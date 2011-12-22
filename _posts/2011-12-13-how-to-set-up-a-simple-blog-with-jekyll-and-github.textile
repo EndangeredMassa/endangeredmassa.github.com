@@ -1,8 +1,12 @@
 ---
 layout: post
-title: How to set up a blog with jekyll, github pages, and dnsimple
+title:  Set up a blog with Jekyll, Github, and dnsimple
 ---
 
-h1. {{ page.title }}
+h1. <a href="{{ page.url }}">{{ page.title }}</a>
 
-p. Content
+_Sean Massa - {{page.date | date_to_string }}_
+
+h2. There is a theory!
+
+p. some content too
