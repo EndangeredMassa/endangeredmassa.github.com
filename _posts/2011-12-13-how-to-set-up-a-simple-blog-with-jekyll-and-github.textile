@@ -1,0 +1,8 @@
+---
+layout: post
+title: How to set up a blog with jekyll, github pages, and dnsimple
+---
+
+h1. {{ page.title }}
+
+p. Content

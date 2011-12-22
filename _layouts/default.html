@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Massa Labs</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="programming blog">
+    <meta name="author" content="sean massa">
 
     <!-- HTML5 shim -->
     <!--[if lt IE 9]>
@@ -16,8 +16,6 @@
 
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   </head>
 
   <body>
@@ -28,7 +26,7 @@
           <a class="brand" href="#">Massa Labs</a>
           <ul class="nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="http://endangeredmassa.github.com/Presentation">Presentations</a></li>
+            <li><a href="http://endangeredmassa.github.com/Presentations">Presentations</a></li>
           </ul>
         </div>
       </div>
@@ -38,14 +36,51 @@
 
       <div class="content">
         <div class="page-header">
-          <h1>Blog</h1>
+          <h1>You could be playing Skyrim right now.</h1>
         </div>
         <div class="row">
           <div class="span10">
-            <h2>[recent post]</h2>
+            {{ content }}
           </div>
           <div class="span4">
             <h3>About Me</h3>
+
+            <a href="mailto:endangeredmassa@gmail.com">endangeredmassa@gmail.com</a><br />
+            <a href="http://www.github.com/endangeredmassa">My Github</a><br />
+            <br />
+            <a href="http://stackoverflow.com/users/106/endangeredmassa">
+              <img src="http://stackoverflow.com/users/flair/106.png" width="208" height="58" alt="profile for EndangeredMassa at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for EndangeredMassa at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+            </a><br />
+            <br />
+            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
+            <script>
+              new TWTR.Widget({
+                version: 2,
+                type: 'profile',
+                rpp: 3,
+                interval: 30000,
+                width: 'auto',
+                height: 300,
+                theme: {
+                  shell: {
+                    background: '#BBBBBB',
+                    color: '#000000'
+                  },
+                  tweets: {
+                    background: '#FFFFFF',
+                    color: '#000000',
+                    links: '#0000EE'
+                  }
+                },
+                features: {
+                  scrollbar: false,
+                  loop: false,
+                  live: false,
+                  behavior: 'all'
+                }
+              }).render().setUser('endangeredmassa').start();
+            </script>
+
           </div>
         </div>
       </div>
