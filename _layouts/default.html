@@ -26,7 +26,7 @@
           <a class="brand" href="/">Massa Labs</a>
           <ul class="nav">
             <li class="active"><a href="/">Home</a></li>
-            <li><a href="http://endangeredmassa.github.com/Presentations">Presentations</a></li>
+            <li><a href="/Presentations">Presentations</a></li>
             <li><a href="http://github.com/endangeredmassa">My Github</a></li>
             <li><a href="mailto:endangeredmassa@gmail.com">Contact</a></li>
           </ul>
@@ -34,17 +34,16 @@
       </div>
     </div>
 
-    <div class="container">
-
+    <div class="container-fluid">
       <div class="content">
         <div class="page-header">
           <em>You could be playing Skyrim right now.</em>
         </div>
         <div class="row">
-          <div class="span10">
+          <div class="span16">
             {{ content }}
           </div>
-          <div class="span4">
+          <div class="span6">
             <h3>About Me</h3>
 
             <a href="http://stackoverflow.com/users/106/endangeredmassa">
@@ -52,34 +51,7 @@
             </a><br />
             <br />
             <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-            <script>
-              new TWTR.Widget({
-                version: 2,
-                type: 'profile',
-                rpp: 3,
-                interval: 30000,
-                width: 'auto',
-                height: 300,
-                theme: {
-                  shell: {
-                    background: '#BBBBBB',
-                    color: '#000000'
-                  },
-                  tweets: {
-                    background: '#FFFFFF',
-                    color: '#000000',
-                    links: '#0000EE'
-                  }
-                },
-                features: {
-                  scrollbar: false,
-                  loop: false,
-                  live: false,
-                  behavior: 'all'
-                }
-              }).render().setUser('endangeredmassa').start();
-            </script>
-
+            <script src="http://endangeredmassa.github.com/js/twitter_widget.js"></script>
           </div>
         </div>
       </div>

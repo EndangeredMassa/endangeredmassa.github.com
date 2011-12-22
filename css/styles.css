@@ -7,9 +7,12 @@ body {
 .container > footer p {
   text-align: center;
 }
+
+/*
 .container {
   width: 820px;
 }
+*/
 
 .content {
   background-color: #fff;

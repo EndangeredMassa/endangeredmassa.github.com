@@ -1,12 +1,50 @@
 ---
 layout: post
-title:  Set up a blog with Jekyll, Github, and dnsimple
+title:  Setting up a blog with Jekyll, Github, and dnsimple
+published: true
 ---
 
 h1. <a href="{{ page.url }}">{{ page.title }}</a>
 
 _Sean Massa - {{page.date | date_to_string }}_
 
-h2. There is a theory!
+h2. Step #1: Github
 
-p. some content too
+p. This step involves setting up your github repository to properly respond to a domain name.
+
+# Register for <a href="http://github.com">Github</a> if you don't already have an account.
+# Create a new repository called yourusername.github.com.
+# Clone it locally by running `git clone git@github.com:yourusername/yourusername.github.com.git`
+
+p. Now we're ready to put some content on our blog! If you go to yourusername.github.com, you should now see a page that says you need to setup some content for your blog. If you need more help for this part, take a look at the <a href="http://pages.github.com/">Github Pages</a> documentation.
+
+h2. Step #2: Jekyll
+
+p. This step involves setting up Jekyll for your static content generation.
+
+# This requires ruby. Make sure that's installed.
+# Install the Jekyll gem with `gem install jekyll`.
+# Find a <a href="https://github.com/krisb/jekyll-template">template</a> that you like and clone it. Or, take a look at <a href="https://github.com/mojombo/jekyll/wiki/sites"an existing site</a> and copy the structure.
+# 
+
+p. You should now be able to see your content by executing `jekyll --server --auto` in your repository directory. The --auto flag will make the server recompile pages based on files you change. If you need more help with this, take a look at the <a href="https://github.com/mojombo/jekyll">Jekyll</a> documentation.
+
+h2. Step #3: dnsimple
+
+p. This step involves setting up your domain name to point to your Github Pages blog.
+
+# Go to <a href="https://dnsimple.com/signup">dnsimple</a> and register for an account.
+# Find a domain name that is available and register it.
+# View your registered domain and click "Add services to domain".
+# Add the Github Pages service.
+# Once you are back at your domain management page, click the "Advanced Editor" button.
+# Edit your CNAME entry to point to yourusername.github.com.
+# Go to your git repository and create a file called CNAME with the content mydomain.com.
+# Push your CNAME change to your git repository.
+# Wait a few seconds.
+# Go to mydomain.com and see if it worked!
+
+p. At this point, your domain should be pointing to your Github Pages content. If not, look at one of the documentation sites I linked above. If this guide was unclear, let me know <a href="mailto:endangeredmassa@gmail.com">via email</a> or a comment.
+
+
+
