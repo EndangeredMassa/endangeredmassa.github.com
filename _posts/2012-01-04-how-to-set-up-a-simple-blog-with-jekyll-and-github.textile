@@ -24,7 +24,7 @@ p. This step involves setting up Jekyll for your static content generation.
 
 # This requires ruby. Make sure that's installed.
 # Install the Jekyll gem with `gem install jekyll`.
-# Find a <a href="https://github.com/krisb/jekyll-template">template</a> that you like and clone it. Or, take a look at <a href="https://github.com/mojombo/jekyll/wiki/sites"an existing site</a> and copy the structure.
+# Find a <a href="https://github.com/krisb/jekyll-template">template</a> that you like and clone it. Or, take a look at <a href="https://github.com/mojombo/jekyll/wiki/sites">an existing site</a> and copy the structure.
 
 p. You should now be able to see your content by executing `jekyll --server --auto` in your repository directory. The --auto flag will make the server recompile pages based on files you change. If you need more help with this, take a look at the <a href="https://github.com/mojombo/jekyll">Jekyll</a> documentation.
 

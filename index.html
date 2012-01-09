@@ -7,7 +7,9 @@ title: Tom Preston-Werner
   <div class="posts">
     {% for post in site.posts offset: 0 limit: 10 %}
       {% if post.published %}
-        {{ post.content }}
+        <div class="post">
+          {{ post.content }}
+        </div>
       {% endif %}
     {% endfor %}
   </div>

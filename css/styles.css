@@ -18,6 +18,15 @@ body {
   margin-bottom: 40px;
 }
 
+.post {
+  margin-bottom: 40px;
+}
+
+.figure {
+  margin: 24px auto;
+  display: block;
+}
+
 .content {
   background-color: #fff;
   padding: 20px;
