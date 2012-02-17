@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  The History of the Chicago Node.js Meetup
-published: false
+published: false 
 ---
 
 h1. <a href="{{ page.url }}">{{ page.title }}</a>
@@ -10,11 +10,9 @@ _Sean Massa - {{page.date | date_to_string }}_
 
 p. The <a href="http://www.meetup.com/Chicago-Nodejs/">Chicago Node.js User Group</a> has been thriving recently. As the Node.js blogger for Groupon Engineering, I wanted the first post in this column to be about this growing group and how it fits in Groupon.
 
-
-
 h2. Starting Out
 
-p. In early 2011, <a href="https://twitter.com/#!/calebcornman">Caleb Cornman</a>[M@5 and I were investigating this interesting system called Node.js. Caleb launched the Meetup.com group <a href="http://www.meetup.com/Chicago-Nodejs/events/16529268/">in March</a>, hosted at the <a href="http://hashrocket.com/">Hashrocket</a> office. We had our first meeting to get things rolling.
+p. In early 2011, <a href="https://twitter.com/#!/calebcornman">Caleb Cornman</a> and I were investigating this interesting system called Node.js. Caleb launched the Meetup.com group <a href="http://www.meetup.com/Chicago-Nodejs/events/16529268/">in March</a>, hosted at the <a href="http://hashrocket.com/">Hashrocket</a> office. We had our first meeting to get things rolling.
 
 p. The first couple of meetups were decent. Attendance hovered around 10-20 people and we went over some intro-level Node.js concepts.
 
@@ -34,7 +32,7 @@ p. The attendance metrics are based on memory and Meetup.com's determination. So
 
 h2. The Future
 
-p. Chicago Node.js will continue to be sponsored and hosted by Groupon for the forseeable future. There are plenty of interesting talks in the works. We're also looking into guest speakers from the greater Node.js community. 2011 promises to be an interesting year for this group.
+p. Chicago Node.js will continue to be sponsored and hosted by Groupon for the forseeable future. There are plenty of interesting talks and workshops coming. We are currently booked through September, but lightning talks can fit in anywhere.
 
 p. If you have any ideas for presentations, lightning talks, events, speakers, or whatever else you can think of, <a href="mailto:endangeredmassa@gmail.com">let us know</a>! Even if you have an idea for a talk, but don't want to present it, we can find someone who will.
 
