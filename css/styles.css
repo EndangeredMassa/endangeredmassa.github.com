@@ -4,6 +4,11 @@ html, body {
 body {
   padding-top: 40px;
 }
+
+code {
+  background-color: #EEE;
+}
+
 .container > footer p {
   text-align: center;
 }
@@ -58,3 +63,34 @@ body {
 .topbar .btn {
   border: 0;
 }
+
+p {
+  margin-bottom: 12px;
+}
+
+.gist-highlight {
+  border-left: 3ex solid #eee;
+  position: relative;
+}
+
+.gist-highlight pre {
+  counter-reset: linenumbers 0;
+}
+
+.gist-highlight pre div:before {
+  color: #aaa;
+  content: counter(linenumbers);
+  counter-increment: linenumbers 1;
+  left: -3ex;
+  position: absolute;
+  text-align: right;
+  width: 15px;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
