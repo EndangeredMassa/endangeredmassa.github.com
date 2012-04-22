@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  The History of the Chicago Node.js Meetup
-published: false 
+published: true
 ---
 
 h1. <a href="{{ page.url }}">{{ page.title }}</a>
@@ -18,21 +18,23 @@ p. The first couple of meetups were decent. Attendance hovered around 10-20 peop
 
 h2. Node Knockout
 
-p. In August, <a href="http://nodeknockout.com/">Node Knockout</a> was the hot topic. We setup shop at Hashrocket for 48 hours. Only one team from our group competed, but a couple of other people tagged along to hang out before the competition started. I was part of the group <a href="http://nodeknockout.com/teams/node-ice">Node Ice</a>. We ended up with a decent score, but missed the mark on completeness. For a longer post-mortem, check out <a href="http://twitter.com/xonev">Steve Oxley</a>'s <a href="http://www.pointlessrants.com/2011/08/node-ices-node-knockout-mostly-non-technical-postmortem/">post</a>.
+p. In August 2011, <a href="http://nodeknockout.com/">Node Knockout</a> was the hot topic. We setup shop at Hashrocket for 48 hours. Only one team from our group competed, but a couple of other people tagged along to hang out before the competition started. I was part of the group <a href="http://nodeknockout.com/teams/node-ice">Node Ice</a>. We ended up with a decent score, but missed the mark on completeness. For a longer post-mortem, check out <a href="http://twitter.com/xonev">Steve Oxley</a>'s <a href="http://www.pointlessrants.com/2011/08/node-ices-node-knockout-mostly-non-technical-postmortem/">post</a>.
 
 h2. Groupon
 
 p. At the end of October, things were changing. Caleb was leaving Hashrocket (our sponsor and host), which prompted the need for a new location. At the same time, I was moving to Groupon. After some discussion with the dev team, we agreed to host the meetup inside Groupon itself. Hooray!
 
-p. The transition went well enough. I was afraid that it would be too hard to get to or that people would get lost in the shuffle. To my surprise, the increase attendance (around 25 in October at Hashrocket) continued to climb when we moved to Groupon. It has held steady around 30 since then. Checkout this plot of attendance over time.
+p. The transition went well enough. I was afraid that it would be too hard to get to or that people would get lost in the shuffle. To my surprise, the increase attendance (around 25 in October at Hashrocket) continued to climb when we moved to Groupon. It has held steady around 30-35 since then. Checkout this plot of attendance over time.
 
-<img class="figure" src="/images/chicago_nodejs_attendance_2011.png" width="600" />
+<img class="figure" src="/images/chicago_nodejs_attendance_2012.png" width="600" />
 
 p. The attendance metrics are based on memory and Meetup.com's determination. So, they may not be accurate. I'll be keeping a better headcount going forward. Even so, it provides an interesting metric: The average attendance rate of registered members for Chicago Node.js is 75.5%. This is important to realize when you need to order food and provide space for attendees.
 
 h2. The Future
 
 p. Chicago Node.js will continue to be sponsored and hosted by Groupon for the forseeable future. There are plenty of interesting talks and workshops coming. We are currently booked through September, but lightning talks can fit in anywhere.
+
+p. We also have a new co-organizer, Todd Larsen, a fellow Groupon developer!
 
 p. If you have any ideas for presentations, lightning talks, events, speakers, or whatever else you can think of, <a href="mailto:endangeredmassa@gmail.com">let us know</a>! Even if you have an idea for a talk, but don't want to present it, we can find someone who will.
 
