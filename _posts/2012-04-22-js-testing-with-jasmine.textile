@@ -14,13 +14,13 @@ p. Jasmine is a great JavaScript testing framework, but I grew tired of managing
 
 p. In a parallel endeavor, I grew tired of namespacing my JavaScript code. So, I brought in RequireJS and setup all of my modules to use the AMD format it requires.
 
-p. However, testing became a problem. I needed a way for Jasmine to play well with RequireJS. I could just require the modules I want inside a test, then <code>waitFor</code> it to be loaded, but that felt rather messy. So, I decided to patch jasmine's <code>it</code> and <code>describe</code> methods to do what I wanted.
+p. However, testing became a problem. I needed a way for Jasmine to play well with RequireJS. I could just require the modules I want inside a test, then <code>waitFor</code> it to be loaded, but that felt rather messy. So, I decided to patch Jasmine's <code>it</code> and <code>describe</code> methods to do what I wanted.
 
 h2. Adding RequireJS Support to Jasmine
 
 h3. RequireJS Config
 
-p. When the jasmine server runs, it exposes a path to your app's /public folder under /public. The problem is that you would normally reference those files from your website root. So, your bootstrap file needs to know if it is being used in a testing environment. You can test for that and act accordingly.
+p. When the Jasmine server runs, it exposes a path to your app's /public folder under /public. The problem is that you would normally reference those files from your website root. So, your bootstrap file needs to know if it is being used in a testing environment. You can test for that and act accordingly.
 
 <script src="https://gist.github.com/2459830.js?file=bootstrap.coffee"></script>
 
@@ -34,13 +34,13 @@ h3. Patching it and describe
 
 p. This step involved a lot of work. Essentially, we override the global <code>it</code> and <code>describe</code> methods to support the following.
 
-* 1 argument => pending
-* 2 arguments => normal behavior
-* 3 arguments => requirejs behavior
+* One argument => pending
+* Two arguments => normal behavior
+* Three arguments => RequireJS behavior
 
-p. The standard method for using RequireJS to import a module is to call <code>define ['module1', 'module2'], (module1, module2) -></code>. So, I decided to follow the same signature in the it and describe calls, making this valid 
+p. The standard method for using RequireJS to import a module is to call <code>define ['module1', 'module2'], (module1, module2) -></code>. So, I decided to follow the same signature in the it and describe calls, making this valid.
 
-p. When using the jasmine gem, the jasmine test runner page is setup to run the tests in a <code>window.onload</code> event handler. The problem here is that we want to wait for our modules to be loaded before registering our specs. The new spec methods will use RequireJS to load the necessary modules asyncronously. If we leave the <code>window.onload</code> handler there, it will run before our modules are loaded and our specs will never be registered.
+p. When using the Jasmine gem, the Jasmine test runner page is setup to run the tests in a <code>window.onload</code> event handler. The problem here is that we want to wait for our modules to be loaded before registering our specs. The new spec methods will use RequireJS to load the necessary modules asyncronously. If we leave the <code>window.onload</code> handler there, it will run before our modules are loaded and our specs will never be registered.
 
 p. Thus, we need to wait for our specs to be registered before running the test suite. I handled this with a simple load counter, but there's probably a race condition with nested module requirements in specs. For now, this works pretty well.
 
@@ -52,7 +52,7 @@ p. The traditional use of the jasmine.yml configuration file has you list all of
 
 <script src="https://gist.github.com/2459830.js?file=hidey.coffee"></script>
 
-p. Since writing that tool, however, I've changed my view on testing visibility. I'd rather let my CSS handle that and simply test for the existence of a class that should imply visibility. The simply example would be to test an element for a <code>hide</code> class if you want it to be hidden.
+p. Since writing that tool, however, I've changed my view on testing visibility. I'd rather let my CSS handle that and simply test for the existence of a class that should imply visibility. The simplest example would be to test an element for a <code>hide</code> class if you want it to be hidden.
 
 h2. Putting It All Together
 
@@ -62,5 +62,5 @@ p. Now, I can write specs that look like this!
 
 h2. Giving Back
 
-p. I considered submitting a pull request to jasmine to add requireJS support, but I'm not completely happy with how it works right now. The more I manipulate jasmine to do what I want, the more I realize I should write my own testing framework (again, although attempt #1 was many years ago and pretty awful). But, I'll save that for another day.
+p. I considered submitting a pull request to Jasmine to add RequireJS support, but I'm not completely happy with how it works right now. The more I manipulate Jasmine to do what I want, the more I realize I should write my own testing framework (again, although attempt #1 was many years ago and pretty awful). But, I'll save that for another day.
 
