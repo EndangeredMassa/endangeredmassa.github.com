@@ -34,5 +34,5 @@ h2. The Future
 
 p. Chicago Node.js will continue to be sponsored and hosted by Groupon for the forseeable future. There are plenty of interesting talks and workshops coming. We have meetings lined up through September, but we can always fit more speakers in! If you have any ideas for presentations, lightning talks, events, speakers, or whatever else you can think of, <a href="mailto:endangeredmassa@gmail.com">let us know</a>! Even if you have an idea for a talk, but don't want to present it, we can find someone who will.
 
-p. We also have a new co-organizer, Todd Larsen, a fellow Groupon developer! He will be working with other companies to secure sponshorships of various sorts. He'll also help run the meetup itself, as you may have noticed at <a href="http://www.meetup.com/Chicago-Nodejs/events/52730812/">this month's meeting</a>.
+p. We also have a new co-organizer, <a href="https://twitter.com/#!/toddjlarsen">Todd Larsen</a>, a fellow Groupon developer! He will be working with other companies to secure sponshorships of various sorts. He'll also help run the meetup itself, as you may have noticed at <a href="http://www.meetup.com/Chicago-Nodejs/events/52730812/">this month's meeting</a>.
 
