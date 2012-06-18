@@ -14,7 +14,7 @@ Writing JavaScript is a lot easier when you actually write <a href="http://coffe
 
 h2. Global State
 
-Global state is bad. We all know it, but we seem to have forgotten how to recognize it in JavaScript. There are many forms
+Global state is bad. We all know it, but we seem to have forgotten how to recognize it in JavaScript. There are many forms, as we'll see.
 
 When your code accesses global state, you have to pay extra attention to avoid test pollution. Check out this example:
 
@@ -24,17 +24,17 @@ If we instead pull the global state access up, we can ignore it completely when 
 
 <script src="https://gist.github.com/2950032.js?file=global_state_fixed.coffee"></script>
 
+If you continue to do this, you start to see exactly where your functions' dependencies lie. If you argument list is growing too large, it's not because you decided to eliminate global state, it's because your function has too many dependencies. This refactoring simple exposed that problem to you.
+
 h2. Global State: Cookies
 
-Tests should never set cookies. You should mock out the cookie access and test the methods without actually setting it. You can tell if the code you are testing sets a cookie if you see `document.cookie` or `Cookie.set` in the code. You can also always check the cookies in the console `document.cookie` or with the Edit This Cookie Chrome extension.
-
-In the near future there will be an actual spec that asserts that document.cookie is empty after the spec suite runs. That will make it a lot easier to tell if you've called code that sets cookies without stubbing that out. Below are examples on how to stub this.
+Tests should not set cookies unless you are testing a cookie library. You should mock out the cookie access and test that your methods call the cookie library or method properly. You can also always check the cookies in the console `document.cookie` or with the <a href="https://chrome.google.com/webstore/detail/fngmhnnpilhplaeedifhccceomclgfbg">Edit This Cookie</a> Chrome extension. Below are examples on how to stub this.
 
 <script src="https://gist.github.com/2950032.js?file=global_state_cookies.coffee"></script>
 
 h2. Global State: DOM
 
-Accessing the DOM is not always necessary. In fact, the instances where this is required are quite rare. If you look at the Customer Support Tools app specs, you'll notice that all specs except a few never touch the DOM via #jasmine_content (or any other part). The trick is that dom fragments act the same (mostly) if they are attached to the document or not. You can even fire events on dom fragments and waitsFor them to be triggered.
+Accessing the DOM is not always necessary. In fact, the instances where this is actually required are quite rare. In my current app, all specs (except a few) never touch the DOM via #jasmine_content (or any other part). The trick is that dom fragments act (mostly) the same if they are attached to the window.document or not. You can even fire events on dom fragments and waitsFor them to be triggered.
 
 If you absolutely must insert items in the DOM, use #jasmine_content. Make sure you clean up after yourself as well. Below is an example:
 
@@ -42,23 +42,21 @@ If you absolutely must insert items in the DOM, use #jasmine_content. Make sure 
 
 h2. Global State: Network
 
-There are only two reasons that your tests should ever access the network: the need to load a fixture or a script. Even then, that should point to localhost and it should succeed. Anything else should be stubbed out. This includes third party scripts hosted on third party sites, such as google maps and facebook. You can always stub those libraries. Essentially, if the build is run on a box without an internet connection, it should still succeed. 
+There are only two reasons that your tests should ever access the network: the need to load a fixture or a local script. Even then, that should point to localhost and it should succeed. Anything else should be stubbed out. This includes third party scripts hosted on third party sites, such as google maps and facebook. You can always stub those libraries. Essentially, if the build is run on a box without an internet connection, it should still succeed.
 
-Sometimes actions can cause a network request without you realizing it. One such example is that inserting an image tag with a src attribute into the DOM. It's important to check the network tab to make sure that nothing new shows up there. Right now, there are hundreds of requests in the network log. I'd like to remove them, but it will require rewriting hundreds of specs. For now, we just have to deal with that.
-
-Below are examples of ways to mock out network access:
+Sometimes actions can cause a network request without you realizing it. One such example is inserting an image tag with a src attribute into the DOM. It's important to check the network tab to make sure that nothing new shows up there. Below are examples of ways to mock out network access:
 
 <script src="https://gist.github.com/2950032.js?file=global_state_network.coffee"></script>
 
 h2. Global State: Other
 
-Scroll Position and Window Size are also forms of global state. Make sure that you are properly mocking these calls out as well.
+Scroll Position, Window Size, and Local Storage are also forms of global state. Make sure that you are properly mocking these calls out as well. These can be especially annoying if you run your javascript specs in a browser because the viewport will change on you seemingly randomly.
 
 h2. Mock Dependencies
 
-Dependencies should be mocked. Assertions should be made that those dependencies were called properly. Allowing execution to pass into a dependent module turns your spec into an integration test. Integration tests are useful, but you should do so explicitly and with purpose.
+Dependencies should be mocked. Assertions should be made that those dependencies were called properly. That's what makes them unit tests. Allowing execution to pass into a dependent module turns your spec into an integration test. Integration tests are useful, but you should do so explicitly and with purpose.
 
-In my travels, I discovered a series of specs where the execution flow went: Module Under Test > Dependent Module > Sub-dependent Module > DOM [insert] > [trigger] Network Request. Then, the assertion tested that the DOM triggered the Network request properly. Ideally, there would be unit tests all along the way. Even an integration test still shouldn't trigger a network request.
+In my travels, I discovered a series of specs where the execution flow of each one went: Module Under Test > Dependent Module > Sub-dependent Module > DOM [insert] > [trigger] Network Request. Then, the assertion tested that the DOM triggered the Network request properly. Ideally, there would be unit tests all along the way. Even an integration test still shouldn't trigger a network request.
 
 Below is an example of how a dependent module can have untested side effects:
 
@@ -80,9 +78,11 @@ Another way is to pull this into two modules. One acts as the interface for the 
 
 <script src="https://gist.github.com/2950032.js?file=module_pattern_3.coffee"></script>
 
+In general, I use the second method here.
+
 h2. Auto-init Considered Harmful
 
-There are several modules in the codebase that define a module then call its `init` method immediately. This pattern has one major advantage and two major drawbacks.
+I have seen several modules that define a module then call its `init` method immediately. This pattern has one major advantage and two major drawbacks.
 
 The advantage is that it's self-contained in one file. All of the logic required to create and use the module can be triggered by including one script. This is nice, but I hope that you will see how the drawbacks make outweight this benefit.
 
@@ -94,9 +94,9 @@ Therefore, I believe that auto-init script files are a bad pattern. Below is a s
 
 h2. Pending Specs and Comments
 
-Comments should only be used for truly exceptional, complex, atomic code. By this I mean that the code with the comment can't be broken down any further and it's complex and strange. Examples are strange bitwise tricks. Otherwise, your comment should probably be either a new method, new variable, or a story in your tracker. 
+Comments should only be used for truly exceptional, complex, atomic code. By this I mean that the code with the comment can't be broken down any further and it's complex and strange. Examples are strange bitwise tricks. Otherwise, your comment should probably be either a new method, new variable, or a story in your tracker.
 
-Another acceptable use may be documentation. I'm talking about inline comments, here.
+My definition of a comment does not include what other people consider documentation. If you use comments for code documentation, that's a separate (and probably legitimate) issue.
 
 Below is an example of all three of these issues:
 
@@ -106,27 +106,29 @@ h2. Console log/warn/error
 
 The browser's console lists messages that come from errors, warnings and log messages triggered by the code on the page. If a script triggers one of these things while loading (not during a spec run), it will log the error to the console, but the suite will pass. This is a huge problem.
 
-The problem is that a console error can imply:
+An error in the console implies:
 
-- a poor understanding of the code under test
-- untested code
-- actual bugs
+1. a poor understanding of the code under test
+1. untested code
+1. actual bugs
 
 It also makes it a lot harder to debug your own specs if the log is already full of dozens of errors.
 
-The worst part is that errors in the console can happen, but the spec suite will still pass.
-
 h2. Spec Suite Health
 
-TODO
+Inspired by the issues discovered above, I constructed a series of Suite Health Specs. They are a group of specs that run at the very end of your entire suite to make sure that none of your tests polluted areas of global scope.
+
+TODO: complete
 
 h2. Threads and Async
+
 JavaScript runs in a single thread, including the UI. Blocking that thread blocks the UI. When you create an async callback, that gets saved to the side until the current execution flow ends. Then it will be executed. However, just because you give a method a callback does not mean it's asynchronous.
 
 Only certain functions are async: setTimeout, event triggers (except lib shortcuts), and ajax calls. If jQuery has an event registered on an element and you trigger it on that element, it will invoke that callback immediately instead of making it asynchronous. If, however, you are using a live event, it will not.
 
+TODO: Verify live event vs. not
+
 h2. Summary
 
-TODO
-
+These practices are all things we have probably heard before. It may have been in school or in practice. We simply need to recognize that code is code: these problems exist in any language and we should be diligent in fighting them.
 
