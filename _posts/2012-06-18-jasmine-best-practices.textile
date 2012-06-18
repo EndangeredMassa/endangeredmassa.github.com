@@ -118,15 +118,25 @@ h2. Spec Suite Health
 
 Inspired by the issues discovered above, I constructed a series of Suite Health Specs. They are a group of specs that run at the very end of your entire suite to make sure that none of your tests polluted areas of global scope.
 
-TODO: complete
+This helper sets up some collections to keep track of a few method calls. We log these calls for later because you will often use console.log (and others) during debugging to check execution order and values.
+
+<script src="https://gist.github.com/2950153.js?file=suite_health_helper.coffee"></script>
+
+Then, we set up this set of specs to run after all of our other specs. These will verify our collections as well as areas of global state.
+
+<script src="https://gist.github.com/2950153.js?file=suite_health.coffee"></script>
+
+In order to get this setup properly, we need to place them in your jasmine.yml file, like so:
+
+<script src="https://gist.github.com/2950153.js?file=jasmine.yml"></script>
+
+Now, we have a spec suite that will fail when a spec pollutes global scope!
 
 h2. Threads and Async
 
 JavaScript runs in a single thread, including the UI. Blocking that thread blocks the UI. When you create an async callback, that gets saved to the side until the current execution flow ends. Then it will be executed. However, just because you give a method a callback does not mean it's asynchronous.
 
-Only certain functions are async: setTimeout, event triggers (except lib shortcuts), and ajax calls. If jQuery has an event registered on an element and you trigger it on that element, it will invoke that callback immediately instead of making it asynchronous. If, however, you are using a live event, it will not.
-
-TODO: Verify live event vs. not
+Only certain functions are async: setTimeout, event triggers (except lib shortcuts), and ajax calls.
 
 h2. Summary
 
