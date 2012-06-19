@@ -12,7 +12,7 @@ h2. CoffeeScript
 
 Writing JavaScript is a lot easier when you actually write <a href="http://coffeescript.org/">CoffeeScript</a>. When using CoffeeScript, you don't have to worry about a lot of errors that cause <a href="http://www.jslint.com/">JSLint</a> or <a href="http://www.jshint.com/">JSHint</a> to get angry. Just promise me you'll take a look at it.
 
-h2. Global State
+h2. Avoiding Global State
 
 Global state is bad. We all know it, but we seem to have forgotten how to recognize it in JavaScript. There are many forms, as we'll see.
 
@@ -24,15 +24,15 @@ If we instead pull the global state access up, we can ignore it completely when 
 
 <script src="https://gist.github.com/2950032.js?file=global_state_fixed.coffee"></script>
 
-If you continue to do this, you start to see exactly where your functions' dependencies lie. If you argument list is growing too large, it's not because you decided to eliminate global state, it's because your function has too many dependencies. This refactoring simple exposed that problem to you.
+If you continue to do this, you start to see exactly where your functions' dependencies lie. If you argument list is growing too large, it's not because you decided to eliminate global state, it's because your function has too many dependencies. This refactoring simply exposed that problem to you.
 
-h2. Global State: Cookies
+h2. Avoiding Global State: Cookies
 
 Tests should not set cookies unless you are testing a cookie library. You should mock out the cookie access and test that your methods call the cookie library or method properly. You can also always check the cookies in the console `document.cookie` or with the <a href="https://chrome.google.com/webstore/detail/fngmhnnpilhplaeedifhccceomclgfbg">Edit This Cookie</a> Chrome extension. Below are examples on how to stub this.
 
 <script src="https://gist.github.com/2950032.js?file=global_state_cookies.coffee"></script>
 
-h2. Global State: DOM
+h2. Avoiding Global State: DOM
 
 Accessing the DOM is not always necessary. In fact, the instances where this is actually required are quite rare. In my current app, all specs (except a few) never touch the DOM via #jasmine_content (or any other part). The trick is that dom fragments act (mostly) the same if they are attached to the window.document or not. You can even fire events on dom fragments and waitsFor them to be triggered.
 
@@ -40,7 +40,7 @@ If you absolutely must insert items in the DOM, use #jasmine_content. Make sure 
 
 <script src="https://gist.github.com/2950032.js?file=global_state_dom.coffee"></script>
 
-h2. Global State: Network
+h2. Avoiding Global State: Network
 
 There are only two reasons that your tests should ever access the network: the need to load a fixture or a local script. Even then, that should point to localhost and it should succeed. Anything else should be stubbed out. This includes third party scripts hosted on third party sites, such as google maps and facebook. You can always stub those libraries. Essentially, if the build is run on a box without an internet connection, it should still succeed.
 
@@ -48,11 +48,11 @@ Sometimes actions can cause a network request without you realizing it. One such
 
 <script src="https://gist.github.com/2950032.js?file=global_state_network.coffee"></script>
 
-h2. Global State: Other
+h2. Avoiding Global State: Other
 
 Scroll Position, Window Size, and Local Storage are also forms of global state. Make sure that you are properly mocking these calls out as well. These can be especially annoying if you run your javascript specs in a browser because the viewport will change on you seemingly randomly.
 
-h2. Mock Dependencies
+h2. Mocking Dependencies
 
 Dependencies should be mocked. Assertions should be made that those dependencies were called properly. That's what makes them unit tests. Allowing execution to pass into a dependent module turns your spec into an integration test. Integration tests are useful, but you should do so explicitly and with purpose.
 
@@ -62,7 +62,7 @@ Below is an example of how a dependent module can have untested side effects:
 
 <script src="https://gist.github.com/2950032.js?file=mock_dependencies.coffee"></script>
 
-h2. Module Pattern
+h2. Using the Module Pattern
 
 The pervasive module pattern is lauded as a best practice, and I think it is, but we really have to be diligent in how we use it. One issue that is always under debate is how much code do you make private? In my opinion, very very little code should ever be private for the simple fact that it makes it harder to test. You can prepend method names with an underscore if you don't intend it to be accessed externally. If it does anything of any real value, it should be tested. If you really want to make it private, pull your private code into another module (with public methods) so that it can be tested there without messing with your primary module's interface.
 
@@ -80,11 +80,11 @@ Another way is to pull this into two modules. One acts as the interface for the 
 
 In general, I use the second method here.
 
-h2. Auto-init Considered Harmful
+h2. The Problem with Auto-init
 
 I have seen several modules that define a module then call its `init` method immediately. This pattern has one major advantage and two major drawbacks.
 
-The advantage is that it's self-contained in one file. All of the logic required to create and use the module can be triggered by including one script. This is nice, but I hope that you will see how the drawbacks make outweight this benefit.
+The advantage is that it's self-contained in one file. All of the logic required to create and use the module can be triggered by including one script. This is nice, but I hope that you will see how the drawbacks outweight this benefit.
 
 The drawbacks are: (1) In order to test this, init has already been called before your spec can run. In many cases, this can throw an error. In others, it may just behave differently the second time it's called. (2) The module iteself becomes less resusable. You can't just include this module and decide when to call the initialize method. Further, you can't include the module and only call certain methods on it (and not initiailze).
 
@@ -102,7 +102,7 @@ Below is an example of all three of these issues:
 
 <script src="https://gist.github.com/2950153.js?file=comments.coffee"></script>
 
-h2. Console log/warn/error
+h2. Using Console log/warn/error
 
 The browser's console lists messages that come from errors, warnings and log messages triggered by the code on the page. If a script triggers one of these things while loading (not during a spec run), it will log the error to the console, but the suite will pass. This is a huge problem.
 
