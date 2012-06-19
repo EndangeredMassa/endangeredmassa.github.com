@@ -142,7 +142,15 @@ h2. Threads and Async
 
 JavaScript runs in a single thread, including the UI. (There's some inconsistencies in browser environments, but this is essentially true.) Blocking that thread blocks the UI. When you create an async callback, that gets saved to the side until the current execution flow ends. Then it will be executed. However, just because you give a method a callback does not mean it's asynchronous.
 
-Only certain functions types are async: setTimeout/setInterval, event triggers (except for shortcut calls like .click() in most browsers), and ajax calls. This applies to any methods that depend on this list, which is why it's important to understand the libraries you use. Reading the source, especially <a href="http://backbonejs.org/docs/backbone.html">nicely annotated source</a>, is the best way to do that.
+There is a short list of things that can cause async events:
+
+1. setTimeout/setInterval
+2. event handlers (on window, document, DOM fragments, workers)
+3. XMLHttpRequests (ajax)
+
+Note that event handlers can be called directly (without creating an async event) in some cases. The most notable case is that .click() calls on DOM elements will (in all current browsers) call that event's handler directly.
+
+Any library that uses these methods underneath will also create async events. That's why it's important to understand the libraries you use. Reading the source, especially <a href="http://backbonejs.org/docs/backbone.html">nicely annotated source</a>, is the best way to do that.
 
 h2. Summary
 
