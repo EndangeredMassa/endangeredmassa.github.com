@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  JavaScript Testing: Best Practices
+title: JavaScript Testing Best Practices
 published: false
 ---
 
@@ -16,7 +16,7 @@ h2. Avoiding Global State
 
 Global state is bad. We all know it, but we seem to have forgotten how to recognize it in JavaScript. There are many forms, as we'll see.
 
-When your code accesses global state, you have to pay extra attention to avoid test pollution. Check out this example:
+When your code accesses global state, you have to pay extra attention to avoid test pollution by saving state before and resoring it after test runs. Check out this example:
 
 <script src="https://gist.github.com/2950032.js?file=global_state.coffee"></script>
 
@@ -24,7 +24,7 @@ If we instead pull the global state access up, we can ignore it completely when 
 
 <script src="https://gist.github.com/2950032.js?file=global_state_fixed.coffee"></script>
 
-If you continue to do this, you start to see exactly where your functions' dependencies lie. If you argument list is growing too large, it's not because you decided to eliminate global state, it's because your function has too many dependencies. This refactoring simply exposed that problem to you.
+If you continue to do this, you start to see exactly where your functions' dependencies lie. If your argument list is growing too large, it's not because you decided to eliminate global state, it's because your function has too many dependencies. This refactoring simply exposed that problem to you.
 
 h2. Avoiding Global State: Cookies
 
@@ -34,7 +34,7 @@ Tests should not set cookies unless you are testing a cookie library. You should
 
 h2. Avoiding Global State: DOM
 
-Accessing the DOM is not always necessary. In fact, the instances where this is actually required are quite rare. In my current app, all specs (except a few) never touch the DOM via #jasmine_content (or any other part). The trick is that dom fragments act (mostly) the same if they are attached to the window.document or not. You can even fire events on dom fragments and waitsFor them to be triggered.
+Accessing the DOM is not always necessary. In fact, the instances where this is actually required are quite rare. In my current app, all specs (except a few) never touch the DOM via #jasmine_content (or any other part). The trick is that DOM fragments act (mostly) the same if they are attached to the window.document or not. You can even fire events on DOM fragments and waitsFor them to be triggered.
 
 If you absolutely must insert items in the DOM, use #jasmine_content. Make sure you clean up after yourself as well. Below is an example:
 
@@ -47,6 +47,8 @@ There are only two reasons that your tests should ever access the network: the n
 Sometimes actions can cause a network request without you realizing it. One such example is inserting an image tag with a src attribute into the DOM. It's important to check the network tab to make sure that nothing new shows up there. Below are examples of ways to mock out network access:
 
 <script src="https://gist.github.com/2950032.js?file=global_state_network.coffee"></script>
+
+For images that aren't what you might call figures, consider setting them with css as a background image instead. Beyond the semantic benefits, this will prevent those images from being loaded in a test environment where you don't load your CSS.
 
 h2. Avoiding Global State: Other
 
@@ -64,9 +66,9 @@ Below is an example of how a dependent module can have untested side effects:
 
 h2. Using the Module Pattern
 
-The pervasive module pattern is lauded as a best practice, and I think it is, but we really have to be diligent in how we use it. One issue that is always under debate is how much code do you make private? In my opinion, very very little code should ever be private for the simple fact that it makes it harder to test. You can prepend method names with an underscore if you don't intend it to be accessed externally. If it does anything of any real value, it should be tested. If you really want to make it private, pull your private code into another module (with public methods) so that it can be tested there without messing with your primary module's interface.
+The pervasive Module Pattern is lauded as a best practice, and I think it is, but we really have to be diligent in how we use it. One issue that is always under debate is how much code do you make private? In my opinion, very very little code should ever be private for the simple fact that it makes it harder to test. You can prepend method names with an underscore if you don't intend it to be accessed externally. If it does anything of any real value, it should be tested. If you really want to make it private, pull your private code into another module (with public methods) so that it can be tested there without messing with your primary module's interface.
 
-Below is an example of the module pattern used poorly.
+Below is an example of the Module Pattern used poorly.
 
 <script src="https://gist.github.com/2950032.js?file=module_pattern_1.coffee"></script>
 
@@ -91,6 +93,10 @@ The drawbacks are: (1) In order to test this, init has already been called befor
 Therefore, I believe that auto-init script files are a bad pattern. Below is a simple example of this pattern at work:
 
 <script src="https://gist.github.com/2950032.js?file=auto_init.coffee"></script>
+
+Note that Backbone.js views that call render in their initialize methods are a form of this Auto-init pattern.
+
+<script src="https://gist.github.com/2950153.js?file=backbone_render.coffee"></script>
 
 h2. Pending Specs and Comments
 
@@ -134,9 +140,9 @@ Now, we have a spec suite that will fail when a spec pollutes global scope!
 
 h2. Threads and Async
 
-JavaScript runs in a single thread, including the UI. Blocking that thread blocks the UI. When you create an async callback, that gets saved to the side until the current execution flow ends. Then it will be executed. However, just because you give a method a callback does not mean it's asynchronous.
+JavaScript runs in a single thread, including the UI. (There's some inconsistencies in browser environments, but this is essentially true.) Blocking that thread blocks the UI. When you create an async callback, that gets saved to the side until the current execution flow ends. Then it will be executed. However, just because you give a method a callback does not mean it's asynchronous.
 
-Only certain functions are async: setTimeout, event triggers (except lib shortcuts), and ajax calls.
+Only certain functions types are async: setTimeout/setInterval, event triggers (except for shortcut calls like .click() in most browsers), and ajax calls. This applies to any methods that depend on this list, which is why it's important to understand the libraries you use. Reading the source, especially <a href="http://backbonejs.org/docs/backbone.html">nicely annotated source</a>, is the best way to do that.
 
 h2. Summary
 
