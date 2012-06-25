@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript Testing Best Practices
-published: false
+published: true
 ---
 
 h1. <a href="{{ page.url }}">{{ page.title }}</a>
@@ -10,7 +10,9 @@ _Sean Massa - {{page.date | date_to_string }}_
 
 h2. CoffeeScript
 
-Writing JavaScript is a lot easier when you actually write <a href="http://coffeescript.org/">CoffeeScript</a>. When using CoffeeScript, you don't have to worry about a lot of errors that cause <a href="http://www.jslint.com/">JSLint</a> or <a href="http://www.jshint.com/">JSHint</a> to get angry. Just promise me you'll take a look at it.
+Writing JavaScript is a lot easier when you actually write <a href="http://coffeescript.org/">CoffeeScript</a>. When using CoffeeScript, you don't have to worry about a lot of errors that cause <a href="http://www.jslint.com/">JSLint</a> or <a href="http://www.jshint.com/">JSHint</a> to get angry. It also provides a lot of syntactic sugar that makes it a pleasure to work with. Just promise me you'll take a look at it.
+
+The examples below are written in CoffeeScript and <a href="http://pivotal.github.com/jasmine/">Jasmine</a>. I use explicit return statements to try and make it more clear to those of you not as familiar with CoffeeScript.
 
 h2. Avoiding Global State
 
@@ -34,7 +36,7 @@ Tests should not set cookies unless you are testing a cookie library. You should
 
 h2. Avoiding Global State: DOM
 
-Accessing the DOM is not always necessary. In fact, the instances where this is actually required are quite rare. In my current app, all specs (except a few) never touch the DOM via #jasmine_content (or any other part). The trick is that DOM fragments act (mostly) the same if they are attached to the window.document or not. You can even fire events on DOM fragments and waitsFor them to be triggered.
+Accessing the DOM is not always necessary. In fact, the instances where this is actually required are quite rare, if you structure your app the right way. In my current app, all specs (except a few) never touch the DOM via #jasmine_content (or any other part). The trick is that DOM fragments act (mostly) the same if they are attached to the window.document or not. You can even fire events on DOM fragments and waitsFor them to be triggered.
 
 If you absolutely must insert items in the DOM, use #jasmine_content. Make sure you clean up after yourself as well. Below is an example:
 
@@ -48,7 +50,7 @@ Sometimes actions can cause a network request without you realizing it. One such
 
 <script src="https://gist.github.com/2950032.js?file=global_state_network.coffee"></script>
 
-For images that aren't what you might call figures, consider setting them with css as a background image instead. Beyond the semantic benefits, this will prevent those images from being loaded in a test environment where you don't load your CSS.
+For images that aren't what you might call <a href="http://en.wikipedia.org/wiki/Floating_block">figures</a>, consider setting them with css as a background image instead. Beyond the semantic benefits, this will prevent those images from being loaded in a test environment where you don't load your CSS.
 
 h2. Avoiding Global State: Other
 
@@ -56,7 +58,9 @@ Scroll Position, Window Size, and Local Storage are also forms of global state. 
 
 h2. Mocking Dependencies
 
-Dependencies should be mocked. Assertions should be made that those dependencies were called properly. That's what makes them unit tests. Allowing execution to pass into a dependent module turns your spec into an integration test. Integration tests are useful, but you should do so explicitly and with purpose.
+Dependencies should be mocked.  Assertions should be made that those dependencies were called properly. That's what makes them unit tests. Allowing execution to pass into a dependent module turns your spec into an integration test. Integration tests are useful, but you should do so explicitly and with purpose.
+
+<a href="http://blakesmith.me/2012/02/29/test-stubbing-as-an-antipattern.html">Some might say</a> that people mock too often--that the fact that their code has multiple depedencies is an indication that you need to refactor. I definitely agree with that. The point here is that if you have depedencies, you need to handle them properly. Sometimes that's with a mock and sometimes it's with a refactoring.
 
 In my travels, I discovered a series of specs where the execution flow of each one went: Module Under Test > Dependent Module > Sub-dependent Module > DOM [insert] > [trigger] Network Request. Then, the assertion tested that the DOM triggered the Network request properly. Ideally, there would be unit tests all along the way. Even an integration test still shouldn't trigger a network request.
 
@@ -102,11 +106,19 @@ h2. Pending Specs and Comments
 
 Comments should only be used for truly exceptional, complex, atomic code. By this I mean that the code with the comment can't be broken down any further and it's complex and strange. Examples are strange bitwise tricks. Otherwise, your comment should probably be either a new method, new variable, or a story in your tracker.
 
-My definition of a comment does not include what other people consider documentation. If you use comments for code documentation, that's a separate (and probably legitimate) issue.
+My definition of a comment does not include what other people consider documentation. If you use comments for code documentation, that's a separate (and probably legitimate) use.
 
-Below is an example of all three of these issues:
+TODO comments like the following should really be logged work items, not comments in the code. If you leave it in the code, it's likely to be forgotten about. And, if someone discovers it later, they will have to find the author of that comment to make sure they do the right thing.
 
-<script src="https://gist.github.com/2950153.js?file=comments.coffee"></script>
+<script src="https://gist.github.com/2950153.js?file=todo_comment.coffee"></script>
+
+Comments about the next few lines of code usually indicate a method in need of extraction. Consider this example.
+
+<script src="https://gist.github.com/2950153.js?file=section_comment.coffee"></script>
+
+In this case, we can turn the comment into the method name. This is called self-documenting code. The best part is that changing the method name will break the code unless you change where it's called. The same is not true for a comment about the code.
+
+<script src="https://gist.github.com/2950153.js?file=section_comment_fixed.coffee"></script>
 
 h2. Using Console log/warn/error
 
@@ -114,11 +126,11 @@ The browser's console lists messages that come from errors, warnings and log mes
 
 An error in the console implies:
 
-1. a poor understanding of the code under test
-1. untested code
-1. actual bugs
+# a poor understanding of the code under test
+# untested code
+# actual bugs
 
-It also makes it a lot harder to debug your own specs if the log is already full of dozens of errors.
+It also makes it a lot harder to debug your own specs if the log is already full of dozens of errors and/or messages.
 
 h2. Spec Suite Health
 
@@ -136,7 +148,7 @@ In order to get this setup properly, we need to place them in your jasmine.yml f
 
 <script src="https://gist.github.com/2950153.js?file=jasmine.yml"></script>
 
-Now, we have a spec suite that will fail when a spec pollutes global scope!
+Now, we have a spec suite that will fail when a spec pollutes global scope! Note that the above does not have a spec that checks for global javascript scope pollution. There are ways to accomplish this, but I'll leave that as an excercise for the reader.
 
 h2. Threads and Async
 
@@ -145,7 +157,7 @@ JavaScript runs in a single thread, including the UI. (There's some inconsistenc
 There is a short list of things that can cause async events:
 
 1. setTimeout/setInterval
-2. event handlers (on window, document, DOM fragments, workers)
+2. event handlers (on window, document, DOM fragments, web workers)
 3. XMLHttpRequests (ajax)
 
 Note that event handlers can be called directly (without creating an async event) in some cases. The most notable case is that .click() calls on DOM elements will (in all current browsers) call that event's handler directly.
@@ -154,5 +166,5 @@ Any library that uses these methods underneath will also create async events. Th
 
 h2. Summary
 
-These practices are all things we have probably heard before. It may have been in school or in practice. We simply need to recognize that code is code: these problems exist in any language and we should be diligent in fighting them.
+These practices are all things we have probably heard before. It may have been in school or in practice. We simply need to recognize that code is code: these problems exist in any language and we should be diligent in understanding and controlling them.
 
