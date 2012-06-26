@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Avoiding Global State in JavaScript Testing
+title: Avoiding Global State in JavaScript and the Testing Thereof
 published: true
 ---
 
