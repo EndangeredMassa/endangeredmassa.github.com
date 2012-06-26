@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript Testing Best Practices
+title: Avoiding Global State in JavaScript Testing
 published: true
 ---
 
@@ -8,13 +8,7 @@ h1. <a href="{{ page.url }}">{{ page.title }}</a>
 
 _Sean Massa - {{page.date | date_to_string }}_
 
-h2. CoffeeScript
-
-Writing JavaScript is a lot easier when you actually write <a href="http://coffeescript.org/">CoffeeScript</a>. When using CoffeeScript, you don't have to worry about a lot of errors that cause <a href="http://www.jslint.com/">JSLint</a> or <a href="http://www.jshint.com/">JSHint</a> to get angry. It also provides a lot of syntactic sugar that makes it a pleasure to work with. Just promise me you'll take a look at it.
-
-The examples below are written in CoffeeScript and <a href="http://pivotal.github.com/jasmine/">Jasmine</a>. I use explicit return statements to try and make it more clear to those of you not as familiar with CoffeeScript.
-
-h2. Avoiding Global State
+_The examples below are written in <a href="http://coffeescript.org">CoffeeScript</a> and <a href="http://pivotal.github.com/jasmine">Jasmine</a>. I use explicit return statements to try and make it more clear to those of you not as familiar with CoffeeScript._
 
 Global state is bad. We all know it, but we seem to have forgotten how to recognize it in JavaScript. There are many forms, as we'll see.
 
@@ -102,24 +96,6 @@ Note that Backbone.js views that call render in their initialize methods are a f
 
 <script src="https://gist.github.com/2950153.js?file=backbone_render.coffee"></script>
 
-h2. Pending Specs and Comments
-
-Comments should only be used for truly exceptional, complex, atomic code. By this I mean that the code with the comment can't be broken down any further and it's complex and strange. Examples are strange bitwise tricks. Otherwise, your comment should probably be either a new method, new variable, or a story in your tracker.
-
-My definition of a comment does not include what other people consider documentation. If you use comments for code documentation, that's a separate (and probably legitimate) use.
-
-TODO comments like the following should really be logged work items, not comments in the code. If you leave it in the code, it's likely to be forgotten about. And, if someone discovers it later, they will have to find the author of that comment to make sure they do the right thing.
-
-<script src="https://gist.github.com/2950153.js?file=todo_comment.coffee"></script>
-
-Comments about the next few lines of code usually indicate a method in need of extraction. Consider this example.
-
-<script src="https://gist.github.com/2950153.js?file=section_comment.coffee"></script>
-
-In this case, we can turn the comment into the method name. This is called self-documenting code. The best part is that changing the method name will break the code unless you change where it's called. The same is not true for a comment about the code.
-
-<script src="https://gist.github.com/2950153.js?file=section_comment_fixed.coffee"></script>
-
 h2. Using Console log/warn/error
 
 The browser's console lists messages that come from errors, warnings and log messages triggered by the code on the page. If a script triggers one of these things while loading (not during a spec run), it will log the error to the console, but the suite will pass. This is a huge problem.
@@ -149,20 +125,6 @@ In order to get this setup properly, we need to place them in your jasmine.yml f
 <script src="https://gist.github.com/2950153.js?file=jasmine.yml"></script>
 
 Now, we have a spec suite that will fail when a spec pollutes global scope! Note that the above does not have a spec that checks for global javascript scope pollution. There are ways to accomplish this, but I'll leave that as an excercise for the reader.
-
-h2. Threads and Async
-
-JavaScript runs in a single thread, including the UI. (There's some inconsistencies in browser environments, but this is essentially true.) Blocking that thread blocks the UI. When you create an async callback, that gets saved to the side until the current execution flow ends. Then it will be executed. However, just because you give a method a callback does not mean it's asynchronous.
-
-There is a short list of things that can cause async events:
-
-1. setTimeout/setInterval
-2. event handlers (on window, document, DOM fragments, web workers)
-3. XMLHttpRequests (ajax)
-
-Note that event handlers can be called directly (without creating an async event) in some cases. The most notable case is that .click() calls on DOM elements will (in all current browsers) call that event's handler directly.
-
-Any library that uses these methods underneath will also create async events. That's why it's important to understand the libraries you use. Reading the source, especially <a href="http://backbonejs.org/docs/backbone.html">nicely annotated source</a>, is the best way to do that.
 
 h2. Summary
 
