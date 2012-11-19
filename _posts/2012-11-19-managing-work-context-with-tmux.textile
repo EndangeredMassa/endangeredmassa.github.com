@@ -1,0 +1,46 @@
+---
+layout: post
+title: Managing Work Context with tmux
+published: true
+---
+
+h1. <a href="{{ page.url }}">{{ page.title }}</a>
+
+_Sean Massa - {{page.date | date_to_string }}_
+
+h2. Let's talk about <a href='http://tmux.sourceforge.net/'>tmux</a>!
+
+<pre>tmux is a terminal multiplexer: it enables a number of terminals (or windows), each running a separate program, to be created, accessed, and controlled from a single screen.</pre>
+
+It essentially provides a new context for you to manage multiple terminal windows. I find this useful for grouping terminal windows that relate to a single project, allowing me to switch entire project contexts quite easily.
+
+I'm assuming you know a bit about how tmux works. If that's not true, take a look at some tutorials and come on back!
+
+You can switch normal tmux sessions (what I'm calling my project contexts) by hitting <code>mod+s</code>, then selecting the session you want. However, I want to be able to recreate my sessions if they don't already exist. To do this, you can create shell scripts that create tmux sessions just as you might by using the shortcuts.
+
+h2. tmux Scripting
+
+Let's create a shell script that will create a context for a project called facile.
+
+<script src="https://gist.github.com/2968046.js?file=setup_facile.sh"></script>
+
+Now, we can just run this script to create and attach to our session! But, we can do better.
+
+h2. Context Switcher
+
+Let's create a context switcher that has the following properties:
+
+* only creates the session if it doesn't already exist
+* attaches to the session we ask for
+* allows us to easily setup new session creation scripts
+
+<script src="https://gist.github.com/2968046.js?file=tmux.sh"></script>
+
+<script src="https://gist.github.com/2968046.js?file=.bashrc"></script>
+
+The simple bash scripting here could be better, but it achieves all of our goals. First, it uses <code>tmux a -t $1</code> to try to attach to a session with the given name. If that fails, the <code>||</code> clause triggers and executes <code>~/.tmux/setup_$1.sh</code>, which looks for a session creation script in that location prefixed by <code>setup_</code>. If that fails, we create a new blank session with the given name by executing <code>tmux new-session -s $1</code>.
+
+h2. Using It
+
+Now, we can simply call <code>tm facile</code> to attach/create our facile session. We can call <code>tm new-thing</code> to create a blank session for our new-thing project. We can go on to create a new session creation script at <code>~/.tmux/setup_new-thing.sh</code> so that future executions of the command <code>tm new-thing</code> executes that script instead!
+
