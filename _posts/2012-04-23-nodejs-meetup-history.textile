@@ -1,7 +1,9 @@
 ---
 layout: post
 title: The History of the Chicago Node.js Meetup
-author: Sena Massa
+author: Sean Massa
+blurb:
+  The Chicago Node.js group has been around for a while. Let's take a look at its history.
 published: true
 ---
 

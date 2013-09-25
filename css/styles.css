@@ -87,6 +87,9 @@ a:focus {
   padding: 2em 3em 0;
 }
 
+.post-list {
+  width: 640px;
+}
 .post {
   padding-bottom: 2em;
 }
@@ -99,6 +102,13 @@ a:focus {
     color: #222;
   }
 
+.post-blurb {
+  font-family: Georgia, "Cambria", serif;
+  color: #444;
+  line-height: 1.8em;
+  margin-top: 8px;
+}
+
 .post-avatar {
   border-radius: 50px;
   float: right;
@@ -107,13 +117,16 @@ a:focus {
 .post-description {
   font-family: Georgia, "Cambria", serif;
   color: #444;
-  line-height: 1.8em;
+  line-height: 1.2em;
 }
 .post-meta {
   color: #999;
   font-size: 90%;
   margin: 0;
 }
+  .post-meta .emphasis {
+    font-weight: bold;
+  }
 
 .post-category {
   margin: 0 0.1em;
@@ -163,7 +176,7 @@ a:focus {
   display: block;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
   .sidebar {
     width: 100%;
     min-width: 350px;

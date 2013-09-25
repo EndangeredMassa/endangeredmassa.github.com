@@ -2,6 +2,8 @@
 layout: post
 title: JavaScript Testing with Jasmine and RequireJS
 author: Sean Massa
+blurb:
+  Integrating RequireJS in Jasmine provides some niceties.
 published: true
 ---
 

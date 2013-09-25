@@ -3,21 +3,24 @@ layout: default
 title: MassaLabs
 ---
 
-{% for post in site.posts offset: 0 limit: 10 %}
-  {% if post.published %}
-    <section class="post">
-      <header class="post-header">
-        <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+<div class="post-list">
+  {% for post in site.posts offset: 0 limit: 10 %}
+    {% if post.published %}
+      <section class="post">
+        <header class="post-header">
+          <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 
-        <p class="post-meta">
-          By {{ post.author }} on {{ post.date | date: "%Y-%m-%d" }}
-        </p>
-      </header>
+          <p class="post-meta">
+            By <span class="emphasis">{{ post.author }}</span>
+            on <span class="emphasis">{{ post.date | date: "%Y-%m-%d" }}</span>
+          </p>
+        </header>
 
-      <div class="post-description">
-        {{ post.content }}
-      </div>
-    </section>
-  {% endif %}
-{% endfor %}
+        <div class="post-blurb">
+          {{ post.blurb }}
+        </div>
+      </section>
+    {% endif %}
+  {% endfor %}
+</div>
 
