@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  The History of the Chicago Node.js Meetup
+title: The History of the Chicago Node.js Meetup
+author: Sena Massa
 published: true
 ---
-
-h1. <a href="{{ page.url }}">{{ page.title }}</a>
-
-_Sean Massa - {{page.date | date_to_string }}_
 
 p. The <a href="http://www.meetup.com/Chicago-Nodejs/">Chicago Node.js User Group</a> has been thriving recently. So, I wanted to talk about this growing group and how it fits in with Groupon.
 

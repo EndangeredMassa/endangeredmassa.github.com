@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  JavaScript Testing with Jasmine and RequireJS
+title: JavaScript Testing with Jasmine and RequireJS
+author: Sean Massa
 published: true
 ---
-
-h1. <a href="{{ page.url }}">{{ page.title }}</a>
-
-_Sean Massa - {{page.date | date_to_string }}_
 
 h2. Problems with Jasmine
 

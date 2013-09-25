@@ -2,9 +2,19 @@
 layout: default
 ---
 
-<div id="post">
-  {{ content }}
-</div>
+<section class="post">
+  <header class="post-header">
+    <h2 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+
+    <p class="post-meta">
+      By {{ page.author }} on {{ page.date | date: "%Y-%m-%d" }}
+    </p>
+  </header>
+
+  <div class="post-description">
+    {{ content }}
+  </div>
+</section>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">

@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Avoiding Global State in JavaScript and the Testing Thereof
+author: Sean Massa
 published: true
 ---
-
-h1. <a href="{{ page.url }}">{{ page.title }}</a>
-
-_Sean Massa - {{page.date | date_to_string }}_
 
 _The examples below are written in <a href="http://coffeescript.org">CoffeeScript</a> and <a href="http://pivotal.github.com/jasmine">Jasmine</a>. I use explicit return statements to try and make it more clear to those of you not as familiar with CoffeeScript._
 

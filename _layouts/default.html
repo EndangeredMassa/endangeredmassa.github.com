@@ -1,78 +1,90 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Massa Labs</title>
-    <link rel="alternate" type="application/rss+xml" title="MassaLabs RSS" href="http://feeds.feedburner.com/MassaLabs" />
-    <meta name="description" content="programming blog">
-    <meta name="author" content="sean massa">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="programming blog">
+  <meta name="author" content="Sean Massa">
 
-    <!-- HTML5 shim -->
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="alternate" type="application/rss+xml" title="MassaLabs RSS" href="http://feeds.feedburner.com/MassaLabs" />
+  <title>Massa Labs</title>
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/styles.css">
+  <!-- HTML5 shim -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-28089637-1']);
-      _gaq.push(['_trackPageview']);
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+  <link rel="stylesheet" href="/css/styles.css">
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
-  </head>
+  <script src="http://use.typekit.net/gis6vng.js"></script>
+  <script>
+    try { Typekit.load(); } catch (e) {}
+  </script>
 
-  <body>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-28089637-1']);
+    _gaq.push(['_trackPageview']);
 
-    <div class="topbar">
-      <div class="fill">
-        <div class="container">
-          <a class="brand" href="/">Massa Labs</a>
-          <ul class="nav">
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="http://github.com/endangeredmassa">My Github</a></li>
-            <li><a href="http://careers.stackoverflow.com/seanmassa">Resume</a></li>
-            <li><a href="mailto:endangeredmassa@gmail.com">Contact</a></li>
-            <li><a href="http://feeds.feedburner.com/MassaLabs">RSS</a></li>
-          </ul>
-        </div>
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body>
+
+<div class="pure-g-r" id="layout">
+  <div class="sidebar pure-u">
+
+<code><pre>
+
+
+
+
+  __  __                     _       _
+ |  \/  |                   | |     | |
+ | \  / | __ _ ___ ___  __ _| | __ _| |__  ___
+ | |\/| |/ _` / __/ __|/ _` | |/ _` | '_ \/ __|
+ | |  | | (_| \__ \__ \ (_| | | (_| | |_) \__ \
+ |_|  |_|\__,_|___/___/\__,_|_|\__,_|_.__/|___/
+
+
+
+
+</pre></code>
+
+<code>
+[massalabs] $ links<br>
+&nbsp;&nbsp;<a href="/">Blog</a><br>
+&nbsp;&nbsp;<a href="http://github.com/endangeredmassa">Github</a><br>
+&nbsp;&nbsp;<a href="http://careers.stackoverflow.com/seanmassa">Resume</a><br>
+&nbsp;&nbsp;<a href="http://stackoverflow.com/users/106/endangeredmassa">Stack Overflow</a><br>
+&nbsp;&nbsp;<a href="mailto:endangeredmassa@gmail.com">Contact</a><br>
+&nbsp;&nbsp;<a href="http://feeds.feedburner.com/MassaLabs">RSS</a><br>
+</code>
+
+  </div>
+
+  <div class="pure-u-1">
+    <div class="content">
+      <div class="posts">
+        {{ content }}
       </div>
-    </div>
 
-    <div class="container">
-      <div class="content">
-        <div class="page-header">
+      <footer class="footer">
+        <div class="pure-menu pure-menu-horizontal pure-menu-open">
+          <p>&copy; Sean Massa 2013</p>
         </div>
-        <div class="row">
-          <div class="span12">
-            {{ content }}
-          </div>
-          <div class="span4">
-            <h3>About Me</h3>
-
-            <a href="http://stackoverflow.com/users/106/endangeredmassa">
-              <img src="http://stackoverflow.com/users/flair/106.png" width="208" height="58" alt="profile for EndangeredMassa at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for EndangeredMassa at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-            </a><br />
-            <br />
-            <script src="http://widgets.twimg.com/j/2/widget.js"></script>
-            <script src="/js/twitter_widget.js"></script>
-          </div>
-        </div>
-      </div>
-
-      <footer>
-        <p>&copy; Sean Massa 2012</p>
       </footer>
     </div>
-  </body>
-</html>
+  </div>
 
+</div>
+
+</body>
+</html>

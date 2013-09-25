@@ -1,12 +1,9 @@
 ---
 layout: post
-title:  Setting up a blog with Jekyll, Github, and dnsimple
+title: Setting up a blog with Jekyll, Github, and dnsimple
+author: Sean Massa
 published: true
 ---
-
-h1. <a href="{{ page.url }}">{{ page.title }}</a>
-
-_Sean Massa - {{page.date | date_to_string }}_
 
 h2. Step #1: Github
 

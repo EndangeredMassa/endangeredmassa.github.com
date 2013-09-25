@@ -1,12 +1,9 @@
 ---
 layout: post
 title: Managing Work Context with tmux
+author: Sean Massa
 published: true
 ---
-
-h1. <a href="{{ page.url }}">{{ page.title }}</a>
-
-_Sean Massa - {{page.date | date_to_string }}_
 
 h2. Let's talk about <a href='http://tmux.sourceforge.net/'>tmux</a>!
 
