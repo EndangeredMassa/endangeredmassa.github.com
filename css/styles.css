@@ -179,7 +179,9 @@ a:focus {
 }
 
 .gist {
-  line-height: 1em;
+  margin: 0 60px;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 @media (max-width: 1000px) {
