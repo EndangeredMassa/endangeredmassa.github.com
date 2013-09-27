@@ -2,6 +2,7 @@
 layout: post
 title: Avoiding Global State in JavaScript and the Testing Thereof
 author: Sean Massa
+categories: [dev]
 blurb:
   Testing your JavaScript can be painful.
   Managing the various kinds of global state seems to be the best way to protect yourself from mayhem.

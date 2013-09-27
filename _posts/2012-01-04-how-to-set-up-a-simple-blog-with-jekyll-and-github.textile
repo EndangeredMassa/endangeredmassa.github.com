@@ -2,6 +2,7 @@
 layout: post
 title: Setting up a blog with Jekyll, Github, and dnsimple
 author: Sean Massa
+categories: [dev]
 blurb:
   Building a blog based on Jekyll and hosted on Github is a relatively simple process.
   We'll take a look at how I set up this very blog!

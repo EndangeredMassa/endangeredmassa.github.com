@@ -2,14 +2,18 @@
 layout: post
 title: JavaScript Testing with Jasmine and RequireJS
 author: Sean Massa
+categories: [dev]
 blurb:
-  Integrating RequireJS in Jasmine provides some niceties.
+  Jasmine is a great JavaScript testing framework,
+  but I grew tired of managing the jasmine gem to work with my JavaScript code in a Rails application.
+  For each new file, you have to add it to your jasmine.yml (or use a wildcard include).
+  This means that every file is loaded every time you run your tests,
+  even if you are only running a small batch of them.
+  I wanted to address that.
 published: true
 ---
 
 h2. Problems with Jasmine
-
-p. Jasmine is a great JavaScript testing framework, but I grew tired of managing the jasmine gem to work with my JavaScript code in a Rails application. For each new file, you have to add it to your jasmine.yml (or use a wildcard include). This means that every file is loaded every time you run your tests, even if you are only running a small batch of them.
 
 p. In a parallel endeavor, I grew tired of namespacing my JavaScript code. So, I brought in RequireJS and setup all of my modules to use the AMD format it requires.
 

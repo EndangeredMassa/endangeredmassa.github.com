@@ -7,7 +7,9 @@ layout: default
     <h2 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
 
     <p class="post-meta">
-      By {{ page.author }} on {{ page.date | date: "%Y-%m-%d" }}
+      By <span class="emphasis">{{ page.author }}</span>
+      on <span class="emphasis">{{ page.date | date: "%Y-%m-%d" }}</span>
+      in <span class="emphasis">{{ page.categories }}</span>
     </p>
   </header>
 

@@ -2,12 +2,12 @@
 layout: post
 title: The History of the Chicago Node.js Meetup
 author: Sean Massa
+categories: [dev]
 blurb:
-  The Chicago Node.js group has been around for a while. Let's take a look at its history.
+  The <a href="http://www.meetup.com/Chicago-Nodejs/">Chicago Node.js User Group</a> has been thriving recently.
+  So, I wanted to talk about this growing group and how it fits in with Groupon.
 published: true
 ---
-
-p. The <a href="http://www.meetup.com/Chicago-Nodejs/">Chicago Node.js User Group</a> has been thriving recently. So, I wanted to talk about this growing group and how it fits in with Groupon.
 
 h2. Starting Out
 
