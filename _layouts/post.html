@@ -9,7 +9,7 @@ layout: default
     <p class="post-meta">
       By <span class="emphasis">{{ page.author }}</span>
       on <span class="emphasis">{{ page.date | date: "%Y-%m-%d" }}</span>
-      in <span class="emphasis">{{ page.categories }}</span>
+      in <a class="emphasis" href="/{{ post.categories }}">{{ post.categories }}</span>
     </p>
   </header>
 
