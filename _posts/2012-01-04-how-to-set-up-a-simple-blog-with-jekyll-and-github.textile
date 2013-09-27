@@ -15,7 +15,7 @@ p. This step involves setting up your github repository to properly respond to a
 
 # Register for <a href="http://github.com">Github</a> if you don't already have an account.
 # Create a new repository called yourusername.github.com.
-# Clone it locally by running `git clone git@github.com:yourusername/yourusername.github.com.git`
+# Clone it locally by running <code>git clone git@github.com:yourusername/yourusername.github.com.git</code>
 
 p. Now we're ready to put some content on our blog! If you go to yourusername.github.com, you should now see a page that says you need to setup some content for your blog. If you need more help for this part, take a look at the <a href="http://pages.github.com/">Github Pages</a> documentation.
 
@@ -24,10 +24,10 @@ h2. Step #2: Jekyll
 p. This step involves setting up Jekyll for your static content generation.
 
 # This requires ruby. Make sure that's installed.
-# Install the Jekyll gem with `gem install jekyll`.
+# Install the Jekyll gem with <code>gem install jekyll</code>.
 # Find a <a href="https://github.com/krisb/jekyll-template">template</a> that you like and clone it. Or, take a look at <a href="https://github.com/mojombo/jekyll/wiki/sites">an existing site</a> and copy the structure.
 
-p. You should now be able to see your content by executing `jekyll --server --auto` in your repository directory. The --auto flag will make the server recompile pages based on files you change. If you need more help with this, take a look at the <a href="https://github.com/mojombo/jekyll">Jekyll</a> documentation.
+p. You should now be able to see your content by executing <code>jekyll --server --auto</code> in your repository directory. The --auto flag will make the server recompile pages based on files you change. If you need more help with this, take a look at the <a href="https://github.com/mojombo/jekyll">Jekyll</a> documentation.
 
 h2. Step #3: dnsimple
 
