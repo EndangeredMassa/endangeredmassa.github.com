@@ -51,7 +51,7 @@ p. Thus, we need to wait for our specs to be registered before running the test 
 
 h2. Testing CSS
 
-p. The traditional use of the jasmine.yml configuration file has you list all of your CSS files. It seems that people usually do this so that they can test the visibility (<code>display: none or display: block</code>) of an element. I feel that this is far from necessary. So, I created a little tool (called Hidey, requires <a href="https://github.com/NV/CSSOM">cssom</a>) to extract out your <code>display: none</code> declarations from your css files into a new smaller file. Now, you only need to include that one file to be able to test your visibilities.
+p. The traditional use of the jasmine.yml configuration file has you list all of your CSS files. It seems that people usually do this so that they can test the visibility <code>display: none or display: block</code> of an element. I feel that this is far from necessary. So, I created a little tool (called Hidey, requires <a href="https://github.com/NV/CSSOM">cssom</a>) to extract out your <code>display: none</code> declarations from your css files into a new smaller file. Now, you only need to include that one file to be able to test your visibilities.
 
 <script src="https://gist.github.com/2459830.js?file=hidey.coffee"></script>
 
