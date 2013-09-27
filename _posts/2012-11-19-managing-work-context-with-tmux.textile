@@ -10,7 +10,7 @@ published: true
 
 h2. Let's talk about <a href='http://tmux.sourceforge.net/'>tmux</a>!
 
-<pre>tmux is a terminal multiplexer: it enables a number of terminals (or windows), each running a separate program, to be created, accessed, and controlled from a single screen.</pre>
+<blockquote>tmux is a terminal multiplexer: it enables a number of terminals (or windows), each running a separate program, to be created, accessed, and controlled from a single screen.</blockquote>
 
 It essentially provides a new context for you to manage multiple terminal windows. I find this useful for grouping terminal windows that relate to a single project, allowing me to switch entire project contexts quite easily.
 
