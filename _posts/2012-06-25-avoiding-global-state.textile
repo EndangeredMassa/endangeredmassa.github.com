@@ -26,15 +26,15 @@ If you continue to do this, you start to see exactly where your functions' depen
 
 h2. Avoiding Global State: Cookies
 
-Tests should not set cookies unless you are testing a cookie library. You should mock out the cookie access and test that your methods call the cookie library or method properly. You can also always check the cookies in the console `document.cookie` or with the <a href="https://chrome.google.com/webstore/detail/fngmhnnpilhplaeedifhccceomclgfbg">Edit This Cookie</a> Chrome extension. Below are examples on how to stub this.
+Tests should not set cookies unless you are testing a cookie library. You should mock out the cookie access and test that your methods call the cookie library or method properly. You can also always check the cookies in the console <code>document.cookie</code> or with the <a href="https://chrome.google.com/webstore/detail/fngmhnnpilhplaeedifhccceomclgfbg">Edit This Cookie</a> Chrome extension. Below are examples on how to stub this.
 
 <script src="https://gist.github.com/2950032.js?file=global_state_cookies.coffee"></script>
 
 h2. Avoiding Global State: DOM
 
-Accessing the DOM is not always necessary. In fact, the instances where this is actually required are quite rare, if you structure your app the right way. In my current app, all specs (except a few) never touch the DOM via #jasmine_content (or any other part). The trick is that DOM fragments act (mostly) the same if they are attached to the window.document or not. You can even fire events on DOM fragments and waitsFor them to be triggered.
+Accessing the DOM is not always necessary. In fact, the instances where this is actually required are quite rare, if you structure your app the right way. In my current app, all specs (except a few) never touch the DOM via <code>#jasmine_content</code> (or any other part). The trick is that DOM fragments act (mostly) the same if they are attached to the window.document or not. You can even fire events on DOM fragments and waitsFor them to be triggered.
 
-If you absolutely must insert items in the DOM, use #jasmine_content. Make sure you clean up after yourself as well. Below is an example:
+If you absolutely must insert items in the DOM, use <code>#jasmine_content</code>. Make sure you clean up after yourself as well. Below is an example:
 
 <script src="https://gist.github.com/2950032.js?file=global_state_dom.coffee"></script>
 
@@ -58,7 +58,7 @@ Dependencies should be mocked.  Assertions should be made that those dependencie
 
 <a href="http://blakesmith.me/2012/02/29/test-stubbing-as-an-antipattern.html">Some might say</a> that people mock too often--that the fact that their code has multiple depedencies is an indication that you need to refactor. I definitely agree with that. The point here is that if you have depedencies, you need to handle them properly. Sometimes that's with a mock and sometimes it's with a refactoring.
 
-In my travels, I discovered a series of specs where the execution flow of each one went: Module Under Test > Dependent Module > Sub-dependent Module > DOM [insert] > [trigger] Network Request. Then, the assertion tested that the DOM triggered the Network request properly. Ideally, there would be unit tests all along the way. Even an integration test still shouldn't trigger a network request.
+In my travels, I discovered a series of specs where the execution flow of each one went: <code>Module Under Test > Dependent Module > Sub-dependent Module > DOM [insert] > [trigger] Network Request</code>. Then, the assertion tested that the DOM triggered the Network request properly. Ideally, there would be unit tests all along the way. Even an integration test still shouldn't trigger a network request.
 
 Below is an example of how a dependent module can have untested side effects:
 
@@ -84,7 +84,7 @@ In general, I use the second method here.
 
 h2. The Problem with Auto-init
 
-I have seen several modules that define a module then call its `init` method immediately. This pattern has one major advantage and two major drawbacks.
+I have seen several modules that define a module then call its <code>init</code> method immediately. This pattern has one major advantage and two major drawbacks.
 
 The advantage is that it's self-contained in one file. All of the logic required to create and use the module can be triggered by including one script. This is nice, but I hope that you will see how the drawbacks outweight this benefit.
 
