@@ -129,6 +129,14 @@ a:focus {
   .post p {
     line-height: 1.2em;
   }
+  
+  .post code {
+    margin: 0 2px;
+    padding: 0px 5px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+  }
 
 .post-category {
   margin: 0 0.1em;
