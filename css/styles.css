@@ -146,6 +146,8 @@ a.no-style {
   
   .post pre > code {
     display: block;
+    margin: 10px 40px;
+    padding: 10px;
   }
 
 .post-category {
