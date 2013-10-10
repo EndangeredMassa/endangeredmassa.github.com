@@ -1,16 +1,15 @@
 ---
 layout: post
-title: 
+title: Managing a Node.js Project
 author: Sean Massa
 categories: [dev]
 blurb:
-  
+  Working with Node.js and npm can be a lot of fun
+  until you have other people actually using your software!
+  Now you have a responsibility to your users to not
+  break their code when they pull down your updates.
 published: false
 ---
-
-# Managing a Node.js Project
-
-Working with Node.js and npm can be a lot of fun until you have other people actually using your software! Now you have a responsibility to your users to not break their code when they pull down your updates.
 
 We're going to assume some Github familiarity, but the principles apply regardless.
 
