@@ -143,6 +143,10 @@ a.no-style {
     border-radius: 3px;
     font-size: 13px;
   }
+  
+  .post pre > code {
+    display: block;
+  }
 
 .post-category {
   margin: 0 0.1em;
