@@ -57,10 +57,10 @@ Your local changes so far should be (1) the version bump in package.json and (2)
 
 Create a tag for the current release for easy git retrieval.
 
-```
-git tag -a v1.2.3 -m "tagged 1.2.3"
-git push --tags
-```
+
+    git tag -a v1.2.3 -m "tagged 1.2.3"
+    git push --tags
+
 
 Later, if you ever want to get the code at an exact version, just use `git checkout v1.2.3`!
 
