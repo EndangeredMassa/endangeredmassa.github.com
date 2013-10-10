@@ -8,7 +8,7 @@ blurb:
   until you have other people actually using your software!
   Now you have a responsibility to your users to not
   break their code when they pull down your updates.
-published: false
+published: true
 ---
 
 We're going to assume some Github familiarity, but the principles apply regardless.
