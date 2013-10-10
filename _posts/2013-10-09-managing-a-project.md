@@ -74,6 +74,6 @@ This allows viewers of the Pull Request easy reference to which version they nee
 
 You can, of course, automate most of the steps here. I think it's important to know what the steps are and how you would do them by hand. However, I do not thing it's important to do them by hand every time. Once you understand them, automate them with your favorite task runner (bash, rake, cake, grunt, whatever) and move on!
 
-## Why
+## How does this all help?
 
-because!
+I've found that following these steps leads to a cleaner system to investigate when something goes wrong. It should be pretty easy to track down a change, find what version where it was introduced, and start working on the fix.
