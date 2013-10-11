@@ -6,18 +6,19 @@ categories: [dev]
 blurb:
   Working with Node.js and npm can be a lot of fun
   until you have other people actually using your software!
-  Now you have a responsibility to your users to not
-  break their code when they pull down your updates.
+  Now your users expect their code to work. The audacity!
 published: false
 ---
 
-We're going to assume some Github familiarity, but the principles apply regardless.
+We're going to assume some Github (pull request) familiarity, but the principles apply regardless.
 
 ## Semver
 
 We want to use Semver for our version numbers.
 
-Semver means "semantic versioning". It's a way of making those version numbers actually mean something. The [semver.org](http://semver.org/) site summarizes the practice extremely well.
+Semver means "semantic versioning".
+It's a way of making those version numbers actually mean something.
+The [semver.org](http://semver.org/) site summarizes the practice extremely well:
 
 Given a version number MAJOR.MINOR.PATCH, increment the:
 
