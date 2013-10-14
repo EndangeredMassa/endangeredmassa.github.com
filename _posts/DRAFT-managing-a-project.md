@@ -6,7 +6,8 @@ categories: [dev]
 blurb:
   Working with Node.js and npm can be a lot of fun
   until you have other people actually using your software!
-  Now your users expect your code to work. How do 
+  Now your users expect your code to work,
+  especially when they use new versions that match their fuzzy selectors.
 published: false
 ---
 
