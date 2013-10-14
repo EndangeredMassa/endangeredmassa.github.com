@@ -8,7 +8,7 @@ blurb:
   until you have other people actually using your software!
   Now your users expect your code to work,
   especially when they use new versions that match their fuzzy selectors.
-published: false
+published: true
 ---
 
 We're going to assume some Github (pull request) familiarity,
