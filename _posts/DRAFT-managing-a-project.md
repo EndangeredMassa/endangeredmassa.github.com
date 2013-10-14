@@ -80,7 +80,7 @@ Create a tag for the current release for easy git retrieval.
 
 Later, if you ever want to get the code at an exact version, just use `git checkout v1.2.3`!
 
-### 6. Loop Back to PRs 
+### 6. Loop Back to Pull Requests
 
 Now that everything is ready to be used,
 go back to each Pull Request included in the recent release.
