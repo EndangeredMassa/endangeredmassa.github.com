@@ -91,12 +91,13 @@
     var nodes = document.querySelectorAll('.highlight code');
     for (var i=0; i<nodes.length; i++) {
       var code = nodes[i];
-      var pre = code. parentNode;
+      var pre = code.parentNode;
       var lang = code.getAttribute("data-lang");
-      pre.className = 'brush: ' + lang;
+      if (lang && lang != 'text')
+        pre.className = 'brush: ' + lang;
     }
   }
-  //SyntaxHighlighter.all()
+  SyntaxHighlighter.all()
 </script>
 
 </body>
