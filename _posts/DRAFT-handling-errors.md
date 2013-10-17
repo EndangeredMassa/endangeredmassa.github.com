@@ -489,7 +489,7 @@ with invalid application state.
 ## express server error handling
 
 [Express](http://expressjs.com/)
-is a populare web server module
+is a popular web server module
 that has a request/response cycle
 based on the concept of middleware.
 
@@ -497,7 +497,7 @@ I set up a small express app
 to demonstrate the different ways you can handle errors.
 
 ```
-git clone $REPO_LINK$
+git clone git@github.com:EndangeredMassa/express-error-handling.git
 cd express-error-handling
 npm install
 npm start
@@ -533,5 +533,5 @@ but I'm sure you can find information about that elsewhere.
 
 The final code for everything you've seen here can be found here:
 
-- [error logger](somegist)
-- [express error handling](somerepo)
+- [error logger](https://github.com/EndangeredMassa/express-error-handling/blob/master/log_error.coffee)
+- [express error handling](https://github.com/EndangeredMassa/express-error-handling)
