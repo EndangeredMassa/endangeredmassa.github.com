@@ -100,7 +100,7 @@ Let's revisit our original attempt with a twist.
 ```coffeescript
 error = new Error 'something broke'
 error.inner = new Error 'some original error'
-error.code = '500B'
+error.code = '500B'
 JSON.stringify error
 ###
 {
