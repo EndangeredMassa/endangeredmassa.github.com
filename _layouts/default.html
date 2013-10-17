@@ -26,11 +26,11 @@
     var $ = function(selector) {
       return document.querySelectorAll(selector);
     };
-    if (document.querySelectorAll && Array.prototype.forEach) {
-      $('.highlight pre').forEach(function(pre) {
+    if (document.querySelectorAll) {
+      for (var pre in $('.highlight pre')) {
         var lang = pre.getAttribute("data-lang");
         pre.className = 'brush: ' + lang;
-      });
+      };
     }
     SyntaxHighlighter.all()
   </script>
