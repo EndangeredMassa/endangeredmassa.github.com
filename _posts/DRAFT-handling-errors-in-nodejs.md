@@ -14,6 +14,9 @@ blurb:
 published: false
 ---
 
+The goal here is to capture errors (with context)
+and format our logs for human readability.
+
 ## logging
 
 The first thing we should investigate is
