@@ -95,7 +95,7 @@ JSON.stringify error, ['stack', 'message', 'inner']
 
 This works, but requires you to list all potential extra properties in the filter list.
 That means this won't be a great general purpose solution.
-Let's revisit our original attempt with a twist.
+Let's explore `JSON.stringify` more.
 
 ```coffeescript
 error = new Error 'something broke'
@@ -113,12 +113,12 @@ JSON.stringify error
 The normal property `code` was found properly,
 `stack` and `error` are still missing as we expect,
 but `inner` shows up with no content.
-This makes sense as well--
-the value of `inner` is an Error object.
+This makes sense as well--the value of `inner` is an Error object.
 
-So, if we don't expect to have nested Error objects--
-which is not an unreasonable expectation--
-we could get a pretty complete error log with the following.
+So, if we don't expect to have
+nested Error objects--which is not
+an unreasonable expectation--we could get
+a pretty complete error log with the following.
 
 Let's also pull in [prettyjson](https://npmjs.org/package/prettyjson)
 for better formatted output.
