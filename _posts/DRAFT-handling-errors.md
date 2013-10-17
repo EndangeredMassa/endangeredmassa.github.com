@@ -96,7 +96,7 @@ Let's revisit our original attempt with a twist.
 ```coffeescript
 error = new Error 'something broke'
 error.inner = new Error 'some original error'
-error.code = '500B'
+error.code = '500B'
 JSON.stringify error
 ###
 {
@@ -131,8 +131,8 @@ error = new Error 'something broke'
 error.code = '500B'
 error.severity = 'high'
 
-stack = error.stack.trim()
 metadata = formatJson error
+stack = error.stack.trim()
 "#{stack}\n  Metadata:\n#{metadata}"
 ###
 Error: something broke
@@ -340,9 +340,9 @@ logError = (error) ->
   # Adding for fun; not for real use                                                                                                                                                      
   error.code = '500B'
 
-  stack = error.stack.trim()
   metadata = formatJson error
-  
+  stack = error.stack.trim()
+
   message = "#{stack}\n"
   message += "  Metadata:\n#{metadata}" if metadata.trim() != ''
   console.error message
@@ -380,11 +380,121 @@ Now, whenever our process crashes, we should have a pretty good idea where!
 
 ## domains
 
+[Domains](http://nodejs.org/api/domain.html)
+attempt to solve a similar problem--
+knowing where (and more context about where)
+an error occurs.
+However, they attack the problem in a very different way.
 
+When working with domains,
+you are better off using Node.js >= 0.10.
+
+Domains are integrated into the Node.js event system
+such that all new EventEmitter objects
+and all callbacks passed to low-level Node.js api calls
+are bound to the active domain automatically.
+That means that errors thrown in these areas
+are captured and trigger an `error` event on the domain
+instead of triggering an `uncaughtException` event on the entire process.
+
+This example shows how this works.
+
+```coffeescript
+fs = require 'fs'
+domain = require('domain').create()
+
+domain.on "error", (error) ->
+  console.error "Caught error in domain!", error
+process.on 'uncaughtException', (error) ->
+  console.error "Caught error in process!", error
+
+domain.run ->
+  process.nextTick ->
+    setTimeout (->
+      # simulating some various async stuff
+      fs.open "non-existent file", "r", (error, fd) ->
+        throw error if error?
+    ), 10
+
+###
+Caught error in domain! { [Error: ENOENT, open 'non-existent file']
+  errno: 34,
+  code: 'ENOENT',
+  path: 'non-existent file',
+  domain: 
+   { domain: null,
+     _events: { error: [Function] },
+     _maxListeners: 10,
+     members: [] },
+  domainThrown: true }
+###
+```
+
+Success!
+We did not crash our process
+and could handle the error however we wanted.
+
+If we use our error logger, we can get this:
+
+```coffeescript
+fs = require 'fs'
+domain = require('domain').create()                                                          
+                                                                                             
+domain.on "error", (error) ->                                                                
+  logError error
+  
+domain.run ->
+  process.nextTick ->                                                                        
+    setTimeout (->                                                                           
+      # simulating some various async stuff                                                  
+      fs.open "non-existent file", "r", (error, fd) ->                                                                                                                                    
+        throw error if error?
+    ), 10
+
+###
+Error: ENOENT, open 'non-existent file'
+---------------------------------------------
+    at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:7:10)
+    at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:20:3)
+    at Module._compile (module.js:456:26)
+    at runModule (/home/smassa/.nvm/v0.10.19/lib/node_modules/coffee-script-redux/lib/run.js:101:17)
+    at runMain (/home/smassa/.nvm/v0.10.19/lib/node_modules/coffee-script-redux/lib/run.js:94:10)
+    at processInput (/home/smassa/.nvm/v0.10.19/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)
+    at /home/smassa/.nvm/v0.10.19/lib/node_modules/coffee-script-redux/lib/cli.js:286:16
+    at fs.js:266:14
+  Metadata:
+    errno:        34
+    code:         ENOENT
+    path:         non-existent file
+    domainThrown: true
+###
+```
+
+That is a thing of beauty.
+You can mix these into a web server's request/response cylce
+for better request-based failures as well.
+
+Remember that domains,
+while very powerful,
+should be used to
+(1) better log and
+(2) better handle your errors
+before exiting the process.
+That is, you should almost always exit your process
+when you encounter an error
+in your domain or process.
+You don't want to continue doing work
+with invalid application state.
 
 ## express error middleware
 
+[Express](http://expressjs.com/)
+is a populare web server module
+that has a request/response cycle
+based on the concept of middleware.
 
 
 
+
+## final code
 
