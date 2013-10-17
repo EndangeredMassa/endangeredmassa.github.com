@@ -11,7 +11,7 @@ blurb:
   If it's not, or you have an error thrown elsewhere, 
   you have to figure out what to do.
   Let's take a look at our options!
-published: false
+published: true
 ---
 
 The goal here is to capture errors (with context)
