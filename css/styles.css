@@ -138,7 +138,7 @@ a.no-style {
   .post pre {
     counter-reset: linenumbers;
   }
-  .post pre div:before {
+  .post pre code:before {
     color: #aaa;
     content: counter(linenumbers);
     counter-increment: linenumbers;
