@@ -493,8 +493,37 @@ is a populare web server module
 that has a request/response cycle
 based on the concept of middleware.
 
+I set up a small express app
+to demonstrate the different ways you can handle errors.
 
+```
+git clone $REPO_LINK$
+cd express-error-handling
+npm install
+npm start
+```
 
+This express app (no running on port 5555)
+has three routs that work as follows:
+
+- [/error](http://localhost:5555/error) throws an error that is caught by the express middleware and delgated to express_logger.coffee
+- [/asyncerror](http://localhost:5555/asyncerror) throws an error from the event loop (via process uncaughtException) and is delegated to uncaught_handler.coffee
+- [/domainerror](http://localhost:5555/domainerror) throws an error from the event loop, but bound to a domain, and is delegated to express_logger.coffee
+
+The directory structure is as follows:
+
+```
+.
+├── app.coffee # setup the routes; start the app
+├── express_logger.coffee # log request information on error
+├── index.coffee # glue
+├── last_resort.coffee # exit the process after a timeout incase something bad happens
+├── log_error.coffee # pretty error log from previous sections
+├── package.json 
+└── uncaught_handler.coffee # closes the server; logs the error
+```
+
+This example includes airbrake integration as well.
 
 ## final code
 
@@ -505,4 +534,4 @@ but I'm sure you can find information about that elsewhere.
 The final code for everything you've seen here can be found here:
 
 - [error logger](somegist)
-- [express error handling](somegist)
+- [express error handling](somerepo)
