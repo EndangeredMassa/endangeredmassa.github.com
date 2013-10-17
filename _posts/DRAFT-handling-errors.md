@@ -506,11 +506,104 @@ npm start
 This express app (no running on port 5555)
 has three routs that work as follows:
 
-- [/error](http://localhost:5555/error) throws an error that is caught by the express middleware and delgated to express_logger.coffee
-- [/asyncerror](http://localhost:5555/asyncerror) throws an error from the event loop (via process uncaughtException) and is delegated to uncaught_handler.coffee
-- [/domainerror](http://localhost:5555/domainerror) throws an error from the event loop, but bound to a domain, and is delegated to express_logger.coffee
+### [/error](http://localhost:5555/error)
 
-The directory structure is as follows:
+This route throws an error that is caught by the express middleware
+and delgated to express_logger.coffee.
+
+You should see output like:
+
+```
+Error: you went to /error, silly!
+    at /home/smassa/source/demo/blog/app.coffee:16:13
+    at callbacks (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:164:37)
+    at param (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:138:11)
+    at pass (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:145:5)
+    at Router._dispatch (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:173:5)
+    at router (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:33:10)
+    at next (/home/smassa/source/demo/blog/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+    at expressInit (/home/smassa/source/demo/blog/node_modules/express/lib/middleware.js:30:5)
+    at next (/home/smassa/source/demo/blog/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+    at query (/home/smassa/source/demo/blog/node_modules/express/node_modules/connect/lib/middleware/query.js:44:5)
+---------------------------------------------
+    at new Server (http.js:1870:10)
+    at exports.createServer (http.js:1900:10)
+    at module.exports (/home/smassa/source/demo/blog/app.coffee:43:19)
+    at Object.<anonymous> (/home/smassa/source/demo/blog/index.coffee:6:9)
+    at Object.<anonymous> (/home/smassa/source/demo/blog/index.coffee:10:3)
+    at Module._compile (module.js:456:26)
+    at runModule (/home/smassa/source/demo/blog/node_modules/coffee-script-redux/lib/run.js:101:17)
+    at runMain (/home/smassa/source/demo/blog/node_modules/coffee-script-redux/lib/run.js:94:10)
+  Metadata:
+    url:    /error
+    action: GET
+```
+
+### [/asyncerror](http://localhost:5555/asyncerror)
+
+This route throws an error from the event loop (via process uncaughtException)
+and is delegated to uncaught_handler.coffee.
+It also crashed the process.
+
+You should see output like:
+
+```
+Error: you went to /asyncerror, silly!
+    at [object Object].<anonymous> (/home/smassa/source/demo/blog/app.coffee:20:15)
+    at listOnTimeout (timers.js:110:15)
+---------------------------------------------
+    at /home/smassa/source/demo/blog/app.coffee:19:14
+    at callbacks (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:164:37)
+    at param (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:138:11)
+    at pass (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:145:5)
+    at Router._dispatch (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:173:5)
+    at router (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:33:10)
+    at next (/home/smassa/source/demo/blog/node_modules/express/node_modules/connect/lib/proto.js:190:15)
+    at expressInit (/home/smassa/source/demo/blog/node_modules/express/lib/middleware.js:30:5)
+```
+
+Note that we don't have any request metadata.
+
+### [/domainerror](http://localhost:5555/domainerror)
+
+This route throws an error from the event loop,
+but bound to a domain,
+and is delegated to express_logger.coffee
+It also crashed the process.
+
+You should see output like:
+
+```
+Error: you went to /domainerror, silly!
+    at [object Object].<anonymous> (/home/smassa/source/demo/blog/app.coffee:34:17)
+    at listOnTimeout (timers.js:110:15)
+---------------------------------------------
+    at /home/smassa/source/demo/blog/app.coffee:33:16
+    at b (domain.js:183:18)
+    at Domain.run (domain.js:123:23)
+    at /home/smassa/source/demo/blog/app.coffee:32:21
+    at callbacks (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:164:37)
+    at param (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:138:11)
+    at pass (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:145:5)
+    at Router._dispatch (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:173:5)
+---------------------------------------------
+    at new Server (http.js:1870:10)
+    at exports.createServer (http.js:1900:10)
+    at module.exports (/home/smassa/source/demo/blog/app.coffee:43:19)
+    at Object.<anonymous> (/home/smassa/source/demo/blog/index.coffee:6:9)
+    at Object.<anonymous> (/home/smassa/source/demo/blog/index.coffee:10:3)
+    at Module._compile (module.js:456:26)
+    at runModule (/home/smassa/source/demo/blog/node_modules/coffee-script-redux/lib/run.js:101:17)
+    at runMain (/home/smassa/source/demo/blog/node_modules/coffee-script-redux/lib/run.js:94:10)
+  Metadata:
+    domainThrown: true
+    url:          /domainerror
+    action:       GET
+```
+
+The domain allowed us to capture the request metadata!
+
+### directory structure
 
 ```
 .
