@@ -254,8 +254,6 @@ this may be the solution you are looking for.
 If it does, just go one solution back!
 
 ## long stack traces
-`npm install long-stack-traces`
-https://github.com/tlrobinson/long-stack-traces
 
 Consider the following code
 that throws errors from the event loop.
@@ -316,13 +314,72 @@ limiting the number of async calls to trace back.
 
 ## process
 
+The Node.js process doesn't know what to do when it encounters an uncaught error.
+This usually crashed the process with a shallow stacked error as we saw above.
+We can listen for these errors
+and log them our way!
+
 ```
-process.on 'uncaughtException', (error) ->
-  log.error(error)
+require 'longjohn'                                                                                                                                                                        
+prettyjson = require('prettyjson')
+
+formatJson = (object) ->
+  # adds 4 spaces in front of each line
+  json = prettyjson.render(object)
+  json = json.split('\n').join('\n    ')
+  "    #{json}"
+  
+playNiceError = (error) ->
+  # remove longjohn properties that break prettyjson
+  delete error.__cached_trace__
+  delete error.__previous__
+  
+logError = (error) ->
+  playNiceError(error)
+  
+  # Adding for fun; not for real use                                                                                                                                                      
+  error.code = '500B'
+
+  stack = error.stack.trim()
+  metadata = formatJson error
+  
+  message = "#{stack}\n"
+  message += "  Metadata:\n#{metadata}" if metadata.trim() != ''
+  console.error message
+  
+process.on 'uncaughtException', logError
+
+throwError = -> throw new Error('foo')
+setTimeout(throwError, Math.random()*1000)
+
+###
+Error: foo
+    at f (/home/smassa/source/demo/blog/test.coffee:28:11)
+    at list.ontimeout (timers.js:101:19)
+---------------------------------------------
+    at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:30:3)
+    at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:31:3)
+    at Module._compile (module.js:449:26)
+    at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)
+    at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)
+    at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)
+    at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16
+    at fs.readFile (fs.js:176:14)
+  Metadata:
+    code: 500B
+###
 ```
 
+Note that the spacing is different here.
+`longjohn`[ uses 4 spaces](https://github.com/mattinsler/longjohn/blob/master/lib/longjohn.coffee#L43-44)
+for indentation instead of 2.
+You can adjust the spacing in the logic above if you'd like the metadata to match.
+I like having it stick about a bit, as above.
+
+Now, whenever our process crashes, we should have a pretty good idea where!
 
 ## domains
+
 
 
 ## express error middleware
