@@ -28,7 +28,7 @@
     };
     if (document.querySelectorAll) {
       var nodes = $('.highlight pre');
-      for (var i; i<pre.length; i++) {
+      for (var i; i<nodes.length; i++) {
         var pre = nodes[i];
         var lang = pre.getAttribute("data-lang");
         pre.className = 'brush: ' + lang;
