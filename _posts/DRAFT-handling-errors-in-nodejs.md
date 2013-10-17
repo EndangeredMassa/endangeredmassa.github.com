@@ -507,12 +507,12 @@ npm start
 ```
 
 This express app (no running on port 5555)
-has three routs that work as follows:
+has three routes that work as follows:
 
 ### [/error](http://localhost:5555/error)
 
 This route throws an error that is caught by the express middleware
-and delgated to express_logger.coffee.
+and delgated to `express_logger.coffee`.
 
 You should see output like:
 
@@ -545,7 +545,7 @@ Error: you went to /error, silly!
 ### [/asyncerror](http://localhost:5555/asyncerror)
 
 This route throws an error from the event loop (via process uncaughtException)
-and is delegated to uncaught_handler.coffee.
+and is delegated to `uncaught_handler.coffee`.
 It also crashed the process.
 
 You should see output like:
@@ -571,7 +571,7 @@ Note that we don't have any request metadata.
 
 This route throws an error from the event loop,
 but bound to a domain,
-and is delegated to express_logger.coffee
+and is delegated to `express_logger.coffee`
 It also crashed the process.
 
 You should see output like:
