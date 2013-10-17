@@ -607,11 +607,11 @@ The domain allowed us to capture the request metadata!
 
 ```
 .
-├── app.coffee # setup the routes; start the app
-├── express_logger.coffee # log request information on error
-├── index.coffee # glue
-├── last_resort.coffee # exit the process after a timeout incase something bad happens
-├── log_error.coffee # pretty error log from previous sections
+├── app.coffee              # setup the routes; start the app
+├── express_logger.coffee   # log request information on error
+├── index.coffee            # glue
+├── last_resort.coffee      # exit the process after a timeout incase something bad happens
+├── log_error.coffee        # pretty error log from previous sections
 ├── package.json 
 └── uncaught_handler.coffee # closes the server; logs the error
 ```
