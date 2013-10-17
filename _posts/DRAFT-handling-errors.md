@@ -486,7 +486,7 @@ in your domain or process.
 You don't want to continue doing work
 with invalid application state.
 
-## express error middleware
+## express server error handling
 
 [Express](http://expressjs.com/)
 is a populare web server module
@@ -498,3 +498,11 @@ based on the concept of middleware.
 
 ## final code
 
+We didn't have time to cover how you can manage crashing processes,
+but I'm sure you can find information about that elsewhere.
+(I like to use Node.js [cluster](http://nodejs.org/api/cluster.html).)
+
+The final code for everything you've seen here can be found here:
+
+- [error logger](somegist)
+- [express error handling](somegist)
