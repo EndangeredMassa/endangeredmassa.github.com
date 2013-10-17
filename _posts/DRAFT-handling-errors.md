@@ -319,7 +319,7 @@ This usually crashed the process with a shallow stacked error as we saw above.
 We can listen for these errors
 and log them our way!
 
-```
+```coffeescript
 require 'longjohn'                                                                                                                                                                        
 prettyjson = require('prettyjson')
 
