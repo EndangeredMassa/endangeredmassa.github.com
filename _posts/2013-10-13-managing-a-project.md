@@ -50,9 +50,11 @@ Modify your changelog to include the new version
 and the major changes made in it.
 I've been using a format like so, that I enjoy:
 
-    1.2.3
-    -----
-    - [#51](http://github.com/someorg/someproject/pull/51) added some crazy new endpoint
+```
+1.2.3
+-----
+- [#51](http://github.com/someorg/someproject/pull/51) added some crazy new endpoint
+```
 
 This allows the viewer to go directly to the pull request where that change was made.
 The context provided by this is invaluable.
