@@ -253,13 +253,66 @@ If that doesn't overly disgust you,
 this may be the solution you are looking for.
 If it does, just go one solution back!
 
-
-
 ## long stack traces
 `npm install long-stack-traces`
 https://github.com/tlrobinson/long-stack-traces
 
+Consider the following code
+that throws errors from the event loop.
 
+```coffeescript
+f = -> throw new Error('foo')
+setTimeout(f, Math.random()*1000)
+setTimeout(f, Math.random()*1000)
+
+###
+timers.js:103
+            if (!process.listeners('uncaughtException').length) throw e;
+                                                                      ^
+Error: foo
+  at Object.f [as _onTimeout] (/home/smassa/source/demo/blog/test.coffee:5:14, <js>:8:11)
+  at Timer.list.ontimeout (timers.js:101:19)
+###
+```
+
+Errors from code like this point to the event loop code where it was run
+instead of the original code that put that event on the queue.
+By using the `longjohn` module (`npm install longjohn`),
+we can get longer stack traces that point to this original code!
+
+```coffeescript
+require 'longjohn'
+
+f = -> throw new Error('foo')
+setTimeout(f, Math.random()*1000)
+setTimeout(f, Math.random()*1000)
+
+###
+timers.js:103
+            if (!process.listeners('uncaughtException').length) throw e;
+                                                                      ^
+Error: foo
+    at f (/home/smassa/source/demo/blog/test.coffee:9:11)
+    at list.ontimeout (timers.js:101:19)
+---------------------------------------------
+    at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:12:3)
+    at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:13:3)
+    at Module._compile (module.js:449:26)
+    at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)
+    at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)
+    at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)
+    at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16
+    at fs.readFile (fs.js:176:14)
+###
+```
+
+You may notice that my fancy coffee-script line numbers are gone.
+It sure would be great if [someone could fix that](https://github.com/mattinsler/longjohn/issues/11).
+However, the value provided here is worth the inconvenience!
+
+These longer stack traces can be invaluable.
+Note that there are options for
+limiting the number of async calls to trace back.
 
 ## process
 
