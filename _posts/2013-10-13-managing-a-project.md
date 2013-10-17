@@ -75,10 +75,10 @@ This makes it clear in your commit history where specific versions were released
 
 Create a tag for the current release for easy git retrieval.
 
-
-    git tag -a v1.2.3 -m "tagged 1.2.3"
-    git push --tags
-
+```
+git tag -a v1.2.3 -m "tagged 1.2.3"
+git push --tags
+```
 
 Later, if you ever want to get the code at an exact version, just use `git checkout v1.2.3`!
 
