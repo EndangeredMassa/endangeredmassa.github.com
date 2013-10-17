@@ -27,7 +27,9 @@
       return document.querySelectorAll(selector);
     };
     if (document.querySelectorAll) {
-      for (var pre in $('.highlight pre')) {
+      var nodes = $('.highlight pre');
+      for (var i; i<pre.length; i++) {
+        var pre = nodes[i];
         var lang = pre.getAttribute("data-lang");
         pre.className = 'brush: ' + lang;
       };
