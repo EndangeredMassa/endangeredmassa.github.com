@@ -50,7 +50,7 @@ Modify your changelog to include the new version
 and the major changes made in it.
 I've been using a format like so, that I enjoy:
 
-```
+```coffee
 1.2.3
 -----
 - [#51](http://github.com/someorg/someproject/pull/51) added some crazy new endpoint
