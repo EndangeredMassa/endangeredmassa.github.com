@@ -29,7 +29,7 @@ console.error (new Error 'something broke')
 # [Error: something broke]
 ```
 
-That only output the actual error message.
+That only outputs the actual error message.
 What about the stack trace?
 
 ```coffeescript
