@@ -135,18 +135,6 @@ a.no-style {
     line-height: 1.2em;
   }
   
-  .post pre {
-    counter-reset: linenumbers;
-  }
-  .post pre code:before {
-    color: #aaa;
-    content: counter(linenumbers);
-    counter-increment: linenumbers;
-    left: -3ex;
-    position: absolute;
-    text-align: right;
-    width: 2.5ex;
-  }
   .post code {
     margin: 0 2px;
     padding: 0px 5px;
