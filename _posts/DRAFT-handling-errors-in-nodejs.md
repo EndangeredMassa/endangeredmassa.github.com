@@ -55,13 +55,14 @@ console.error JSON.stringify (new Error 'something broke')
 ```
 
 That's empty, of course.
-This is JavaScript-land, after all.
+This is JavaScript-land, where making sense rarely matters.
 JSON.stringify accepts more arguments.
-We can pass filters in the second argument.
+We can pass filters in the second argument
+and a number of indent spaces to use as the third.
 
 ```coffeescript
 error = new Error 'something broke'
-console.error JSON.stringify error, ['stack', 'message']
+console.error JSON.stringify error, ['stack', 'message'], 2
 ###
 {
   "stack":"Error: something broke\n  at Object.<anonymous> (/home/smassa/test.coffee:5:9, <js>:7:11)\n  at Object.<anonymous> (/home/smassa/test.coffee:6:1, <js>:12:3)\n  at Module._compile (module.js:449:26)\n  at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)\n  at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)\n  at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)\n  at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16\n  at fs.readFile (fs.js:176:14)\n  at Object.oncomplete (fs.js:297:15)\n",
@@ -79,7 +80,7 @@ But what happens if the error object has other properties we care about?
 error = new Error 'something broke'
 error.inner = new Error 'some original error'
 error.code = '500B'
-JSON.stringify error, ['stack', 'message', 'inner']
+JSON.stringify error, ['stack', 'message', 'inner'], 2
 ###
 {
   "stack":"Error: something broke\n  at Object.<anonymous> (/home/smassa/test.coffee:5:9, <js>:7:11)\n  at Object.<anonymous> (/home/smassa/test.coffee:8:1, <js>:16:3)\n  at Module._compile (module.js:449:26)\n  at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)\n  at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)\n  at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)\n  at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16\n  at fs.readFile (fs.js:176:14)\n  at Object.oncomplete (fs.js:297:15)\n",
@@ -101,7 +102,7 @@ Let's explore `JSON.stringify` more.
 error = new Error 'something broke'
 error.inner = new Error 'some original error'
 error.code = '500B'
-JSON.stringify error
+JSON.stringify error, null, 2
 ###
 {
   "code":"500B",
@@ -159,7 +160,7 @@ However, if we do expect to have nested error objects,
 we need to go a little further.
 Until this requirement,
 I wanted to stay away from modifying standard object prototypes.
-If that doesn't bother, read on!
+If that doesn't bother you, read on!
 
 It [turns out](http://stackoverflow.com/a/18391400/106)
 that we can tell `Error` objects how to serialize themselves to json
@@ -185,7 +186,7 @@ error.inner = new Error 'some inner thing broke'
 error.code = '500c'
 error.severity = 'high'
 
-JSON.stringify error 
+JSON.stringify error, null, 2
 ###
 {
   "message":"something broke",
