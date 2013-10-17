@@ -341,7 +341,7 @@ playNiceError = (error) ->
 logError = (error) ->
   playNiceError(error)
   
-  # Adding for fun; not for real use                                                                                                                                                      
+  # Adding for fun; not for real use
   error.code = '500B'
 
   metadata = formatJson error
