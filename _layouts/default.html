@@ -88,16 +88,19 @@
     return document.querySelectorAll(selector);
   };
   if (document.querySelectorAll) {
-    var nodes = document.querySelectorAll('.highlight code');
+    var nodes = document.querySelectorAll('.highlight code')
     for (var i=0; i<nodes.length; i++) {
       var code = nodes[i];
       var pre = code.parentNode;
       var lang = code.getAttribute("data-lang");
-      if (lang && lang != 'text')
-        pre.className = 'brush: ' + lang;
-    }
+      pre.className = 'brush: ' + lang;
+      while (code.hasChildNodes()) {
+        pre.appendChild(code.childNodes[0]);
+      }
+      pre.removeChild(code);
+    };
   }
-  //SyntaxHighlighter.all()
+  SyntaxHighlighter.all()
 </script>
 
 </body>
