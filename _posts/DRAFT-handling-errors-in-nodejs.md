@@ -4,9 +4,13 @@ title: Handling Errors in Node.js
 author: Sean Massa
 categories: [dev]
 blurb:
-  The async callback standard in Node.js suggests that the first parameter of the callback
-  is an error object. If that's null, you can move along. If it's not, you have to
-  figure out what to do. Let's take a look at our options!
+  The async callback standard in Node.js suggests
+  that the first parameter of the callback
+  is an error object.
+  If that's null, you can move along.
+  If it's not, or you have an error thrown elsewhere, 
+  you have to figure out what to do.
+  Let's take a look at our options!
 published: false
 ---
 
