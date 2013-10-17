@@ -91,8 +91,7 @@ JSON.stringify error, ['stack', 'message', 'inner'], 2
   "inner":{
     "stack":"Error: some original error\n  at Object.<anonymous> (/home/smassa/test.coffee:7:15, <js>:9:17)\n  at Object.<anonymous> (/home/smassa/test.coffee:8:1, <js>:16:3)\n  at Module._compile (module.js:449:26)\n  at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)\n  at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)\n  at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)\n  at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16\n  at fs.readFile (fs.js:176:14)\n  at Object.oncomplete (fs.js:297:15)\n",
     "message":"some original error"
-  },
-  "code":"500B"
+  }
 }
 ###
 ```
