@@ -23,8 +23,10 @@
   <script src="http://alexgorbatchev.com/pub/sh/current/scripts/shCore.js" type="text/javascript"></script>
   <script src="/js/shBrushCoffeeScript.js" type="text/javascript"></script>
   <script type="text/javascript">
-    var $ = document.querySelectorAll;
-    if ($ && Array.prototype.forEach) {
+    var $ = function(selector) {
+      return document.querySelectorAll(selector);
+    };
+    if (document.querySelectorAll && Array.prototype.forEach) {
       $('.highlight pre').forEach(function(pre) {
         var lang = pre.getAttribute("data-lang");
         pre.className = 'brush: ' + lang;
