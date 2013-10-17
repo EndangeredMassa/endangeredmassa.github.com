@@ -385,13 +385,12 @@ Now, whenever our process crashes, we should have a pretty good idea where!
 ## domains
 
 [Domains](http://nodejs.org/api/domain.html)
-attempt to solve a similar problem--
-knowing where (and more context about where)
-an error occurs.
+attempt to solve a similar problem--knowing where
+(and more context about where) an error occurs.
 However, they attack the problem in a very different way.
 
 When working with domains,
-you are better off using Node.js >= 0.10.
+you are better off using `Node.js >= 0.10`.
 
 Domains are integrated into the Node.js event system
 such that all new EventEmitter objects
