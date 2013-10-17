@@ -507,13 +507,13 @@ npm install
 npm start
 ```
 
-This express app (no running on port 5555)
+This express app (now running on port 5555)
 has three routes that work as follows:
 
 ### [/error](http://localhost:5555/error)
 
 This route throws an error that is caught by the express middleware
-and delgated to `express_logger.coffee`.
+and delegated to `express_logger.coffee`.
 
 You should see output like:
 
