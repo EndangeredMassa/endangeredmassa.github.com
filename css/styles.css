@@ -147,22 +147,27 @@ a.no-style {
   .highlight pre {
     counter-reset: linenumbers;
   }
+
+  .code-line {
+    min-height: 1em;
+  }
  
   .highlight pre .code-line:before {
-    color: #666;
-    content: counter(linenumbers);
-    counter-increment: linenumbers;
-    left: -23px;
-    position: relative;
-    text-align: right;
-    width: 2.5ex;
-    
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    
+    color: #666;
+    content: counter(linenumbers);
+    counter-increment: linenumbers;
+    text-align: right;
+    width: 18px;
+    margin-right: 16px;
+    float: left;
+    clear: left;
   }
 
   .post pre > code {
