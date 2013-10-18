@@ -633,3 +633,6 @@ The final code for everything you've seen here can be found here:
 
 - [error logger](https://github.com/EndangeredMassa/express-error-handling/blob/master/log_error.coffee)
 - [express error handling](https://github.com/EndangeredMassa/express-error-handling)
+
+Let me know in the comments
+if you have other techniques for formatting errors!
