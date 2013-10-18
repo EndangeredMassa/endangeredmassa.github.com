@@ -82,7 +82,6 @@ But what happens if the error object has other properties we care about?
 ```coffeescript
 error = new Error 'something broke'
 error.inner = new Error 'some original error'
-error.code = '500B'
 JSON.stringify error, ['stack', 'message', 'inner'], 2
 ###
 {
