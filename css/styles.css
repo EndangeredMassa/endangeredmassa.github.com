@@ -144,6 +144,20 @@ a.no-style {
     font-size: 13px;
   }
   
+  .highlight pre {
+    counter-reset: linenumbers;
+  }
+ 
+  .highlight pre .code-line:before {
+    color: #aaa;
+    content: counter(linenumbers);
+    counter-increment: linenumbers;
+    left: -3ex;
+    position: absolute;
+    text-align: right;
+    width: 2.5ex;
+  }
+
   .post pre > code {
     display: block;
     margin: 10px 40px;
