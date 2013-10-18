@@ -1,0 +1,17 @@
+---
+layout: post
+title: Working Around WebDriver
+author: Sean Massa
+categories: [dev]
+blurb:
+  
+published: false
+---
+
+- webdriver doesn't support getting response status codes
+- webdriver doesn't support setting request headers
+- how to write a small proxy to work around these issues
+- how to use browsermob instead http://bmp.lightbody.net/
+
+
+
