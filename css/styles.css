@@ -152,7 +152,7 @@ a.no-style {
     color: #666;
     content: counter(linenumbers);
     counter-increment: linenumbers;
-    left: -9px;
+    left: -14px;
     position: relative;
     text-align: right;
     width: 2.5ex;
@@ -161,7 +161,7 @@ a.no-style {
   .post pre > code {
     display: block;
     margin: 10px 40px;
-    padding: 2px 14px;
+    padding: 2px 17px;
   }
 
 .post-category {
