@@ -76,8 +76,23 @@
       </footer>
     </div>
   </div>
-
 </div>
+
+<script type="text/javascript">
+  // wrap code lines in div that lets us add line numbers
+  var $ = function(selector) {
+    return document.querySelectorAll(selector);
+  };
+  if (document.querySelectorAll) {
+    var nodes = document.querySelectorAll('.highlight code')
+    for (var i=0; i<nodes.length; i++) {
+      var code = nodes[i];
+      var pre = code.parentNode;
+      var lines = code.innerHTML.split('\n');
+      code.innerHTML = '<div class="code-line">' + lines.join('</div><div class="code-line">') + '</div>'
+    };
+  }
+</script>
 
 </body>
 </html>
