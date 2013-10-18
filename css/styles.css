@@ -165,6 +165,7 @@ a.no-style {
     counter-increment: linenumbers;
     text-align: right;
     width: 18px;
+    height: 1em;
     margin-right: 16px;
     float: left;
     clear: left;
