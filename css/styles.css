@@ -156,6 +156,13 @@ a.no-style {
     position: relative;
     text-align: right;
     width: 2.5ex;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   .post pre > code {
