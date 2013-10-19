@@ -46,7 +46,7 @@ We need our proxy to:
 
 Let's explore how we can accomplish each of these.
 
-## 1. Capture Response StatuCodes and Headers
+## 1. Capture Response Status Codes and Headers
 
 ## 2. Communicate Response Data to Consumer Code
 
