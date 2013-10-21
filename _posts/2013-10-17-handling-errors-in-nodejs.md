@@ -28,7 +28,7 @@ but I want to take a look at everything involved.
 Let's first try simply sending the error to `stderr`.
 
 ```javascript
-console.error(new Error('something broke'))
+console.error( new Error('something broke') )
 // [Error: something broke]
 ```
 
@@ -36,7 +36,8 @@ That only outputs the actual error message.
 What about the stack trace?
 
 ```javascript
-console.error( new Error('something broke')).stack )
+var error = new Error('something broke')
+console.error( error.stack )
 /*
 Error: something broke
   at [eval]:1:16
