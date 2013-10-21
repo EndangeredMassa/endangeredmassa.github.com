@@ -27,17 +27,17 @@ but I want to take a look at everything involved.
 
 Let's first try simply sending the error to `stderr`.
 
-```coffeescript
-console.error (new Error 'something broke')
-# [Error: something broke]
+```javascript
+console.error(new Error('something broke'))
+// [Error: something broke]
 ```
 
 That only outputs the actual error message.
 What about the stack trace?
 
-```coffeescript
-console.error (new Error 'something broke').stack
-###
+```javascript
+console.error( new Error('something broke')).stack )
+/*
 Error: something broke
   at [eval]:1:16
   at Object.<anonymous> ([eval]-wrapper:6:22)
@@ -45,16 +45,17 @@ Error: something broke
   at evalScript (node.js:283:25)
   at startup (node.js:77:7)
   at node.js:628:3
-###
+*/
 ```
 
 The stack property contains the message as well as the stack.
 If we only log this value, we get both!
 But what about other properties that might exist on the error object?
 
-```coffeescript
-console.error JSON.stringify (new Error 'something broke')
-# '{}'
+```javascript
+var error = new Error('something broke')
+console.error( JSON.stringify(error) )
+// '{}'
 ```
 
 That's empty, of course.
@@ -63,15 +64,16 @@ JSON.stringify accepts more arguments.
 We can pass filters in the second argument
 and a number of indent spaces to use as the third.
 
-```coffeescript
-error = new Error 'something broke'
-console.error JSON.stringify error, ['stack', 'message'], 2
-###
+```javascript
+var error = new Error('something broke')
+var message = JSON.stringify(error, ['stack', 'message'], 2)
+console.error(message)
+/*
 {
-  "stack":"Error: something broke\n  at Object.<anonymous> (/home/smassa/test.coffee:5:9, <js>:7:11)\n  at Object.<anonymous> (/home/smassa/test.coffee:6:1, <js>:12:3)\n  at Module._compile (module.js:449:26)\n  at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)\n  at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)\n  at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)\n  at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16\n  at fs.readFile (fs.js:176:14)\n  at Object.oncomplete (fs.js:297:15)\n",
-  "message":"something broke"
+  "stack": "Error: something broke\n    at Object.<anonymous> (/home/smassa/test.js:5:13)\n    at Module._compile (module.js:449:26)\n    at Object.Module._extensions..js (module.js:467:10)\n    at Module.load (module.js:356:32)\n    at Function.Module._load (module.js:312:12)\n    at Module.runMain (module.js:492:10)\n    at process.startup.processNextTick.process._tickCallback (node.js:245:9)",
+  "message": "something broke"
 }
-###
+*/
 ```
 
 Now, if you are wondering why filtering works when not filtering already shows nothing--
@@ -79,37 +81,39 @@ like I said, JavaScript-land.
 
 But what happens if the error object has other properties we care about?
 
-```coffeescript
-error = new Error 'something broke'
-error.inner = new Error 'some original error'
-JSON.stringify error, ['stack', 'message', 'inner'], 2
-###
+```javascript
+var error = new Error('something broke')
+error.inner = new Error('some original error')
+var message = JSON.stringify(error, ['stack', 'message', 'inner'], 2)
+console.error(message)
+/*
 {
-  "stack":"Error: something broke\n  at Object.<anonymous> (/home/smassa/test.coffee:5:9, <js>:7:11)\n  at Object.<anonymous> (/home/smassa/test.coffee:8:1, <js>:16:3)\n  at Module._compile (module.js:449:26)\n  at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)\n  at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)\n  at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)\n  at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16\n  at fs.readFile (fs.js:176:14)\n  at Object.oncomplete (fs.js:297:15)\n",
-  "message":"something broke",
-  "inner":{
-    "stack":"Error: some original error\n  at Object.<anonymous> (/home/smassa/test.coffee:7:15, <js>:9:17)\n  at Object.<anonymous> (/home/smassa/test.coffee:8:1, <js>:16:3)\n  at Module._compile (module.js:449:26)\n  at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)\n  at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)\n  at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)\n  at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16\n  at fs.readFile (fs.js:176:14)\n  at Object.oncomplete (fs.js:297:15)\n",
-    "message":"some original error"
+  "stack": "Error: something broke\n    at Object.<anonymous> (/home/smassa/test.js:2:13)\n    at Module._compile (module.js:449:26)\n    at Object.Module._extensions..js (module.js:467:10)\n    at Module.load (module.js:356:32)\n    at Function.Module._load (module.js:312:12)\n    at Module.runMain (module.js:492:10)\n    at process.startup.processNextTick.process._tickCallback (node.js:245:9)",
+  "message": "something broke",
+  "inner": {
+    "stack": "Error: some original error\n    at Object.<anonymous> (/home/smassa/test.js:3:15)\n    at Module._compile (module.js:449:26)\n    at Object.Module._extensions..js (module.js:467:10)\n    at Module.load (module.js:356:32)\n    at Function.Module._load (module.js:312:12)\n    at Module.runMain (module.js:492:10)\n    at process.startup.processNextTick.process._tickCallback (node.js:245:9)",
+    "message": "some original error"
   }
 }
-###
+*/
 ```
 
 This works, but requires you to list all potential extra properties in the filter list.
 That means this won't be a great general purpose solution.
 Let's explore `JSON.stringify` more.
 
-```coffeescript
-error = new Error 'something broke'
-error.inner = new Error 'some original error'
+```javascript
+var error = new Error('something broke')
+error.inner = new Error('some original error')
 error.code = '500B'
-JSON.stringify error, null, 2
-###
+var message = JSON.stringify(error, null, 2)
+console.error(message)
+/*
 {
   "code":"500B",
   "inner":{}
 }
-###
+*/
 ```
 
 The normal property `code` was found properly,
@@ -125,36 +129,36 @@ a pretty complete error log with the following.
 Let's also pull in [prettyjson](https://npmjs.org/package/prettyjson)
 for better formatted output.
 
-```coffeescript
-prettyjson = require('prettyjson')                                                                                                                                                        
-formatJson = (object) ->
-  # adds 4 spaces in front of each line
-  json = prettyjson.render(object)
+```javascript
+var prettyjson = require('prettyjson')
+var formatJson = function(object) {
+  // adds 4 spaces in front of each line
+  var json = prettyjson.render(object)
   json = json.split('\n').join('\n    ')
-  "    #{json}"
+  return '    ' + json
+}
 
-error = new Error 'something broke'
+var error = new Error('something broke')
 error.code = '500B'
 error.severity = 'high'
 
-metadata = formatJson error
-stack = error.stack.trim()
-"#{stack}\n  Metadata:\n#{metadata}"
-###
+var metadata = formatJson(error)
+var stack = error.stack.trim()
+var message = stack + '\n  Metadata:\n' + metadata
+console.error(message)
+/*
 Error: something broke
-  at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:11:11, <js>:14:11)
-  at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:17:1, <js>:20:3)
-  at Module._compile (module.js:449:26)
-  at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)
-  at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)
-  at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)
-  at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16
-  at fs.readFile (fs.js:176:14)
-  at Object.oncomplete (fs.js:297:15)
+    at Object.<anonymous> (/home/smassa/test.js:10:13)
+    at Module._compile (module.js:449:26)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:245:9)
   Metadata:
     code:     500B
     severity: high
-###
+*/
 ```
 
 However, if we do expect to have nested error objects,
@@ -167,91 +171,98 @@ It [turns out](http://stackoverflow.com/a/18391400/106)
 that we can tell `Error` objects how to serialize themselves to json
 by setting their `toJSON` properties.
 
-```coffeescript
-Object.defineProperty Error.prototype, 'toJSON',
-  configurable: true
-  value: ->
-    alt = {}
-    storeKey = (key) ->
+```javascript
+var config = {
+  configurable: true,
+  value: function() {
+    var alt = {}
+    var storeKey = function(key) {
       alt[key] = this[key]
+    }
 
     Object.getOwnPropertyNames(this).forEach(storeKey, this)
-    alt
+    return alt
+  }
+}
+Object.defineProperty(Error.prototype, 'toJSON', config)
 ```
 
 Now, when we serialize our `Error` objects, we get:
 
-```coffeescript
-error = new Error 'something broke'
-error.inner = new Error 'some inner thing broke'
+```javascript
+var error = new Error('something broke')
+error.inner = new Error('some inner thing broke')
 error.code = '500c'
 error.severity = 'high'
 
-JSON.stringify error, null, 2
-###
+var message = JSON.stringify(error, null, 2)
+console.error(message)
+/*
 {
-  "message":"something broke",
-  "code":"500c",
-  "severity":"high",
-  "inner":{
-    "message":"some inner thing broke",
-    "stack":"Error: some inner thing broke\n  at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:16:15, <js>:20:17)\n  at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:20:1, <js>:24:3)\n  at Module._compile (module.js:449:26)\n  at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)\n  at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)\n  at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)\n  at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16\n  at fs.readFile (fs.js:176:14)\n  at Object.oncomplete (fs.js:297:15)\n"
+  "severity": "high",
+  "message": "something broke",
+  "code": "500c",
+  "inner": {
+    "message": "some inner thing broke",
+    "stack": "Error: some inner thing broke\n    at Object.<anonymous> (/home/smassa/test.js:18:15)\n    at Module._compile (module.js:449:26)\n    at Object.Module._extensions..js (module.js:467:10)\n    at Module.load (module.js:356:32)\n    at Function.Module._load (module.js:312:12)\n    at Module.runMain (module.js:492:10)\n    at process.startup.processNextTick.process._tickCallback (node.js:245:9)"
   },
-  "stack":"Error: something broke\n  at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:15:13, <js>:19:11)\n  at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:20:1, <js>:24:3)\n  at Module._compile (module.js:449:26)\n  at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)\n  at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)\n  at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)\n  at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16\n  at fs.readFile (fs.js:176:14)\n  at Object.oncomplete (fs.js:297:15)\n"
+  "stack": "Error: something broke\n    at Object.<anonymous> (/home/smassa/test.js:17:13)\n    at Module._compile (module.js:449:26)\n    at Object.Module._extensions..js (module.js:467:10)\n    at Module.load (module.js:356:32)\n    at Function.Module._load (module.js:312:12)\n    at Module.runMain (module.js:492:10)\n    at process.startup.processNextTick.process._tickCallback (node.js:245:9)"
 }
-###
+*/
 ```
 
 This won't work directly wth prettyjson,
+it strangley renders incomplete output,
 but we can do something messy:
 
-```coffeescript
-prettyjson = require 'prettyjson'
-Object.defineProperty Error.prototype, 'toJSON',
-  configurable: true
-  value: ->
-    alt = {}
-    storeKey = (key) ->
+```javascript
+var prettyjson = require('prettyjson')
+
+var config = {
+  configurable: true,
+  value: function() {
+    var alt = {}
+    var storeKey = function(key) {
       alt[key] = this[key]
+    }
 
     Object.getOwnPropertyNames(this).forEach(storeKey, this)
-    alt
-                                                                                                                                                                                          
-error = new Error 'something broke'
-error.inner = new Error 'some inner thing broke'
+    return alt
+  }
+}
+Object.defineProperty(Error.prototype, 'toJSON', config)
+
+var error = new Error('something broke')
+error.inner = new Error('some inner thing broke')
 error.code = '500c'
 error.severity = 'high'
 
-prettyjson.render JSON.parse JSON.stringify error
-###
-severity: high                                                                                                                                                                     [0/150]
+var simpleError = JSON.parse(JSON.stringify(error))
+var message = prettyjson.render(simpleError)
+console.error(message)
+/*
+stack:    Error: something broke
+    at Object.<anonymous> (/home/smassa/test.js:18:13)
+    at Module._compile (module.js:449:26)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:245:9)
 inner: 
   stack:   Error: some inner thing broke
-  at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:17:15, <js>:21:17)
-  at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:21:1, <js>:25:3)
-  at Module._compile (module.js:449:26)
-  at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)
-  at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)
-  at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)
-  at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16
-  at fs.readFile (fs.js:176:14)
-  at Object.oncomplete (fs.js:297:15)
-
+    at Object.<anonymous> (/home/smassa/test.js:19:15)
+    at Module._compile (module.js:449:26)
+    at Object.Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Function.Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at process.startup.processNextTick.process._tickCallback (node.js:245:9)
   message: some inner thing broke
-stack:    Error: something broke
-  at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:16:13, <js>:20:11)
-  at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:21:1, <js>:25:3)
-  at Module._compile (module.js:449:26)
-  at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)
-  at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)
-  at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)
-  at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16
-  at fs.readFile (fs.js:176:14)
-  at Object.oncomplete (fs.js:297:15)
-
+severity: high
 message:  something broke
 code:     500c
-###
+*/
 ```
 
 Which is not too bad.
@@ -264,19 +275,19 @@ If it does, just go one solution back!
 Consider the following code
 that throws errors from the event loop.
 
-```coffeescript
-f = -> throw new Error('foo')
+```javascript
+function f() { throw new Error('foo') )
 setTimeout(f, Math.random()*1000)
 setTimeout(f, Math.random()*1000)
 
-###
+/*
 timers.js:103
             if (!process.listeners('uncaughtException').length) throw e;
                                                                       ^
 Error: foo
-  at Object.f [as _onTimeout] (/home/smassa/source/demo/blog/test.coffee:5:14, <js>:8:11)
+  at Object.f [as _onTimeout] (/home/smassa/source/demo/blog/test.js:8:11)
   at Timer.list.ontimeout (timers.js:101:19)
-###
+*/
 ```
 
 Errors from code like this point to the event loop code where it was run
@@ -284,30 +295,29 @@ instead of the original code that put that event on the queue.
 By using the `longjohn` module (`npm install longjohn`),
 we can get longer stack traces that point to this original code!
 
-```coffeescript
-require 'longjohn'
+```javascript
+require('longjohn')
 
-f = -> throw new Error('foo')
+function f() { throw new Error('foo') }
 setTimeout(f, Math.random()*1000)
 setTimeout(f, Math.random()*1000)
 
-###
+/*
 timers.js:103
             if (!process.listeners('uncaughtException').length) throw e;
                                                                       ^
 Error: foo
-    at f (/home/smassa/source/demo/blog/test.coffee:9:11)
+    at f (/home/smassa/test.js:4:22)
     at list.ontimeout (timers.js:101:19)
 ---------------------------------------------
-    at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:12:3)
-    at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:13:3)
+    at Object.<anonymous> (/home/smassa/test.js:5:1)
     at Module._compile (module.js:449:26)
-    at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)
-    at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)
-    at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)
-    at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16
-    at fs.readFile (fs.js:176:14)
-###
+    at Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at startup.processNextTick.process._tickCallback (node.js:245:9)
+*/
 ```
 
 You may notice that my fancy coffee-script line numbers are gone.
@@ -325,55 +335,62 @@ This usually crashed the process with a shallow stacked error as we saw above.
 We can listen for these errors
 and log them our way!
 
-```coffeescript
-require 'longjohn'                                                                                                                                                                        
-prettyjson = require('prettyjson')
+```javascript
+require('longjohn')
+var prettyjson = require('prettyjson')
 
-formatJson = (object) ->
-  # adds 4 spaces in front of each line
-  json = prettyjson.render(object)
+function formatJson(object) {
+  // adds 4 spaces in front of each line
+  var json = prettyjson.render(object)
   json = json.split('\n').join('\n    ')
-  "    #{json}"
+  return '    ' + json
+}
   
-playNiceError = (error) ->
-  # remove longjohn properties that break prettyjson
+function playNiceError(error) {
+  // remove longjohn properties that break prettyjson
   delete error.__cached_trace__
   delete error.__previous__
   
-logError = (error) ->
+  // remove domain information we probably don't need
+  delete error.domain
+}
+  
+function logError(error) {
   playNiceError(error)
   
-  # Adding for fun; not for real use
+  // Adding for fun; not for real use
   error.code = '500B'
 
-  metadata = formatJson error
-  stack = error.stack.trim()
+  var metadata = formatJson(error)
+  var stack = error.stack.trim()
 
-  message = "#{stack}\n"
-  message += "  Metadata:\n#{metadata}" if metadata.trim() != ''
-  console.error message
-  
-process.on 'uncaughtException', logError
+  message = stack + '\n'
+  if (metadata.trim() !== '') {
+    message += '  Metadata:\n' + metadata 
+  }
+  console.error(message)
+}
 
-throwError = -> throw new Error('foo')
+process.on('uncaughtException', logError)
+
+function throwError() { throw new Error('foo') }
 setTimeout(throwError, Math.random()*1000)
 
-###
+/*
 Error: foo
-    at f (/home/smassa/source/demo/blog/test.coffee:28:11)
+    at throwError (/home/smassa/test.js:36:31)
     at list.ontimeout (timers.js:101:19)
 ---------------------------------------------
-    at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:30:3)
-    at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:31:3)
+    at Object.<anonymous> (/home/smassa/test.js:37:1)
     at Module._compile (module.js:449:26)
-    at runModule (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:101:17)
-    at runMain (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/run.js:94:10)
-    at processInput (/home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)
-    at /home/smassa/.nvm/v0.8.25/lib/node_modules/coffee-script-redux/lib/cli.js:286:16
-    at fs.readFile (fs.js:176:14)
+    at Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at startup.processNextTick.process._tickCallback (node.js:245:9)
   Metadata:
     code: 500B
-###
+*/
 ```
 
 Note that the spacing is different here.
@@ -404,35 +421,39 @@ instead of triggering an `uncaughtException` event on the entire process.
 
 This example shows how this works.
 
-```coffeescript
-fs = require 'fs'
-domain = require('domain').create()
+```javascript
+var fs = require('fs')
+var domain = require('domain').create()
 
-domain.on "error", (error) ->
-  console.error "Caught error in domain!", error
-process.on 'uncaughtException', (error) ->
-  console.error "Caught error in process!", error
+domain.on('error', function(error) {
+  console.error('Caught error in domain!', error)
+})
+process.on('uncaughtException', function(error) {
+  console.error('Caught error in process!', error)
+})
 
-domain.run ->
-  process.nextTick ->
-    setTimeout (->
-      # simulating some various async stuff
-      fs.open "non-existent file", "r", (error, fd) ->
-        throw error if error?
-    ), 10
-
-###
-Caught error in domain! { [Error: ENOENT, open 'non-existent file']
+domain.run(function(){
+  process.nextTick(function(){
+    setTimeout (function(){
+      // simulating some various async stuff
+      fs.open("non-existent file", "r", function(error, fd) {
+        if (error) throw error
+      })
+    }, 10)
+  })
+})
+/*
+Caught error in domain! { [Error: ENOENT, open 'non-existent file']                                                                                                                [5/328]
   errno: 34,
   code: 'ENOENT',
   path: 'non-existent file',
+  domain_thrown: true,
   domain: 
    { domain: null,
      _events: { error: [Function] },
      _maxListeners: 10,
-     members: [] },
-  domainThrown: true }
-###
+     members: [] } }
+*/
 ```
 
 Success!
@@ -441,38 +462,47 @@ and could handle the error however we wanted.
 
 If we use our error logger, we can get this:
 
-```coffeescript
-fs = require 'fs'
-domain = require('domain').create()                                                          
-                                                                                             
-domain.on "error", (error) ->                                                                
-  logError error
-  
-domain.run ->
-  process.nextTick ->                                                                        
-    setTimeout (->                                                                           
-      # simulating some various async stuff                                                  
-      fs.open "non-existent file", "r", (error, fd) ->                                                                                                                                    
-        throw error if error?
-    ), 10
+```javascript
+require('longjohn')
 
-###
+var fs = require('fs')
+var domain = require('domain').create()
+
+function logError(error) {
+  // as defined earlier
+}
+
+domain.on('error', function(error) {
+  logError(error)
+})
+
+domain.run(function(){
+  process.nextTick(function(){
+    setTimeout(function(){
+      // simulating some various async stuff
+      fs.open("non-existent file", "r", function(error, fd) {
+        if (error) throw error
+      })
+    }, 10)
+  })
+})
+
+/*
 Error: ENOENT, open 'non-existent file'
 ---------------------------------------------
-    at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:7:10)
-    at Object.<anonymous> (/home/smassa/source/demo/blog/test.coffee:20:3)
-    at Module._compile (module.js:456:26)
-    at runModule (/home/smassa/.nvm/v0.10.19/lib/node_modules/coffee-script-redux/lib/run.js:101:17)
-    at runMain (/home/smassa/.nvm/v0.10.19/lib/node_modules/coffee-script-redux/lib/run.js:94:10)
-    at processInput (/home/smassa/.nvm/v0.10.19/lib/node_modules/coffee-script-redux/lib/cli.js:272:7)
-    at /home/smassa/.nvm/v0.10.19/lib/node_modules/coffee-script-redux/lib/cli.js:286:16
-    at fs.js:266:14
+    at Object.<anonymous> (/home/smassa/test.js:39:8)
+    at Module._compile (module.js:449:26)
+    at Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Module._load (module.js:312:12)
+    at Module.runMain (module.js:492:10)
+    at startup.processNextTick.process._tickCallback (node.js:245:9)
   Metadata:
-    errno:        34
-    code:         ENOENT
-    path:         non-existent file
-    domainThrown: true
-###
+    errno:         34
+    code:          500B
+    path:          non-existent file
+    domain_thrown: true
+*/
 ```
 
 That is a thing of beauty.
