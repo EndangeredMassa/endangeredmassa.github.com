@@ -320,7 +320,7 @@ Error: foo
 */
 ```
 
-You may notice that my fancy coffee-script line numbers are gone.
+Note that this will get rid of your CoffeeScript line numbers, if you use CoffeeScript.
 It sure would be great if [someone could fix that](https://github.com/mattinsler/longjohn/issues/11).
 However, the value provided here is worth the inconvenience!
 
