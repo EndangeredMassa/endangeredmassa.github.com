@@ -11,7 +11,7 @@ blurb:
   If it's not, or you have an error thrown elsewhere, 
   you have to figure out what to do.
   Let's take a look at our options!
-published: true
+published: true
 ---
 
 The goal here is to capture errors (with context)
@@ -551,7 +551,7 @@ You should see output like:
 
 ```
 Error: you went to /error, silly!
-    at /home/smassa/source/demo/blog/app.coffee:16:13
+    at module.exports.app.use.response.status (/home/smassa/source/demo/blog/app.js:14:11)
     at callbacks (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:164:37)
     at param (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:138:11)
     at pass (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:145:5)
@@ -562,14 +562,14 @@ Error: you went to /error, silly!
     at next (/home/smassa/source/demo/blog/node_modules/express/node_modules/connect/lib/proto.js:190:15)
     at query (/home/smassa/source/demo/blog/node_modules/express/node_modules/connect/lib/middleware/query.js:44:5)
 ---------------------------------------------
-    at new Server (http.js:1870:10)
-    at exports.createServer (http.js:1900:10)
-    at module.exports (/home/smassa/source/demo/blog/app.coffee:43:19)
-    at Object.<anonymous> (/home/smassa/source/demo/blog/index.coffee:6:9)
-    at Object.<anonymous> (/home/smassa/source/demo/blog/index.coffee:10:3)
-    at Module._compile (module.js:456:26)
-    at runModule (/home/smassa/source/demo/blog/node_modules/coffee-script-redux/lib/run.js:101:17)
-    at runMain (/home/smassa/source/demo/blog/node_modules/coffee-script-redux/lib/run.js:94:10)
+    at new Server (http.js:1759:10)
+    at exports.createServer (http.js:1776:10)
+    at module.exports (/home/smassa/source/demo/blog/app.js:44:21)
+    at Object.<anonymous> (/home/smassa/source/demo/blog/index.js:3:11)
+    at Module._compile (module.js:449:26)
+    at Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Module._load (module.js:312:12)
   Metadata:
     url:    /error
     action: GET
@@ -585,10 +585,10 @@ You should see output like:
 
 ```
 Error: you went to /asyncerror, silly!
-    at [object Object].<anonymous> (/home/smassa/source/demo/blog/app.coffee:20:15)
-    at listOnTimeout (timers.js:110:15)
+    at module.exports.app.use.response.status (/home/smassa/source/demo/blog/app.js:19:13)
+    at list.ontimeout (timers.js:101:19)
 ---------------------------------------------
-    at /home/smassa/source/demo/blog/app.coffee:19:14
+    at /home/smassa/source/demo/blog/app.js:18:5
     at callbacks (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:164:37)
     at param (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:138:11)
     at pass (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:145:5)
@@ -596,6 +596,15 @@ Error: you went to /asyncerror, silly!
     at router (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:33:10)
     at next (/home/smassa/source/demo/blog/node_modules/express/node_modules/connect/lib/proto.js:190:15)
     at expressInit (/home/smassa/source/demo/blog/node_modules/express/lib/middleware.js:30:5)
+---------------------------------------------
+    at new Server (http.js:1759:10)
+    at exports.createServer (http.js:1776:10)
+    at module.exports (/home/smassa/source/demo/blog/app.js:44:21)
+    at Object.<anonymous> (/home/smassa/source/demo/blog/index.js:3:11)
+    at Module._compile (module.js:449:26)
+    at Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Module._load (module.js:312:12)
 ```
 
 Note that we don't have any request metadata.
@@ -611,30 +620,30 @@ You should see output like:
 
 ```
 Error: you went to /domainerror, silly!
-    at [object Object].<anonymous> (/home/smassa/source/demo/blog/app.coffee:34:17)
-    at listOnTimeout (timers.js:110:15)
+    at module.exports.app.use.response.status (/home/smassa/source/demo/blog/app.js:33:15)
+    at list.ontimeout (timers.js:101:19)
 ---------------------------------------------
-    at /home/smassa/source/demo/blog/app.coffee:33:16
-    at b (domain.js:183:18)
-    at Domain.run (domain.js:123:23)
-    at /home/smassa/source/demo/blog/app.coffee:32:21
+    at module.exports.app.use.response.status (/home/smassa/source/demo/blog/app.js:32:7)
+    at Domain.bind.b (domain.js:201:18)
+    at Domain.run (domain.js:141:23)
+    at module.exports.app.use.response.status (/home/smassa/source/demo/blog/app.js:31:12)
     at callbacks (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:164:37)
     at param (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:138:11)
     at pass (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:145:5)
     at Router._dispatch (/home/smassa/source/demo/blog/node_modules/express/lib/router/index.js:173:5)
 ---------------------------------------------
-    at new Server (http.js:1870:10)
-    at exports.createServer (http.js:1900:10)
-    at module.exports (/home/smassa/source/demo/blog/app.coffee:43:19)
-    at Object.<anonymous> (/home/smassa/source/demo/blog/index.coffee:6:9)
-    at Object.<anonymous> (/home/smassa/source/demo/blog/index.coffee:10:3)
-    at Module._compile (module.js:456:26)
-    at runModule (/home/smassa/source/demo/blog/node_modules/coffee-script-redux/lib/run.js:101:17)
-    at runMain (/home/smassa/source/demo/blog/node_modules/coffee-script-redux/lib/run.js:94:10)
+    at new Server (http.js:1759:10)
+    at exports.createServer (http.js:1776:10)
+    at module.exports (/home/smassa/source/demo/blog/app.js:44:21)
+    at Object.<anonymous> (/home/smassa/source/demo/blog/index.js:3:11)
+    at Module._compile (module.js:449:26)
+    at Module._extensions..js (module.js:467:10)
+    at Module.load (module.js:356:32)
+    at Module._load (module.js:312:12)
   Metadata:
-    domainThrown: true
-    url:          /domainerror
-    action:       GET
+    domain_thrown: true
+    url:           /domainerror
+    action:        GET
 ```
 
 The domain allowed us to capture the request metadata!
@@ -643,13 +652,13 @@ The domain allowed us to capture the request metadata!
 
 ```
 .
-├── app.coffee              # setup the routes; start the app
-├── express_logger.coffee   # log request information on error
-├── index.coffee            # glue
-├── last_resort.coffee      # exit the process after a timeout incase something bad happens
-├── log_error.coffee        # pretty error log from previous sections
+├── app.js              # setup the routes; start the app
+├── express_logger.js   # log request information on error
+├── index.js            # glue
+├── last_resort.js      # exit the process after a timeout incase something bad happens
+├── log_error.js        # pretty error log from previous sections
 ├── package.json 
-└── uncaught_handler.coffee # closes the server; logs the error
+└── uncaught_handler.js # closes the server; logs the error
 ```
 
 This example includes airbrake integration as well.
@@ -660,7 +669,7 @@ We didn't have time to cover how you can manage crashing processes,
 but I'm sure you can find information about that elsewhere.
 (I like to use Node.js [cluster](http://nodejs.org/api/cluster.html).)
 
-The final code for everything you've seen here can be found here:
+The final code (JavaScript and CoffeeScript) for everything you've seen here can be found here:
 
 - [error logger](https://github.com/EndangeredMassa/express-error-handling/blob/master/log_error.coffee)
 - [express error handling](https://github.com/EndangeredMassa/express-error-handling)
