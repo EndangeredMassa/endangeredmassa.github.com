@@ -50,11 +50,9 @@ Let's explore how we can accomplish each of these.
 
 ## 2. Communicate Response Data to Consumer Code
 
-### Set Response Cookie
-
-### IPC
-
-### Shared State
+- setup proxy
+- set response cookie
+- hide from retrieval
 
 ## 3. Modify Request Headers
 
