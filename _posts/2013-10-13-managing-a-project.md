@@ -86,7 +86,8 @@ Later, if you ever want to get the code at an exact version, just use `git check
 
 Now that everything is ready to be used,
 go back to each Pull Request included in the recent release.
-Add a comment to each of them specifying which version they were included.
+Add a comment to each of them specifying which version they were included,
+linked to the changelog: `published in [1.2.3](https://github.com/user/project/blob/master/CHANGELOG.md#123)`
 
 This allows viewers of the Pull Request easy reference to which version they need (or higher)
 in order to use the features described in the Pull Request.
