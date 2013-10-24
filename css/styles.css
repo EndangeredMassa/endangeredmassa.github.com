@@ -118,6 +118,21 @@ a.no-style {
   float: right;
   margin-left: 1em;
 }
+
+h2 {
+  clear: both;
+}
+
+.pull-left {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.pull-left img {
+  width: 200px;
+}
+
 .post-description {
   font-family: Georgia, "Cambria", serif;
   color: #444;
