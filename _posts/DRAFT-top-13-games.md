@@ -239,13 +239,29 @@ then actually playing the game is amazing.
 
 ## 1. [Kingsburg](http://www.boardgamegeek.com/boardgame/27162/kingsburg)
 
+Worker placement in games has always been interesting to me.
+I really enjoy it when you have different types of workers
+that can only be placed under certain restrictions.
+Imagine my surprise when I find a game that
+uses combinations of dice as your "workers".
 
-[Kingsburg: To Forge a Realm](http://www.boardgamegeek.com/boardgameexpansion/39775/kingsburg-to-forge-a-realm)
+Otherwise, it's not unlike other "euro" games.
+You place workers, get resources,
+build buildings, earn victory points.
+But the dice workers really sell this game for me.
 
+There's an expansion called 
+[Kingsburg: To Forge a Realm](http://www.boardgamegeek.com/boardgameexpansion/39775/kingsburg-to-forge-a-realm).
+This is group of modifications you can add to the base game.
+The most important of these is the change to the soldiers you get at the end of each year.
+You should play with that one every time.
 
 ## Notes
 
-- expect some changes after I get to play
+There are a few games that I expect to really enjoy.
+Once I play these a few times, this list may change!
+
+Here's what I hope to play soon:
   - [Lords of Waterdeep](http://www.boardgamegeek.com/boardgame/110327/lords-of-waterdeep)
   - [Mage Wars](http://www.boardgamegeek.com/boardgame/101721/mage-wars)
   - [Seasons](http://www.boardgamegeek.com/boardgame/108745/seasons)
