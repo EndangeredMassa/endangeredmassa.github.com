@@ -16,6 +16,8 @@ Below is my personal list of Top 13 Card and Board Games of All Time.
 
 ## 13. [Acquire](http://boardgamegeek.com/boardgame/5/acquire)
 
+![Acquire](http://cf.geekdo-images.com/images/pic342163_md.jpg)
+
 Acquire is a game where you build companies,
 buy stock,
 and hope to be on the best side of mergers.
@@ -27,6 +29,8 @@ save tiles that can cause merges until you are ready,
 and try to make sure you don't run out of money!
 
 ## 12. [Epic Spell Wars of the Battle Wizards: Duel at Mt. Skullzfyre](http://boardgamegeek.com/boardgame/112686/epic-spell-wars-of-the-battle-wizards-duel-at-mt)
+
+![Epic Spell Wars](http://cf.geekdo-images.com/images/pic1170265_md.jpg)
 
 Epic Spell Wars is a fun, light game that's alot of fun.
 Players draw cards from a shared deck
@@ -42,6 +46,8 @@ but there is plenty of strategy.
 
 ## 11. [Puzzle Strike](http://boardgamegeek.com/boardgame/123607/puzzle-strike-third-edition)
 
+![Puzzle Strike](http://cf.geekdo-images.com/images/pic1288706_md.jpg)
+
 Puzzle Strike is a game that essentially turns
 [Super Puzzle Fighter](http://en.wikipedia.org/wiki/Super_Puzzle_Fighter_II_Turbo)
 into a deckbuilding game. And that's exactly what I want!
@@ -54,6 +60,8 @@ but they never really worked for me.
 Puzzle Strike fills the deckbuilding hole in my life quite well.
 
 ## 10. [World of Warcraft TCG](http://boardgamegeek.com/boardgame/19643/world-of-warcraft-trading-card-game)
+
+![World of Warcraft TCG](http://cf.geekdo-images.com/images/pic154602_md.jpg)
 
 The World of Warcraft card game is a pretty faithful representation
 of the license in a card game.
@@ -80,6 +88,8 @@ There are already a ton of cards out there.
 
 ## 9. [Android: Netrunner](http://boardgamegeek.com/boardgame/124742/android-netrunner)
 
+![Android: Netrunner](http://cf.geekdo-images.com/images/pic1324609_md.jpg)
+
 I played the original Netrunner a bit and enjoyed it.
 However, finding cards was a huge pain.
 The game has a cult following that caused
@@ -96,6 +106,8 @@ There is also a lot of resource management and bluffing.
 The cyberpunk theme is also something I don't see in a lot of games.
 
 ## 8. [7 Wonders](http://boardgamegeek.com/boardgame/68448/7-wonders)
+
+![7 Wonders](http://cf.geekdo-images.com/images/pic860217_md.jpg)
 
 *Why couldn't it be #7!?*
 
@@ -118,6 +130,8 @@ but I need to play it a lot more to find out.
 For now, this sits proudly where it is.
 
 ## 7. [King of Tokyo](http://boardgamegeek.com/boardgame/70323/king-of-tokyo)
+
+![King of Tokyo](http://cf.geekdo-images.com/images/pic761434_md.jpg)
 
 King of Tokyo isn't terribly complicated.
 You Yahtzee some dice,
@@ -142,6 +156,8 @@ but it's a very welcome addition to the game.
 
 ## 6. [Pathfinder Adventure Card Game](http://boardgamegeek.com/boardgame/133038/pathfinder-adventure-card-game-rise-of-the-runelor)
 
+![Pathfinder Adventure Card Game](http://cf.geekdo-images.com/images/pic1775517_md.jpg)
+
 Pathfinder is the translation of a PnP Role Play into a
 cooperative card-based adventure game with no DM player.
 The player decks also evolve across play sessions,
@@ -159,6 +175,8 @@ I preferred to focus on the game engine rules.
 That makes Pathfinder the perfect way for me to play PnP RP games.
 
 ## 5. [The Spoils](http://boardgamegeek.com/boardgame/24947/the-spoils)
+
+![The Spoils](http://cf.geekdo-images.com/images/pic139657_md.jpg)
 
 The Spoils is very magic-like,
 with a sense of humor about it.
@@ -179,6 +197,8 @@ I also won several The Spoils tournaments.
 Fun times.
 
 ## 4. [MapleStory iTCG](http://boardgamegeek.com/boardgame/32050/maplestory-itrading-card-game)
+
+![MapleStory iTCG](http://boardgamegeek.com/image/267494/maplestory-itrading-card-game)
 
 MapleStory is an amazing card game.
 You play cards either as instructions on your character
@@ -201,6 +221,8 @@ all of those redemption cards.
 
 ## 3. [Ca$h 'n Gun$](http://boardgamegeek.com/boardgame/19237/cash-n-guns)
 
+![Ca$h 'n Gun$](http://cf.geekdo-images.com/images/pic87523_md.jpg)
+
 This game is the easiest to play with
 people who don't play games.
 That's not even close to a requirement for this list,
@@ -220,6 +242,8 @@ It's also very quick to play.
 
 ## 2. [Magic: the Gathering](http://www.boardgamegeek.com/boardgame/463/magic-the-gathering)
 
+![Magic: the Gathering](http://cf.geekdo-images.com/images/pic163749_md.jpg)
+
 Oh, Magic.
 I've been playing this off and on for 20 years.
 It almost can't not be on the list.
@@ -238,6 +262,8 @@ figuring out what kind of deck to build with them,
 then actually playing the game is amazing.
 
 ## 1. [Kingsburg](http://www.boardgamegeek.com/boardgame/27162/kingsburg)
+
+![Kingsburg](http://www.boardgamegeek.com/image/253057/kingsburg)
 
 Worker placement in games has always been interesting to me.
 I really enjoy it when you have different types of workers
