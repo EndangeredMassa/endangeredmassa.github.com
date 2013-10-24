@@ -4,32 +4,244 @@ title: Top 13 Board and Card Games
 author: Sean Massa
 categories: [games]
 blurb:
-  Take a look at my top 13 board and card games
-  of all time!
-  I enjoy a lot of games not on this list,
-  but my favorites are here.
+  I've been enjoying the Top 100 Games of All Time lists
+  from [The Dice Tower](http://www.youtube.com/user/thedicetower)
+  in the past months.
+  I don't think I can come up with 100 games that I really enjoy,
+  but I can come up with 13!
 published: false
 ---
 
+Below is my personal list of Top 13 Card and Board Games of All Time.
+
+## 13. [Acquire](http://boardgamegeek.com/boardgame/5/acquire)
+
+Acquire is a game where you build companies,
+buy stock,
+and hope to be on the best side of mergers.
+
+I really enjoy the strategy involved in this game.
+You have to keep track of what other players are buying,
+race them to get majority control of companies,
+save tiles that can cause merges until you are ready,
+and try to make sure you don't run out of money!
+
+## 12. [Epic Spell Wars of the Battle Wizards: Duel at Mt. Skullzfyre](http://boardgamegeek.com/boardgame/112686/epic-spell-wars-of-the-battle-wizards-duel-at-mt)
+
+Epic Spell Wars is a fun, light game that's alot of fun.
+Players draw cards from a shared deck
+and construct spells from those cards.
+Spells have three components
+that play off of each other in different ways.
+
+I love making fun combinations of spells,
+revealing them at the same time as other players,
+and seeing what craziness happens.
+This is definitely a luck-driven game,
+but there is plenty of strategy.
+
+## 11. [Puzzle Strike](http://boardgamegeek.com/boardgame/123607/puzzle-strike-third-edition)
+
+Puzzle Strike is a game that essentially turns
+[Super Puzzle Fighter](http://en.wikipedia.org/wiki/Super_Puzzle_Fighter_II_Turbo)
+into a deckbuilding game. And that's exactly what I want!
+
+I was blown away by Dominion when it came out,
+but it quickly lost its novelty.
+I tried the deckbuilding games that came after,
+like Thunderstone,
+but they never really worked for me.
+Puzzle Strike fills the deckbuilding hole in my life quite well.
+
+## 10. [World of Warcraft TCG](http://boardgamegeek.com/boardgame/19643/world-of-warcraft-trading-card-game)
+
+The World of Warcraft card game is a pretty faithful representation
+of the license in a card game.
+It's very Magic-like, but has it's own flavor, mechanics,
+and rules that give it its own identity.
+
+However, the game has a serious problem.
+It has too many restrictive factions.
+There are 10 classes, subsets of those classes,
+and special monster heros.
+There are too many cards that you just won't care about when you open booster packs.
+
+The real glory of this game comes with using the precon hero or monster decks
+against the special raid decks.
+One person plays the raid boss
+and the rest of the players are on a team against them.
+These raid boss decks are always different, interesting,
+and packed full of flavor
+and respect for their digital game equivalents.
+
+The will be no more expansions for this game
+and that's probably for the best.
+There are already a ton of cards out there.
+
+## 9. [Android: Netrunner](http://boardgamegeek.com/boardgame/124742/android-netrunner)
+
+I played the original Netrunner a bit and enjoyed it.
+However, finding cards was a huge pain.
+The game has a cult following that caused
+the price of cards of this dead game to be very high.
+
+Fortunately, Fantasy Flight Games reprinted Netrunner
+under their Android license.
+They streamlined some of the mechanics, gave it a facelift,
+and sent it to the printers!
+The result is a better game than the original!
+
+I enjoy the asymmetric gameplay of Netrunner.
+There is also a lot of resource management and bluffing.
+The cyberpunk theme is also something I don't see in a lot of games.
+
+## 8. [7 Wonders](http://boardgamegeek.com/boardgame/68448/7-wonders)
+
+*Why couldn't it be #7!?*
+
+7 Wonders is a popular game right now,
+but a lot of "hardcore" (i.e., experienced)
+board gamers look down on it.
+It's a drafting resource management game that offers
+little (compared to most other games) player interaction.
+However, I still really enjoy it.
+
+The drafting mechanic is why I enjoy it.
+It's one of my favorite mechanics in any game.
+Planning your turns, managing resources, leaving options open,
+while keeping your neighbors in check
+is a lot of fun.
+
+I can see this falling off of my list if I find another strong drafting game.
+Seasons might be that game at some point,
+but I need to play it a lot more to find out.
+For now, this sits proudly where it is.
+
+## 7. [King of Tokyo](http://boardgamegeek.com/boardgame/70323/king-of-tokyo)
+
+King of Tokyo isn't terribly complicated.
+You Yahtzee some dice,
+perform the simple effects (of which there are four),
+buy a card if you can afford it,
+then you are done.
+
+The theme of giant monsters fighting for control of Tokyo
+works very well with the mechanics.
+The cards give the game the opportunity to breathe the theme quite well.
+
+I love this game because the turns are very quick,
+it allows you to manipulate the luck,
+and has a multiple win conditions.
+
+The first expansion,
+[King of Tokyo: Power Up!](http://boardgamegeek.com/boardgameexpansion/127067/king-of-tokyo-power-up),
+adds some variety to the monsters.
+Otherwise, they are all exactly the same.
+I wouldn't say it's necessary,
+but it's a very welcome addition to the game.
+
+## 6. [Pathfinder Adventure Card Game](http://boardgamegeek.com/boardgame/133038/pathfinder-adventure-card-game-rise-of-the-runelor)
+
+Pathfinder is the translation of a PnP Role Play into a
+cooperative card-based adventure game with no DM player.
+The player decks also evolve across play sessions,
+like a player's character would in a traditional PnP game.
+
+I enjoy PnP RP games, but they are very hard to organize.
+They also depend greatly on the DM doing a good job,
+all the time.
+Pathfinder removes the need for a DM
+and still provides that PnP RP feeling.
+Sure, there's less actual RP here, unless you push it,
+but I was always light with the actual RP anyway.
+I preferred to focus on the game engine rules.
+
+That makes Pathfinder the perfect way for me to play PnP RP games.
+
+## 5. [The Spoils](http://boardgamegeek.com/boardgame/24947/the-spoils)
+
+The Spoils is very magic-like,
+with a sense of humor about it.
+It is a bit more advanced than Magic in a few ways,
+which the strategist in me enjoys,
+but it also has it's own identity that I can appreciate.
+
+I especially liked the Faction cards
+that had the basic game rules on them.
+There was only one faction for a long time,
+but the did add more that allowed those decks
+to play with different basic rules.
+
+The game also did something I'd never seen before--it
+had an open beta.
+I helped run several open beta tournaments.
+I also won several The Spoils tournaments.
+Fun times.
+
+## 4. [MapleStory iTCG](http://boardgamegeek.com/boardgame/32050/maplestory-itrading-card-game)
+
+MapleStory is an amazing card game.
+You play cards either as instructions on your character
+or as spells or monsters on the board.
+Each turn, you execute all of the instructions on your character
+for which you meet the requirements.
+Characters also have a couple printed instructions on them,
+which usually includes drawing a card.
+
+The theme of this game is cute and playful,
+but not even necessary.
+The mechanics here would work very well
+in a cyberpunk theme, for example.
+
+But the gameplay is top notch.
+The game is dead, but I still
+buy boosters when I can find them.
+I just wish I knew what I could do with
+all of those redemption cards.
+
+## 3. [Ca$h 'n Gun$](http://boardgamegeek.com/boardgame/19237/cash-n-guns)
+
+This game is the easiest to play with
+people who don't play games.
+That's not even close to a requirement for this list,
+but it's good to mention.
+It's incredibly easy to teach,
+incredibly fun to play,
+and the theme drips throughout.
+
+I always have fun plaything this game,
+no matter who wins.
+Blufing bullets,
+shooting first,
+using abilities,
+or just backing off
+always add such wonderful tension to the game.
+It's also very quick to play.
+
+## 2. [Magic: the Gathering](http://www.boardgamegeek.com/boardgame/463/magic-the-gathering)
+
+Oh, Magic.
+I've been playing this off and on for 20 years.
+It almost can't not be on the list.
+
+I love this game.
+It is the pinacle of game design,
+evolves over the years,
+is relatively easy to learn,
+and incredibly difficult to master.
+
+My favorite way to play the game is draft.
+As I mentioned in the 7 Wonders section,
+I love the drafting mechanic in general.
+Playing with a limited selection of cards,
+figuring out what kind of deck to build with them,
+then actually playing the game is amazing.
+
 ## 1. [Kingsburg](http://www.boardgamegeek.com/boardgame/27162/kingsburg)
+
 
 [Kingsburg: To Forge a Realm](http://www.boardgamegeek.com/boardgameexpansion/39775/kingsburg-to-forge-a-realm)
 
-## 2. [Magic: the Gathering](http://www.boardgamegeek.com/boardgame/463/magic-the-gathering)
-## 3. [Ca$h 'n Gun$](http://boardgamegeek.com/boardgame/19237/cash-n-guns)
-## 4. [MapleStory iTCG](http://boardgamegeek.com/boardgame/32050/maplestory-itrading-card-game)
-## 5. [The Spoils](http://boardgamegeek.com/boardgame/24947/the-spoils)
-## 6. [Pathfinder Adventure Card Game](http://boardgamegeek.com/boardgame/133038/pathfinder-adventure-card-game-rise-of-the-runelor)
-## 7. [King of Tokyo](http://boardgamegeek.com/boardgame/70323/king-of-tokyo)
-
-[King of Tokyo: Power Up!](http://boardgamegeek.com/boardgameexpansion/127067/king-of-tokyo-power-up)
-
-## 8. [7 Wonders](http://boardgamegeek.com/boardgame/68448/7-wonders)
-## 9. [Android: Netrunner](http://boardgamegeek.com/boardgame/124742/android-netrunner)
-## 10. [World of Warcraft TCG](http://boardgamegeek.com/boardgame/19643/world-of-warcraft-trading-card-game)
-## 11. [Puzzle Strike](http://boardgamegeek.com/boardgame/123607/puzzle-strike-third-edition)
-## 12. [Epic Spell Wars of the Battle Wizards: Duel at Mt. Skullzfyre](http://boardgamegeek.com/boardgame/112686/epic-spell-wars-of-the-battle-wizards-duel-at-mt)
-## 13. [Acquire](http://boardgamegeek.com/boardgame/5/acquire)
 
 ## Notes
 
