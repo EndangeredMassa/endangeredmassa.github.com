@@ -263,7 +263,7 @@ then actually playing the game is amazing.
 
 ## 1. [Kingsburg](http://www.boardgamegeek.com/boardgame/27162/kingsburg)
 
-![Kingsburg](http://www.boardgamegeek.com/image/253057/kingsburg)
+![Kingsburg](http://cf.geekdo-images.com/images/pic253057.jpg)
 
 Worker placement in games has always been interesting to me.
 I really enjoy it when you have different types of workers
