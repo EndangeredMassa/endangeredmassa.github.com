@@ -301,7 +301,7 @@ require('longjohn')
 
 function f() { throw new Error('foo') }
 setTimeout(f, Math.random()*1000)
-setTimeout(f, Math.random()*1000)
+setTimeout(f, Math.random()*1000)
 
 /*
 timers.js:103
@@ -533,11 +533,12 @@ I set up a small express app
 to demonstrate the different ways you can handle errors.
 
 ```
-git clone git@github.com:EndangeredMassa/express-error-handling.git
-cd express-error-handling
+git clone git@github.com:EndangeredMassa/examples.git
+cd examples/express-error-handling
 npm install
-npm start
 ```
+
+To start it, run `node index.js` or `coffee index.coffee`.
 
 This express app (now running on port 5555)
 has three routes that work as follows:
@@ -671,8 +672,8 @@ but I'm sure you can find information about that elsewhere.
 
 The final code (JavaScript and CoffeeScript) for everything you've seen here can be found here:
 
-- [error logger](https://github.com/EndangeredMassa/express-error-handling/blob/master/log_error.coffee)
-- [express error handling](https://github.com/EndangeredMassa/express-error-handling)
+- [error logger](https://github.com/EndangeredMassa/examples/blob/master/express-error-handling/log_error.coffee)
+- [express error handling](https://github.com/EndangeredMassa/examples/express-error-handling)
 
 Let me know in the comments
 if you have other techniques for formatting errors!
