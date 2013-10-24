@@ -673,7 +673,7 @@ but I'm sure you can find information about that elsewhere.
 The final code (JavaScript and CoffeeScript) for everything you've seen here can be found here:
 
 - [error logger](https://github.com/EndangeredMassa/examples/blob/master/express-error-handling/log_error.coffee)
-- [express error handling](https://github.com/EndangeredMassa/examples/express-error-handling)
+- [express error handling](https://github.com/EndangeredMassa/examples/tree/master/express-error-handling)
 
 Let me know in the comments
 if you have other techniques for formatting errors!
