@@ -301,7 +301,7 @@ require('longjohn')
 
 function f() { throw new Error('foo') }
 setTimeout(f, Math.random()*1000)
-setTimeout(f, Math.random()*1000)
+setTimeout(f, Math.random()*1000)
 
 /*
 timers.js:103
