@@ -56,7 +56,7 @@ Let's explore how we can accomplish each of these.
 
 ## 3. Modify Request Headers
 
-## Using browsermob Instead
+## Improving the Setup
 
-http://bmp.lightbody.net/
-
+- consider using [browsermob](http://bmp.lightbody.net) Instead
+- thoughts in comments
