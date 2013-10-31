@@ -8,7 +8,7 @@ blurb:
   [how to have a successful hackathon](https://docs.google.com/presentation/d/1s5OHHfzlmzhXp7hthjjHD7fREj2xavI3MZ6c9Q9D0aE/edit?usp=sharing)
   at Chicago Node.js.
   This is the blog post version!
-published: false
+published: true
 ---
 
 Below are my points of advice for anyone participating in a hackathon.
