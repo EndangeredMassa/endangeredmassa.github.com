@@ -1,6 +1,6 @@
 ---
 layout: crosspost
-title: Crosspost: Groupon Sponsors Node Knockout 2013!
+title: "Crosspost: Groupon Sponsors Node Knockout 2013!"
 author: Sean Massa
 categories: [dev]
 blurb:
