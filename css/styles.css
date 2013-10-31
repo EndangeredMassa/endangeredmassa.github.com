@@ -32,6 +32,7 @@ a.no-style {
   margin-left: -350px;
   background: #000;
   color: #0f0;
+  padding-bottom: 14px;
 }
 
   .sidebar code pre {
@@ -131,6 +132,14 @@ h2 {
 
 .pull-left img {
   width: 150px;
+}
+
+.block {
+  display: block;
+}
+
+.logo {
+  margin: 56px 0;
 }
 
 .post-description {
@@ -265,6 +274,10 @@ h2 {
 
   #layout {
     padding: 0;
+  }
+  
+  .logo {
+    margin: 0;
   }
 }
 
