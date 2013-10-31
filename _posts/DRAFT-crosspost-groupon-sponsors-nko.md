@@ -10,4 +10,4 @@ published: false
 ---
 
 I'm excited that Groupon is sponsoring Node Knockout 2013.
-I competed in the previous two hackathons--it's always a lot of fun.
+I competed in the previous two hackathons&mdash;it's always a lot of fun.
