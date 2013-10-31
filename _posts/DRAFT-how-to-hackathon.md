@@ -173,3 +173,5 @@ The `tl;dr` of it all, inconveniently at the end, is this:
 * take care of your body
 * always have a goal
 * always prioritize work toward goal
+
+Leave your suggestions below!
