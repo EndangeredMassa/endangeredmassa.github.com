@@ -8,6 +8,7 @@ blurb:
   <a href="https://engineering.groupon.com/2013/misc/groupon-sponsors-node-knockout-2013/">Groupon Engineering blog</a>!
   I'm excited that Groupon is sponsoring Node Knockout 2013.
   I competed in the previous two hackathons&mdash;it's always a lot of fun.
+link: https://engineering.groupon.com/2013/misc/groupon-sponsors-node-knockout-2013
 published: true
 ---
 
