@@ -11,10 +11,13 @@ blurb:
 published: false
 ---
 
-Below are my points of advice for anyone particpating in a hackathon.
+Below are my points of advice for anyone participating in a hackathon.
 This information draws on my experience
 of many hackathons in previous years.
 I learned from most of these mistakes myself.
+
+A lot of these suggestions will apply to new or in-progress projects
+regardless of hackathons.
 
 ## Preparation
 
@@ -43,76 +46,123 @@ Whatever it is, figure it out before you start!
 ## Execution
 
 **Use a Project Template**:
-https://github.com/michaelficarra/coffeescript-project
-http://expressjs.com/guide.html#executable
-http://html5boilerplate.com/
-create your own!
+You don't want to waste time at the start of the event setting up your dev environment.
+Find a project template that you like, or create your own, and use it!
+Here are a few starting points:
+[coffeescript-project](https://github.com/michaelficarra/coffeescript-project),
+[expressjs](http://expressjs.com/guide.html#executable),
+[html5builerplate](http://html5boilerplate.com).
 
 **Deploy First, Then Often**:
-test deploy process first
-deploy often during development
-Execution: Commit Like Crazy
-make use of git
-commits
-branches
-merge/rebase
-revert
-learn these better before the event
+One of the first things you should do after the event starts
+is to test your project in production.
+Set up a quick response route (if a web server),
+deploy it, and make sure it can respond properly.
+You don't want to get most of the way through the event
+and realize that the deploy system doesn't work as advertised.
+
+**Git [or similar] Like Crazy**:
+Pick your DVCS ahead of time.
+Make sure you know how to use it.
+For git, that means knowing how to work with: commits, branches, merge/rebase, and revert.
 
 **Don’t Ignore Architecture**:
-never going too fast
-even in 24-48 hours, you will save time
+You are never going too fast to skip spending time
+on thinking about the architecture of your feature.
+The short-term focus of hackathons will often lead to many bugs.
+You can protect yourself from bad architecture decisions
+by spending some actual time thinking about it first.
 
 **Use Existing Libraries**:
-now is not the time to rewrite existing libraries
+There are times where you will want to rewrite some functionality
+because it will be easier "your way".
+For hackathons, I urge you to work through
+whatever trouble you have with the existing solutions
+and focus on what you should be building.
 
 **Don’t Necessarily Ignore TDD**:
-decide when to test, when to not
-make sure you are set up to test
+If you normally practice TDD,
+don't assume that it has no place in hackathons.
+Just like normal projects,
+you should decide where it makes sense
+for you to TDD and where it doesn't.
+The difference here is that the line is in a different place.
+It's hard to provide any hard rules here,
+but you should be mindful of the situation.
+Make sure your template project has you
+set up to write tests if you choose to.
 
 **Don’t Ignore Meatspace**:
-eat
-drink (caffeine, water)
-sleep
+For short 24-48 bursts,
+some people consider skipping meals and sleep,
+sometimes with the help of caffeine.
+I am definitely guilty of this in the past.
+However, it never seems to provide much benefit.
+You may accomplish some work overnight,
+but people who do this are often much less capable
+to help with problems that will arise at the very end of the event.
+You will know your own body better than me,
+but you should consider planning for
+some amount of sleep during the event.
 
 **Schedule Distractions**:
-remove real-time distractions
-schedule real breaks for food, fun
+Remove real-time distractions (IM, email, etc.)
+that can interrupt you during work.
+You should also take real breaks away from your work
+to allow your subconscious to continue working on the problem
+while you take care of some physical need.
 
 **Pair Appropriately**:
-pair on hard problems
-distribute tedious work
+Pair programming is incredibly helpful in general.
+Try to pair often during hackathons.
+The bug count is already going to be higher than normal.
+Use that second pair of eyes to help keep it down.
 
 **Avoid New Accounts**:
-allow guest usage (use cookie tracking)
-allow social media account access
+If you are making an app that requires user accounts in some way,
+either also allow guest accounts or
+allow social media account connections.
+People are lazy.
+If they have to sign up for an account to look at your app,
+they might just skip it.
 
 **Support Multiple Users**:
-if your app requires multiple users to demo well:
-prioritize naive AI users
-schedule times where judges can use the app with you
+If your app requires multiple users to showcase its core concepts,
+it can be hard for people to judge it.
+If you can build even a naive AI or small seed data set,
+the judges will be able to experience your app properly.
+You can also schedule times where judges can use your app
+with the developers (and possibly other users).
 
 **Leave Time for Testing**:
-schedule 2+ hours before the end to deploy and test
+The last couple of hours before the end of a hackathon are always hectic.
+Schedule at least two hours leading up to the end
+in order to test, debug, and polish your app.
 
 
 ## Reflection
 
 **Record a Demo**:
-show best case scenario
-show core, compelling features
-be quick, but not too fast
-don’t waste time with
-introductions
-account creation
-other trivial features
+In some cases, like Node Knockout,
+you are allowed to record a video demo of your app.
+If this is at all allowed, you should do it.
+It saves you from failed demos due to bugs.
+Make sure that the video shows the best case scenario,
+skips trivial things like account creation,
+and is quick, but informative.
 
-**Marketing**:
-take to your social media accounts
-Reflection: Blog About It
-writing is a great way to internalize, reflect
-Core Advice
-take care of your body
-always have a goal
-always prioritize work toward goal
+**Talk About It**:
+Recalling this experience will help you
+learn from and internalize it.
+You should do this however you feel comfortable.
+That can be blogging,
+discussing the event at a meetup or the IRC room,
+or just quietly thinking about the experience to yourself.
 
+## Core Advice
+
+The `tl;dr` of it all, inconveniently at the end, is this:
+
+* take care of your body
+* always have a goal
+* always prioritize work toward goal
