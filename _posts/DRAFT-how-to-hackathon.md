@@ -56,13 +56,14 @@ Here are a few starting points:
 **Deploy First, Then Often**:
 One of the first things you should do after the event starts
 is to test your project in production.
-Set up a quick response route (if a web server),
+Set up a quick response mechanism (like a route for a web server),
 deploy it, and make sure it can respond properly.
 You don't want to get most of the way through the event
 and realize that the deploy system doesn't work as advertised.
 
 **Git [or similar] Like Crazy**:
-Pick your DVCS ahead of time.
+Pick your [DVCS](http://en.wikipedia.org/wiki/Distributed_revision_control)
+ahead of time.
 Make sure you know how to use it.
 For git, that means knowing how to work with: commits, branches, merge/rebase, and revert.
 
