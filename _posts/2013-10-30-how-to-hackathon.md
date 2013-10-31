@@ -6,7 +6,7 @@ categories: [dev]
 blurb:
   I gave a presentation about
   <a href="https://docs.google.com/presentation/d/1s5OHHfzlmzhXp7hthjjHD7fREj2xavI3MZ6c9Q9D0aE/edit?usp=sharing">how to have a successful hackathon</a>
-  at Chicago Node.js.
+  at <a href="http://www.meetup.com/Chicago-Nodejs/">Chicago Node.js</a>.
   This is the blog post version!
 published: true
 ---
