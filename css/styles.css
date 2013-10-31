@@ -257,7 +257,7 @@ h2 {
   line-height: 14px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .sidebar {
     width: 100%;
     min-width: 350px;
