@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<section class="post">
+  <header class="post-header">
+    <h2 class="post-title"><a href="{{ page.url }}">{{ page.title }}</a></h2>
+
+    <p class="post-meta">
+      By <span class="emphasis">{{ page.author }}</span>
+      on <span class="emphasis">{{ page.date | date: "%Y-%m-%d" }}</span>
+      in <a class="emphasis" href="/{{ page.categories }}">{{ page.categories }}</a>
+    </p>
+  </header>
+
+  <div class="notice">Crossposts are quick links to my writing on other sites.</div>
+
+  <div class="post-blurb">
+    {{ page.blurb }}
+  </div>
+
+  <div class="post-description">
+    {{ content }}
+  </div>
+</section>
+
+<div class="notice">Comments are disabled on crossposts.</div>
