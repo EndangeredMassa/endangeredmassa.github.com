@@ -19,6 +19,7 @@ I learned from most of these mistakes myself.
 A lot of these suggestions will apply to new or in-progress projects
 regardless of hackathons.
 
+
 ## Preparation
 
 **Know the Rules**:
@@ -126,14 +127,6 @@ Try to pair often during hackathons.
 The bug count is already going to be higher than normal.
 Use that second pair of eyes to help keep it down.
 
-**Avoid New Accounts**:
-If you are making an app that requires user accounts in some way,
-either also allow guest accounts or
-allow social media account connections.
-People are lazy.
-If they have to sign up for an account to look at your app,
-they might just skip it.
-
 **Support Multiple Users**:
 If your app requires multiple users to showcase its core concepts,
 it can be hard for people to judge it.
@@ -148,10 +141,28 @@ Schedule at least two hours leading up to the end
 in order to test, debug, and polish your app.
 
 
+## App Design
+
+**Avoid New Accounts**:
+If you are making an app that requires user accounts in some way,
+either also allow guest accounts or
+allow social media account connections.
+People are lazy.
+If they have to sign up for an account to look at your app,
+they might just skip it.
+
+**Ignore Security**:
+Unless it's a selling point of your app,
+don't worry about security concerns.
+They will likely cost you time without providing demo-able benefit.
+You can add those features in after the hackathon
+if you choose to continue your project.
+
+
 ## Reflection
 
 **Record a Demo**:
-In some cases, like Node Knockout,
+In some cases, like [Node Knockout](http://nodeknockout.com/),
 you are allowed to record a video demo of your app.
 If this is at all allowed, you should do it.
 It saves you from failed demos due to bugs.
@@ -166,6 +177,7 @@ You should do this however you feel comfortable.
 That can be blogging,
 discussing the event at a meetup or the IRC room,
 or just quietly thinking about the experience to yourself.
+
 
 ## Core Advice
 
