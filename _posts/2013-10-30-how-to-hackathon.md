@@ -5,7 +5,7 @@ author: Sean Massa
 categories: [dev]
 blurb:
   I gave a presentation about
-  [how to have a successful hackathon](https://docs.google.com/presentation/d/1s5OHHfzlmzhXp7hthjjHD7fREj2xavI3MZ6c9Q9D0aE/edit?usp=sharing)
+  <a href="https://docs.google.com/presentation/d/1s5OHHfzlmzhXp7hthjjHD7fREj2xavI3MZ6c9Q9D0aE/edit?usp=sharing">how to have a successful hackathon</a>
   at Chicago Node.js.
   This is the blog post version!
 published: true
