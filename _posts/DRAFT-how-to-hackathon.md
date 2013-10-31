@@ -33,9 +33,9 @@ If allowed, come up with your idea ahead of time.
 Spend time before the event coming up with a plan of attack.
 This can include learning libraries or tools ahead of time.
 
-**Have a Goal**:
-All of your work during the event should be prioritized toward some goal.
-Before the event, you need to know what that goal is.
+**Have an Event Goal**:
+All of your work during the event should be prioritized toward some event goal.
+Before the event, you need to know what that event goal is.
 It could be to win the entire hackathon,
 win a specific category,
 to build something just so that it exists,
@@ -72,6 +72,13 @@ on thinking about the architecture of your feature.
 The short-term focus of hackathons will often lead to many bugs.
 You can protect yourself from bad architecture decisions
 by spending some actual time thinking about it first.
+
+**Prioritize All Work**:
+For everything that you do,
+ask yourself if it is the best thing you can do right now
+to complete your project's minimum viable product (MVP).
+Your MVP can shift throughout the event,
+but each feature you start should be compared against it.
 
 **Use Existing Libraries**:
 There are times where you will want to rewrite some functionality
