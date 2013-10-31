@@ -52,7 +52,7 @@ Find a project template that you like, or create your own, and use it!
 Here are a few starting points:
 [coffeescript-project](https://github.com/michaelficarra/coffeescript-project),
 [expressjs](http://expressjs.com/guide.html#executable),
-[html5builerplate](http://html5boilerplate.com).
+[html5boilerplate](http://html5boilerplate.com).
 
 **Deploy First, Then Often**:
 One of the first things you should do after the event starts
