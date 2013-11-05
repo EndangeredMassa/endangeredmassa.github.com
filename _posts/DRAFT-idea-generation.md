@@ -38,6 +38,7 @@ works well.
 You will want to come back to your ideas
 to modify or delete them.
 
+**[insert scan of idea notebook with annotations]**
 
 ## The Inspiration
 
@@ -92,7 +93,12 @@ from intense conscious thought.
 When you have an idea, what makes it great?
 The great ideas are those you are excited about.
 The best ideas are those that you can get others excited about.
-
 It's one of those "you'll know" moments.
+
+Once you have a great idea,
+you should test it as soon as possible.
+This could be talking about it to friends,
+building a small prototype,
+or working through the use cases.
 
 Share your methods of idea generation below!
