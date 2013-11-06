@@ -25,7 +25,9 @@ p. At the end of October, things were changing. Caleb was leaving Hashrocket (ou
 
 p. The transition went well enough. I was afraid that it would be too hard to get to or that people would get lost in the shuffle. To my surprise, the increase attendance (around 25 in October at Hashrocket) continued to climb when we moved to Groupon. It has held steady around 30-35 since then. Checkout this plot of attendance over time.
 
-<img class="figure" src="/images/chicago_nodejs_attendance_2012.png" width="600" />
+<div class="figure">
+<a href="/images/chicago_nodejs_attendance_2012.png" target="_blank"><img src="/images/chicago_nodejs_attendance_2012.png" width="600"></a>
+</div>
 
 p. The attendance metrics are based on memory and Meetup.com's determination. So, they may not be accurate. I'll be keeping a better headcount going forward. Even so, it provides an interesting metric: The average attendance rate of registered members for Chicago Node.js is 69.7%. This is important to realize when you need to order food and provide space for attendees.
 
