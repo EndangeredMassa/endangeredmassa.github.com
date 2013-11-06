@@ -251,13 +251,12 @@ h2 {
 }
 
 .figure {
-  margin: 24px 0;
-  display: block;
+  text-align: center;
 }
 
-  .figure img {
+  .figure a {
     margin: 0 auto;
-    display: block;
+    display: inline-block;
   }
 
 .gist {
