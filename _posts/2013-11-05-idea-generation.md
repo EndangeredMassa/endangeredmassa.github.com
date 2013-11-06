@@ -43,7 +43,7 @@ Here is a scan of one of my idea notebook pages.
 I annotated it a bit, pointing out
 the metadata I add to the top of my pages.
 
-<a href="../images/notebook_page.jpg"><img class="figure" src="../images/notebook_page_small.jpg"></a>
+<a href="/images/notebook_page.jpg"><img class="figure" src="/images/notebook_page_small.jpg"></a>
 
 
 ## The Inspiration
