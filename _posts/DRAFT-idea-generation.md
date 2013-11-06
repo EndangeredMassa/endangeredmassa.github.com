@@ -29,7 +29,7 @@ provide.
 Once you have this, record your ideas all the time.
 Some people get a nice notebook,
 then are afraid to write anything in it.
-Paper (or digital notes) is cheap.
+Physical and digital pages are cheap.
 Don't be afraid to write down your ideas!
 
 I have also found that using things like
