@@ -13,6 +13,7 @@ published: false
 
 
 ## The Act
+
 You should be keeping an Idea Notebook.
 This can be a physical notebook, which I prefer,
 or some note taking program on your smart devices.
@@ -71,7 +72,7 @@ only friends from the industry.
 
 Sometimes you can't think of anything good
 and that's ok!
-Generating ideas is an a process
+Generating ideas is a process
 that requires creating connections in your brain.
 You won't know ahead of time which connections
 will turn into awesome ideas.
@@ -81,7 +82,7 @@ as possible.
 If you aren't having any luck,
 sometimes not thinking about anything
 can allow your mind to work on problems
-in an asyncronous manner.
+in an asynchronous manner.
 Try going for a run,
 sitting outside,
 or otherwise taking a break
