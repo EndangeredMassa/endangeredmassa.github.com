@@ -39,7 +39,7 @@ works well.
 You will want to come back to your ideas
 to modify or delete them.
 
-**[insert scan of idea notebook with annotations]**
+<a href="../images/notebook_page.jpg"><img src="../images/notebook_page_small.jpg"></a>
 
 
 ## The Inspiration
