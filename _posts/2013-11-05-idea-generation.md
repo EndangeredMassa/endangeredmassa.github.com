@@ -8,7 +8,7 @@ blurb:
   This is especially true when you need ideas for
   a hackathon.
   Here are some tips on getting those ideas flowing!
-published: false
+published: true
 ---
 
 
