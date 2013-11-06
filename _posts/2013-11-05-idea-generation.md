@@ -2,7 +2,7 @@
 layout: post
 title: Idea Generation
 author: Sean Massa
-categories: [dev]
+categories: [dev, games]
 blurb:
   Coming up with ideas for new projects can be hard.
   This is especially true when you need ideas for
