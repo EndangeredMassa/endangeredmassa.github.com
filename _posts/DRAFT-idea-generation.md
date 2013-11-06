@@ -41,6 +41,7 @@ to modify or delete them.
 
 **[insert scan of idea notebook with annotations]**
 
+
 ## The Inspiration
 
 When you are trying to come up with new ideas
