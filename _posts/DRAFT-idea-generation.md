@@ -39,7 +39,7 @@ works well.
 You will want to come back to your ideas
 to modify or delete them.
 
-<a href="../images/notebook_page.jpg"><img src="../images/notebook_page_small.jpg"></a>
+<a href="../images/notebook_page.jpg"><img class="figure" src="../images/notebook_page_small.jpg"></a>
 
 
 ## The Inspiration
