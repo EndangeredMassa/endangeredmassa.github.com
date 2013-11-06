@@ -44,7 +44,7 @@ I annotated it a bit, pointing out
 the metadata I add to the top of my pages.
 
 <div class="figure">
-<a href="/images/notebook_page.jpg"><img src="/images/notebook_page_small.jpg"></a>
+<a href="/images/notebook_page.jpg" target="_blank"><img src="/images/notebook_page_small.jpg"></a>
 </div>
 
 ## The Inspiration
