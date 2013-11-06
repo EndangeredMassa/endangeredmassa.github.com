@@ -32,6 +32,8 @@ Some people get a nice notebook,
 then are afraid to write anything in it.
 Physical and digital pages are cheap.
 Don't be afraid to write down your ideas!
+The more ideas you record, the more ideas you will have.
+It's like exercising a muscle.
 
 I have also found that using things like
 page numbers and category tags on pages
