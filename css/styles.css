@@ -251,9 +251,14 @@ h2 {
 }
 
 .figure {
-  margin: 24px auto;
+  margin: 24px 0;
   display: block;
 }
+
+  .figure img {
+    margin: 0 auto;
+    display: block;
+  }
 
 .gist {
   margin: 0 60px;
