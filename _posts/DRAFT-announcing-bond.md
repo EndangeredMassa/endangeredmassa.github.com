@@ -22,6 +22,7 @@ but it also fits gramatically.
 You are `bond`ing a reference `to` a value:
 `bond(object, property).to(value)`.
 
+I just released `bond@1.0.0`!
 It works in browsers and Node.js
 ([bondjs](https://npmjs.org/package/bondjs) on npm).
 
