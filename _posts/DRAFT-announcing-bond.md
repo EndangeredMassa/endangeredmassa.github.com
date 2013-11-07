@@ -5,8 +5,8 @@ author: Sean Massa
 categories: [dev]
 blurb:
   When switching from jasmine to mocha,
-  I found myself missing the spyOn functionality.
-  bond was my attempt to reproduce that
+  I found myself missing jasmine spies.
+  bond is my reproduction of jasmine spies
   (with a few enhancements)
   in a package that can be used with any testing framework.
 published: false
@@ -27,7 +27,9 @@ It works in browsers and Node.js
 
 ## bond api
 
-You can checkout the full README for a breakdown of the api,
+You can checkout the full
+[README](https://github.com/EndangeredMassa/bond/blob/master/README.md)
+for a breakdown of the api,
 but I wanted to call out the core concepts here.
 
 The core method accepts an object and propertyName,
