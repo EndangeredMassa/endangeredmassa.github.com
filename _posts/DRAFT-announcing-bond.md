@@ -1,9 +1,14 @@
 ---
 layout: post
-title: Announcing: bond 1.0.0
+title: "Announcing: bond 1.0.0"
 author: Sean Massa
 categories: [dev]
 blurb:
+  When switching from jasmine to mocha,
+  I found myself missing jasmine spies.
+  bond is my reproduction of jasmine spies
+  (with a few enhancements)
+  in a package that can be used with any testing framework.
 published: false
 ---
 
