@@ -1,0 +1,71 @@
+---
+layout: post
+title: Announcing: bond 1.0.0
+author: Sean Massa
+categories: [dev]
+blurb:
+  When switching from jasmine to mocha,
+  I found myself missing the spyOn functionality.
+  bond was my attempt to reproduce that
+  (with a few enhancements)
+  in a package that can be used with any testing framework.
+published: false
+---
+
+## bond: the simple stub/spy javascript library
+
+I wanted to have something that did one thing and did it well.
+That thing is to stub/spy on JavaScript objects.
+
+The name comes from a famous spy,
+but it also fits gramatically.
+You are `bond`ing a reference `to` a value:
+`bond(object, property).to(value)`.
+
+It works in browsers and Node.js
+([bondjs](https://npmjs.org/package/bondjs) on npm).
+
+## bond api
+
+You can checkout the full README for a breakdown of the api,
+but I wanted to call out the core concepts here.
+
+The core method accepts an object and propertyName,
+returning the bond api.
+
+`bond(object, propertyName)`
+
+The bond api allows you to stub or spy on this property.
+For example, you could stub a method to return a specific value with
+`bond(object, methodName).return(someValue)`.
+You can also stub a value property with 
+`bond(object, propertyName).to(someValue)`.
+
+There are some cases where you want to spy on a method without changing it.
+For that, you can use `bond(object, methodName).through()`.
+bond#through() replaces the value with a spy, but allows it to return its normal value
+
+## bond spies
+
+When you create a bond spy,
+you can check to see how many times it was called with `spy.called`.
+I abuse the fact that 0 is falsey when I use this method:
+`if spy.called then ...`.
+
+You can check that a spy was called with specific arguments as well:
+`spy.calledWith(arg1, arg2, ...)`.
+
+## conclusion
+
+I have been using bond for about a year now.
+I find that it does exactly what I need.
+
+You can even use it to whip a quick `require.cache` stub using bond:
+
+```
+stubModule = (modulePath, stub) ->
+  resolvedPath = require.resolve(modulePath)
+  require.cache[resolvedPath] = stub
+```
+
+Let me know how you like bond below!
