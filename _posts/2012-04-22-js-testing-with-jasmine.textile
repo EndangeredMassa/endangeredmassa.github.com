@@ -13,6 +13,8 @@ blurb:
 published: true
 ---
 
+_EDIT: Note that I no longer advocate the use of RequireJS. If you still find this useful, that's awesome._
+
 h2. Problems with Jasmine
 
 p. In a parallel endeavor, I grew tired of namespacing my JavaScript code. So, I brought in RequireJS and setup all of my modules to use the AMD format it requires.
