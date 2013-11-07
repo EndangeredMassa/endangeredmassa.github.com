@@ -45,7 +45,6 @@ You can also stub a value property with
 
 There are some cases where you want to spy on a method without changing it.
 For that, you can use `bond(object, methodName).through()`.
-bond#through() replaces the value with a spy, but allows it to return its normal value
 
 ## bond spies
 
