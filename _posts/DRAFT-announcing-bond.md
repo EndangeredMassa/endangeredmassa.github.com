@@ -12,7 +12,7 @@ blurb:
 published: false
 ---
 
-## bond: the simple stub/spy javascript library
+## bond: the simple stub/spy JavaScript library
 
 I wanted to have something that did one thing and did it well.
 That thing is to stub/spy on JavaScript objects.
