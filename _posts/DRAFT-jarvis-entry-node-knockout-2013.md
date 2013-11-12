@@ -40,7 +40,19 @@ Take a look at the pitch video.
 
 <iframe width="640" height="390" src="http://www.youtube.com/embed/M42Qi8OxDpw" frameborder="0"></iframe>
 
+Jarvis is also open source!
+We need to do some post-hackathon code cleanup,
+then we'll be ready to fix a few things,
+and add some features!
 
+The biggest things for the near future are:
 
+* code cleanup (mostly around the data model for sources and items)
+* don't re-add things that were removed
+* twitter favorites should auto parse
+* [dex](https://github.com/EndangeredMassa/Dex) integratino
+* ability to view and remove sources
+
+Let me know what you'd like to see below!
 
 
