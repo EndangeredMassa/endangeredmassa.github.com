@@ -36,6 +36,9 @@ Sadly, RSS is often ignored or implemented globally for a site,
 paying no mind to categories of content.
 
 Jarvis lets you work around that issue.
+Take a look at the pitch video.
+
+<iframe width="640" height="390" src="http://www.youtube.com/embed/M42Qi8OxDpw" frameborder="0"></iframe>
 
 
 
