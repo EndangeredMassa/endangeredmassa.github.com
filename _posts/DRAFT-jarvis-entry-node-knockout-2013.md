@@ -20,7 +20,22 @@ It took me quite a long time to come up with an idea that could
 
 We eventually decided to build a tool that
 I've wanted to exist for some time.
+The goal is to have a single place that allows you to
+consume any type of content.
+That includes RSS feeds,
+youtube videos,
+podcasts,
+images,
+articles,
+and whatever else you can find on the internet.
 
+If every site implemented RSS in such a way that
+I could subscribe to the strict subset of content I want,
+this tool would not be necessary.
+Sadly, RSS is often ignored or implemented globally for a site,
+paying no mind to categories of content.
+
+Jarvis lets you work around that issue.
 
 
 
