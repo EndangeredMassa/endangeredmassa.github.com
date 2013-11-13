@@ -12,7 +12,8 @@ published: false
 
 ## facile
 
-Facile is a convention-based template engine
+[Facile](https://github.com/EndangeredMassa/facile.js)
+is a convention-based template engine
 that can be executed either in the browser (using jQuery or zepto)
 or on the server (using cheerio).
 While other template systems like Mustache
