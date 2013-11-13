@@ -65,7 +65,9 @@ You can check that a spy was called with specific arguments as well:
 I have been using bond for about a year now.
 I find that it does exactly what I need.
 
-You can even use it to write a quick `require.cache` stub using bond:
+You can even use it to write a quick `require.cache` stub
+for those cases where a module only exports a function
+and you can't stub or spy on it.
 
 ```coffeescript
 stubModule = (modulePath, stub) ->
