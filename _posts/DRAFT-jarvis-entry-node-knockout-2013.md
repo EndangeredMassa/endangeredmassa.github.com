@@ -56,7 +56,7 @@ The biggest things for the near future are:
 * auto-download videos when running locally
 * don't re-add things that were removed
 * twitter favorites should auto parse
-* [dex](https://github.com/EndangeredMassa/Dex) integratino
+* [dex](https://github.com/EndangeredMassa/Dex) integration
 * ability to view and remove sources
 
 Let me know what you'd like to see below!
