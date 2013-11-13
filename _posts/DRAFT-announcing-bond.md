@@ -62,7 +62,7 @@ You can check that a spy was called with specific arguments as well:
 I have been using bond for about a year now.
 I find that it does exactly what I need.
 
-You can even use it to whip a quick `require.cache` stub using bond:
+You can even use it to write a quick `require.cache` stub using bond:
 
 ```
 stubModule = (modulePath, stub) ->
