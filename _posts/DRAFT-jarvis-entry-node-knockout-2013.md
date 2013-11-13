@@ -42,7 +42,7 @@ Take a look at the pitch video.
 
 <iframe width="640" height="390" src="http://www.youtube.com/embed/M42Qi8OxDpw" frameborder="0"></iframe>
 
-Jarvis is also open source!
+Jarvis is also [open source](https://github.com/EndangeredMassa/jarvis)!
 We need to do some post-hackathon code cleanup,
 then we'll be ready to fix a few things,
 and add some features!
