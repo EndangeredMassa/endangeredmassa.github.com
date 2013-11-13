@@ -4,8 +4,9 @@ title: Jarvis: An Entry for Node Knockout 2013!
 author: Sean Massa
 categories: [dev]
 blurb:
-  Another year, another Node Knockout!
-  Come check out our entry, Jarvis!
+  Another year, another <a href="http://nodeknockout.com">Node Knockout</a>!
+  Come check out our entry,
+  <a href="http://nodeknockout.com/teams/rockem-sockem">Jarvis</a>!
 published: false
 ---
 
@@ -25,7 +26,7 @@ I've wanted to exist for some time.
 The goal is to have a single place that allows you to
 consume any type of content.
 That includes RSS feeds,
-youtube videos,
+youtube/vimeo videos,
 podcasts,
 images,
 articles,
