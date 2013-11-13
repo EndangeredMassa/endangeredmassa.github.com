@@ -30,7 +30,7 @@ I just wanted to call out the core concepts here.
 ## Usage
 The facile package is a single function that accepts a template string and a data object:
 
-```
+```javascript
 var facile = require("facile"), // only needed in Node.js
     template = "...",
     data = {...},
@@ -40,7 +40,7 @@ var facile = require("facile"), // only needed in Node.js
 Facile will look for DOM ids and classes that match the keys in your data object
 and set the DOM elements' text to the data values:
 
-```
+```javascript
 var template = '<div id="dog"></div><div class="cat"></div>',
     data = {dog: "woof", cat: "meow"};
 facile(template, data);
@@ -52,7 +52,7 @@ Facile will find the container DOM element
 that matches the data key
 and render its contents for each item in the array.
 
-```
+```javascript
 var template = '<ul id="users"><li class="name"></li></ul>',
     data = {users: [
       {name: "Moe"}, 
@@ -73,7 +73,7 @@ Facile will use the content of the table's <tbody>
 as the template for the data object.
 This allows you to setup a <thead> without duplicating it.
 
-```
+```javascript
 var template = '<table id="users">' +
                '  <thead>' +
                '    <tr><th>Name</th></tr>' +
@@ -104,7 +104,7 @@ facile(template, data);
 If the data object has a null value,
 the corresponding DOM element will be removed.
 
-```
+```javascript
 var template = '<p>Hello!</p><p class="impolite">Take a hike, guy.</p>',
     data = {impolite: null};
 facile(template, data);
