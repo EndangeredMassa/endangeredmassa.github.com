@@ -64,7 +64,7 @@ I find that it does exactly what I need.
 
 You can even use it to write a quick `require.cache` stub using bond:
 
-```
+```coffeescript
 stubModule = (modulePath, stub) ->
   resolvedPath = require.resolve(modulePath)
   require.cache[resolvedPath] = stub
