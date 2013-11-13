@@ -52,7 +52,7 @@ The biggest things for the near future are:
 
 * code cleanup
   * data model for sources and items
-  * split into a daemon for processing and a web ui for viewing feeds
+  * split into a daemon for processing and a web UI for viewing feeds
 * auto-download videos when running locally
 * don't re-add things that were removed
 * twitter favorites should auto parse
