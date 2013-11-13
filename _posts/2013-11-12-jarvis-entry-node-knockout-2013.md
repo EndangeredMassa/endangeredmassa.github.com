@@ -7,7 +7,7 @@ blurb:
   Another year, another <a href="http://nodeknockout.com">Node Knockout</a>!
   Come check out our entry,
   <a href="http://nodeknockout.com/teams/rockem-sockem">Jarvis</a>!
-published: false
+published: true
 ---
 
 This year, I didn't get an idea and team together
