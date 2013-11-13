@@ -22,7 +22,8 @@ but it also fits gramatically.
 You are `bond`ing a reference `to` a value:
 `bond(object, property).to(value)`.
 
-I just released [`bond@1.0.0`](https://github.com/EndangeredMassa/bond)!
+Given that I've not changed bond in 7 months,
+I think it's time to release [`bond@1.0.0`](https://github.com/EndangeredMassa/bond).
 It works in browsers and Node.js
 ([bondjs](https://npmjs.org/package/bondjs) on npm).
 
@@ -33,10 +34,12 @@ You can checkout the full
 for a breakdown of the api,
 but I wanted to call out the core concepts here.
 
-The core method accepts an object and propertyName,
+The core method accepts an `object` and `propertyName`,
 returning the bond api.
 
-`bond(object, propertyName)`
+```javascript
+bond(object, propertyName)
+```
 
 The bond api allows you to stub or spy on this property.
 For example, you could stub a method to return a specific value with
