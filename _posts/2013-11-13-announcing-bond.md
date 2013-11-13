@@ -9,7 +9,7 @@ blurb:
   bond is my reproduction of jasmine spies
   (with a few enhancements)
   in a package that can be used with any testing framework.
-published: false
+published: true
 ---
 
 ## bond: the simple stub/spy JavaScript library
