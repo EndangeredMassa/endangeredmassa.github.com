@@ -7,7 +7,7 @@ blurb:
   I felt that the "logicless" template engines had too much logic.
   In my desire to purge all logic from templates, I created one
   of the few truly logicless templates.
-published: false
+published: true
 ---
 
 ## facile
