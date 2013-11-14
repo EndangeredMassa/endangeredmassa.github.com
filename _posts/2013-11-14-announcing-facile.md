@@ -68,10 +68,10 @@ facile(template, data);
 // </ul>
 ```
 
-If you are binding an array of data to a <table> element,
-Facile will use the content of the table's <tbody>
+If you are binding an array of data to a `<table>` element,
+Facile will use the content of the table's `<tbody>`
 as the template for the data object.
-This allows you to setup a <thead> without duplicating it.
+This allows you to setup a `<thead>` without duplicating it.
 
 ```javascript
 var template = '<table id="users">' +
