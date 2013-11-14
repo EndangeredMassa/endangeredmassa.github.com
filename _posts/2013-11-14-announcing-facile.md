@@ -27,7 +27,7 @@ Checkout the full
 for details.
 I just wanted to call out the core concepts here.
 
-## Usage
+## usage
 The facile package is a single function that accepts a template string and a data object:
 
 ```javascript
