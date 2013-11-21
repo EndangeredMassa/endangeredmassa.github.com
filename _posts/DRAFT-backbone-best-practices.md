@@ -25,8 +25,8 @@ Don't do it.
 This means that you'll have code like:
 
 ```coffee
-  view = new OrderView
-  view.render()
+view = new OrderView
+view.render()
 ```
 
 And that's just fine.
@@ -75,7 +75,7 @@ class ViewManager
 For more complex apps,
 you may want a more complex view manager:
 
-```
+```coffee
 class ViewManager
   constructor: (@$container) ->
     @views = []
