@@ -116,7 +116,7 @@ and we test against that directly with `@el.find('selector')`.
 Render methods should defer to a `toHtml` method to generate the actual html.
 A typical render method looks like:
 
-```
+```coffee
 render: ->
   @$el.html(@toHtml(@template, @model.attributes))
 ```
