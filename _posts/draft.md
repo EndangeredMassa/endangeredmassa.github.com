@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: ""
 author: Sean Massa
 categories: [dev]
 blurb:
