@@ -18,6 +18,10 @@ a.no-style {
   color: inherit;
 }
 
+ul ul {
+  margin: 0;
+}
+
 /* LAYOUT CSS */
 #layout {
   padding-left: 350px; /* "left col (nav + list)" width */
