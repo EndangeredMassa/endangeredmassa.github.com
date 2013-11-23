@@ -43,6 +43,14 @@ ul ul {
     font-size: 11px;
   }
 
+.cmd-info {
+  color: #6BC4C6;
+}
+
+.cmd-prompt {
+  color: #D371E2;
+}
+
 .header {
   margin: 50% 2em 0;
   text-align: right;
