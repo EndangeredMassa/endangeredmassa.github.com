@@ -23,9 +23,9 @@ almost as much as we owe the Node.js project itself.
 Node.js without npm would be cool,
 but it would be too hard to use.
 
-Nodejitsu has [laucnhed a campaign](https://scalenpm.org)
+Nodejitsu has [launcnhed a campaign](https://scalenpm.org)
 to solicit donations from the community
 at both the individual and corporate level.
 
-Please consider donating to the project individually
-as well as asking your employer about donating.
+Please consider donating to the project personally
+or through your employer.
