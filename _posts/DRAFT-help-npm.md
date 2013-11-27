@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Help npm Keep the Lights On"
+author: Sean Massa
+categories: [dev]
+blurb:
+  npm is enables Node.js module distribution
+  and consumption.
+  Without it, we would be lost.
+  Help keep the lights on
+  by donating to the project!
+published: false
+---
+
+[Nodejitsu](https://www.nodejitsu.com/) runs [npmjs.org](https://npmjs.org/)
+as a free service to the community.
+The rapid growth of Node.js (and thus Node.js package usage)
+means that this service costs significantly more than it once did.
+This cost comes in both dollars and resources.
+
+I feel that we, as Node.js developers, owe the npm project
+almost as much as we owe the Node.js project itself.
+Node.js without npm would be cool,
+but it would be too hard to use.
+
+Nodejitsu has [laucnhed a campaign](https://scalenpm.org)
+to solicit donations from the community
+at both the individual and corporate level.
+
+Please consider donating to the project individually
+as well as asking your employer about donating.
