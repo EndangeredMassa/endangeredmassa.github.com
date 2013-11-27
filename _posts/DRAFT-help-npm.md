@@ -4,8 +4,8 @@ title: "Help npm Keep the Lights On"
 author: Sean Massa
 categories: [dev]
 blurb:
-  npm is enables Node.js module distribution
-  and consumption.
+  npm single-handedly enables Node.js
+  module distribution and consumption.
   Without it, we would be lost.
   Help keep the lights on
   by donating to the project!
