@@ -6,7 +6,7 @@ categories: [dev]
 blurb:
   Crosspost from the
   <a href="#####">Groupon Engineering blog</a>!
-  [Testium](https://github.com/groupon/testium)
+  <a href="https://github.com/groupon/testium">Testium</a>
   is a new integration testing tool
   that I wrote for Groupon.
   It allows you to write integration tests
