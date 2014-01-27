@@ -10,7 +10,7 @@ blurb:
    <a href="https://twitter.com/mcculloughsean">Sean McCullough</a>
    and <a href="https://twitter.com/ageitgey">Adam Geitgey</a>
    talking about
-   <a href="https://engineering.groupon.com/2013/misc/i-tier-dismantling-the-monoliths/"Groupon's move to Node.js</a>.
+   <a href="https://engineering.groupon.com/2013/misc/i-tier-dismantling-the-monoliths/">Groupon's move to Node.js</a>.
    
    This was my first podcast appearance,
    which was pretty exciting.
