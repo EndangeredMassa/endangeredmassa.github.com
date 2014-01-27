@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: crosspost
 title: "[Crosspost] NodeUp: a team groupon show"
 author: Sean Massa
 categories: [dev]
