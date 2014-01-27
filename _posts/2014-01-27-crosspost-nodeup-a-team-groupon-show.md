@@ -19,5 +19,5 @@ blurb:
    but my focus was promoting
    <a href="https://github.com/groupon/testium">testium</a>!
 remote_link: http://nodeup.com/fiftyeight
-published: false
+published: true
 ---
