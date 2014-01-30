@@ -6,8 +6,8 @@ categories: [dev]
 blurb:
    I was on <a href="http://nodeup.com/fiftyeight">NodeUp</a>
    with
-   <a href="https://twitter.com/dshaw">Daniel Shaw</a>
-   <a href="https://twitter.com/mcculloughsean">Sean McCullough</a>
+   <a href="https://twitter.com/dshaw">Daniel Shaw</a>,
+   <a href="https://twitter.com/mcculloughsean">Sean McCullough</a>,
    and <a href="https://twitter.com/ageitgey">Adam Geitgey</a>
    talking about
    <a href="https://engineering.groupon.com/2013/misc/i-tier-dismantling-the-monoliths/">Groupon's move to Node.js</a>.
