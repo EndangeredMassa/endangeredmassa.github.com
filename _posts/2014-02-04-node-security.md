@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "automatic nodesecurity.io validation of dependencies"
+title: "Automatic NodeSecurity.io Validation of Dependencies"
 author: Sean Massa
 categories: [dev]
 blurb:
