@@ -13,7 +13,7 @@ blurb:
   that allows you to submit your `npm-shrinkwrap.json` file
   and receive a list of security advisories
   for all modules in your dependency tree.  
-published: false
+published: true
 ---
 
 You can wire this up to a build or release process,
