@@ -6,8 +6,8 @@ categories: [dev]
 blurb:
   The amazing <a href="https://nodesecurity.io">Node Security Project</a>
   is attempting to audit all node modules
-  for security issues.
-  
+  for security issues.<br>
+  <br>
   There is a
   <a href="http://blog.nodesecurity.io/post/75342048303/new-feature-validate-modules-with-npm-shrinkwrap">new endpoint available</a>
   that allows you to submit your `npm-shrinkwrap.json` file
