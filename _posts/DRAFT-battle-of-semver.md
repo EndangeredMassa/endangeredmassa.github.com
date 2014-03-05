@@ -199,8 +199,8 @@ but are depended on by thousands of other packages.
 Semver says that anything less than 1.0.0
 should be considered "initial development".
 This means that the
-api could change at any time
---there are no commitments.
+api could change
+at any time--there are no commitments.
 
 This new default means that we need to:
 
@@ -224,15 +224,15 @@ we'll hit version 42.0.0 quickly
 if backwards incompatible changes
 are only allowed in major versions.
 
-Semver says that this hesitation is good
---forcing your to consider backwards incompatible changes more carefully.
+Semver says that this hesitation is good--forcing
+you to consider backwards incompatible changes more carefully.
 I agree that that is useful,
 but I also think that
 we are often too hesitant.
 
-Maybe version 42 is still a bit much
---you don't want to constantly break backwards compatibility
---but I think we should stomach
+Maybe version 42 is still a bit much--you
+don't want to constantly break backwards compatibility--but
+I think we should stomach
 a few more version 12.0.0s
 instead of hundreds of 0.42.0s.
 
