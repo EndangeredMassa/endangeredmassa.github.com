@@ -205,7 +205,17 @@ api could change at any time
 This new default means that we need to:
 
 1. encourage these projects to update to 1.0.0
-2. make sure we continue to use tilde ranges for these projects
+1. make sure we continue to use tilde ranges for these projects
+
+Below are the top 4 packages depended on
+that have versions less than 1.0.0.
+Let's politely encourage them
+to update to 1.0.0.
+
+1. [async](https://www.npmjs.org/package/async) >1000 dependents
+1. [optimist](https://www.npmjs.org/package/optimist) >1000 dependents
+1. [colors](https://www.npmjs.org/package/colors) >1000 dependents
+1. [mkdirp](https://www.npmjs.org/package/mkdirp) >1000 dependents
 
 ### battle of too many majors
 
