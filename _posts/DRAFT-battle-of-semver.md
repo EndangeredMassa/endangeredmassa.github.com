@@ -141,13 +141,14 @@ use carat ranges,
 they cannot be using Node.js <0.10.16.
 
 This is an issue that requires consideration,
-but remember that Node.js 0.10.16 has been out for months.
-It's true that many people are still on Node.js 0.8.*
-and the Node.js project still supports 0.8.*,
+but remember that Node.js 0.10.16 has been out
+[since August 2013](http://blog.nodejs.org/2013/08/16/node-v0-10-16-stable).
+It's true that many people are still on Node.js 0.8.x
+and the Node.js project still supports 0.8.x,
 but that won't last forever.
-I think it's time to start moving away from 0.8.* anyway.
+I think it's time to start moving away from 0.8.x anyway.
 
-That said, a version of 0.8.*
+That said, a version of 0.8.x
 with a fix for this
 would not be unwelcome.
 
