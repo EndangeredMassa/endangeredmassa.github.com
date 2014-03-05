@@ -76,13 +76,6 @@ and patch versions being the only place
 where backwards compatibility
 is preserved.
 
-Some suggest that we adopt this alternate policy
-because that's how it's used in the "real world".
-It is certainly tempting to codify
-how things are actually happening
-in the module ecosystem.
-However, I believe this is a mistake.
-
 **Side note:**
 Some claim that carat ranges
 will force them to use
@@ -98,6 +91,13 @@ but it is still significant with tilde-ranges.
 In my opinion, all production code should always use shrinkwrap.
 You never want ANY change to your codebase
 to happen between testing and deploying.
+
+Some suggest that we adopt this alternate policy
+because that's how it's used in the "real world".
+It is certainly tempting to codify
+how things are actually happening
+in the module ecosystem.
+However, I believe this is a mistake.
 
 It implies that (at least) the majority of packages
 use this "realistic" version of semver.
