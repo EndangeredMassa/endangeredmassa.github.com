@@ -9,17 +9,19 @@ ensured that
 npm was already full of
 the tools we will need
 to compose an OS.
-
-[Docker](https://www.docker.io)
-is a tool that allows you to build
-entire systems inside linux containers
-based on tags in a history system,
-not unlike git.
+Now we have the power to
+compose those modules
+into an actual operating system!
 
 ## A Look into NodeOS
 
-Docker allows us to construct an OS
+[Docker](https://www.docker.io)
+allows us to construct an OS
 in a series of layers.
+Check out the awesome
+[Docker tutorial](https://www.docker.io/gettingstarted)
+for more information
+on how that works.
 
 ![NodeOS Breakdown](images/nodeos_breakdown.png)
 
@@ -43,14 +45,15 @@ expands on those modules
 with some nice-to-haves.
 
 These layer definitions make it
-easy to know where you should modify
-some part of the build.
+easy to work on a specific
+level of the overall system
+independently of levels above it.
 They also allow users to branch off of any layer
 and do their own work from there.
 For example, if you wanted to take Layer 1
 and pull in Java instead of Node.js,
-you could start on your own Android-inspired
-system.
+you could start on your own
+Android-like system.
 
 For NodeOS work, you will most likely want to
 customize Layer 4 to provide more
@@ -97,12 +100,76 @@ The only real difference is that
 and `boxes` (terminal UI)
 are installed
 and the initial command is `boxes`
+(my terminal-based window manager)
 instead of `nsh` (the NodeOS shell).
 
 This means that starting this custom NodeOS
 will boot directly into
-[boxes](https://github.com/EndangeredMassa/boxes),
-which is my terminal window manager.
+[boxes](https://github.com/EndangeredMassa/boxes).
 
-https://github.com/EndangeredMassa/massa-os/blob/master/Makefile
+To run this, you need to build the docker image specified by this Dockerfile, then start the image.
+
+```bash
+# build an image called `myos`
+# based on the Dockerfile
+# in the current `.` directory
+docker build --tag myos .
+
+# run the image called `myos`
+docker run --tty --interactive myos
+```
+
+You should see a lot of output
+when docker builds the image,
+but then you should see
+the boxes window manager!
+
+If you try the commands again,
+you will notice that
+it goes much quicker the second time.
+That's because docker cached
+the file system state
+based on the commands
+in the Dockerfile.
+If you add a command to the Dockerfile,
+everything from that command
+to the end will be re-run
+based on the cached file system state
+up to that point in the Dockerfile.
+
+
+## Iteration
+
+Iteration on your custom NodeOS
+can be made easier with
+[a simple Makefile](https://github.com/EndangeredMassa/massa-os/blob/master/Makefile).
+
+
+```makefile
+build:
+	docker build --tag myos .
+
+run: build
+	docker run --tty --interactive myos
+
+link: build
+	docker run --tty --interactive \
+	--volume /home/#{YOUR_USER}/nodeos:/host:ro \
+	myos
+```
+
+This will allow you
+to run `make run`
+to fire up your docker instance
+based on your current Dockerfile.
+`make link` will do the same,
+but also mount the path provided
+inside the docker instance at `/host`. 
+Linking makes it useful
+for developing modules
+you want to use
+inside a docker instance.
+
+
+
 
