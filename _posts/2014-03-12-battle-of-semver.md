@@ -82,8 +82,9 @@ and patch versions being the only place
 where backwards compatibility
 is preserved.
 
-**Side note:**
-Some claim that carat ranges
+<table class="pure-table" style="float:right; width: 325px">
+<tr><td>Side Note</td></tr>
+<tr><td>Some claim that carat ranges
 will force them to use
 shrinkwrap in order to protect themselves
 from the increased risk of
@@ -97,6 +98,7 @@ but it is still significant with tilde-ranges.
 In my opinion, all production code should always use shrinkwrap.
 You never want ANY change to your codebase
 to happen between testing and deploying.
+</td></tr></table>
 
 Some suggest that we adopt this alternate policy
 because that's how it's used in the "real world".
