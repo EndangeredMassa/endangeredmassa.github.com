@@ -280,7 +280,7 @@ a "best" practice.</td></tr></table>
 
 I think that using carat ranges
 as the default behavior
-of <code>--save</code> is best
+of `--save` is best
 for the Node.js module ecosystem.
 
 The fact that the alternate unofficial semver
