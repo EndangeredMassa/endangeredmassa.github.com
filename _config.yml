@@ -1,5 +1,7 @@
-markdown: redcarpet
 name: Massalabs Blog
 description: Programming, Games, and Other Things
 url: http://massalabs.com
 
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables"]
