@@ -1,16 +1,22 @@
-# The War of Sem-Ver
-
-In [a previous post](http://massalabs.com/dev/2013/10/13/managing-a-project.html),
-I recommended following the [official semver standard](http://semver.org).
-I, however, don't always follow my own advice.
-I decided to dig into the spec,
-it's usage (especially in the Node.js community),
-and the recent change of `npm install --save`
-to use `^` (carat ranges)
-instead of `~` (tilde ranges)
-in order to better educate myself
-on this issue.
-This article is a summary of my findings.
+---
+layout: post
+title: "The War of Sem-Ver"
+author: Sean Massa
+categories: [dev]
+blurb:
+  In <a href="http://massalabs.com/dev/2013/10/13/managing-a-project.html">a previous post</a>,
+  I recommended following the <a href="http://semver.org">official semver standard</a>.
+  I, however, don't always follow my own advice.
+  I decided to dig into the spec,
+  it's usage (especially in the Node.js community),
+  and the recent change of <code>npm install --save</code>
+  to use <code>^</code> (carat ranges)
+  instead of <code>~</code> (tilde ranges)
+  in order to better educate myself
+  on this issue.
+  This article is a summary of my findings.  
+published: false
+---
 
 In [Node v0.10.26 (Stable)](http://blog.nodejs.org/2014/02/18/node-v0-10-26-stable/)
 the default behavior of `npm install --save`
