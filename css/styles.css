@@ -135,6 +135,9 @@ ul ul {
 .post header {
   margin-bottom: 26px;
 }
+.post-list header {
+  margin-bottom: 8px;
+}
 
 
 h2 {
