@@ -55,6 +55,10 @@ the variant followers use it
 as a way to imply "less" breaking changes
 than a new major version.
 
+<table class="pure-table sidenote">
+<thead><tr><th>Side Note</th></tr></thead>
+<tr><td>Some suggest that semver doesn't work because it *only* tracks the API and not the output of a module. I believe that the output of a module is *part of* the API, and therefore covered by the semver spec.</td></tr></table>
+
 Put completely, official semver is:
 
 - MAJOR: backwards-incompatible API changes
@@ -67,10 +71,6 @@ and the unofficial alternate is:
 - MINOR: possibly backwards-incompatible functionality additions
 - PATCH: backwards-compatible bug fixes
 
-<table class="pure-table sidenote">
-<thead><tr><th>Side Note</th></tr></thead>
-<tr><td>Some suggest that semver doesn't work because it *only* tracks the API and not the output of a module. I believe that the output of a module is *part of* the API, and therefore covered by the semver spec.</td></tr></table>
-
 I am certainly guilty of
 following the alternate form in the past.
 There is a tension against bumping major version numbers,
@@ -82,13 +82,6 @@ minor versions implying smaller changes,
 and patch versions being the only place
 where backwards compatibility
 is preserved.
-
-Some suggest that we adopt this alternate policy
-because that's how it's used in the "real world".
-It is certainly tempting to codify
-how things are actually happening
-in the module ecosystem.
-However, I believe this is a mistake.
 
 <table class="pure-table sidenote">
 <thead><tr><th>Side Note</th></tr></thead>
@@ -107,6 +100,13 @@ In my opinion, all production code should always use shrinkwrap.
 You never want ANY change to your codebase
 to happen between testing and deploying.
 </td></tr></table>
+
+Some suggest that we adopt this alternate policy
+because that's how it's used in the "real world".
+It is certainly tempting to codify
+how things are actually happening
+in the module ecosystem.
+However, I believe this is a mistake.
 
 It implies that (at least) the majority of packages
 use this "realistic" version of semver.
