@@ -251,7 +251,7 @@ of `--save` is best
 for the Node.js module ecosystem.
 
 **Remember:**
-you should be
+You should be
 using shrinkwrap regardless.
 You will only see things break
 when you update your shrinkwrap
