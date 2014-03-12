@@ -115,6 +115,7 @@ ul ul {
   font-size: 2em;
   color: #222;
   margin-bottom: 0.2em;
+  margin-top: 0;
 }
   .post-title a {
     color: #222;
@@ -132,9 +133,6 @@ ul ul {
   margin-left: 1em;
 }
 
-header {
-  margin-top: 0
-}
 .post header {
   margin-bottom: 26px;
 }
