@@ -82,7 +82,7 @@ and patch versions being the only place
 where backwards compatibility
 is preserved.
 
-<table class="pure-table sidebar">
+<table class="pure-table sidenote">
 <thead><tr><th>Side Note</th></tr></thead>
 <tr><td>Some claim that carat ranges
 will force them to use
