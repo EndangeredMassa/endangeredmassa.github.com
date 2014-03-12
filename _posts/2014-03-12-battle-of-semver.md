@@ -267,8 +267,9 @@ as the default behavior
 of `--save` is best
 for the Node.js module ecosystem.
 
-**Remember:**
-You should be
+<table class="pure-table sidenote">
+<thead><tr><th>Remember</th></tr></thead>
+<tr><td>You should be
 using shrinkwrap regardless.
 You will only see things break
 when you update your shrinkwrap
@@ -280,7 +281,7 @@ You can also always
 change your range matchers.
 This default is there to
 nudge the community towards
-a "best" practice.
+a "best" practice.</td></tr></table>
 
 The fact that the alternate unofficial semver
 exists in the wild
