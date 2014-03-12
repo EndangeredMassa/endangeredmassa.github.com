@@ -97,8 +97,6 @@ The risk may be higher
 with carat ranges than tilde ranges,
 but it is still significant with tilde-ranges.
 In my opinion, all production code should always use shrinkwrap.
-You never want ANY change to your codebase
-to happen between testing and deploying.
 </td></tr></table>
 
 Some suggest that we adopt this alternate policy
@@ -134,7 +132,7 @@ but will do so less than major version changes.
 That doesn't inspire me with confidence.
 
 
-<table class="pure-table">
+<table class="pure-table" style="margin: 0 auto;">
 <thead><tr>
 <th>Version Part</th>
 <th>Upgrade Risk</th>
