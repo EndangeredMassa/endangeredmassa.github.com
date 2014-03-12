@@ -10,7 +10,7 @@ blurb:
   I decided to dig into the spec,
   it's usage (especially in the Node.js community),
   and the recent change of <code>npm install --save</code>
-  to use <code>^</code> (carat ranges)
+  to use <code>^</code> (caret ranges)
   instead of <code>~</code> (tilde ranges)
   in order to better educate myself
   on this issue.
@@ -85,7 +85,7 @@ is preserved.
 
 <table class="pure-table sidenote">
 <thead><tr><th>Side Note</th></tr></thead>
-<tr><td>Some claim that carat ranges
+<tr><td>Some claim that caret ranges
 will force them to use
 shrinkwrap in order to protect themselves
 from the increased risk of
@@ -94,7 +94,7 @@ This is especially a concern
 when dealing with packages
 that don't follow official semver.
 The risk may be higher
-with carat ranges than tilde ranges,
+with caret ranges than tilde ranges,
 but it is still significant with tilde-ranges.
 In my opinion, all production code should always use shrinkwrap.
 </td></tr></table>
@@ -149,17 +149,17 @@ That doesn't inspire me with confidence.
 I'd much rather subscribe to a system
 where minor versions imply compatibility
 and therefore reduces risk in upgrading.
-Carat ranges are a perfect fit
+Caret ranges are a perfect fit
 with the official spec.
 
 ### battle of different platforms
 
-If your module uses carat ranges,
+If your module uses caret ranges,
 this creates an implicit dependency on
 Node.js 0.10.16+.
 If a consumer wants to use a module
 where it or its dependents
-use carat ranges,
+use caret ranges,
 they cannot be using Node.js <0.10.16.
 
 This is an issue that requires consideration,
@@ -176,7 +176,7 @@ would not be unwelcome.
 
 ### battle on multiple fronts
 
-One of the benefits of promoting carat ranges
+One of the benefits of promoting caret ranges
 is that module authors will be able
 to more reasonably support fewer versions
 of their modules.
@@ -201,7 +201,7 @@ When <code>npm</code> installs modules,
 it will reuse local versions
 that match dependency ranges
 of multiple dependencies.
-If those range matchers use carat ranges,
+If those range matchers use caret ranges,
 the same version of a module
 can be used for even more parent modules
 in your dependency tree.
@@ -271,14 +271,14 @@ when you update your shrinkwrap
 and test your app
 before deploying it.
 This applies regardless of
-tilde and carat ranges.
+tilde and caret ranges.
 You can also always
 change your range matchers.
 This default is there to
 nudge the community towards
 a "best" practice.</td></tr></table>
 
-I think that using carat ranges
+I think that using caret ranges
 as the default behavior
 of `--save` is best
 for the Node.js module ecosystem.
