@@ -82,8 +82,8 @@ and patch versions being the only place
 where backwards compatibility
 is preserved.
 
-<table class="pure-table" style="float:right; width: 325px">
-<tr><td>Side Note</td></tr>
+<table class="pure-table sidebar">
+<thead><tr><th>Side Note</th></tr></thead>
 <tr><td>Some claim that carat ranges
 will force them to use
 shrinkwrap in order to protect themselves
