@@ -67,8 +67,9 @@ and the unofficial alternate is:
 - MINOR: possibly backwards-incompatible functionality additions
 - PATCH: backwards-compatible bug fixes
 
-**Side note:**
-Some suggest that semver doesn't work because it *only* tracks the API and not the output of a module. I believe that the output of a module is *part of* the API, and therefore covered by the semver spec.
+<table class="pure-table sidenote">
+<thead><tr><th>Side Note</th></tr></thead>
+<tr><td>Some suggest that semver doesn't work because it *only* tracks the API and not the output of a module. I believe that the output of a module is *part of* the API, and therefore covered by the semver spec.</td></tr></table>
 
 I am certainly guilty of
 following the alternate form in the past.
@@ -191,8 +192,9 @@ do less of that.
 Instead, they can focus more
 on their latest versions.
 
-**Side note:**
-There is also the browser to consider.
+<table class="pure-table sidenote">
+<thead><tr><th>Side Note</th></tr></thead>
+<tr><td>There is also the browser to consider.
 When `npm` installs modules,
 it will reuse local versions
 that match dependency ranges
@@ -205,7 +207,7 @@ This allows less total code
 to be bundled into a client-side asset,
 making it more reasonable
 to take advantage of `npm` modules
-in client-side code.
+in client-side code.</td></tr></table>
 
 ### battle before we're ready
 
