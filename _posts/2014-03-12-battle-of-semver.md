@@ -262,11 +262,6 @@ instead of hundreds of 0.42.0s.
 
 ## let there be peace
 
-I think that using carat ranges
-as the default behavior
-of `--save` is best
-for the Node.js module ecosystem.
-
 <table class="pure-table sidenote">
 <thead><tr><th>Remember</th></tr></thead>
 <tr><td>You should be
@@ -282,6 +277,11 @@ change your range matchers.
 This default is there to
 nudge the community towards
 a "best" practice.</td></tr></table>
+
+I think that using carat ranges
+as the default behavior
+of `--save` is best
+for the Node.js module ecosystem.
 
 The fact that the alternate unofficial semver
 exists in the wild
