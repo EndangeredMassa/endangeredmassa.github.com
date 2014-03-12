@@ -57,7 +57,7 @@ than a new major version.
 
 <table class="pure-table sidenote">
 <thead><tr><th>Side Note</th></tr></thead>
-<tr><td>Some suggest that semver doesn't work because it *only* tracks the API and not the output of a module. I believe that the output of a module is *part of* the API, and therefore covered by the semver spec.</td></tr></table>
+<tr><td>Some suggest that semver doesn't work because it <i>only</i> tracks the API and not the output of a module. I believe that the output of a module is <i>part of</i> the API, and therefore covered by the semver spec.</td></tr></table>
 
 Put completely, official semver is:
 
