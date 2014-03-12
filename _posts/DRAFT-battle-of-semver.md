@@ -244,20 +244,8 @@ as the default behavior
 of `--save` is best
 for the Node.js module ecosystem.
 
-The fact that the alternate unofficial semver
-exists in the wild
-doesn't mean we can't influence it.
-Node.js modules have already
-done a lot to promote semver in general.
-Do you remember version numbers meaning
-much of anything before using Node.js?
-
-For those using the alternate semver,
-this may be troublesome until they adjust.
-But the result will be a
-stronger Node.js module ecosystem.
-
-Remember that you should be
+**Remember:**
+you should be
 using shrinkwrap regardless.
 You will only see things break
 when you update your shrinkwrap
@@ -265,12 +253,24 @@ and test your app
 before deploying it.
 This applies regardless of
 tilde and carat ranges.
-
 You can also always
 change your range matchers.
 This default is there to
 nudge the community towards
 a "best" practice.
 
+The fact that the alternate unofficial semver
+exists in the wild
+doesn't mean we can't influence it.
+Node.js modules have already
+done a lot to promote semver in general.
+Do you remember version numbers meaning
+much of anything before using Node.js?
+I certainly don't.
+
+There will be growing pains, sure.
+But we're promoting
+an achievable ideal.
+
 Semver works best if everyone follows it.
-Let's promote the official spec.
+Let's promote the official spec!
