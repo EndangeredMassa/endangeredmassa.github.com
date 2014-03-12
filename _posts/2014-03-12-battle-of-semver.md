@@ -130,11 +130,20 @@ break backwards compatibility,
 but will do so less than major version changes.
 That doesn't inspire me with confidence.
 
+Version Part | Upgrade Risk | Implied Compatibilty
+:----- | --:-- | --:--
+official.major  | high | incompatible  
+official.minor  | low | compatible
+official.patch  | low | compatible
+alternate.major | high | incompatible
+alternate.minor | medium | incompatible
+alternate.patch | low | compatible
+
 I'd much rather subscribe to a system
-that attempts to provide some guarantees
-about compatibility than one that simply tells you
-about the degree to which you are likely
-going to experience breakages in that compatibility.
+where minor versions imply compatibility
+and therefore reduces risk in upgrading.
+Carat ranges are a perfect fit
+with the official spec.
 
 ### battle of different platforms
 
