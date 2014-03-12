@@ -83,6 +83,13 @@ and patch versions being the only place
 where backwards compatibility
 is preserved.
 
+Some suggest that we adopt this alternate policy
+because that's how it's used in the "real world".
+It is certainly tempting to codify
+how things are actually happening
+in the module ecosystem.
+However, I believe this is a mistake.
+
 <table class="pure-table sidenote">
 <thead><tr><th>Side Note</th></tr></thead>
 <tr><td>Some claim that carat ranges
@@ -100,13 +107,6 @@ In my opinion, all production code should always use shrinkwrap.
 You never want ANY change to your codebase
 to happen between testing and deploying.
 </td></tr></table>
-
-Some suggest that we adopt this alternate policy
-because that's how it's used in the "real world".
-It is certainly tempting to codify
-how things are actually happening
-in the module ecosystem.
-However, I believe this is a mistake.
 
 It implies that (at least) the majority of packages
 use this "realistic" version of semver.
@@ -134,14 +134,18 @@ but will do so less than major version changes.
 That doesn't inspire me with confidence.
 
 
-Version Part | Upgrade Risk | Implied Compatibilty
-:----- | :---- | :----
-official.major  | high | incompatible  
-official.minor  | low | compatible
-official.patch  | low | compatible
-alternate.major | high | incompatible
-alternate.minor | medium | incompatible
-alternate.patch | low | compatible
+<table class="pure-table">
+<thead><tr>
+<th>Version Part</th>
+<th>Upgrade Risk</th>
+<th>Implied Compatibilty</th>
+</tr></thead>
+<tr><td>official.major</td><td>high</td><td>incompatible</td></tr>
+<tr><td>official.minor</td><td>low</td><td>compatible</td></tr>
+<tr><td>official.patch</td><td>low</td><td>compatible</td></tr>
+<tr><td>alternate.major</td><td>high</td><td>incompatible</td></tr>
+<tr><td>alternate.minor</td><td>medium</td><td>incompatible</td></tr>
+<tr><td>alternate.patch</td><td>low</td><td>compatible</td></tr></table>
 
 
 I'd much rather subscribe to a system
