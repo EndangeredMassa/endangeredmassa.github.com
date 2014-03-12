@@ -132,11 +132,14 @@ ul ul {
   margin-left: 1em;
 }
 
+header {
+  margin-top: 0
+}
 .post header {
   margin-bottom: 26px;
 }
 .post-list header {
-  margin-bottom: 8px;
+  margin-bottom: 8px;;
 }
 
 
