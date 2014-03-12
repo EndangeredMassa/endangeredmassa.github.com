@@ -7,7 +7,7 @@ if(document.querySelectorAll) {
 
   window.onload = function(){
     var tables = toArray(document.querySelectorAll('table'));
-    tables.each(function(table){
+    tables.forEach(function(table){
       table.className == 'pure-table';
     });
   };
