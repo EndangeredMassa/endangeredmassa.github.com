@@ -277,6 +277,13 @@ h2 {
   line-height: 14px;
 }
 
+.sidenote {
+  float: right;
+  width: 325px
+  margin: 0 12px;
+  padding: 8px;
+}
+
 @media (max-width: 900px) {
   .sidebar {
     width: 100%;
