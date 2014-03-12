@@ -130,14 +130,16 @@ break backwards compatibility,
 but will do so less than major version changes.
 That doesn't inspire me with confidence.
 
+
 Version Part | Upgrade Risk | Implied Compatibilty
-:----- | --:-- | --:--
+:----- | :---- | :----
 official.major  | high | incompatible  
 official.minor  | low | compatible
 official.patch  | low | compatible
 alternate.major | high | incompatible
 alternate.minor | medium | incompatible
 alternate.patch | low | compatible
+
 
 I'd much rather subscribe to a system
 where minor versions imply compatibility
