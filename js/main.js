@@ -8,7 +8,7 @@ if(document.querySelectorAll) {
   window.onload = function(){
     var tables = toArray(document.querySelectorAll('table'));
     tables.forEach(function(table){
-      table.className == 'pure-table';
+      table.className = 'pure-table';
     });
   };
 }
