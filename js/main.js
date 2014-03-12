@@ -9,6 +9,7 @@ if(document.querySelectorAll) {
     var tables = toArray(document.querySelectorAll('table'));
     tables.forEach(function(table){
       table.className = 'pure-table';
+      table.style = 'margin: 0 auto;';
     });
   };
 }
