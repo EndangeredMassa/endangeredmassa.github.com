@@ -51,6 +51,10 @@ ul ul {
   color: #D371E2;
 }
 
+header {
+  margin-bottom: 26px;
+}
+
 .header {
   margin: 50% 2em 0;
   text-align: right;
