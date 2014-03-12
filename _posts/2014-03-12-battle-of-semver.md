@@ -15,7 +15,7 @@ blurb:
   in order to better educate myself
   on this issue.
   This article is a summary of my findings.  
-published: false
+published: true
 ---
 
 In [Node v0.10.26 (Stable)](http://blog.nodejs.org/2014/02/18/node-v0-10-26-stable/)
