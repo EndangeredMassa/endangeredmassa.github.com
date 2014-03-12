@@ -5,7 +5,7 @@ if(document.querySelectorAll) {
     return realArray;
   }
 
-  window.onready = function(){
+  window.onload = function(){
     var tables = toArray(document.querySelectorAll('table'));
     tables.each(function(table){
       table.className == 'pure-table';
