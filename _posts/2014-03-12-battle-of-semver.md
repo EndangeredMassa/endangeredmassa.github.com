@@ -197,7 +197,7 @@ on their latest versions.
 <table class="pure-table sidenote">
 <thead><tr><th>Side Note</th></tr></thead>
 <tr><td>There is also the browser to consider.
-When `npm` installs modules,
+When <code>npm</code> installs modules,
 it will reuse local versions
 that match dependency ranges
 of multiple dependencies.
@@ -208,7 +208,7 @@ in your dependency tree.
 This allows less total code
 to be bundled into a client-side asset,
 making it more reasonable
-to take advantage of `npm` modules
+to take advantage of <code>npm</code> modules
 in client-side code.</td></tr></table>
 
 ### battle before we're ready
@@ -280,7 +280,7 @@ a "best" practice.</td></tr></table>
 
 I think that using carat ranges
 as the default behavior
-of `--save` is best
+of <code>--save</code> is best
 for the Node.js module ecosystem.
 
 The fact that the alternate unofficial semver
