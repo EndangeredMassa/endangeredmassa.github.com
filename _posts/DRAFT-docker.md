@@ -170,6 +170,45 @@ for developing modules
 you want to use
 inside a docker instance.
 
+For example,
+you can make changes to your project
+on your host system,
+run `make link`,
+navigate to your container's linked directory
+`/host/#{project}`,
+and test your code.
 
 
+## Public Registry
 
+Once you are ready to share your image
+with the world, you can upload it
+to the official docker registry.
+
+After
+[setting up an account](https://www.docker.io/account/signup/),
+you can:
+
+```bash
+sudo docker login
+sudo docker commit #{container_id} #{user_name}/#{image_name}
+sudo docker push #{user_name}/#{image_name}
+```
+
+Then someone else can test your image with:
+
+```bash
+docker pull #{user_name}/#{image_name}
+docker run --tty --interactive #{user_name}/#{image_name}
+```
+
+## working with Docker and NodeOS
+
+Building an OS with Docker feels great!
+It's one of the most interesting uses of
+docker that I've seen so far.
+
+NodeOS itself has some very interesting problems and capabilities.
+Using npm at a system level is very compelling.
+
+I'm excited about the future of both of these great technologies.
