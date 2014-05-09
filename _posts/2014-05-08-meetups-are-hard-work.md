@@ -12,7 +12,7 @@ blurb:
   order pizza,
   and you are done!<br><br>
   It's just not that easy.
-published: false
+published: true
 ---
 
 The hidden cost of meetups
