@@ -230,20 +230,20 @@ lead to the following total person-hours spent
 planning and running this event.
 
 ```
-approval: 2
+approval:           2
 coordinate speaker: 2
-schedule venue: 2
-facilities: 0.5
-media: 0.5
-food: 0.75
-names: 0.5
+schedule venue:     2
+facilities:         0.5
+media:              0.5
+food:               0.75
+names:              0.5
 
-keg: 1
-verification: 1.5
-event: 2.5
-cleanup: 1
+keg:                1
+verification:       1.5
+event:              2.5
+cleanup:            1
 
-total: ~14.75 hours
+total:             ~14.75 hours
 ```
 
 That brings the total cost up to
