@@ -40,7 +40,8 @@ I received approval
 and a budget of $300
 for the first event.
 
-Meanwhile, Trek was working with Luke Melia
+Meanwhile, Trek was working with
+[Luke Melia](https://twitter.com/lukemelia)
 to figure out what the topic
 and description would be.
 Luke was presenting a similar talk at RailsConf,
