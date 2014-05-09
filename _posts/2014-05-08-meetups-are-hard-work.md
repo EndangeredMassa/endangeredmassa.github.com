@@ -22,8 +22,8 @@ Let me tell you a story.
 ## Chicago Ember.js at Groupon
 
 [Trek Glowacki](https://twitter.com/trek)
-is a member of the Ember.js core team,
-organizes the Chicago Ember.js meetup,
+is a member of the [Ember.js](http://emberjs.com/) core team,
+organizes the [Chicago Ember.js meetup](http://www.meetup.com/Chicago-Ember-js/),
 and is a software engineer at Groupon.
 I felt that Groupon could do more to help
 promote Ember.js via the meetup.
