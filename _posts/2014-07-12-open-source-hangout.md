@@ -9,6 +9,17 @@ blurb:
 published: false
 ---
 
+## pilot episode
+
+The pilot episode will be on
+July 16th at 9pm central time.
+It will be streamed live via
+Google Hangouts On Air.
+
+Check the
+[event page](https://plus.google.com/u/0/b/109839388509585785858/events/c3fdsk0a4232krfplb0hai6qlqo)
+for full details!
+
 ## show format
 
 The show will run weekly,
@@ -30,14 +41,11 @@ participate in the discussion!
 
 ## participate!
 
-The pilot episode will be on
-July 16th at 9pm central time.
-
 If you want to be a part of the discussion,
 we need to invite you when the event starts.
 Comment on the [event page](https://plus.google.com/u/0/b/109839388509585785858/events/c3fdsk0a4232krfplb0hai6qlqo)
 saying that you would like to particiapte.
-Google Hangouts has a cap of 10 people.
+Google Hangouts has a cap of 10 participants.
 If we have more than that,
 we'll probably do first-come first-served.
 
