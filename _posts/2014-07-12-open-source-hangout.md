@@ -39,7 +39,7 @@ However, unlike traditional podcasts,
 we'll try to invite the community to
 participate in the discussion!
 
-## participate!
+## participate
 
 If you want to be a part of the discussion,
 we need to invite you when the event starts.
