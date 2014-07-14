@@ -13,9 +13,16 @@ published: false
 
 The pilot episode will be on
 July 16th at 9pm central time.
+The primary topic of discussion
+will be likely be
+Ideal Package Management for Browsers.
+The always amazing
+[Trek](https://twitter.com/trek)
+will be the cohost
+for this episode!
+
 It will be streamed live via
 Google Hangouts On Air.
-
 Check the
 [event page](https://plus.google.com/events/c3fdsk0a4232krfplb0hai6qlqo)
 for full details!
