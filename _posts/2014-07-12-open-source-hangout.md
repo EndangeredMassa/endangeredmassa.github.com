@@ -31,6 +31,8 @@ for full details!
 
 The show will run weekly,
 Wednesday nights at 9pm central time.
+You can chat during the show on
+[irc.freenode.net #opensourcehangout](http://webchat.freenode.net/?channels=%23opensourcehangout&uio=d4).
 
 The show will have a host (me!)
 and a cohost that may change per week.
