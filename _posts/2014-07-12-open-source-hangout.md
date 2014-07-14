@@ -43,7 +43,7 @@ announcements,
 and/or other news.
 
 There will always be a primary topic
-that in some way involves open source.
+related to developing open source software.
 However, unlike traditional podcasts,
 we'll try to invite the community to
 participate in the discussion!
