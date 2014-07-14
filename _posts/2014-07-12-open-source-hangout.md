@@ -12,10 +12,10 @@ published: false
 ## pilot episode
 
 The pilot episode will be on
-July 16th at 9pm central time.
+**July 16th at 9pm central time**.
 The primary topic of discussion
 will be likely be
-Ideal Package Management for Browsers.
+**Ideal Package Management for Browsers**.
 The always amazing
 [Trek](https://twitter.com/trek)
 will be the cohost
