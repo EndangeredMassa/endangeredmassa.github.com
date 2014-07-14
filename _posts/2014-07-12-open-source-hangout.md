@@ -6,7 +6,7 @@ categories: [dev]
 blurb:
   A brand new podcast about developing
   and working with Open Source software!
-published: false
+published: true
 ---
 
 ## pilot episode
