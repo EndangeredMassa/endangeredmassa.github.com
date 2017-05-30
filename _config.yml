@@ -8,8 +8,7 @@ title: "Sean Massa's Blog"
 description: ""
 
 email: endangeredmassa@gmail.com
-#blog logo
-logo: "/assets/images/logo.png"
+logo: "/assets/images/logo.svg"
 float_logo: true # true, false (default)
 
 # blog cover

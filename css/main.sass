@@ -18,10 +18,6 @@ $font-sans: Open Sans, MundoSans, "Helvetica Neue", Arial, Helvetica, sans-serif
   @media only screen and (max-width: $breakpoint + px)
     @content
 
-// Only needed for syntax highlighting
-%vertical-rhythm
-  margin-bottom: $rs
-
 main
   display: block
 
@@ -45,7 +41,6 @@ body
   top: 10px
   width: $rs*3
   height: $rs*3
-  background-color: #000
   overflow: hidden
   z-index: 99
   .logo
@@ -589,7 +584,7 @@ body
       text-decoration: none
       cursor: pointer
       height: 44px
-      background: #57ad68
+      background: #000
       color: #fff
       vertical-align: middle
       box-sizing: border-box
@@ -607,14 +602,15 @@ code
   font-size: 15px
   border: 1px solid #e8e8e8
   border-radius: 3px
-  background-color: #eef
+  background: #f6f8fa
 
 code
   padding: 1px 5px
 
 pre
   padding: 8px 12px
-  overflow-x: scroll
+  overflow-x: auto
+
   > code
     border: 0
     padding-right: 0
