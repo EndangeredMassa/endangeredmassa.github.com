@@ -7,7 +7,7 @@ layout: page
     <div class="custom-links">
       {% for social in site.social %}
         {% if social.url %}
-            <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
+            <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %}title="{{ social.desc }}"{% endif %}>
               <i class="fa fa-{{ social.icon }}"></i>
             </a>
             &nbsp;&nbsp;·&nbsp;&nbsp;
@@ -22,7 +22,20 @@ layout: page
 
   <article class="post">
     <section class="post-content">
-      <p>Hey there. I'm Sean Massa.</p>
+      <p>
+        Sean Massa is a(n):
+      </p>
+
+      <ul>
+        <li>software engineer with a decade of experience spanning .NET, Ruby, front-end javascript, and node.js.</li>
+        <li>community organizer of (at different times) the Chicago Node.js, Chicago Ember, Geekfest Chicago, hackathons, Groupon's internal engineering community</li>
+        <li>supporter of diversity and inclusion</li>
+        <li>enthusiast of organizational structure development</li>
+      </ul>
+      <p>
+        Feel free to reach out to me about anything, especially if it's about my interests, on Twitter at
+        <a href="https://twitter.com/endangeredmassa">@endangeredmassa</a>.
+      </p>
     </section>
   </article>
 
