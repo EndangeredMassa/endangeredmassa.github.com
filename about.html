@@ -1,0 +1,29 @@
+---
+layout: page
+---
+
+<header class="blog-header">
+    <h1 class="blog-title">About Sean Massa</h1>
+    <div class="custom-links">
+      {% for social in site.social %}
+        {% if social.url %}
+            <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
+              <i class="fa fa-{{ social.icon }}"></i>
+            </a>
+            &nbsp;&nbsp;·&nbsp;&nbsp;
+        {% endif %}
+      {% endfor %}
+      <a href={{ "/about/" | prepend: site.baseurl }}>About</a>
+    </div>
+</header>
+
+
+<main class="content" role="main">
+
+  <article class="post">
+    <section class="post-content">
+      <p>Hey there. I'm Sean Massa.</p>
+    </section>
+  </article>
+
+</main>

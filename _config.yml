@@ -9,15 +9,16 @@ description: ""
 
 email: endangeredmassa@gmail.com
 logo: "/assets/images/logo.svg"
-float_logo: true # true, false (default)
+float_logo: true
 
 # blog cover
 # cover:
 
 name: "Sean Massa"
-author: 'Sean Massa'
+author: "Sean Massa"
 author_image: "/assets/images/author.jpg"
 
+permalink: /blog/:title
 paginate:	10
 
 url: "http://massalabs.***.***" # the base hostname & protocol for your site

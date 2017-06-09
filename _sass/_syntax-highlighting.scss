@@ -1,8 +1,17 @@
 /**
  * Syntax highlighting styles
  */
+
+// inline form
+code.highlight {
+  background: #f6f8fa;
+}
+
 .highlight {
-    background: #f6f8fa;
+    // block form
+    pre {
+      background: #f6f8fa;
+    }
 
     margin-top: 22px;
     margin-bottom: 48px;

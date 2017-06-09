@@ -65,19 +65,21 @@ layout: default
       {% endfor %}
     </div>
 
-    <nav class="pagination" role="navigation">
-      {% if paginator.next_page %}
-        <a class="newer-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.next_page }}>&larr; Older posts</a>
-      {% endif %}
-      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-      {% if paginator.previous_page %}
-        {% if paginator.page == 2 %}
-          <a class="older-posts" href={{ "/" | prepend: site.baseurl }}>Newer posts &rarr;</a>
-        {% else %}
-          <a class="older-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.previous_page }}>Newer posts &rarr;</a>
+    {% if paginator.total_pages > 1 %}
+      <nav class="pagination" role="navigation">
+        {% if paginator.next_page %}
+          <a class="newer-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.next_page }}>&larr; Older posts</a>
         {% endif %}
-      {% endif %}
-    </nav>
+        <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        {% if paginator.previous_page %}
+          {% if paginator.page == 2 %}
+            <a class="older-posts" href={{ "/" | prepend: site.baseurl }}>Newer posts &rarr;</a>
+          {% else %}
+            <a class="older-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.previous_page }}>Newer posts &rarr;</a>
+          {% endif %}
+        {% endif %}
+      </nav>
+    {% endif %}
 
 
     <!-- {{!! After all the posts, we have the previous/next pagination links }}
