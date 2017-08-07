@@ -52,12 +52,19 @@ layout: default
             <header class="post-header">
               <h2 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h2>
             </header>
+            <div class="post-meta">
+              By
+              <b>{{ site.author }}</b>
+              on
+              <time datetime="{{ post.date }}">{{ post.date | date: '%B %d, %Y' }}</time>  
+            </div>
+
+            
+            
             <section class="post-excerpt" itemprop="description">
               <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
             </section>
-            <div class="post-meta">
-              <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-            </div>
+            
           </div>
         </article>
       {% endfor %}
