@@ -36,7 +36,7 @@
               By
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
               on
-              <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time>
+              <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%B %d, %Y' }}</time>
             </div>
           </div>
         </div>
@@ -46,7 +46,8 @@
         {% endif %}
         <section class="post-content">
           <div class="post-reading">
-            <span class="post-reading-time"></span> read
+            <span class="post-reading-time"></span> read<br>
+            <!-- <span class="post-word-count"></span> words -->
           </div>
           <a name="topofpage"></a>
           {{content}}
