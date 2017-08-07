@@ -21,7 +21,7 @@ author_image: "/assets/images/author.jpg"
 permalink: /blog/:title
 paginate:	10
 
-url: "http://massalabs.***.***" # the base hostname & protocol for your site
+url: "http://massalabs.com" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
 twitter_handle: '@endangeredmassa'
