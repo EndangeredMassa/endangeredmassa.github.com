@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "An Incremental Approach to Linting to Your Projects"
-date:   2017-07-12
+date:   2017-08-08
 ---
 
 I have gone through the process of adding linting to existing, large projects a couple of times. I've learned some lessons about how to approach this so that it's not disruptive to the team doing other work. Follow these steps to get robust linting into your project without pulling team velocity to a halt!
@@ -66,12 +66,13 @@ There are a lot of great linters out there. Here's a list to get you started!
   - [airbnb-base](https://github.com/airbnb/javascript)
   - [eslint-plugin-import](https://github.com/benmosher/eslint-plugin-import)
   - [others...](https://www.npmjs.com/browse/keyword/eslint)
-
 - ember
   - [ember-cli-eslint](https://github.com/ember-cli/ember-cli-eslint)
+  - [ember-a11y-testing](https://github.com/ember-a11y/ember-a11y-testing)
   - [ember-cli-template-lint](https://github.com/rwjblue/ember-cli-template-lint)
   - [ember-cli-scss-lint](https://github.com/tomasbasham/ember-cli-scss-lint)
-
 - [sass lint](https://github.com/sasstools/sass-lint)
+- [axe (a11y)](https://github.com/dequelabs/axe-core)
+- [lighthouse (PWA/Performance)](https://developers.google.com/web/tools/lighthouse/)
 
 Happy linting!
