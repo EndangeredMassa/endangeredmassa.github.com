@@ -7,4 +7,41 @@
     </div>
 </footer>
 
+<script src="https://unpkg.com/mermaid@7.1.0/dist/mermaid.js"></script>
+<script>
+  function getTextWithLineBreaks(element) {
+    var elem = document.createElement('textarea');
+    elem.innerHTML = element.innerHTML;
+    return elem.value;
+  }
+
+  mermaid.initialize({
+    startOnLoad: false,
+    logLevel: 3,
+    theme: 'neutral'
+  });
+
+  $(function(){
+    var counter = 0;
+    var elements = document.querySelectorAll(".language-mermaid");
+
+    elements.forEach((element) => {
+      var graph = document.createElement('div');
+      //graph.id = 'mm-graph-' + counter++;
+      
+      var insertSvg = function(svgCode, bindFunctions) {
+        graph.innerHTML = svgCode;  
+      };
+
+      var graphDefinition = getTextWithLineBreaks(element);
+
+      var parent = element.parentElement;
+      parent.insertAdjacentElement('beforebegin', graph);
+      parent.remove();
+
+      var graph = mermaid.render('mm-graph-' + counter++, graphDefinition, insertSvg);
+    });
+  });
+</script>
+
 <!-- footer end -->
