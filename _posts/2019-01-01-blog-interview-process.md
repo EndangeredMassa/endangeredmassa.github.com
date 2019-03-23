@@ -5,8 +5,6 @@ description: My take on a strength-finding interview
 tags: interview
 ---
 
-# The Strength-finding Interview
-
 Most interviews seem to be Me-finding Interviews: the interviewers are looking for others who share their values, virtues, and unkowingly their vices. The format is also often very rigid, looking for specific things and rejecting candidates who can't demonstrate them.
 
 I think we can do better. I know many are trying, too! I'm not setting up a straw man here. I just want to share my take on doing better.
@@ -27,6 +25,14 @@ The other goals are to:
 You may notice that "plan the specific candidate's interview" and "provide a ... consistent experience to candidates" are at odds, but we'll find a compromise.
 
 
+# A Job and a Candidate
+
+- job post
+- candidate profile
+
+
+
+
 # Interview Process
 
 There are four phases to the process. They will look pretty typical, but the details are where the magic happens.
@@ -44,8 +50,10 @@ Phase 4: Meet the Founders / Make Offer
 
 Schedule a 30-minute call to with the candidate to discuss the work environment, growth of the candidate, direction of the business, and compensation expectations.
 
-Example Meeting Agenda:
-
+> **Subject: "Call: Sean <> Jessie"**
+> 
+> *Date: 2019-03-01 9:30 - 10:00am*
+>
 > Topics:
 > - work: collaborating in a remote environment
 > - growth: what you are looking for in your next role
@@ -67,16 +75,30 @@ Example Meeting Agenda:
 
 **Compensation:** Discuss the compensation expectations of the candidate and the compensation range of the position. Include stock, bonus, and benefits. Make it clear that you do not discuss compensation history.
 
-**Dealbreakers:** Discuss any absolute requirements that either you have for the candidate or they have for employment. These must be clearly discussed in this phase.
+**Deal Breakers:** Discuss any absolute requirements that either you have for the candidate or they have for employment. These must be clearly discussed in this phase.
 
 Near the end of the call, remind the candidate of the next steps. Ask them if they have any final questions.
 
-Make note of any follow up tasks you may want to do. These can be anything that will help you decide on whether or not to advance the candidate to the next phase, such as:
+Make note of any follow up tasks you may want to do. These can be anything that will help you decide on whether or not to advance the candidate to the next phase.
 
-- reference calls
-- reviewing new information
-- following up with HR about insurance details
-- another candidate call to continue a previous agenda item
+> **Notes: Jessie on 2019-03-01**
+>
+> Work: They've not worked full-time in a remote environment before,
+> but have worked remotely on their team for up to a week at a time.
+> They enjoyed it and felt productive during that time.
+> 
+> Growth: They would like to grow in technical leadership skills, such as mentorship, giving good feedback, and breaking down complex tasks.
+> 
+> Compensation: They seemed amenable to our compensation range for the position,
+> but would prefer higher equity and lower salary, given a choice.
+> 
+> Deal Breakers: Not interested in working somewhere that uses "go fast and break things"
+> to mean "write bad code and move on".
+> 
+> To Do:
+> - reference call: Ashish about working a remote environment
+> - ask HR: what's the largest life insurance policy we offer?
+
 
 After completing your follow ups, you should be certain that a candidate should or should not progress to the next phase. If you are not, you either have more follow ups to do or should just pass on the candidate.
 
@@ -91,7 +113,7 @@ This phase starts with a request for information from the candidate. The request
 
 Example email:
 
-> **Hello [name]!**
+> **Hello {{name}}!**
 >
 > Welcome to Phase 2 of our interview process!
 >
@@ -107,7 +129,7 @@ Example email:
 > - Node.js (API)
 > - React (Web Client)
 > - React Native (Mobile Apps)
-> - AWS (Infrastructure)
+> - AWS EC2/RDS/S3 (Infrastructure)
 >
 > Our problem space is the recruiting software landscape. We're currently focused on improving our job board and streamlining customer onboarding.
 >
@@ -153,16 +175,14 @@ Example Candidate Response:
 >
 > - Data Modelling
 > - API Design
-> - System Architecture
+> - System Architecture Design
 > - Breaking Large Tasks into Smaller Tasks
 >
 > I don't typically do well programming in an interview setting. Can we do the homework problem you mentioned instead? I'm most comfortable with React and Node.js.
 
-For an example job, suppose that API Design and Task Management are key skills.
+For our job, suppose that API Design and Task Management are key skills. We also have a standard set of skills we want to evaluate: a form of technical execution and a form of communication.
 
-You should have a standard set of skills you want to evaluate, like a form of technical execution and a form of communication.
-
-You may end up with something like the following.
+Our interview schedule looks like this:
 
 ```
 Intro (5m)
@@ -177,7 +197,6 @@ Two-directional Q&A (45m)
 
 ### Running the Interview
 
-On my team, we value technical writing, especially given the remote team dynamics. Because of this, we also request a technical writing sample.
 
 
 
