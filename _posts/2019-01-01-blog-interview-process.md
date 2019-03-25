@@ -27,10 +27,77 @@ You may notice that "plan the specific candidate's interview" and "provide a ...
 
 # A Job and a Candidate
 
-- job post
-- candidate profile
+Let's assume we have a candidate Jessie:
 
+> **Candidate: Jessie**
+> 
+> Education: Self-taught
+> 
+> Experience: 4 years web development
+> 
+> Skills:
+> - React
+> - Node.js
 
+who is applying for this Software Engineer job:
+ 
+> **Job: Software Engineer**
+> 
+> FlashRecruit is a funded recruitment technology startup with massive traction (SaaS based) looking for a Software Engineer (for full stack development) to join our growing team! We're building chat-based (and other) software to make the job seeking and recruiting experiences better.
+> 
+> **Opportunity**
+> 
+> You are invited to join us on this adventure! There is a unique opportunity here to not only be a part of what we're building, but to influence the direction we take. You will be able to contribute your different skill sets to the various problems we'll solve together.
+> 
+> In this role specifically, you'll be collaborating with the development team to build new features, new products, and iterate on our processes. These efforts will directly lead to happier customers and more sales for the business.
+> 
+> We'd love to tell you more about what to expect, but the team is small and growing. It's hard to predict what the future will hold. Joining now gives you an opportunity to shape that future.
+> 
+> **Context**
+> 
+> We work in the recruiting software landscape, which is complex and crowded. We're doing something unique in the space by offering the ability to chat with a recruiter before applying to a job, which is exciting. However, we're not stopping there.
+> 
+> We're also a small startup, which means you'll likely wear different hats at different times. We expect you to spend most of your time writing software, but sometimes other hats will be necessary.
+> 
+> Not everyone works in our Oak Brook (and soon downtown Chicago) office. We fully embrace remote work. You will be collaborating with others that could be working anywhere in the US. Because of this, communication is key. This includes screen sharing, remote pair programming, writing documentation, virtual meetings, and more.
+> 
+> **Expectations of You**
+> 
+> There aren't many technical requirements. We don't want to exclude you based on something you could learn quickly enough on the job. Instead, we'd like to focus on the interpersonal skills that we find to be critical to team happiness and success.
+> 
+> **Continuous Improvement:** For each other item, you don't have to already be great. The core expectation and real requirement is that you improve over time. The processes and expectations in place will facilitate that, but you should be driven to continuous improvement as well.
+> 
+> **Code:** Writing software is the core of this role. You should write software that is tested, modifiable, and clear. We have no expectations around computer science concepts, but you should be open to learning about anything useful.
+> 
+> **Worked on Web Software:** You should have built web applications or the systems supporting them before. Experience with our entire stack is not necessary. It is helpful to have some experience with at least one of these:
+> 
+> *   Node.js (API)
+> *   React (Web Client)
+> *   React Native (Mobile Apps)
+> *   AWS (Infrastructure)
+> 
+> **Collaborate:** You should work well in a collaborative environment. As a team, we'll be building software, reviewing code, deciding on architecture, and iterating on our processes. You don't have to do all of these things, but we'd like you to be involved with the team more than just executing individual task after task.
+> 
+> **Write:** Because we fully embrace remote work, you will often be writing messages, pull request descriptions, the occasional document, and more. Technical Writing is an important skill in general, but especially in a remote environment.
+> 
+> **Give Feedback:** You should give feedback on the product, team, and team members. Feedback should be specific, actionable, and timely. For individuals, it should also be directly related to the job they are expected to perform. You should also be mindful of your biases when giving feedback.
+> 
+> **Receive Feedback:** You should respond well to feedback. Responding well can mean many things, including disagreement. We want to build a strong, trust-and-respect-based relationship across the team that allows us to give feedback about actions, not judgements about people.
+> 
+> **Benefits**
+> 
+> *   Competitive compensation
+> *   Equity in a funded, early-stage startup poised for exponential growth
+> *   Full-time W2 employment
+> *   Health Care Plan that's good for families and individuals
+> *   Flexible time to allow for a work-life balance that works for you and your family
+> *   Unlimited PTO with minimums to prevent burnout
+> *   Intentionally Guided Culture based on inclusion and respect
+> *   Remote work options
+> 
+> If you aren't sure if you should apply, please apply anyway. Don't self-select yourself out. We'd be happy to discuss any concerns you have with the job post matching your skill set.
+> 
+> FlashRecruit is committed to creating a diverse environment and is proud to be an equal opportunity employer. All applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, disability, age, or veteran status.
 
 
 # Interview Process
@@ -44,16 +111,22 @@ Phase 3: Follow Ups
 Phase 4: Meet the Founders / Make Offer
 ```
 
+
 ## Phase 1: Confirm Expectations
 
 *Phase Goal: Confirm expectations of the candidate and employer regarding the work, growth, and compensation.*
 
 Schedule a 30-minute call to with the candidate to discuss the work environment, growth of the candidate, direction of the business, and compensation expectations.
 
-> **Subject: "Call: Sean <> Jessie"**
-> 
+
+> **Calendar Invite: "Call: Sean <> Jessie"**
+>
+> *To: Jessie*<br>
+> *From: Sean*<br>
 > *Date: 2019-03-01 9:30 - 10:00am*
 >
+> ---
+> 
 > Topics:
 > - work: collaborating in a remote environment
 > - growth: what you are looking for in your next role
@@ -66,6 +139,9 @@ Schedule a 30-minute call to with the candidate to discuss the work environment,
 > Interview Process: {{link to full description of process}}
 >
 > Job Description: {{link to the job description}}
+
+
+Let's explore those topics in more detail.
 
 **Work:** Discuss the current working environment including culture, physical/remote space, collaboration, and project management. Discuss the candidates preferences in those areas.
 
@@ -81,8 +157,13 @@ Near the end of the call, remind the candidate of the next steps. Ask them if th
 
 Make note of any follow up tasks you may want to do. These can be anything that will help you decide on whether or not to advance the candidate to the next phase.
 
-> **Notes: Jessie on 2019-03-01**
+
+> **Candidate Notes: Jessie**
+> 
+> *Date: 2019-03-01*
 >
+> ---
+> 
 > Work: They've not worked full-time in a remote environment before,
 > but have worked remotely on their team for up to a week at a time.
 > They enjoyed it and felt productive during that time.
@@ -107,13 +188,21 @@ After completing your follow ups, you should be certain that a candidate should 
 
 *Phase Goal: Assess the candidate at their best in a well-structured, fair way.*
 
+
 ### Collaborate on the Format
 
 This phase starts with a request for information from the candidate. The request boils down to "what are your strengths that overlap with our needs?"
 
-Example email:
 
-> **Hello {{name}}!**
+> **Subject: FlashRecruit Interview Process**
+> 
+> *To: Jessie*<br>
+> *From: Sean*<br>
+> *Date: 2019-03-02*
+> 
+> ---
+>
+> **Hello Jessie!**
 >
 > Welcome to Phase 2 of our interview process!
 >
@@ -169,9 +258,16 @@ Example email:
 
 The candidate will respond with their strengths. If they shared some relevant strengths, select a couple to build into the interview. If not, either (1) select less relevant strengths as a way to assess their ability to master something or (2) follow up with them to see if there are other strengths you could focus on.
 
-Example Candidate Response:
 
-> My Strengths:
+> **Subject: My Strengths**
+>
+> *To: Sean*<br>
+> *From: Jessie*<br>
+> *Date: 2019-03-03*
+>
+> ---
+> 
+> These are my strengths that seem to overlap with your needs:
 >
 > - Data Modelling
 > - API Design
@@ -179,6 +275,9 @@ Example Candidate Response:
 > - Breaking Large Tasks into Smaller Tasks
 >
 > I don't typically do well programming in an interview setting. Can we do the homework problem you mentioned instead? I'm most comfortable with React and Node.js.
+
+
+
 
 For our job, suppose that API Design and Task Management are key skills. We also have a standard set of skills we want to evaluate: a form of technical execution and a form of communication.
 
