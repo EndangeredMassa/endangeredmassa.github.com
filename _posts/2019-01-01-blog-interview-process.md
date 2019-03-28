@@ -29,18 +29,16 @@ You may notice that "plan the specific candidate's interview" and "provide a ...
 
 Let's assume we have a candidate Jessie:
 
+
 > **Candidate: Jessie**
 > 
-> Education: Self-taught
-> 
-> Experience: 4 years web development
-> 
-> Skills:
-> - React
-> - Node.js
+> Education: Self-taught<br>
+> Experience: 4 years web development<br>
+
 
 who is applying for this Software Engineer job:
- 
+
+
 > **Job: Software Engineer**
 > 
 > FlashRecruit is a funded recruitment technology startup with massive traction (SaaS based) looking for a Software Engineer (for full stack development) to join our growing team! We're building chat-based (and other) software to make the job seeking and recruiting experiences better.
@@ -269,28 +267,58 @@ The candidate will respond with their strengths. If they shared some relevant st
 > 
 > These are my strengths that seem to overlap with your needs:
 >
-> - Data Modelling
+> - Technical Writing
 > - API Design
+> - Outside-in TDD of a Feature
 > - System Architecture Design
 > - Breaking Large Tasks into Smaller Tasks
 >
 > I don't typically do well programming in an interview setting. Can we do the homework problem you mentioned instead? I'm most comfortable with React and Node.js.
 
 
+For our job, we could really use someone with strong API Design and high-quality execution. Let's set up an interview that highlights the cadnidates "API Design" and "TDD" skills.
 
 
-For our job, suppose that API Design and Task Management are key skills. We also have a standard set of skills we want to evaluate: a form of technical execution and a form of communication.
+> **Subject: Interview Agenda**
+> 
+> *To: Jessie*<br>
+> *From: Sean*<br>
+> *Date: 2019-03-04*
+>
+> ---
+> 
+> **Format**
+> 
+> Here's a breakdown of the format we'd like to use. Let me know if you have any comments, questions, or concerns.
+> 
+> ```
+> Intro (5m)
+> Homework Discussion: Chat App (1hr)
+> Collaborate: Redesigning the Job board (1hr)
+> Collaborate: Refactoring and Testing (30m)
+> Two-directional Q&A (45m)
+> ```
+>
+> **Pair Programming: Work on an API in Node.js**
+> Strength: Writing tested Node controllers and maintaining clean functional back-end logic
+> We'll work together to implement some functionality in a Node.js API.
+> 
+> **UI Architecture Breadkdown**
+> Strength: Building out well-tested reusable React visual and higher-order components
+> We’ll take a page from our system and talk through how we’d go about architecting the UI of it from scratch. We’ll dig into what components should exist, how they should communicate, and how UI state should be managed.
+> 
+> **UX Flow Walkthrough**
+> Strength: Helping design and scope out user features and flow that are streamlined and efficient.
+> We’ll walk through several of our current user workflows and talk about how they could be improved.
+> 
+> **Two-directional Q&A**
+> We’ll take this time to ask more specific questions about each other.
 
-Our interview schedule looks like this:
 
-```
-Intro (5m)
-Architecture Overview (10m)
-Homework Discussion: Chrome Extension Project (1hr)
-Collaborate: Redesigning the Job board (1hr)
-Collaborate: Refactoring and Testing Discussion (30m)
-Two-directional Q&A (45m)
-```
+### Module Selection
+
+Modules are how you can find balance between consistent and adaptive interview experiences for candidates.
+
 
 
 
@@ -330,7 +358,7 @@ Making a decision from here is easier than a standard one-size-fits-all intervie
 
 # References
 
-This is the result of research, theorizing, experimentation, and iteration across a few years of work in collaboration with [@Trek](https://twitter.com/trek). You can read [Trek's earlier take](https://medium.com/@trek/tired-engineering-interviews-hired-engineering-auditions-5f9f00147a57) on this format, as well.
+This is the result of research, experimentation, and iteration across years of work, quite often in collaboration with [@Trek](https://twitter.com/trek). You can read [Trek's earlier take](https://medium.com/@trek/tired-engineering-interviews-hired-engineering-auditions-5f9f00147a57) on this format, as well.
 
 Other Interesting Resources
 
