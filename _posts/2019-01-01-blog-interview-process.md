@@ -123,7 +123,7 @@ Phase 5: Make a Decision
 Schedule a 30-minute call to with the candidate to discuss the work environment, growth of the candidate, direction of the business, and compensation expectations.
 
 <details open>
-<summary> <b>Calendar Invite: "Call: Sean <> Jessie</b></summary>
+<summary>🗓 <b>Calendar Invite: "Call: Sean <> Jessie</b></summary>
 
 > *To: Jessie*<br>
 > *From: Sean*<br>
