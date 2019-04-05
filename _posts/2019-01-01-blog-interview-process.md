@@ -30,7 +30,7 @@ You may notice that "plan the specific candidate's interview" and "provide a ...
 Let's assume we have a candidate Jessie:
 
 
-> **Candidate: Jessie**
+> 👩🏾‍💻 **Candidate: Jessie**
 > 
 > Education: Self-taught<br>
 > Experience: 4 years web development<br>
@@ -39,7 +39,7 @@ Let's assume we have a candidate Jessie:
 who is applying for this Software Engineer job:
 
 
-> **Job: Software Engineer**
+> 📋 **Job: Software Engineer**
 > 
 > FlashRecruit is a funded recruitment technology startup with massive traction (SaaS based) looking for a Software Engineer (for full stack development) to join our growing team! We're building chat-based (and other) software to make the job seeking and recruiting experiences better.
 > 
@@ -104,9 +104,10 @@ There are four phases to the process. They will look pretty typical, but the det
 
 ```
 Phase 1: Confirm Expectations
-Phase 2: Strength Finding Interview
-Phase 3: Follow Ups
-Phase 4: Meet the Founders / Make Offer
+Phase 2: Interview Negotiation
+Phase 3: Strength Finding Interview
+Phase 4: Review and Follow Ups
+Phase 5: Make a Decision
 ```
 
 
@@ -117,7 +118,7 @@ Phase 4: Meet the Founders / Make Offer
 Schedule a 30-minute call to with the candidate to discuss the work environment, growth of the candidate, direction of the business, and compensation expectations.
 
 
-> **Calendar Invite: "Call: Sean <> Jessie"**
+> 🗓 **Calendar Invite: "Call: Sean <> Jessie"**
 >
 > *To: Jessie*<br>
 > *From: Sean*<br>
@@ -156,7 +157,7 @@ Near the end of the call, remind the candidate of the next steps. Ask them if th
 Make note of any follow up tasks you may want to do. These can be anything that will help you decide on whether or not to advance the candidate to the next phase.
 
 
-> **Candidate Notes: Jessie**
+> 📝 **Expectation Setting Notes: Jessie**
 > 
 > *Date: 2019-03-01*
 >
@@ -182,7 +183,7 @@ Make note of any follow up tasks you may want to do. These can be anything that 
 After completing your follow ups, you should be certain that a candidate should or should not progress to the next phase. If you are not, you either have more follow ups to do or should just pass on the candidate.
 
 
-## Phase 2: Strength Finding Interview
+## Phase 2: Interview Negotation
 
 *Phase Goal: Assess the candidate at their best in a well-structured, fair way.*
 
@@ -192,7 +193,7 @@ After completing your follow ups, you should be certain that a candidate should 
 This phase starts with a request for information from the candidate. The request boils down to "what are your strengths that overlap with our needs?"
 
 
-> **Subject: FlashRecruit Interview Process**
+> ✉️ **Subject: FlashRecruit Interview Process**
 > 
 > *To: Jessie*<br>
 > *From: Sean*<br>
@@ -257,7 +258,7 @@ This phase starts with a request for information from the candidate. The request
 The candidate will respond with their strengths. If they shared some relevant strengths, select a couple to build into the interview. If not, either (1) select less relevant strengths as a way to assess their ability to master something or (2) follow up with them to see if there are other strengths you could focus on.
 
 
-> **Subject: My Strengths**
+> ️✉️ **Subject: My Strengths**
 >
 > *To: Sean*<br>
 > *From: Jessie*<br>
@@ -276,21 +277,33 @@ The candidate will respond with their strengths. If they shared some relevant st
 > I don't typically do well programming in an interview setting. Can we do the homework problem you mentioned instead? I'm most comfortable with React and Node.js.
 
 
+### Module Selection
+
+Modules are how you can find balance between consistent and adaptive interview experiences for candidates. The format is flexible around which modules are chosen, but a given module should remain as consistent as possible across candidates.
+
+Some modules will still apply to most candidates. In our interviews, we typically do the same 2 modules for everyone, then leave room for 2 other modules to be flexible towards the candidate's strengths.
+
+Collaboration is very important. If the candidate is comfortable with it, try to make at least 1 large module involve collaboration with a team member. If the candidate doesn't feel comfortable with this, ask for a work sample or completion og a homework problem that you can discuss during the interview.
+
+As you use this process more, you'll build more and more modules. This will require some work, but it's also worth the effort.
+
+When building modules, try to make them as realistic as possible. The domain should be the same or analgous to your domain by default, although you can shift this per candidate too. The tasks should be representative of the work required to do the job.
+
 For our job, we could really use someone with strong API Design and high-quality execution. Let's set up an interview that highlights the cadnidates "API Design" and "TDD" skills.
 
 
-> **Subject: Interview Agenda**
-> 
+> 🗓 **Subject: Interview Agenda**
+>
 > *To: Jessie*<br>
 > *From: Sean*<br>
 > *Date: 2019-03-04*
 >
 > ---
-> 
+>
 > **Format**
-> 
+>
 > Here's a breakdown of the format we'd like to use. Let me know if you have any comments, questions, or concerns.
-> 
+>
 > ```
 > Intro (5m)
 > Homework Discussion: Chat App (1hr)
@@ -300,49 +313,68 @@ For our job, we could really use someone with strong API Design and high-quality
 > ```
 >
 > **Pair Programming: Work on an API in Node.js**
+> 
 > Strength: Writing tested Node controllers and maintaining clean functional back-end logic
 > We'll work together to implement some functionality in a Node.js API.
-> 
+>
 > **UI Architecture Breadkdown**
+> 
 > Strength: Building out well-tested reusable React visual and higher-order components
 > We’ll take a page from our system and talk through how we’d go about architecting the UI of it from scratch. We’ll dig into what components should exist, how they should communicate, and how UI state should be managed.
-> 
+>
 > **UX Flow Walkthrough**
+> 
 > Strength: Helping design and scope out user features and flow that are streamlined and efficient.
 > We’ll walk through several of our current user workflows and talk about how they could be improved.
-> 
+>
 > **Two-directional Q&A**
+> 
 > We’ll take this time to ask more specific questions about each other.
 
 
-### Module Selection
+## Phase 3: Strength-finding Interview
 
-Modules are how you can find balance between consistent and adaptive interview experiences for candidates.
+Now we run the actual interview. This phase includes your common interview fare. You have a schedule, you meet, you discuss, you collaborate, and you evaluate.
 
+> 📝 **Interview Notes: Jessie**
+> 
+> **Pair Programming: Work on an API in Node.js**
+> 
+> Jessie was a strong collaborator. We both contributed to the solution.
+>
+> **UI Architecture Breadkdown**
+> 
+> There are essentially two skills being tested here: UI Architecture Design and React Execution. On the React Execution parts, Jessie could tell me in detail how the system would work. On the UI Architecture Design parts, Jessie struggled a bit on identifying a good solution to the problem. With some assistance, we arrived at a pretty good solution.
+>
+> **UX Flow Walkthrough**
+> 
+> {{TO DO}}
+>
+> **Two-directional Q&A**
+> 
+> {{TO DO}}
 
-
-
-### Running the Interview
-
-
-
-
-
-## Phase 3: Follow Ups
+## Phase 4: Review and Follow Ups
 
 *Phase Goal: Fill in the assessment gaps.*
 
-No matter how much effort you reasonably put into the process, there will be times that Phase 2 does not produce enough information to make a decision. This can come from poor execution of an interview module, poor choice of interview module, candidate nerves getting in the way, or other mishaps. Instead of declining what may be an excellent candidate, Phase 3 is here to course correct.
+No matter how much effort you reasonably put into the process, there will be times that Phase 2 does not produce enough information to make a decision. This can come from poor execution of an interview module, poor choice of interview module, candidate nerves getting in the way, or other mishaps.
 
-The candidate and hiring manager can both request additional interview sessions for any of those reasons. Common requests at this stage include:
+Review the data gathered from the interview and decide if this candidate is a clear hire, decline, or it's unclear. If it's unclear, figure out what missing information you have.
+
+The candidate may also have requests for additional information. Common requests at this stage include:
 - candidate requesting to meet other team members
 - hiring manager requesting running a different module
 - hiring manager requesting supporting evidence of a skill
 
-Schedule any new modules that make sense and run them just like in Phase 2.
+Schedule any new modules that make sense and run them just like in Phase 3. Gather any relevant information and add it to the notes. After that's all run, go through Phase 4 again.
 
+> 📝 **Review Notes: Jessie**
+> 
+> {{TO DO}}
+> 
 
-## Phase 4: Make a Decision
+## Phase 5: Make a Decision
 
 *Phase Goal: Decide to pass or make an offer on a candidate.*
 
@@ -350,10 +382,25 @@ The information gathered so far should be focused on the candidate's strengths t
 
 Making a decision from here is easier than a standard one-size-fits-all interview. The actual framework for making this decision is not the focus of this article, but it should be based on consistent processes that aim to remove bias in the hiring process.
 
+> ✉️ **Subject: Offer from FlashRecruit!**
+> 
+> *To: Jessie*<br>
+> *From: Sean*<br>
+> *Date: 2019-03-06*
+> 
+> ---
+>
+> **Hello Jessie!**
+>
+> {{TO DO}}
+> 
 
 
-# Results
+# The End
 
+That's the Strength-finding Interview! I hope you find this useful.
+
+I consider this to be an evolving process. If you have questions or feedback, please let me know!
 
 
 # References
@@ -364,76 +411,3 @@ Other Interesting Resources
 
 - [Lara Hogan's Interview Loop Template](https://larahogan.me/blog/onsite-interview-loop-template/)
 - [Gallup's Clifton Strengths Finder](https://www.gallupstrengthscenter.com/)
-
-
-
-
-
-# Interview Modules
-
-## Example Format
-
-What do you think about this format for the interview?
-
-    Intro (5m)
-    FlashRecruit Architecture Overview (10m)
-    Homework Discussion: Chrome Extension Project (1hr)
-    Break (10m)
-    Collaborate: Redesigning the Job board (1hr)
-    Collaborate: Refactoring and Testing Discussion (20m)
-    Two-directional Q&A (40m)
-
-## Modules
-
-<table>
-  <tr>
-   <td><strong>Module</strong>
-   </td>
-   <td><strong>Relevant Strengths</strong>
-   </td>
-  </tr>
-  <tr>
-   <td><strong><a href="https://www.draw.io/?state=%7B%22ids%22:%5B%221HxuTY24j_thSPNZNcnqnyXROiX3TkL0G%22%5D,%22action%22:%22open%22,%22userId%22:%22111788342311165271282%22%7D#G1HxuTY24j_thSPNZNcnqnyXROiX3TkL0G">Architecture Overview</a></strong>
-   </td>
-   <td>system architecture design
-   </td>
-  </tr>
-  <tr>
-   <td><strong><a href="https://gist.github.com/EndangeredMassa/84f072e5367671b08a94732a6e81b3d1">Refactoring and Testing Discussion</a></strong>
-   </td>
-   <td>writing tests, testing legacy code, refactoring
-   </td>
-  </tr>
-  <tr>
-   <td><strong><a href="https://docs.google.com/document/d/1y-lb6EW9YQH0F6gJw8aLJDba-kXi3SScHMWK-jTH9ww/edit#">UI Architecture Breakdown</a></strong>
-   </td>
-   <td>UI architecture design
-   </td>
-  </tr>
-  <tr>
-   <td><strong><a href="https://docs.google.com/document/d/12cOYNLG-RhzKr_eXugNSd4h9ttMCiMELd3VK7gpGORY/edit">UX Flow Walkthrough</a></strong>
-   </td>
-   <td>UX design
-   </td>
-  </tr>
-  <tr>
-   <td><strong><a href="https://docs.google.com/document/d/1BUU_o3SZXM_P4nZRC9P_EN_AJ_ETwgj-dDovmNYo83s/edit#">Pair: Node.js Service</a></strong>
-   </td>
-   <td>Writing APIs, Node.js
-   </td>
-  </tr>
-  <tr>
-   <td><strong><a href="https://docs.google.com/document/d/1jwbt0K9h5EQQJgEYsUOKr76YfILskuvV-dI-Cwk0gL4/edit#heading=h.lnsmm5t40wcn">Homework: Implement Chat Interface</a></strong>
-   </td>
-   <td>UI component development, testing, css
-   </td>
-  </tr>
-  <tr>
-   <td><strong><a href="https://docs.google.com/document/d/15ZkhOxn2Tl6OKyeWzlAuGKJqduuk64LCdfnl15i8HGA/edit#heading=h.4z7dtqklrnod">Pair: Redesign the Job Board</a></strong>
-   </td>
-   <td>UI/UX concepting, UI/UX design, Breaking work down
-   </td>
-  </tr>
-</table>
-
-**[Two-directional Q&A](https://docs.google.com/document/d/1txvlrebCOoJscUFA0WGQfr4d6OOIH7ckdNBncv6WHDw/edit#)**
