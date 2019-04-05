@@ -34,6 +34,8 @@ Let's assume we have a candidate Jessie:
 > 
 > Education: Self-taught<br>
 > Experience: 4 years web development<br>
+>
+> {{TO DO}}
 
 
 who is applying for this Software Engineer job:
@@ -97,6 +99,7 @@ who is applying for this Software Engineer job:
 > 
 > FlashRecruit is committed to creating a diverse environment and is proud to be an equal opportunity employer. All applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, disability, age, or veteran status.
 
+*Side Note: I used [text.io](https://textio.com/) in the writing of this job post and I'm very happy with the results!*
 
 # Interview Process
 
@@ -394,6 +397,15 @@ Making a decision from here is easier than a standard one-size-fits-all intervie
 >
 > {{TO DO}}
 > 
+
+
+# Feedback
+
+Candidate feedback on the process for both those who were successful and those who weren't has been outstanding. Everyone appreciated the goals of the format as well as the execution of it.
+
+As interviewers, we felt much more confident in our offers and rejections. On rejections specifically: it was compelling to see a candidate claim a specific strength, us to shape the interview around that strength, then the evaluation come back as sub-par for that strength.
+
+When we reject someone, we try to give some notes about why. There's potentiatl legal risk in these kinds of conversations--so have them with care and approval from the responsible parties in your organization. If you can provide feedback to rejected candidates, please do so.
 
 
 # The End
