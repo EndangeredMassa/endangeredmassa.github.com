@@ -29,20 +29,21 @@ You may notice that "plan the specific candidate's interview" and "provide a ...
 
 Let's assume we have a candidate Jessie:
 
+<details open>
+<summary>👩🏾‍💻 <b>Candidate: Jessie</b></summary>
 
-> 👩🏾‍💻 **Candidate: Jessie**
-> 
 > Education: Self-taught<br>
 > Experience: 4 years web development<br>
 >
 > {{TO DO}}
 
+</details>
 
 who is applying for this Software Engineer job:
 
+<details open>
+  <summary>📋 <b>Job: Software Engineer</b></summary>
 
-> 📋 **Job: Software Engineer**
-> 
 > FlashRecruit is a funded recruitment technology startup with massive traction (SaaS based) looking for a Software Engineer (for full stack development) to join our growing team! We're building chat-based (and other) software to make the job seeking and recruiting experiences better.
 > 
 > **Opportunity**
@@ -98,6 +99,7 @@ who is applying for this Software Engineer job:
 > If you aren't sure if you should apply, please apply anyway. Don't self-select yourself out. We'd be happy to discuss any concerns you have with the job post matching your skill set.
 > 
 > FlashRecruit is committed to creating a diverse environment and is proud to be an equal opportunity employer. All applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, disability, age, or veteran status.
+</details>
 
 *Side Note: I used [text.io](https://textio.com/) in the writing of this job post and I'm very happy with the results!*
 
@@ -120,9 +122,9 @@ Phase 5: Make a Decision
 
 Schedule a 30-minute call to with the candidate to discuss the work environment, growth of the candidate, direction of the business, and compensation expectations.
 
+<details open>
+<summary> <b>Calendar Invite: "Call: Sean <> Jessie</b></summary>
 
-> 🗓 **Calendar Invite: "Call: Sean <> Jessie"**
->
 > *To: Jessie*<br>
 > *From: Sean*<br>
 > *Date: 2019-03-01 9:30 - 10:00am*
@@ -142,6 +144,8 @@ Schedule a 30-minute call to with the candidate to discuss the work environment,
 >
 > Job Description: {{link to the job description}}
 
+</details>
+
 
 Let's explore those topics in more detail.
 
@@ -159,9 +163,9 @@ Near the end of the call, remind the candidate of the next steps. Ask them if th
 
 Make note of any follow up tasks you may want to do. These can be anything that will help you decide on whether or not to advance the candidate to the next phase.
 
+<details open>
+<summary>📝 <b>Expectation Setting Notes: Jessie</b></summary>
 
-> 📝 **Expectation Setting Notes: Jessie**
-> 
 > *Date: 2019-03-01*
 >
 > ---
@@ -182,6 +186,7 @@ Make note of any follow up tasks you may want to do. These can be anything that 
 > - reference call: Ashish about working a remote environment
 > - ask HR: what's the largest life insurance policy we offer?
 
+</details>
 
 After completing your follow ups, you should be certain that a candidate should or should not progress to the next phase. If you are not, you either have more follow ups to do or should just pass on the candidate.
 
@@ -195,9 +200,9 @@ After completing your follow ups, you should be certain that a candidate should 
 
 This phase starts with a request for information from the candidate. The request boils down to "what are your strengths that overlap with our needs?"
 
+<details open>
+<summary>✉️ <b>Subject: FlashRecruit Interview Process</b></summary>
 
-> ✉️ **Subject: FlashRecruit Interview Process**
-> 
 > *To: Jessie*<br>
 > *From: Sean*<br>
 > *Date: 2019-03-02*
@@ -257,12 +262,13 @@ This phase starts with a request for information from the candidate. The request
 >
 > ~Sean Massa
 
+</details>
 
 The candidate will respond with their strengths. If they shared some relevant strengths, select a couple to build into the interview. If not, either (1) select less relevant strengths as a way to assess their ability to master something or (2) follow up with them to see if there are other strengths you could focus on.
 
+<details open>
+<summary> ️✉️ <b>Subject: My Strengths</b></summary>
 
-> ️✉️ **Subject: My Strengths**
->
 > *To: Sean*<br>
 > *From: Jessie*<br>
 > *Date: 2019-03-03*
@@ -279,6 +285,9 @@ The candidate will respond with their strengths. If they shared some relevant st
 >
 > I don't typically do well programming in an interview setting. Can we do the homework problem you mentioned instead? I'm most comfortable with React and Node.js.
 
+</details>
+
+
 
 ### Module Selection
 
@@ -294,9 +303,9 @@ When building modules, try to make them as realistic as possible. The domain sho
 
 For our job, we could really use someone with strong API Design and high-quality execution. Let's set up an interview that highlights the cadnidates "API Design" and "TDD" skills.
 
+<details open>
+<summary>🗓 <b>Subject: Interview Agenda</b></summary>
 
-> 🗓 **Subject: Interview Agenda**
->
 > *To: Jessie*<br>
 > *From: Sean*<br>
 > *Date: 2019-03-04*
@@ -334,13 +343,16 @@ For our job, we could really use someone with strong API Design and high-quality
 > 
 > We’ll take this time to ask more specific questions about each other.
 
+</details>
+
 
 ## Phase 3: Strength-finding Interview
 
 Now we run the actual interview. This phase includes your common interview fare. You have a schedule, you meet, you discuss, you collaborate, and you evaluate.
 
-> 📝 **Interview Notes: Jessie**
-> 
+<details open>
+<summary>📝 <b>Interview Notes: Jessie</b></summary>
+
 > **Pair Programming: Work on an API in Node.js**
 > 
 > Jessie was a strong collaborator. We both contributed to the solution.
@@ -357,6 +369,9 @@ Now we run the actual interview. This phase includes your common interview fare.
 > 
 > {{TO DO}}
 
+</details>
+
+
 ## Phase 4: Review and Follow Ups
 
 *Phase Goal: Fill in the assessment gaps.*
@@ -372,10 +387,14 @@ The candidate may also have requests for additional information. Common requests
 
 Schedule any new modules that make sense and run them just like in Phase 3. Gather any relevant information and add it to the notes. After that's all run, go through Phase 4 again.
 
-> 📝 **Review Notes: Jessie**
-> 
+<details open>
+<summary>📝 <b>Review Notes: Jessie</b></summary>
+
 > {{TO DO}}
 > 
+
+</details>
+
 
 ## Phase 5: Make a Decision
 
@@ -385,8 +404,9 @@ The information gathered so far should be focused on the candidate's strengths t
 
 Making a decision from here is easier than a standard one-size-fits-all interview. The actual framework for making this decision is not the focus of this article, but it should be based on consistent processes that aim to remove bias in the hiring process.
 
-> ✉️ **Subject: Offer from FlashRecruit!**
-> 
+<details open>
+<summary>✉️ <b>Subject: Offer from FlashRecruit!</b></summary>
+
 > *To: Jessie*<br>
 > *From: Sean*<br>
 > *Date: 2019-03-06*
@@ -397,6 +417,8 @@ Making a decision from here is easier than a standard one-size-fits-all intervie
 >
 > {{TO DO}}
 > 
+
+</details>
 
 
 # Feedback
