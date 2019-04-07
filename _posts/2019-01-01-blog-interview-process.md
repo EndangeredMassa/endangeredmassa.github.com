@@ -35,14 +35,16 @@ Let's assume we have a candidate Jessie:
 > Education: Self-taught<br>
 > Experience: 4 years web development<br>
 >
-> {{TO DO}}
+> - Designed and implemented APIs in Node.js
+> - Wrote API documentation
+> - Managed API project by breaking down tasks
 
 </details>
 
 who is applying for this Software Engineer job:
 
 <details open>
-  <summary>📋 <b>Job: Software Engineer</b></summary>
+<summary>📋 <b>Job: Software Engineer</b></summary>
 
 > FlashRecruit is a funded recruitment technology startup with massive traction (SaaS based) looking for a Software Engineer (for full stack development) to join our growing team! We're building chat-based (and other) software to make the job seeking and recruiting experiences better.
 > 
@@ -105,7 +107,7 @@ who is applying for this Software Engineer job:
 
 # Interview Process
 
-There are four phases to the process. They will look pretty typical, but the details are where the magic happens.
+There are five phases to the process. They will look pretty typical, but the details are where the magic happens.
 
 ```
 Phase 1: Confirm Expectations
@@ -123,14 +125,16 @@ Phase 5: Make a Decision
 Schedule a 30-minute call to with the candidate to discuss the work environment, growth of the candidate, direction of the business, and compensation expectations.
 
 <details open>
-<summary>🗓 <b>Calendar Invite: "Call: Sean <> Jessie</b></summary>
+<summary>🗓 <b>Calendar Invite: "Call: Sean <> Jessie</b> [Sean -> Jessie]</summary>
 
 > *To: Jessie*<br>
 > *From: Sean*<br>
 > *Date: 2019-03-01 9:30 - 10:00am*
 >
 > ---
-> 
+>
+> Hey Jessie! Let's use this time to cover the following.
+>
 > Topics:
 > - work: collaborating in a remote environment
 > - growth: what you are looking for in your next role
@@ -140,8 +144,7 @@ Schedule a 30-minute call to with the candidate to discuss the work environment,
 >
 > I'm also happy to discuss any other questions you have about the role!
 >
-> Interview Process: {{link to full description of process}}
->
+> Interview Process: {{link to full description of process}}<br>
 > Job Description: {{link to the job description}}
 
 </details>
@@ -164,7 +167,7 @@ Near the end of the call, remind the candidate of the next steps. Ask them if th
 Make note of any follow up tasks you may want to do. These can be anything that will help you decide on whether or not to advance the candidate to the next phase.
 
 <details open>
-<summary>📝 <b>Expectation Setting Notes: Jessie</b></summary>
+<summary>📝 <b>Expectation Setting Notes: Jessie</b> [Sean]</summary>
 
 > *Date: 2019-03-01*
 >
@@ -201,31 +204,33 @@ After completing your follow ups, you should be certain that a candidate should 
 This phase starts with a request for information from the candidate. The request boils down to "what are your strengths that overlap with our needs?"
 
 <details open>
-<summary>✉️ <b>Subject: FlashRecruit Interview Process</b></summary>
+<summary>✉️ <b>Subject: FlashRecruit Interview Process</b> [Sean -> Jessie]</summary>
 
 > *To: Jessie*<br>
 > *From: Sean*<br>
 > *Date: 2019-03-02*
-> 
+>
 > ---
 >
 > **Hello Jessie!**
 >
 > Welcome to Phase 2 of our interview process!
 >
->     Phase 1: [Audio Call] Match Expectations
->     **Phase 2: [Video Interview] Strength Finding Interview**
->     Phase 3: [Variable] Follow Ups
->     Phase 4: [Video Call] Meet the Founders
+>     Phase 1: [Audio Call] Confirm Expectations
+>     **Phase 2: [Email] Interview Negotiation**
+>     Phase 3: [Video Interview] Strength Finding Interview
+>     Phase 4: [Variable] Follow Ups
+>     Phase 5: [Video Call] Meet the Founders
 >
 > The goal here is to really highlight your strengths. Take some time think about what your strengths are, what our problem domain looks like, and how those overlap.
 >
 > Our stack is:
 >
 > - Node.js (API)
-> - React (Web Client)
+> - Ember (Web Client)
+> - React (Deprecated Web Client)
 > - React Native (Mobile Apps)
-> - AWS EC2/RDS/S3 (Infrastructure)
+> - Heroku/S3/RDS (Infrastructure)
 >
 > Our problem space is the recruiting software landscape. We're currently focused on improving our job board and streamlining customer onboarding.
 >
@@ -267,7 +272,7 @@ This phase starts with a request for information from the candidate. The request
 The candidate will respond with their strengths. If they shared some relevant strengths, select a couple to build into the interview. If not, either (1) select less relevant strengths as a way to assess their ability to master something or (2) follow up with them to see if there are other strengths you could focus on.
 
 <details open>
-<summary> ️✉️ <b>Subject: My Strengths</b></summary>
+<summary> ️✉️ <b>Subject: My Strengths</b> [Jessie -> Sean]</summary>
 
 > *To: Sean*<br>
 > *From: Jessie*<br>
@@ -283,7 +288,7 @@ The candidate will respond with their strengths. If they shared some relevant st
 > - System Architecture Design
 > - Breaking Large Tasks into Smaller Tasks
 >
-> I don't typically do well programming in an interview setting. Can we do the homework problem you mentioned instead? I'm most comfortable with React and Node.js.
+> I don't typically do well programming in an interview setting. Can we do the homework problem you mentioned instead? I'm most comfortable with Node.js for APIs and Jade templates for web sites.
 
 </details>
 
@@ -301,10 +306,10 @@ As you use this process more, you'll build more and more modules. This will requ
 
 When building modules, try to make them as realistic as possible. The domain should be the same or analgous to your domain by default, although you can shift this per candidate too. The tasks should be representative of the work required to do the job.
 
-For our job, we could really use someone with strong API Design and high-quality execution. Let's set up an interview that highlights the cadnidates "API Design" and "TDD" skills.
+For our job, we could really use someone with strong API Design and high-quality execution. We also want to assess how well they will work in a remote environment. Let's set up an interview that highlights the candidate's "API Design", "Testing", and "Technical Writing" skills.
 
 <details open>
-<summary>🗓 <b>Subject: Interview Agenda</b></summary>
+<summary>✉️ <b>Subject: Interview Agenda</b> [Sean -> Jessie]</summary>
 
 > *To: Jessie*<br>
 > *From: Sean*<br>
@@ -312,12 +317,16 @@ For our job, we could really use someone with strong API Design and high-quality
 >
 > ---
 >
-> **Format**
+> We're excited for your interview!
+> 
+> Especially on our remote team, technical writing is a critical skill to being a successful team member. Can you provide a technical writing sample? This can be some documentation you wrote, a couple of Pull Request descriptions you are proud of, a prusuasive email you sent to a colleague, or anything else that describes or persuades involving technical or philosophical aspects of our work. If nothing like this is sharable, let us know and we'll figure something else out together.
+> 
+> Here's a breakdown of the interview format we'd like to use. Let me know if you have any comments, questions, or concerns.
 >
-> Here's a breakdown of the format we'd like to use. Let me know if you have any comments, questions, or concerns.
+> **Proposed Interview Format**
 >
 > ```
-> Intro (5m)
+> {{TODO}}
 > Homework Discussion: Chat App (1hr)
 > Collaborate: Redesigning the Job board (1hr)
 > Collaborate: Refactoring and Testing (30m)
@@ -342,6 +351,35 @@ For our job, we could really use someone with strong API Design and high-quality
 > **Two-directional Q&A**
 > 
 > We’ll take this time to ask more specific questions about each other.
+>
+> **Summary**
+>
+> Please do the following:
+>
+> - provide a technical writing sample
+> - confirm the interview format
+> - provide availability for a 4-hour block in the next week or so
+
+</details>
+
+<details open>
+<summary>✉️ <b>Re: Interview Agenda</b>  [Jessie -> Sean]</summary>
+
+> *To: Sean*<br>
+> *From: Jessie*<br>
+> *Date: 2019-03-05*
+>
+> ---
+>
+> That sounds great! I'm available anytime tomorrow from 9am - 5pm central time.
+
+</details>
+
+
+<details open>
+<summary>🗓 <b>Invite: FlashRecruit Interview</b> [Sean -> Jessie]</summary>
+
+> {{TODO}}
 
 </details>
 
@@ -351,7 +389,7 @@ For our job, we could really use someone with strong API Design and high-quality
 Now we run the actual interview. This phase includes your common interview fare. You have a schedule, you meet, you discuss, you collaborate, and you evaluate.
 
 <details open>
-<summary>📝 <b>Interview Notes: Jessie</b></summary>
+<summary>📝 <b>Interview Notes: Jessie</b> [Sean]</summary>
 
 > **Pair Programming: Work on an API in Node.js**
 > 
@@ -361,13 +399,7 @@ Now we run the actual interview. This phase includes your common interview fare.
 > 
 > There are essentially two skills being tested here: UI Architecture Design and React Execution. On the React Execution parts, Jessie could tell me in detail how the system would work. On the UI Architecture Design parts, Jessie struggled a bit on identifying a good solution to the problem. With some assistance, we arrived at a pretty good solution.
 >
-> **UX Flow Walkthrough**
-> 
-> {{TO DO}}
->
-> **Two-directional Q&A**
-> 
-> {{TO DO}}
+> {{TODO}}
 
 </details>
 
@@ -388,9 +420,9 @@ The candidate may also have requests for additional information. Common requests
 Schedule any new modules that make sense and run them just like in Phase 3. Gather any relevant information and add it to the notes. After that's all run, go through Phase 4 again.
 
 <details open>
-<summary>📝 <b>Review Notes: Jessie</b></summary>
+<summary>📝 <b>Review Notes: Jessie</b> [Sean]</summary>
 
-> {{TO DO}}
+> {{TODO}}
 > 
 
 </details>
@@ -405,7 +437,7 @@ The information gathered so far should be focused on the candidate's strengths t
 Making a decision from here is easier than a standard one-size-fits-all interview. The actual framework for making this decision is not the focus of this article, but it should be based on consistent processes that aim to remove bias in the hiring process.
 
 <details open>
-<summary>✉️ <b>Subject: Offer from FlashRecruit!</b></summary>
+<summary>✉️ <b>Subject: Offer from FlashRecruit!</b> [Sean -> Jessie]</summary>
 
 > *To: Jessie*<br>
 > *From: Sean*<br>
@@ -415,7 +447,7 @@ Making a decision from here is easier than a standard one-size-fits-all intervie
 >
 > **Hello Jessie!**
 >
-> {{TO DO}}
+> {{TODO}}
 > 
 
 </details>
