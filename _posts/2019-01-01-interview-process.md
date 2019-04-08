@@ -48,48 +48,48 @@ who is applying for this Software Engineer job:
 <summary>📋 <b>Job: Software Engineer</b></summary>
 
 > FlashRecruit is a funded recruitment technology startup with massive traction (SaaS based) looking for a Software Engineer (for full stack development) to join our growing team! We're building chat-based (and other) software to make the job seeking and recruiting experiences better.
-> 
+>
 > **Opportunity**
-> 
+>
 > You are invited to join us on this adventure! There is a unique opportunity here to not only be a part of what we're building, but to influence the direction we take. You will be able to contribute your different skill sets to the various problems we'll solve together.
-> 
+>
 > In this role specifically, you'll be collaborating with the development team to build new features, new products, and iterate on our processes. These efforts will directly lead to happier customers and more sales for the business.
-> 
+>
 > We'd love to tell you more about what to expect, but the team is small and growing. It's hard to predict what the future will hold. Joining now gives you an opportunity to shape that future.
-> 
+>
 > **Context**
-> 
+>
 > We work in the recruiting software landscape, which is complex and crowded. We're doing something unique in the space by offering the ability to chat with a recruiter before applying to a job, which is exciting. However, we're not stopping there.
-> 
+>
 > We're also a small startup, which means you'll likely wear different hats at different times. We expect you to spend most of your time writing software, but sometimes other hats will be necessary.
-> 
+>
 > Not everyone works in our Oak Brook (and soon downtown Chicago) office. We fully embrace remote work. You will be collaborating with others that could be working anywhere in the US. Because of this, communication is key. This includes screen sharing, remote pair programming, writing documentation, virtual meetings, and more.
-> 
+>
 > **Expectations of You**
-> 
+>
 > There aren't many technical requirements. We don't want to exclude you based on something you could learn quickly enough on the job. Instead, we'd like to focus on the interpersonal skills that we find to be critical to team happiness and success.
-> 
+>
 > **Continuous Improvement:** For each other item, you don't have to already be great. The core expectation and real requirement is that you improve over time. The processes and expectations in place will facilitate that, but you should be driven to continuous improvement as well.
-> 
+>
 > **Code:** Writing software is the core of this role. You should write software that is tested, modifiable, and clear. We have no expectations around computer science concepts, but you should be open to learning about anything useful.
-> 
+>
 > **Worked on Web Software:** You should have built web applications or the systems supporting them before. Experience with our entire stack is not necessary. It is helpful to have some experience with at least one of these:
-> 
+>
 > *   Node.js (API)
 > *   React (Web Client)
 > *   React Native (Mobile Apps)
 > *   AWS (Infrastructure)
-> 
+>
 > **Collaborate:** You should work well in a collaborative environment. As a team, we'll be building software, reviewing code, deciding on architecture, and iterating on our processes. You don't have to do all of these things, but we'd like you to be involved with the team more than just executing individual task after task.
-> 
+>
 > **Write:** Because we fully embrace remote work, you will often be writing messages, pull request descriptions, the occasional document, and more. Technical Writing is an important skill in general, but especially in a remote environment.
-> 
+>
 > **Give Feedback:** You should give feedback on the product, team, and team members. Feedback should be specific, actionable, and timely. For individuals, it should also be directly related to the job they are expected to perform. You should also be mindful of your biases when giving feedback.
-> 
+>
 > **Receive Feedback:** You should respond well to feedback. Responding well can mean many things, including disagreement. We want to build a strong, trust-and-respect-based relationship across the team that allows us to give feedback about actions, not judgements about people.
-> 
+>
 > **Benefits**
-> 
+>
 > *   Competitive compensation
 > *   Equity in a funded, early-stage startup poised for exponential growth
 > *   Full-time W2 employment
@@ -98,9 +98,9 @@ who is applying for this Software Engineer job:
 > *   Unlimited PTO with minimums to prevent burnout
 > *   Intentionally Guided Culture based on inclusion and respect
 > *   Remote work options
-> 
+>
 > If you aren't sure if you should apply, please apply anyway. Don't self-select yourself out. We'd be happy to discuss any concerns you have with the job post matching your skill set.
-> 
+>
 > FlashRecruit is committed to creating a diverse environment and is proud to be an equal opportunity employer. All applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, disability, age, or veteran status.
 </details>
 
@@ -173,19 +173,19 @@ Make note of any follow up tasks you may want to do. These can be anything that 
 > *Date: 2019-03-01*
 >
 > ---
-> 
+>
 > Work: They've not worked full-time in a remote environment before,
 > but have worked remotely on their team for up to a week at a time.
 > They enjoyed it and felt productive during that time.
-> 
+>
 > Growth: They would like to grow in technical leadership skills, such as mentorship, giving good feedback, and breaking down complex tasks.
-> 
+>
 > Compensation: They seemed amenable to our compensation range for the position,
 > but would prefer higher equity and lower salary, given a choice.
-> 
+>
 > Deal Breakers: Not interested in working somewhere that uses "go fast and break things"
 > to mean "write bad code and move on".
-> 
+>
 > To Do:
 > - reference call: Ashish about working a remote environment
 > - ask HR: what's the largest life insurance policy we offer?
@@ -280,7 +280,7 @@ The candidate will respond with their strengths. If they shared some relevant st
 > *Date: 2019-03-03*
 >
 > ---
-> 
+>
 > These are my strengths that seem to overlap with your needs:
 >
 > - Technical Writing
@@ -318,7 +318,7 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 > ---
 >
 > We're excited for your interview!
-> 
+>
 > Especially on our remote team, technical writing is a critical skill to being a successful team member. Can you provide a technical writing sample? This can be some documentation you wrote, a couple of Pull Request descriptions you are proud of, a prusuasive email you sent to a colleague, or anything else that describes or persuades involving technical or philosophical aspects of our work. If nothing like this is sharable, let us know and we'll figure something else out together.
 >
 > **Proposed Interview Format**
@@ -333,9 +333,9 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 > - Collaborate: Refactoring and Testing (45m)
 > - Two-directional Q&A (45m)
 > ```
-> 
+>
 > **Intro and Overview**
-> 
+>
 > We'll walk through the general landscape of FlashRecruit's industry and architecture. This will help us get things flowing before digging into the other modules.
 >
 > **Homework Discussion: Chat App**
@@ -357,7 +357,7 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 > We'll discuss refactoring and testing strategies in general and with a specific example from our system.
 >
 > **Two-directional Q&A**
-> 
+>
 > We’ll take this time to ask more specific questions about each other.
 >
 > **Summary**
@@ -380,6 +380,10 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 > ---
 >
 > That sounds great! I'm available anytime tomorrow from 9am - 5pm central time.
+>
+> I have some example PRs that I think will serve as my technical writing sample. Please let me know if you'd like for me to provide something else.
+>
+> {{Links to PRs}}
 
 </details>
 
@@ -387,7 +391,16 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 <details open>
 <summary>🗓 <b>Invite: FlashRecruit Interview</b> [Sean -> Jessie]</summary>
 
-> {{TODO}}
+> Here's a breakdown of the interview format we agreed to use. Let me know if you have any comments, questions, or concerns.
+>
+> ```
+> - Intro and Overview (15m)
+> - Homework Discussion: Chat App (1hr)
+> - Collaborate: API Design (1hr)
+> - Break (10m)
+> - Collaborate: Refactoring and Testing (45m)
+> - Two-directional Q&A (45m)
+> ```
 
 </details>
 
@@ -399,13 +412,19 @@ Now we run the actual interview. This phase includes your common interview fare.
 <details open>
 <summary>📝 <b>Interview Notes: Jessie</b> [Sean]</summary>
 
-> **Pair Programming: Work on an API in Node.js**
-> 
-> Jessie was a strong collaborator. We both contributed to the solution.
+> **Homework Discussion: Chat App**
 >
-> **UI Architecture Breadkdown**
-> 
+> {{TODO}}
+>
+> **API Design**
+>
 > There are essentially two skills being tested here: UI Architecture Design and React Execution. On the React Execution parts, Jessie could tell me in detail how the system would work. On the UI Architecture Design parts, Jessie struggled a bit on identifying a good solution to the problem. With some assistance, we arrived at a pretty good solution.
+>
+> **Refactoring and Testing**
+>
+> {{TODO}}
+>
+> **Two-directional Q&A**
 >
 > {{TODO}}
 
@@ -431,7 +450,7 @@ Schedule any new modules that make sense and run them just like in Phase 3. Gath
 <summary>📝 <b>Review Notes: Jessie</b> [Sean]</summary>
 
 > {{TODO}}
-> 
+>
 
 </details>
 
@@ -450,13 +469,16 @@ Making a decision from here is easier than a standard one-size-fits-all intervie
 > *To: Jessie*<br>
 > *From: Sean*<br>
 > *Date: 2019-03-06*
-> 
+>
 > ---
 >
 > **Hello Jessie!**
 >
-> {{TODO}}
-> 
+> We were impressed with you during your interview and would like to make you an offer!
+>
+> Please see the offer letter attached. We hope you accept!
+>
+> Let me know if you have any questions.
 
 </details>
 
