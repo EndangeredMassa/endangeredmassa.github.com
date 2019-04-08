@@ -36,6 +36,7 @@ Let's assume we have a candidate Jessie:
 > Experience: 4 years web development<br>
 >
 > - Designed and implemented APIs in Node.js
+> - Implemented web applications in React
 > - Wrote API documentation
 > - Managed API project by breaking down tasks
 
@@ -293,20 +294,19 @@ The candidate will respond with their strengths. If they shared some relevant st
 </details>
 
 
+### Interview Modules
 
-### Module Selection
+Interview Modules are how you can find balance between consistent and adaptive interview experiences for candidates. The format is flexible around which modules are chosen, but a given module should remain as consistent as possible across candidates.
 
-Modules are how you can find balance between consistent and adaptive interview experiences for candidates. The format is flexible around which modules are chosen, but a given module should remain as consistent as possible across candidates.
+**Selction:** Some modules will still apply to most candidates. In our interviews, we typically do the same 2 modules for everyone, then leave room for 2 other modules to be flexible towards the candidate's strengths. Modules should also span technical implementation skills as well as collaboration/communication skills.
 
-Some modules will still apply to most candidates. In our interviews, we typically do the same 2 modules for everyone, then leave room for 2 other modules to be flexible towards the candidate's strengths.
+**Format:** Collaboration is very important. If the candidate is comfortable with it, try to make at least 1 large module involve collaboration with a team member. If the candidate doesn't feel comfortable with this, ask for a work sample or completion og a homework problem that you can discuss during the interview.
 
-Collaboration is very important. If the candidate is comfortable with it, try to make at least 1 large module involve collaboration with a team member. If the candidate doesn't feel comfortable with this, ask for a work sample or completion og a homework problem that you can discuss during the interview.
+**Construction:** As you use this process more, you'll build more and more modules. This will require some work, but it's also worth the effort. When building modules, try to make them as realistic as possible. The domain should be the same or analgous to your domain by default, although you can shift this per candidate too. The tasks should be representative of the work required to do the job.
 
-As you use this process more, you'll build more and more modules. This will require some work, but it's also worth the effort.
+For our job, we could really use someone with strong API Design and high-quality execution. We also want to assess how well they will work in a remote environment.
 
-When building modules, try to make them as realistic as possible. The domain should be the same or analgous to your domain by default, although you can shift this per candidate too. The tasks should be representative of the work required to do the job.
-
-For our job, we could really use someone with strong API Design and high-quality execution. We also want to assess how well they will work in a remote environment. Let's set up an interview that highlights the candidate's "API Design", "Testing", and "Technical Writing" skills.
+Let's set up an interview that highlights the candidate's "API Design" and "Testing". We always ask for a technical writing sample and the homework problem includes a writing section as well. We can dig further into how well the candidate works in a remote environment during the Q&A, as well.
 
 <details open>
 <summary>✉️ <b>Subject: Interview Agenda</b> [Sean -> Jessie]</summary>
@@ -320,33 +320,41 @@ For our job, we could really use someone with strong API Design and high-quality
 > We're excited for your interview!
 > 
 > Especially on our remote team, technical writing is a critical skill to being a successful team member. Can you provide a technical writing sample? This can be some documentation you wrote, a couple of Pull Request descriptions you are proud of, a prusuasive email you sent to a colleague, or anything else that describes or persuades involving technical or philosophical aspects of our work. If nothing like this is sharable, let us know and we'll figure something else out together.
-> 
-> Here's a breakdown of the interview format we'd like to use. Let me know if you have any comments, questions, or concerns.
 >
 > **Proposed Interview Format**
 >
+> Here's a breakdown of the interview format we'd like to use. Let me know if you have any comments, questions, or concerns.
+>
 > ```
-> {{TODO}}
-> Homework Discussion: Chat App (1hr)
-> Collaborate: Redesigning the Job board (1hr)
-> Collaborate: Refactoring and Testing (30m)
-> Two-directional Q&A (45m)
+> - Intro and Overview (15m)
+> - Homework Discussion: Chat App (1hr)
+> - Collaborate: API Design (1hr)
+> - Break (10m)
+> - Collaborate: Refactoring and Testing (45m)
+> - Two-directional Q&A (45m)
 > ```
->
-> **Pair Programming: Work on an API in Node.js**
 > 
-> Strength: Writing tested Node controllers and maintaining clean functional back-end logic
-> We'll work together to implement some functionality in a Node.js API.
->
-> **UI Architecture Breadkdown**
+> **Intro and Overview**
 > 
-> Strength: Building out well-tested reusable React visual and higher-order components
-> We’ll take a page from our system and talk through how we’d go about architecting the UI of it from scratch. We’ll dig into what components should exist, how they should communicate, and how UI state should be managed.
+> We'll walk through the general landscape of FlashRecruit's industry and architecture. This will help us get things flowing before digging into the other modules.
 >
-> **UX Flow Walkthrough**
-> 
-> Strength: Helping design and scope out user features and flow that are streamlined and efficient.
-> We’ll walk through several of our current user workflows and talk about how they could be improved.
+> **Homework Discussion: Chat App**
+>
+> *Strength:* Technical Implementation
+>
+> We'll discuss the decisions you made and the product you produced for the homework assignment. This will include what you would plan to do if you had more time.
+>
+> **API Design**
+>
+> *Strength: "Designed and implemented APIs in Node.js"*
+>
+> We’ll take a page from our system and talk through how we’d go about architecting the API of it from scratch. We’ll dig into general strategy, URL schemes, wire formats, resource relationships, data backing, performance monitoring and optimization, and wherever else you have related skill.
+>
+> **Collaborate: Refactoring and Testing**
+>
+> *Strengths: Refactoring and Testing*
+>
+> We'll discuss refactoring and testing strategies in general and with a specific example from our system.
 >
 > **Two-directional Q&A**
 > 
