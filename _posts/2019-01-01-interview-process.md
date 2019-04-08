@@ -328,9 +328,10 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 > ```
 > - Intro and Overview (15m)
 > - Homework Discussion: Chat App (1hr)
-> - Collaborate: API Design (1hr)
 > - Break (10m)
+> - Collaborate: API Design (1hr)
 > - Collaborate: Refactoring and Testing (45m)
+> - Break (5m)
 > - Two-directional Q&A (45m)
 > ```
 >
@@ -396,9 +397,10 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 > ```
 > - Intro and Overview (15m)
 > - Homework Discussion: Chat App (1hr)
-> - Collaborate: API Design (1hr)
 > - Break (10m)
+> - Collaborate: API Design (1hr)
 > - Collaborate: Refactoring and Testing (45m)
+> - Break (5m)
 > - Two-directional Q&A (45m)
 > ```
 
@@ -408,6 +410,8 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 ## Phase 3: Strength-finding Interview
 
 Now we run the actual interview. This phase includes your common interview fare. You have a schedule, you meet, you discuss, you collaborate, and you evaluate.
+
+In the break before the Two-directional Q&A, review your notes to find areas where you'd like to dig deeper.
 
 <details open>
 <summary>📝 <b>Interview Notes: Jessie</b> [Sean]</summary>
@@ -496,14 +500,12 @@ When we reject someone, we try to give some notes about why. There's potentiatl 
 
 That's the Strength-finding Interview! I hope you find this useful.
 
+This is the result of research, experimentation, and iteration across years of work, quite often in collaboration with [@Trek](https://twitter.com/trek). You can read [Trek's earlier take](https://medium.com/@trek/tired-engineering-interviews-hired-engineering-auditions-5f9f00147a57) on this format, as well.
+
 I consider this to be an evolving process. If you have questions or feedback, please let me know!
 
 
-# References
-
-This is the result of research, experimentation, and iteration across years of work, quite often in collaboration with [@Trek](https://twitter.com/trek). You can read [Trek's earlier take](https://medium.com/@trek/tired-engineering-interviews-hired-engineering-auditions-5f9f00147a57) on this format, as well.
-
-Other Interesting Resources
+## Other Interesting Resources
 
 - [Lara Hogan's Interview Loop Template](https://larahogan.me/blog/onsite-interview-loop-template/)
 - [Gallup's Clifton Strengths Finder](https://www.gallupstrengthscenter.com/)
