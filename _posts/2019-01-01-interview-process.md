@@ -428,7 +428,9 @@ In the break before the Two-directional Q&A, review your notes to find areas whe
 
 > **Homework Discussion: Chat App**
 >
-> {{TODO}}
+> They made it to the middle of Part 2 with tests for all of the functionality they implemented. There's only basic styling, which makes sense given how far they made it into the funciontality. Code looks legible with good identigiers, small-ish functions, and reasonably well modeled data.
+>
+> Their writeup was well-reasoned. It described a strong, TDD-focused path forward.
 >
 > **API Design**
 >
@@ -461,7 +463,6 @@ In the break before the Two-directional Q&A, review your notes to find areas whe
 >
 >     They use distraction blocking software called [Freedom](https://freedom.to/) to prevent themselves from jumping over to Twitter and getting distracted. They also like working in Pomodoros. Keeping mornings clear of meetings is helpful because they feel most productive then.
 
-
 </details>
 
 
@@ -483,8 +484,11 @@ Schedule any new modules that make sense and run them just like in Phase 3. Gath
 <details open>
 <summary>📝 <b>Review Notes: Jessie</b> [Sean]</summary>
 
-> {{TODO}}
+> The candidate clearly has a strong TDD background and focus. They not only absorb the philosphy, but execute the practice. Their work in the interview shows a high quality level that appears to be well supported by this approach.
 >
+> Our current team does not practice TDD. The candidate's story about encountering this situation in the past is promising, though. Maybe they'll end up converting a few of us, maybe not. Regardless, this candidate's code looks strong.
+>
+> 
 
 </details>
 
