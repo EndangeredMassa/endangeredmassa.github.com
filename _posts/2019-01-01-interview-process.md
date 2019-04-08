@@ -25,6 +25,15 @@ The other goals are to:
 You may notice that "plan the specific candidate's interview" and "provide a ... consistent experience to candidates" are at odds, but we'll find a compromise.
 
 
+# Summary
+
+The key takeaways are:
+
+- ask the candidate what their strengths are, then tailor the interview towards the overlap between those and your needs
+- be flexible in format, tech stack, and time
+- be consistent wherever possible
+
+
 # A Job and a Candidate
 
 Let's assume we have a candidate Jessie:
@@ -35,6 +44,7 @@ Let's assume we have a candidate Jessie:
 > Education: Self-taught<br>
 > Experience: 4 years web development<br>
 >
+> - Worked on chat software before
 > - Designed and implemented APIs in Node.js
 > - Implemented web applications in React
 > - Wrote API documentation
@@ -426,11 +436,31 @@ In the break before the Two-directional Q&A, review your notes to find areas whe
 >
 > **Refactoring and Testing**
 >
-> {{TODO}}
+> They suggested writing some outside tests first, then refactoring the inside to be more legible. Suggested better identifiers, method extractions, dead code elimination.
+> 
+> We also talked about general testing strategy. They mentioned enjoying Justin Searls' [writing on the topic](https://github.com/testdouble/contributing-tests/wiki). They follow the Detroit School TDD methodology.
+> 
 >
 > **Two-directional Q&A**
 >
-> {{TODO}}
+> 1. Tell us about a time when you felt that you didn’t collaborate well. Why? What did you do about it?
+> 
+>     There was a coworker they would pair with that would not often contribute to the discussion or code. The candidate received feedback that the coworker wasn't comfortable with TDD and also wasn't comfortable bringing this up to the candidate. After talking it through, they realized that they could be more accomodating to other styles. Now, they try to alternate driver/navigator more often and are more flexible around testing style, while still teaching others about what they find valuable in TDD.
+> 
+> 2. Tell us about a time when you received some important feedback. How did you received it? What did you do about it?
+> 
+>     The tech lead on their project mentioned several times that smaller PRs make things easier to develop and review. The candidate learned this lesson and is now also an advocate for that. They said they like to "aggressively" shrink work to be smaller, accomplishable, deliverable tasks.
+> 
+> 3. Tell us about a time when you had to solve a hard software problem. What made it hard? How did you approach solving it?
+> 
+>     While working in a chat system, agents would talk to customers, but there were also monitors of chats. There could be up to 4-way chats. Monitors could be silent or coaching. Some chat messages could be seen by everyone and others only by staff. There were no tests, making development hard. Debugging was especially difficult.
+> 
+>     They decided to add a lot of tests around this area. In doing so, they discovered several bugs and made the system easier to maintain. They now champion 
+> 
+> 4. Tell us about how you manage your time and focus.
+> 
+>     They use distraction blocking software called [Freedom](https://freedom.to/) to prevent themselves from jumping over to Twitter and getting distracted. They also like working in Pomodoros. Keeping mornings clear of meetings is helpful because they feel most productive then.
+
 
 </details>
 
@@ -505,7 +535,7 @@ This is the result of research, experimentation, and iteration across years of w
 I consider this to be an evolving process. If you have questions or feedback, please let me know!
 
 
-## Other Interesting Resources
+## Related Resources
 
 - [Lara Hogan's Interview Loop Template](https://larahogan.me/blog/onsite-interview-loop-template/)
 - [Gallup's Clifton Strengths Finder](https://www.gallupstrengthscenter.com/)
