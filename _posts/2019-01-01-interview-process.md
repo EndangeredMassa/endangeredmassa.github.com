@@ -488,7 +488,7 @@ Schedule any new modules that make sense and run them just like in Phase 3. Gath
 >
 > Our current team does not practice TDD. The candidate's story about encountering this situation in the past is promising, though. Maybe they'll end up converting a few of us, maybe not. Regardless, this candidate's code looks strong.
 >
-> 
+> {{TODO - show the throughline from job description expectations through review against those expectations}}
 
 </details>
 
