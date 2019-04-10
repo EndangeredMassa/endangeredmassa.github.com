@@ -5,7 +5,7 @@ description: My take on a strength-finding interview
 tags: interview
 ---
 
-Most interviews seem to be Me-finding Interviews: the interviewers are looking for others who share their values, virtues, and unkowingly their vices. The format is also often very rigid, looking for specific things and rejecting candidates who can't demonstrate them.
+Most interviews seem to be Me-finding Interviews: the interviewers are looking for others who share their values, virtues, and unknowingly their vices. The format is also often very rigid, looking for specific things and rejecting candidates who can't demonstrate them.
 
 I think we can do better. I know many are trying, too! I'm not setting up a straw man here. I just want to share my take on doing better.
 
@@ -205,7 +205,7 @@ Make note of any follow up tasks you may want to do. These can be anything that 
 After completing your follow ups, you should be certain that a candidate should or should not progress to the next phase. If you are not, you either have more follow ups to do or should just pass on the candidate.
 
 
-## Phase 2: Interview Negotation
+## Phase 2: Interview Negotiation
 
 *Phase Goal: Assess the candidate at their best in a well-structured, fair way.*
 
@@ -243,7 +243,7 @@ This phase starts with a request for information from the candidate. The request
 > - React Native (Mobile Apps)
 > - Heroku/S3/RDS (Infrastructure)
 >
-> Our problem space is the recruiting software landscape. We're currently focused on improving our job board and streamlining customer onboarding.
+> Our problem space is the recruiting software landscape. We're currently focused on improving our job board and streamlining customer on-boarding.
 >
 > That means:
 >
@@ -308,11 +308,11 @@ The candidate will respond with their strengths. If they shared some relevant st
 
 Interview Modules are how you can find balance between consistent and adaptive interview experiences for candidates. The format is flexible around which modules are chosen, but a given module should remain as consistent as possible across candidates.
 
-**Selction:** Some modules will still apply to most candidates. In our interviews, we typically do the same 2 modules for everyone, then leave room for 2 other modules to be flexible towards the candidate's strengths. Modules should also span technical implementation skills as well as collaboration/communication skills.
+**Selection:** Some modules will still apply to most candidates. In our interviews, we typically do the same 2 modules for everyone, then leave room for 2 other modules to be flexible towards the candidate's strengths. Modules should also span technical implementation skills as well as collaboration/communication skills.
 
-**Format:** Collaboration is very important. If the candidate is comfortable with it, try to make at least 1 large module involve collaboration with a team member. If the candidate doesn't feel comfortable with this, ask for a work sample or completion og a homework problem that you can discuss during the interview.
+**Format:** Collaboration is very important. If the candidate is comfortable with it, try to make at least 1 large module involve collaboration with a team member. If the candidate doesn't feel comfortable with this, ask for a work sample or completion of a homework problem that you can discuss during the interview.
 
-**Construction:** As you use this process more, you'll build more and more modules. This will require some work, but it's also worth the effort. When building modules, try to make them as realistic as possible. The domain should be the same or analgous to your domain by default, although you can shift this per candidate too. The tasks should be representative of the work required to do the job.
+**Construction:** As you use this process more, you'll build more and more modules. This will require some work, but it's also worth the effort. When building modules, try to make them as realistic as possible. The domain should be the same or analogous to your domain by default, although you can shift this per candidate too. The tasks should be representative of the work required to do the job.
 
 For our job, we could really use someone with strong API Design and high-quality execution. We also want to assess how well they will work in a remote environment.
 
@@ -329,7 +329,7 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 >
 > We're excited for your interview!
 >
-> Especially on our remote team, technical writing is a critical skill to being a successful team member. Can you provide a technical writing sample? This can be some documentation you wrote, a couple of Pull Request descriptions you are proud of, a prusuasive email you sent to a colleague, or anything else that describes or persuades involving technical or philosophical aspects of our work. If nothing like this is sharable, let us know and we'll figure something else out together.
+> Especially on our remote team, technical writing is a critical skill to being a successful team member. Can you provide a technical writing sample? This can be some documentation you wrote, a couple of Pull Request descriptions you are proud of, a persuasive email you sent to a colleague, or anything else that describes or persuades involving technical or philosophical aspects of our work. If nothing like this is sharable, let us know and we'll figure something else out together.
 >
 > **Proposed Interview Format**
 >
@@ -428,7 +428,7 @@ In the break before the Two-directional Q&A, review your notes to find areas whe
 
 > **Homework Discussion: Chat App**
 >
-> They made it to the middle of Part 2 with tests for all of the functionality they implemented. There's only basic styling, which makes sense given how far they made it into the funciontality. Code looks legible with good identigiers, small-ish functions, and reasonably well modeled data.
+> They made it to the middle of Part 2 with tests for all of the functionality they implemented. There's only basic styling, which makes sense given how far they made it into the funciontality. Code looks legible with good identifiers, small-ish functions, and reasonably well modeled data.
 >
 > Their writeup was well-reasoned. It described a strong, TDD-focused path forward.
 >
@@ -440,14 +440,14 @@ In the break before the Two-directional Q&A, review your notes to find areas whe
 >
 > They suggested writing some outside tests first, then refactoring the inside to be more legible. Suggested better identifiers, method extractions, dead code elimination.
 >
-> We also talked about general testing strategy. They mentioned enjoying Justin Searls' [writing on the topic](https://github.com/testdouble/contributing-tests/wiki). They follow the Detroit School TDD methodology.
+> We also talked about general testing strategy. They mentioned enjoying writing by Justin Searls [on the topic](https://github.com/testdouble/contributing-tests/wiki). They follow the Detroit School TDD methodology.
 >
 >
 > **Two-directional Q&A**
 >
 > 1. Tell us about a time when you felt that you didn’t collaborate well. Why? What did you do about it?
 >
->     There was a coworker they would pair with that would not often contribute to the discussion or code. The candidate received feedback that the coworker wasn't comfortable with TDD and also wasn't comfortable bringing this up to the candidate. After talking it through, they realized that they could be more accomodating to other styles. Now, they try to alternate driver/navigator more often and are more flexible around testing style, while still teaching others about what they find valuable in TDD.
+>     There was a coworker they would pair with that would not often contribute to the discussion or code. The candidate received feedback that the coworker wasn't comfortable with TDD and also wasn't comfortable bringing this up to the candidate. After talking it through, they realized that they could be more accommodating to other styles. Now, they try to alternate driver/navigator more often and are more flexible around testing style, while still teaching others about what they find valuable in TDD.
 >
 > 2. Tell us about a time when you received some important feedback. How did you received it? What did you do about it?
 >
@@ -484,11 +484,11 @@ Schedule any new modules that make sense and run them just like in Phase 3. Gath
 <details open>
 <summary>📝 <b>Review Notes: Jessie</b> [Sean]</summary>
 
-> The candidate clearly has a strong TDD background and focus. They not only absorb the philosphy, but execute the practice. Their work in the interview shows a high quality level that appears to be well supported by this approach.
+> The candidate clearly has a strong TDD background and focus. They not only absorb the philosophy, but execute the practice. Their work in the interview shows a high quality level that appears to be well supported by this approach.
 >
 > Our current team does not practice TDD. The candidate's story about encountering this situation in the past is promising, though. Maybe they'll end up converting a few of us, maybe not. Regardless, this candidate's code looks strong.
 >
-> {{TODO - show the throughline from job description expectations through review against those expectations}}
+> {{TODO - show the through-line from job description expectations through review against those expectations}}
 
 </details>
 
@@ -527,7 +527,7 @@ Candidate feedback on the process for both those who were successful and those w
 
 As interviewers, we felt much more confident in our offers and rejections. On rejections specifically: it was compelling to see a candidate claim a specific strength, us to shape the interview around that strength, then the evaluation come back as sub-par for that strength.
 
-When we reject someone, we try to give some notes about why. There's potentiatl legal risk in these kinds of conversations--so have them with care and approval from the responsible parties in your organization. If you can provide feedback to rejected candidates, please do so.
+When we reject someone, we try to give some notes about why. There's potential legal risk in these kinds of conversations--so have them with care and approval from the responsible parties in your organization. If you can provide feedback to rejected candidates, please do so.
 
 
 # The End
