@@ -466,6 +466,8 @@ In the break before the Two-directional Q&A, review your notes to find areas whe
 </details>
 
 
+
+
 ## Phase 4: Review and Follow Ups
 
 *Phase Goal: Fill in the assessment gaps.*
@@ -490,16 +492,93 @@ Schedule any new modules that make sense and run them just like in Phase 3. Gath
 >
 > {{TODO - show the through-line from job description expectations through review against those expectations}}
 
+
 </details>
+
+### Scoring
+
+In our job description we mentioned several requirements. They aren't all required, but this serves as a guideline for what we're looking for. We'll reference those items to build a scorecard.
+
+For each module, we score the skills involved. These scores should have justifying metrics, statements, and artifacts of the work. This allows it to be reviewable.
+
+
+
+
+> - Homework Discussion: Chat App (1hr)
+> - Break (10m)
+> - Collaborate: API Design (1hr)
+> - Collaborate: Refactoring and Testing (45m)
+> - Break (5m)
+> - Two-directional Q&A (45m)
+
+Tell us about a time when you felt that you collaborated well, perhaps in an environment that wasn’t the best.
+Tell us about a time when you felt that you didn’t collaborate well. Why? What did you do about it?
+
+Tell us about a time when you gave someone some important feedback. How did you go about it? How did they receive it?
+Tell us about a time when you received some important feedback. How did you received it? What did you do about it?
+
+Tell us about a time when you had to solve a hard software problem. What made it hard? How did you approach solving it?
+Tell me about a time when you took a complex task and broke it into smaller tasks? What criteria do you use?
+
+
+
+
+
 
 
 ## Phase 5: Make a Decision
 
 *Phase Goal: Decide to pass or make an offer on a candidate.*
 
+
+
+
+
+
+
+
+### Scorecards
+
+It's important to note that there's a difference between a score on an assessment and the confidence in the form that assessment takes. You might have an acquaintance strongly recommend you hire someone for a specific job, but you barely know the acquaintance and aren't sure what their standards and processes are. You could say that this assessment has a high score (because it was a strong recommendation) but low confidence (because you barely know the person).
+
+There's a spectrum of confidence that roughly goes like this:
+1. [75-90%] first-hand experience over time
+2. [60-80%] third-hand vouching from trusted source
+3. [50-70%] first-hand experience briefly
+4. [35-65%] second-hand description
+
+
+> **Scorecard: Jessie as Software Engineer**
+>
+> General Skill | Score | Confidence |
+> ------------ | :---: | ---------: |
+> Continuous Improvement | 90% | 25%
+> Collaborate            |     |
+> Write                  |     |
+> Give Feedback          |     |
+> Receive Feedback       |     |
+>
+> <br>
+>
+> Technical Skill | Score         | Confidence |
+> ------------ | :-----------: | -----------: |
+> breaking down tasks | 90% | 25%
+> writing maintainable code | 60% | 35%
+
+Assessment of technical skill involves a lot of skills and domains. It would be impossible to assess that to any degree of completeness, even if only scoped to the subset you most need. Instead, we look for strengths in helpful areas. The Technical Skill scorecard assesses only the skills mentioned in the interview negotiation and is definitely incomplete.
+
+
+
+
+
+
+
+
 The information gathered so far should be focused on the candidate's strengths that match the employer's needs. If the candidate did well in the selected areas, you can be more confident that you've seen them at their best. If they did not, maybe they aren't as strong in those areas as they think they are.
 
-Making a decision from here is easier than a standard one-size-fits-all interview. The actual framework for making this decision is not the focus of this article, but it should be based on consistent processes that aim to remove bias in the hiring process.
+Making a decision from here is easier than a standard one-size-fits-all interview.
+
+{TODO} The actual framework for making this decision is not the focus of this article, but it should be based on consistent processes that aim to remove bias in the hiring process.
 
 <details open>
 <summary>✉️ <b>Subject: Offer from FlashRecruit!</b> [Sean -> Jessie]</summary>
@@ -519,6 +598,13 @@ Making a decision from here is easier than a standard one-size-fits-all intervie
 > Let me know if you have any questions.
 
 </details>
+
+
+
+
+
+
+
 
 
 # Feedback
