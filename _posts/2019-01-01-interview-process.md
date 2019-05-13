@@ -25,7 +25,7 @@ The other goals are to:
 You may notice that "plan the specific candidate's interview" and "provide a ... consistent experience to candidates" are at odds, but we'll find a compromise.
 
 
-# Summary
+# Summary (tl;dr)
 
 The key takeaways are:
 
@@ -497,9 +497,28 @@ Schedule any new modules that make sense and run them just like in Phase 3. Gath
 
 ### Scoring
 
-In our job description we mentioned several requirements. They aren't all required, but this serves as a guideline for what we're looking for. We'll reference those items to build a scorecard.
+In our job description we mentioned several expectations of someone filling the role. They aren't all required, but this serves as a guideline for what we're looking for. We'll reference those items to build a scorecard.
 
-For each module, we score the skills involved. These scores should have justifying metrics, statements, and artifacts of the work. This allows it to be reviewable.
+For each module, we score the skills involved. The skills list can include everything the candidate mentioned that would be applicable to the role. The scores should have justifying metrics, statements, and artifacts of the work.
+
+
+> **Scorecard: Jessie as Software Engineer**
+>
+> General Skill | Score | Confidence |
+> ------------ | :---: | ---------: |
+> Continuous Improvement | 90% | 25%
+> Collaborate            |     |
+> Write                  |     |
+> Give Feedback          |     |
+> Receive Feedback       |     |
+>
+> <br>
+>
+> Technical Skill | Score         | Confidence |
+> ------------ | :-----------: | -----------: |
+> breaking down tasks | 90% | 25%
+> writing maintainable code | 60% | 35%
+
 
 
 
