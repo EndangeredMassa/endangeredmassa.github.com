@@ -12,20 +12,20 @@ I think we can do better. I know many are trying, too! I'm not setting up a stra
 What follows is (hopefully) a better default. If you agree with the goals of this format, feel free to use it as a starting point in your own interview process.
 
 
-# Goals
+## Goals
 
 The differentiating goal is to find the overlap between your team's needs and a candidate's strengths, then plan the specific candidate's interview to highlight those strengths.
 
 The other goals are to:
 - be as accurate as possible within the constraints of time expectations
-- remove bias from the process as much as possible
+- remove as much bias as possible from the process
 - provide a fair and consistent experience to candidates
 - be transparent throughout
 
-You may notice that "plan the specific candidate's interview" and "provide a ... consistent experience to candidates" are at odds, but we'll find a compromise.
+You may notice that "plan the specific candidate's interview" and "provide a ... consistent experience to candidates" are at odds, but we'll explore a compromise below.
 
 
-# Summary (tl;dr)
+## Summary (tl;dr)
 
 The key takeaways are:
 
@@ -48,7 +48,7 @@ Let's assume we have a candidate Jessie:
 > - Designed and implemented APIs in Node.js
 > - Implemented web applications in React
 > - Wrote API documentation
-> - Managed API project by breaking down tasks
+> - Managed API project by breaking down tasks and communicating across teams
 
 </details>
 
@@ -69,26 +69,26 @@ who is applying for this Software Engineer job:
 >
 > **Context**
 >
-> We work in the recruiting software landscape, which is complex and crowded. We're doing something unique in the space by offering the ability to chat with a recruiter before applying to a job, which is exciting. However, we're not stopping there.
+> We work in the recruiting software landscape, which is complex and crowded. We're doing something unique in the space by offering the ability to chat with a recruiter before applying to a job, which is exciting. We're not stopping there.
 >
-> We're also a small startup, which means you'll likely wear different hats at different times. We expect you to spend most of your time writing software, but sometimes other hats will be necessary.
+> We're also a small startup, which means you'll likely wear different hats at different times. We expect you to spend most of your time writing software, but sometimes other related hats will be necessary.
 >
-> Not everyone works in our Oak Brook (and soon downtown Chicago) office. We fully embrace remote work. You will be collaborating with others that could be working anywhere in the US. Because of this, communication is key. This includes screen sharing, remote pair programming, writing documentation, virtual meetings, and more.
+> We have an office in Oakbrook, which you are free to use if you like, but the engineering team is fully remote. The company fully embraces remote work. You will be collaborating with others that could be working anywhere in the US (for now). Because of this, communication is key. This includes screen sharing, remote pair programming, writing documentation, virtual meetings, and more.
 >
 > **Expectations of You**
 >
-> There aren't many technical requirements. We don't want to exclude you based on something you could learn quickly enough on the job. Instead, we'd like to focus on the interpersonal skills that we find to be critical to team happiness and success.
+> There aren't many technical requirements. We don't want to exclude you based on something you could learn quickly enough on the job. Instead, we'd like to focus on the skills that we find to be critical to happiness and success in self and team.
 >
-> **Continuous Improvement:** For each other item, you don't have to already be great. The core expectation and real requirement is that you improve over time. The processes and expectations in place will facilitate that, but you should be driven to continuous improvement as well.
+> **Continuous Improvement:** For each other item, you don't have to already be great. The core expectation and real requirement is that you improve over time. The processes and expectations in place will facilitate that, but you should be motivated to continuous improvement as well. 
 >
-> **Code:** Writing software is the core of this role. You should write software that is tested, modifiable, and clear. We have no expectations around computer science concepts, but you should be open to learning about anything useful.
+> **Code:** Writing software is the core of this role. You should write software that is tested, modifiable, and clear. We have no expectations around computer science concepts, but you should be open to learning about anything relevant to the work.
 >
 > **Worked on Web Software:** You should have built web applications or the systems supporting them before. Experience with our entire stack is not necessary. It is helpful to have some experience with at least one of these:
 >
 > *   Node.js (API)
-> *   React (Web Client)
+> *   Ember (Web Client)
 > *   React Native (Mobile Apps)
-> *   AWS (Infrastructure)
+> *   Heroku/S3/RDS (Infrastructure)
 >
 > **Collaborate:** You should work well in a collaborative environment. As a team, we'll be building software, reviewing code, deciding on architecture, and iterating on our processes. You don't have to do all of these things, but we'd like you to be involved with the team more than just executing individual task after task.
 >
@@ -96,7 +96,7 @@ who is applying for this Software Engineer job:
 >
 > **Give Feedback:** You should give feedback on the product, team, and team members. Feedback should be specific, actionable, and timely. For individuals, it should also be directly related to the job they are expected to perform. You should also be mindful of your biases when giving feedback.
 >
-> **Receive Feedback:** You should respond well to feedback. Responding well can mean many things, including disagreement. We want to build a strong, trust-and-respect-based relationship across the team that allows us to give feedback about actions, not judgements about people.
+> **Receive Feedback:** You should respond well to valid feedback. Responding well can mean many things, including disagreement. We want to build a strong, trust-and-respect-based relationship across the team that allows us to give feedback about actions, not judgements about people.
 >
 > **Benefits**
 >
@@ -105,9 +105,9 @@ who is applying for this Software Engineer job:
 > *   Full-time W2 employment
 > *   Health Care Plan that's good for families and individuals
 > *   Flexible time to allow for a work-life balance that works for you and your family
-> *   Unlimited PTO with minimums to prevent burnout
+> *   Minimum Required PTO with suggested 4-weeks per year
 > *   Intentionally Guided Culture based on inclusion and respect
-> *   Remote work options
+> *   Remote work
 >
 > If you aren't sure if you should apply, please apply anyway. Don't self-select yourself out. We'd be happy to discuss any concerns you have with the job post matching your skill set.
 >
@@ -118,7 +118,7 @@ who is applying for this Software Engineer job:
 
 # Interview Process
 
-There are five phases to the process. They will look pretty typical, but the details are where the magic happens.
+There are five phases to the process. They will look pretty typical, but the details are a bit more unique.
 
 ```
 Phase 1: Confirm Expectations
@@ -153,6 +153,8 @@ Schedule a 30-minute call to with the candidate to discuss the work environment,
 > - compensation: expectations, not history
 > - dealbreakers: absolute requirements
 >
+> Request: Please provide a technical writing sample of something you are proud of and you believe represents your technical writing ability well. This can be a pull request, API or other code documentation, readme, research notes, project plan, or anything else that involves explaining technical concepts. If you don't have one available, let's chat about how we can do something else. Please don't let this specific requirement cause you to self-select out of the process.
+>
 > I'm also happy to discuss any other questions you have about the role!
 >
 > Interview Process: {{link to full description of process}}<br>
@@ -175,7 +177,7 @@ Let's explore those topics in more detail.
 
 Near the end of the call, remind the candidate of the next steps. Ask them if they have any final questions.
 
-Make note of any follow up tasks you may want to do. These can be anything that will help you decide on whether or not to advance the candidate to the next phase.
+Make note of any follow up tasks you may want to do before deciding to bring them in for an interview. These could be calling references, reviewing work samples, confirming details of employment you didn't have at hand for the candidate, etc.
 
 <details open>
 <summary>📝 <b>Expectation Setting Notes: Jessie</b> [Sean]</summary>
@@ -187,10 +189,12 @@ Make note of any follow up tasks you may want to do. These can be anything that 
 > Work: They've not worked full-time in a remote environment before,
 > but have worked remotely on their team for up to a week at a time.
 > They enjoyed it and felt productive during that time.
+> In 1:1s, we'll want to keep an eye on focus and communication levels
+> to help them through that transition to meet expectations.
 >
 > Growth: They would like to grow in technical leadership skills, such as mentorship, giving good feedback, and breaking down complex tasks.
 >
-> Compensation: They seemed amenable to our compensation range for the position,
+> Compensation: They were amenable to our compensation range for the position,
 > but would prefer higher equity and lower salary, given a choice.
 >
 > Deal Breakers: Not interested in working somewhere that uses "go fast and break things"
@@ -202,7 +206,36 @@ Make note of any follow up tasks you may want to do. These can be anything that 
 
 </details>
 
-After completing your follow ups, you should be certain that a candidate should or should not progress to the next phase. If you are not, you either have more follow ups to do or should just pass on the candidate.
+After completing your follow ups, you should be certain that a candidate should or should not progress to the next phase. If you are not, you either have more follow ups to do or should decide on leaning towards interviewing less qualified candidates or not interviewing qualified candidates. If you are low on interviewable candidates, this is a hard to fill position, or you suspect your biases are making you hesitant, consider progressing the candidate to the next stage. If you already have a lot of interviews or the position is not hard to fill, consider passing on the candidate.
+
+
+<details open>
+<summary>📝 <b>Phase 2 Decision Notes: Jessie</b> [Sean]</summary>
+
+> *Date: 2019-03-01*
+>
+> ---
+> 
+> Pros:
+> - have a background that roughly matches our tech stack
+> - seem very interested in what we're building
+> - appreciate our approach to recruiting and performance reviews
+> - have a growth mindset
+> 
+> Cons:
+> - never worked full-time remotely before
+> - not well experienced in automated testing
+> - tech skillset doesn't include Ember
+> 
+> The pros are strong and the cons can be addressed relatively easily, except maybe
+> managing the transition to remote work. We can certainly offer support and guidance here, but
+> success in that area will ultimately come from within. After talking to their past colleague
+> Ashish about working remote with the candidate for brief periods of time, they did affirm that
+> communication was frequent and detailed. No concerns were raised about this arrangement.
+> 
+> Decision: This candidate looks like a good initial match for the team. Let's bring them in for the interview!
+
+</details>
 
 
 ## Phase 2: Interview Negotiation
@@ -211,6 +244,8 @@ After completing your follow ups, you should be certain that a candidate should 
 
 
 ### Collaborate on the Format
+
+As a candidate, have you ever missed out on a job and thought "If only I could have shown them my skill in X"? As part of a hiring decision, have you ever declined a candidate who went somewhere else and performed very well? There are certainly cases where it still wouldn't have worked out if the candidate was hired in these situations, but they should certainly be making it through the process more often.
 
 This phase starts with a request for information from the candidate. The request boils down to "what are your strengths that overlap with our needs?"
 
@@ -229,7 +264,7 @@ This phase starts with a request for information from the candidate. The request
 >
 >     Phase 1: [Audio Call] Confirm Expectations
 >     **Phase 2: [Email] Interview Negotiation**
->     Phase 3: [Video Interview] Strength Finding Interview
+>     Phase 3: [Video Call] Strength Finding Interview
 >     Phase 4: [Variable] Follow Ups
 >     Phase 5: [Video Call] Meet the Founders
 >
@@ -267,15 +302,15 @@ This phase starts with a request for information from the candidate. The request
 > - Breaking down large tasks into smaller ones
 > - Optimizing a UX flow
 > - Designing new views
+> - Documenting a gnarly part of the system
 >
 > Then, we'll schedule the actual interview. We like to book 4 hours for that, but if that large of a block of time doesn't work, we can split it up.
 >
-> If coding in an interview setting won't show you at your best, we can provide a homework problem for you to tackle or you can provide a suitable work sample. In those alternative cases, the scheduled interview would involve talking through the choices you made on that problem.
+> If coding in an interview setting won't show you at your best, we can provide a homework problem for you to tackle or you can provide a suitable work sample. In those alternative cases, the scheduled interview would involve talking through homework or work sample.
 >
 > If you have any questions or concerns about any of this, please let me know.
 >
-> Thanks!
->
+> Thanks!<br>
 > ~Sean Massa
 
 </details>
@@ -299,7 +334,10 @@ The candidate will respond with their strengths. If they shared some relevant st
 > - System Architecture Design
 > - Breaking Large Tasks into Smaller Tasks
 >
-> I don't typically do well programming in an interview setting. Can we do the homework problem you mentioned instead? I'm most comfortable with Node.js for APIs and Jade templates for web sites.
+> I don't typically do well programming in an interview setting. My past work is all private, which means I have no work samples I can provide. Can we do the homework problem you mentioned instead? I'm most comfortable with Node.js for APIs and Jade templates for web sites.
+>
+> Thanks!<br>
+> ~Jessie
 
 </details>
 
@@ -310,13 +348,17 @@ Interview Modules are how you can find balance between consistent and adaptive i
 
 **Selection:** Some modules will still apply to most candidates. In our interviews, we typically do the same 2 modules for everyone, then leave room for 2 other modules to be flexible towards the candidate's strengths. Modules should also span technical implementation skills as well as collaboration/communication skills.
 
-**Format:** Collaboration is very important. If the candidate is comfortable with it, try to make at least 1 large module involve collaboration with a team member. If the candidate doesn't feel comfortable with this, ask for a work sample or completion of a homework problem that you can discuss during the interview.
+**Format:** Collaboration is very important. If the candidate is comfortable with it, try to make at least 1 large module involve collaboration with a team member. That doesn't have to be live coding in a high-pressure situation. Collaboration could be talking through an architectural design, planning a project, triaging (not necessarily fixing) a bug, or the like.
 
-**Construction:** As you use this process more, you'll build more and more modules. This will require some work, but it's also worth the effort. When building modules, try to make them as realistic as possible. The domain should be the same or analogous to your domain by default, although you can shift this per candidate too. The tasks should be representative of the work required to do the job.
+**Construction:** As you use this process more, you'll build more and more modules. This will require some work, but it's also worth the effort. When building modules, try to make them as realistic as possible. The domain should be the same or analogous to your domain by default, although you can shift this per candidate too. The tasks should be representative of the work required to do the job. Try to be flexible on technology choices, as well. Candidates will do a better job if they can pick tools they know to solve a problem.
 
 For our job, we could really use someone with strong API Design and high-quality execution. We also want to assess how well they will work in a remote environment.
 
-Let's set up an interview that highlights the candidate's "API Design" and "Testing". We always ask for a technical writing sample and the homework problem includes a writing section as well. We can dig further into how well the candidate works in a remote environment during the Q&A, as well.
+Let's set up an interview that highlights the candidate's "API Design" and "Testing". We already asked for a technical writing sample and the homework problem includes a writing section as well. We can dig further into how well the candidate works in a remote environment during the Q&A.
+
+
+
+
 
 <details open>
 <summary>✉️ <b>Subject: Interview Agenda</b> [Sean -> Jessie]</summary>
@@ -505,19 +547,25 @@ For each module, we score the skills involved. The skills list can include every
 > **Scorecard: Jessie as Software Engineer**
 >
 > General Skill | Score | Confidence |
-> ------------ | :---: | ---------: |
+> ------------- | :---: | ---------: |
 > Continuous Improvement | 90% | 25%
 > Collaborate            |     |
-> Write                  |     |
+> Writing                |     |
 > Give Feedback          |     |
 > Receive Feedback       |     |
 >
 > <br>
 >
-> Technical Skill | Score         | Confidence |
-> ------------ | :-----------: | -----------: |
+> Core Role Skill | Score         | Confidence |
+> --------------- | :-----------: | ---------: |
 > breaking down tasks | 90% | 25%
-> writing maintainable code | 60% | 35%
+> maintainable code   | 60% | 35%
+> component use       |     |
+> css implementation  |     |
+> testing             |     |
+> api design          |     |
+
+
 
 
 
