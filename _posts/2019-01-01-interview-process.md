@@ -153,8 +153,14 @@ Schedule a 30-minute call to with the candidate to discuss the work environment,
 > - compensation: expectations, not history
 > - dealbreakers: absolute requirements
 >
-> Request: Please provide a technical writing sample of something you are proud of and you believe represents your technical writing ability well. This can be a pull request, API or other code documentation, readme, research notes, project plan, or anything else that involves explaining technical concepts. If you don't have one available, let's chat about how we can do something else. Please don't let this specific requirement cause you to self-select out of the process.
+> Request:
 >
+> Especially on our remote team, technical writing is a critical skill to being a successful team member. Can you provide a technical writing sample? This can be some documentation you wrote, a couple of Pull Request descriptions you are proud of, a persuasive email you sent to a colleague, or anything else that describes or persuades involving technical or philosophical aspects of our work.
+> 
+> If nothing like this is sharable, let us know and we'll figure something else out together. Please don't let this requirement cause you to self-select out of the interview process.
+> 
+> ---
+> 
 > I'm also happy to discuss any other questions you have about the role!
 >
 > Interview Process: {{link to full description of process}}<br>
@@ -206,11 +212,13 @@ Make note of any follow up tasks you may want to do before deciding to bring the
 
 </details>
 
-After completing your follow ups, you should be certain that a candidate should or should not progress to the next phase. If you are not, you either have more follow ups to do or should decide on leaning towards interviewing less qualified candidates or not interviewing qualified candidates. If you are low on interviewable candidates, this is a hard to fill position, or you suspect your biases are making you hesitant, consider progressing the candidate to the next stage. If you already have a lot of interviews or the position is not hard to fill, consider passing on the candidate.
+After completing your follow ups, you should be certain that a candidate should or should not progress to the next phase. If you are not, you either have more follow ups to do or should decide on leaning towards interviewing less qualified candidates or not interviewing qualified candidates.
+
+If you are low on interviewable candidates, this is a hard to fill position, or you suspect your biases are making you hesitant, consider progressing the candidate to the next stage. If you already have a lot of interviews or the position is not hard to fill, consider passing on the candidate.
 
 
 <details open>
-<summary>📝 <b>Phase 2 Decision Notes: Jessie</b> [Sean]</summary>
+<summary>📝 <b>Phase 2 Notes: Jessie</b> [Sean]</summary>
 
 > *Date: 2019-03-01*
 >
@@ -224,7 +232,6 @@ After completing your follow ups, you should be certain that a candidate should 
 > 
 > Cons:
 > - never worked full-time remotely before
-> - not well experienced in automated testing
 > - tech skillset doesn't include Ember
 > 
 > The pros are strong and the cons can be addressed relatively easily, except maybe
@@ -357,9 +364,6 @@ For our job, we could really use someone with strong API Design and high-quality
 Let's set up an interview that highlights the candidate's "API Design" and "Testing". We already asked for a technical writing sample and the homework problem includes a writing section as well. We can dig further into how well the candidate works in a remote environment during the Q&A.
 
 
-
-
-
 <details open>
 <summary>✉️ <b>Subject: Interview Agenda</b> [Sean -> Jessie]</summary>
 
@@ -370,8 +374,6 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 > ---
 >
 > We're excited for your interview!
->
-> Especially on our remote team, technical writing is a critical skill to being a successful team member. Can you provide a technical writing sample? This can be some documentation you wrote, a couple of Pull Request descriptions you are proud of, a persuasive email you sent to a colleague, or anything else that describes or persuades involving technical or philosophical aspects of our work. If nothing like this is sharable, let us know and we'll figure something else out together.
 >
 > **Proposed Interview Format**
 >
@@ -434,9 +436,9 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 >
 > That sounds great! I'm available anytime tomorrow from 9am - 5pm central time.
 >
-> I have some example PRs that I think will serve as my technical writing sample. Please let me know if you'd like for me to provide something else.
+> I have some blog posts that I think will serve as my technical writing sample. Please let me know if you'd like for me to provide something else.
 >
-> {{links to PRs}}
+> {{links to blog posts}}
 
 </details>
 
@@ -457,6 +459,13 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 > ```
 
 </details>
+
+Now that we have the format agreed upon, we can construct the assessment scorecard for this candidate.
+
+
+
+
+
 
 
 ## Phase 3: Strength-finding Interview
@@ -541,52 +550,53 @@ Schedule any new modules that make sense and run them just like in Phase 3. Gath
 
 In our job description we mentioned several expectations of someone filling the role. They aren't all required, but this serves as a guideline for what we're looking for. We'll reference those items to build a scorecard.
 
-For each module, we score the skills involved. The skills list can include everything the candidate mentioned that would be applicable to the role. The scores should have justifying metrics, statements, and artifacts of the work.
+For each module, we score the skills involved. The skills list can include everything the candidate exhibited that would be applicable to the role. The scores should have justifying metrics, statements, and artifacts of the work.
+
+This article won't dive into how things are actually scored. I just don't have the experience, research, and data on how best to do that. The research does show that having a rubric to turn qualifying assessments into more quantitative data leads to better outcomes. Beyond that, for now, just do your best.
+
+For our scoring, we use high-level categorizations based on a rubric. Someone can score poor, solid, or great on an assessment.
 
 
-> **Scorecard: Jessie as Software Engineer**
->
+#### Assessment Confidence
+
+We also temper that with our confidence rating on how well we believe that assessment actually represents their skill. The assessment can have a low, medium, or high level of confidence. Here are some examples of assessments by confidence level.
+
+**High:** Assessments with high confidence include those where we worked together with the candidate to solve a problem. Collaboration is a great way to understand what it's going to be like to have the candidate on your team.
+
+**Medium:** Assessments with a medium confidence include work samples, certifications (variable, can be high), discussions about how someone works. These are 
+
+**Low:** Assessments with a low confidence include reference calls, unvalidated claims, discussions about how someone works, or otherwise higher confidence assessments that were too short or otherwise incomplete.
+
+<details open>
+<summary>📝 <b>Scorecard: Jessie as Software Engineer</b></summary>
+
+
+> **Overall Score:** Great!
+> 
 > General Skill | Score | Confidence |
 > ------------- | :---: | ---------: |
-> Continuous Improvement | 90% | 25%
-> Collaborate            |     |
-> Writing                |     |
-> Give Feedback          |     |
-> Receive Feedback       |     |
+> Continuous Improvement | great | Low
+> Collaborate            |       | 
+> Writing                |       | 
+> Give Feedback          |       | 
+> Receive Feedback       |       | 
 >
 > <br>
 >
 > Core Role Skill | Score         | Confidence |
 > --------------- | :-----------: | ---------: |
-> breaking down tasks | 90% | 25%
-> maintainable code   | 60% | 35%
-> component use       |     |
-> css implementation  |     |
-> testing             |     |
-> api design          |     |
+> breaking down tasks | great | 
+> maintainable code   | solid | 
+> component use       |       | 
+> css implementation  |       | 
+> testing             |       | 
+> api design          |       | 
+> product interaction |       | 
+> design interaction  |       | 
 
+</details>
 
-
-
-
-
-
-> - Homework Discussion: Chat App (1hr)
-> - Break (10m)
-> - Collaborate: API Design (1hr)
-> - Collaborate: Refactoring and Testing (45m)
-> - Break (5m)
-> - Two-directional Q&A (45m)
-
-Tell us about a time when you felt that you collaborated well, perhaps in an environment that wasn’t the best.
-Tell us about a time when you felt that you didn’t collaborate well. Why? What did you do about it?
-
-Tell us about a time when you gave someone some important feedback. How did you go about it? How did they receive it?
-Tell us about a time when you received some important feedback. How did you received it? What did you do about it?
-
-Tell us about a time when you had to solve a hard software problem. What made it hard? How did you approach solving it?
-Tell me about a time when you took a complex task and broke it into smaller tasks? What criteria do you use?
-
+The scorecard is broken up into General Skills that we think most/all team members should have and Core Role Skills, which for a Software Engineer includes a lot of technical implementation skills as well as product and design collaborative skills.
 
 
 
@@ -596,49 +606,6 @@ Tell me about a time when you took a complex task and broke it into smaller task
 ## Phase 5: Make a Decision
 
 *Phase Goal: Decide to pass or make an offer on a candidate.*
-
-
-
-
-
-
-
-
-### Scorecards
-
-It's important to note that there's a difference between a score on an assessment and the confidence in the form that assessment takes. You might have an acquaintance strongly recommend you hire someone for a specific job, but you barely know the acquaintance and aren't sure what their standards and processes are. You could say that this assessment has a high score (because it was a strong recommendation) but low confidence (because you barely know the person).
-
-There's a spectrum of confidence that roughly goes like this:
-1. [75-90%] first-hand experience over time
-2. [60-80%] third-hand vouching from trusted source
-3. [50-70%] first-hand experience briefly
-4. [35-65%] second-hand description
-
-
-> **Scorecard: Jessie as Software Engineer**
->
-> General Skill | Score | Confidence |
-> ------------ | :---: | ---------: |
-> Continuous Improvement | 90% | 25%
-> Collaborate            |     |
-> Write                  |     |
-> Give Feedback          |     |
-> Receive Feedback       |     |
->
-> <br>
->
-> Technical Skill | Score         | Confidence |
-> ------------ | :-----------: | -----------: |
-> breaking down tasks | 90% | 25%
-> writing maintainable code | 60% | 35%
-
-Assessment of technical skill involves a lot of skills and domains. It would be impossible to assess that to any degree of completeness, even if only scoped to the subset you most need. Instead, we look for strengths in helpful areas. The Technical Skill scorecard assesses only the skills mentioned in the interview negotiation and is definitely incomplete.
-
-
-
-
-
-
 
 
 The information gathered so far should be focused on the candidate's strengths that match the employer's needs. If the candidate did well in the selected areas, you can be more confident that you've seen them at their best. If they did not, maybe they aren't as strong in those areas as they think they are.
@@ -658,29 +625,17 @@ Making a decision from here is easier than a standard one-size-fits-all intervie
 >
 > **Hello Jessie!**
 >
-> We were impressed with you during your interview and would like to make you an offer!
+> We were very impressed with you during your interview and would like to make you an offer!
 >
 > Please see the offer letter attached. We hope you accept!
+>
+> We hope to have a response within a week, but if you need more time to make this very important decision, let us know and we can find something that works best for everyone.
 >
 > Let me know if you have any questions.
 
 </details>
 
-
-
-
-
-
-
-
-
-# Feedback
-
-Candidate feedback on the process for both those who were successful and those who weren't has been outstanding. Everyone appreciated the goals of the format as well as the execution of it.
-
-As interviewers, we felt much more confident in our offers and rejections. On rejections specifically: it was compelling to see a candidate claim a specific strength, us to shape the interview around that strength, then the evaluation come back as sub-par for that strength.
-
-When we reject someone, we try to give some notes about why. There's potential legal risk in these kinds of conversations--so have them with care and approval from the responsible parties in your organization. If you can provide feedback to rejected candidates, please do so.
+Then, the candidate hopefully accepts and everyone is excited to have them start!
 
 
 # The End
@@ -690,6 +645,17 @@ That's the Strength-finding Interview! I hope you find this useful.
 This is the result of research, experimentation, and iteration across years of work, quite often in collaboration with [@Trek](https://twitter.com/trek). You can read [Trek's earlier take](https://medium.com/@trek/tired-engineering-interviews-hired-engineering-auditions-5f9f00147a57) on this format, as well.
 
 I consider this to be an evolving process. If you have questions or feedback, please let me know!
+
+
+## Feedback from Candidates So Far
+
+Candidate feedback on the process for both those who were successful and those who weren't has been outstanding. Everyone appreciated the goals of the format as well as the execution of it.
+
+As interviewers, we felt much more confident in our offers and rejections. On rejections specifically: it was compelling to see a candidate claim a specific strength, us to shape the interview around that strength, then the evaluation come back as sub-par for that strength.
+
+When we reject someone, we try to give some notes about why. There's potential legal risk in these kinds of conversations--so have them with care and approval from the responsible parties in your organization. If you can provide feedback to rejected candidates, please do so.
+
+When we accept someone, we try to use this assessment as a starting point for their internal continue improvement through performance management. We plan to get to a place where the interview counts as a partial assessment in the performance management cycle. But, that's a topic for another time.
 
 
 ## Related Resources
