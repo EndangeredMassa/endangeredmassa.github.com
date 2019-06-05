@@ -38,6 +38,7 @@ The key takeaways are:
 
 Let's assume we have a candidate Jessie:
 
+
 <details open>
 <summary>👩🏾‍💻 <b>Candidate: Jessie</b></summary>
 
@@ -52,7 +53,9 @@ Let's assume we have a candidate Jessie:
 
 </details>
 
+
 who is applying for this Software Engineer job:
+
 
 <details open>
 <summary>📋 <b>Job: Software Engineer</b></summary>
@@ -114,7 +117,9 @@ who is applying for this Software Engineer job:
 > FlashRecruit is committed to creating a diverse environment and is proud to be an equal opportunity employer. All applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, disability, age, or veteran status.
 </details>
 
+
 *Side Note: I used [text.io](https://textio.com/) in the writing of this job post and I'm very happy with the results!*
+
 
 # Interview Process
 
@@ -134,6 +139,7 @@ Phase 5: Make a Decision
 *Phase Goal: Confirm expectations of the candidate and employer regarding the work, growth, and compensation.*
 
 Schedule a 30-minute call to with the candidate to discuss the work environment, growth of the candidate, direction of the business, and compensation expectations.
+
 
 <details open>
 <summary>🗓 <b>Calendar Invite: "Call: Sean <> Jessie</b> [Sean -> Jessie]</summary>
@@ -185,6 +191,7 @@ Near the end of the call, remind the candidate of the next steps. Ask them if th
 
 Make note of any follow up tasks you may want to do before deciding to bring them in for an interview. These could be calling references, reviewing work samples, confirming details of employment you didn't have at hand for the candidate, etc.
 
+
 <details open>
 <summary>📝 <b>Expectation Setting Notes: Jessie</b> [Sean]</summary>
 
@@ -211,6 +218,7 @@ Make note of any follow up tasks you may want to do before deciding to bring the
 > - ask HR: what's the largest life insurance policy we offer?
 
 </details>
+
 
 After completing your follow ups, you should be certain that a candidate should or should not progress to the next phase. If you are not, you either have more follow ups to do or should decide on leaning towards interviewing less qualified candidates or not interviewing qualified candidates.
 
@@ -255,6 +263,7 @@ If you are low on interviewable candidates, this is a hard to fill position, or 
 As a candidate, have you ever missed out on a job and thought "If only I could have shown them my skill in X"? As part of a hiring decision, have you ever declined a candidate who went somewhere else and performed very well? There are certainly cases where it still wouldn't have worked out if the candidate was hired in these situations, but they should certainly be making it through the process more often.
 
 This phase starts with a request for information from the candidate. The request boils down to "what are your strengths that overlap with our needs?"
+
 
 <details open>
 <summary>✉️ <b>Subject: FlashRecruit Interview Process</b> [Sean -> Jessie]</summary>
@@ -322,7 +331,9 @@ This phase starts with a request for information from the candidate. The request
 
 </details>
 
+
 The candidate will respond with their strengths. If they shared some relevant strengths, select a couple to build into the interview. If not, either (1) select less relevant strengths as a way to assess their ability to master something or (2) follow up with them to see if there are other strengths you could focus on.
+
 
 <details open>
 <summary> ️✉️ <b>Subject: My Strengths</b> [Jessie -> Sean]</summary>
@@ -425,6 +436,7 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 
 </details>
 
+
 <details open>
 <summary>✉️ <b>Re: Interview Agenda</b>  [Jessie -> Sean]</summary>
 
@@ -460,7 +472,10 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 
 </details>
 
-Now that we have the format agreed upon, we can construct the assessment scorecard for this candidate.
+Now that we have the format agreed upon, we can construct the assessment scorecard for this candidate. We'll use this scorecard to assess the candidate. I'll discuss it more in a later section, but for now, let's translate the modules into assessments.
+
+
+
 
 
 
@@ -473,6 +488,7 @@ Now that we have the format agreed upon, we can construct the assessment scoreca
 Now we run the actual interview. This phase includes your common interview fare. You have a schedule, you meet, you discuss, you collaborate, and you evaluate.
 
 In the break before the Two-directional Q&A, review your notes to find areas where you'd like to dig deeper.
+
 
 <details open>
 <summary>📝 <b>Interview Notes: Jessie</b> [Sean]</summary>
@@ -534,21 +550,19 @@ The candidate may also have requests for additional information. Common requests
 
 Schedule any new modules that make sense and run them just like in Phase 3. Gather any relevant information and add it to the notes. After that's all run, go through Phase 4 again.
 
+
 <details open>
 <summary>📝 <b>Review Notes: Jessie</b> [Sean]</summary>
 
 > The candidate clearly has a strong TDD background and focus. They not only absorb the philosophy, but execute the practice. Their work in the interview shows a high quality level that appears to be well supported by this approach.
 >
 > Our current team does not practice TDD. The candidate's story about encountering this situation in the past is promising, though. Maybe they'll end up converting a few of us, maybe not. Regardless, this candidate's code looks strong.
->
-> {{TODO - show the through-line from job description expectations through review against those expectations}}
-
 
 </details>
 
+
 ### Scoring
 
-In our job description we mentioned several expectations of someone filling the role. They aren't all required, but this serves as a guideline for what we're looking for. We'll reference those items to build a scorecard.
 
 For each module, we score the skills involved. The skills list can include everything the candidate exhibited that would be applicable to the role. The scores should have justifying metrics, statements, and artifacts of the work.
 
@@ -567,9 +581,9 @@ We also temper that with our confidence rating on how well we believe that asses
 
 **Low:** Assessments with a low confidence include reference calls, unvalidated claims, discussions about how someone works, or otherwise higher confidence assessments that were too short or otherwise incomplete.
 
+
 <details open>
 <summary>📝 <b>Scorecard: Jessie as Software Engineer</b></summary>
-
 
 > **Overall Score:** Great!
 > 
@@ -598,7 +612,7 @@ We also temper that with our confidence rating on how well we believe that asses
 
 The scorecard is broken up into General Skills that we think most/all team members should have and Core Role Skills, which for a Software Engineer includes a lot of technical implementation skills as well as product and design collaborative skills.
 
-
+I'd love to dig into each skill in detail, but this is already going to be too long. Let's accept for now that these skills could be anything and discuss how we score candidates at a higher level.
 
 
 
@@ -607,12 +621,14 @@ The scorecard is broken up into General Skills that we think most/all team membe
 
 *Phase Goal: Decide to pass or make an offer on a candidate.*
 
-
 The information gathered so far should be focused on the candidate's strengths that match the employer's needs. If the candidate did well in the selected areas, you can be more confident that you've seen them at their best. If they did not, maybe they aren't as strong in those areas as they think they are.
 
-Making a decision from here is easier than a standard one-size-fits-all interview.
+Making a decision from here is easier than a standard one-size-fits-all interview, in our experience with the two formats.
 
-{TODO} The actual framework for making this decision is not the focus of this article, but it should be based on consistent processes that aim to remove bias in the hiring process.
+{{TODO: Hiring Decision Process with Scorecard}}
+
+This candidate looks like a great fit. We decide to hire them and make them an offer.
+
 
 <details open>
 <summary>✉️ <b>Subject: Offer from FlashRecruit!</b> [Sean -> Jessie]</summary>
@@ -635,6 +651,7 @@ Making a decision from here is easier than a standard one-size-fits-all intervie
 
 </details>
 
+
 Then, the candidate hopefully accepts and everyone is excited to have them start!
 
 
@@ -655,10 +672,25 @@ As interviewers, we felt much more confident in our offers and rejections. On re
 
 When we reject someone, we try to give some notes about why. There's potential legal risk in these kinds of conversations--so have them with care and approval from the responsible parties in your organization. If you can provide feedback to rejected candidates, please do so.
 
-When we accept someone, we try to use this assessment as a starting point for their internal continue improvement through performance management. We plan to get to a place where the interview counts as a partial assessment in the performance management cycle. But, that's a topic for another time.
+When we accept someone, we try to use this assessment as a starting point for their internal continuous improvement through performance management. We plan to get to a place where the interview counts as a partial assessment in the performance management cycle. But, that's a topic for another time.
 
 
 ## Related Resources
 
 - [Lara Hogan's Interview Loop Template](https://larahogan.me/blog/onsite-interview-loop-template/)
 - [Gallup's Clifton Strengths Finder](https://www.gallupstrengthscenter.com/)
+
+
+# Appendix: Example Modules
+
+<details>
+<summary><b>Module A: API Design</b></summary>
+other things
+</details>
+
+<br>
+
+<details>
+<summary><b>Module B: Homework</b></summary>
+other things
+</details>
