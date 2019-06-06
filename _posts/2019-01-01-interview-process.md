@@ -82,7 +82,7 @@ who is applying for this Software Engineer job:
 >
 > There aren't many technical requirements. We don't want to exclude you based on something you could learn quickly enough on the job. Instead, we'd like to focus on the skills that we find to be critical to happiness and success in self and team.
 >
-> **Continuous Improvement:** For each other item, you don't have to already be great. The core expectation and real requirement is that you improve over time. The processes and expectations in place will facilitate that, but you should be motivated to continuous improvement as well. 
+> **Continuous Improvement:** For each other item, you don't have to already be great. The core expectation and real requirement is that you improve over time. The processes and expectations in place will facilitate that, but you should be motivated to continuous improvement as well.
 >
 > **Code:** Writing software is the core of this role. You should write software that is tested, modifiable, and clear. We have no expectations around computer science concepts, but you should be open to learning about anything relevant to the work.
 >
@@ -162,11 +162,11 @@ Schedule a 30-minute call to with the candidate to discuss the work environment,
 > Request:
 >
 > Especially on our remote team, technical writing is a critical skill to being a successful team member. Can you provide a technical writing sample? This can be some documentation you wrote, a couple of Pull Request descriptions you are proud of, a persuasive email you sent to a colleague, or anything else that describes or persuades involving technical or philosophical aspects of our work.
-> 
+>
 > If nothing like this is sharable, let us know and we'll figure something else out together. Please don't let this requirement cause you to self-select out of the interview process.
-> 
+>
 > ---
-> 
+>
 > I'm also happy to discuss any other questions you have about the role!
 >
 > Interview Process: {{link to full description of process}}<br>
@@ -231,23 +231,23 @@ If you are low on interviewable candidates, this is a hard to fill position, or 
 > *Date: 2019-03-01*
 >
 > ---
-> 
+>
 > Pros:
 > - have a background that roughly matches our tech stack
 > - seem very interested in what we're building
 > - appreciate our approach to recruiting and performance reviews
 > - have a growth mindset
-> 
+>
 > Cons:
 > - never worked full-time remotely before
 > - tech skillset doesn't include Ember
-> 
+>
 > The pros are strong and the cons can be addressed relatively easily, except maybe
 > managing the transition to remote work. We can certainly offer support and guidance here, but
 > success in that area will ultimately come from within. After talking to their past colleague
 > Ashish about working remote with the candidate for brief periods of time, they did affirm that
 > communication was frequent and detailed. No concerns were raised about this arrangement.
-> 
+>
 > Decision: This candidate looks like a good initial match for the team. Let's bring them in for the interview!
 
 </details>
@@ -474,12 +474,116 @@ Let's set up an interview that highlights the candidate's "API Design" and "Test
 
 Now that we have the format agreed upon, we can construct the assessment scorecard for this candidate. We'll use this scorecard to assess the candidate. I'll discuss it more in a later section, but for now, let's translate the modules into assessments.
 
+Each module can assess multiple skills, some deeply and others less so. There can also be a lot of overlap. A scorecard format helps us gather notes from multiple sources about a specific skill.
+
+Below are the modules we're going to run along with the skills we can capture signals for in those modules.
+
+- **Homework Discussion: Chat App**
+    - UI Component Architecture
+    - UI Component Development
+    - Testing
+    - CSS Implementation
+    - Technical Writing
+    - Breaking Down Tasks
+    - Maintainable Code
+- **Collaborate: API Design**
+    - API Design
+    - Testing
+    - Technical Writing
+    - Collaboration
+- **Collaborate: Refactoring and Testing**
+    - Refactoring
+    - Testing
+    - Working with Existing Code
+    - Culture: Empathy and Understanding for Past Decisions
+    - Collaboration
+    - Maintainable Code
+- **Two-directional Q&A**
+    - Giving Feedback
+    - Receiving Feedback
+    - Remote Work
+    - Collaboration
+    - Continuous Learning
+
+We then translate that into our scorecard:
 
 
+<details open>
+<summary>📝 <b>Scorecard: Jessie as Software Engineer</b></summary>
 
+> ## **Overall Score:** TBD
+> 
+> ### **General Skills**
+> 
+> **Continuous Improvement** [Score: TBD]
+> - Two-directional Q&A [Confidence: Medium]
+>     - {{notes}}
+> 
+> **Collaboration** [Score: TBD]
+> - Collaborate: API Design [Confidence: High]
+>     - {{notes}}
+> - Collaborate: Refactoring and Testing [Confidence: High]
+>     - {{notes}}
+> - Two-directional Q&A [Confidence: Medium]
+>     - {{notes}}
+> 
+> **Technical Writing** [Score: TBD]
+> - Collaborate: API Design [Confidence: High]
+>     - {{notes}}
+> - Homework Discussion: Chat App [Confidence: High]
+>     - {{notes}}
+> 
+> **Giving Feedback** [Score: TBD]
+> - Two-directional Q&A [Confidence: Medium]
+>   - {{notes}}
+> 
+> **Receiving Feedback** [Score: TBD]
+> - Two-directional Q&A [Confidence: Medium]
+>     - {{notes}}
+> 
+> **Remote Work** [Score: TBD]
+> - Two-directional Q&A [Confidence: Medium]
+>     - {{notes}}
+> - Reference: Ashish [Confidence: Low]
+>      - {{notes}}
+>
+> ### **Core Role Skills**
+> 
+> **Breaking Down Tasks** [Score: TBD]
+> - Homework Discussion: Chat App [Confidence: Low]
+>     - {{notes}}
+> 
+> **Maintainable Code** [Score: TBD]
+> - Homework Discussion: Chat App [Confidence: High]
+>     - {{notes}}
+> - Collaborate: Refactoring and Testing [Confidence: High]
+>     - {{notes}}
+> 
+> **UI Component Architecture** [Score: TBD]
+> - Homework Discussion: Chat App [Confidence: Medium]
+>     - {{notes}}
+> 
+> **UI Component Development** [Score: TBD]
+> - Homework Discussion: Chat App [Confidence: High]
+>     - {{notes}}
+> 
+> **CSS Implementation** [Score: TBD]
+> - Homework Discussion: Chat App [Confidence: Medium]
+>     - {{notes}}
+> 
+> **Testing** [Score: TBD]
+> - Homework Discussion: Chat App [Confidence: Medium]
+>     - {{notes}}
+> - Collaborate: Refactoring and Testing [Confidence: Medium]
+>     - {{notes}}
+> - Collaborate: API Design [Confidence: Low]
+>     - {{notes}}
+> 
+> **API Design** [Score: TBD]
+> - Collaborate: API Design [Confidence: High]
+>     - {{notes}}
 
-
-
+</details>
 
 
 
@@ -529,6 +633,14 @@ In the break before the Two-directional Q&A, review your notes to find areas whe
 > 4. Tell us about how you manage your time and focus.
 >
 >     They use distraction blocking software called [Freedom](https://freedom.to/) to prevent themselves from jumping over to Twitter and getting distracted. They also like working in Pomodoros. Keeping mornings clear of meetings is helpful because they feel most productive then.
+>
+> 5. Tell us about how you manage your own continuous learning.
+>
+>    {{TODO}}
+>
+> 6. What employer processes and programs you prefer to aid in continuous learning?
+>
+>    {{TODO}}
 
 </details>
 
@@ -577,7 +689,7 @@ We also temper that with our confidence rating on how well we believe that asses
 
 **High:** Assessments with high confidence include those where we worked together with the candidate to solve a problem. Collaboration is a great way to understand what it's going to be like to have the candidate on your team.
 
-**Medium:** Assessments with a medium confidence include work samples, certifications (variable, can be high), discussions about how someone works. These are 
+**Medium:** Assessments with a medium confidence include work samples, certifications (variable, can be high), discussions about how someone works. These are
 
 **Low:** Assessments with a low confidence include reference calls, unvalidated claims, discussions about how someone works, or otherwise higher confidence assessments that were too short or otherwise incomplete.
 
@@ -586,27 +698,27 @@ We also temper that with our confidence rating on how well we believe that asses
 <summary>📝 <b>Scorecard: Jessie as Software Engineer</b></summary>
 
 > **Overall Score:** Great!
-> 
+>
 > General Skill | Score | Confidence |
 > ------------- | :---: | ---------: |
 > Continuous Improvement | great | Low
-> Collaborate            |       | 
-> Writing                |       | 
-> Give Feedback          |       | 
-> Receive Feedback       |       | 
+> Collaborate            |       |
+> Writing                |       |
+> Give Feedback          |       |
+> Receive Feedback       |       |
 >
 > <br>
 >
 > Core Role Skill | Score         | Confidence |
 > --------------- | :-----------: | ---------: |
-> breaking down tasks | great | 
-> maintainable code   | solid | 
-> component use       |       | 
-> css implementation  |       | 
-> testing             |       | 
-> api design          |       | 
-> product interaction |       | 
-> design interaction  |       | 
+> breaking down tasks | great |
+> maintainable code   | solid |
+> component use       |       |
+> css implementation  |       |
+> testing             |       |
+> api design          |       |
+> product interaction |       |
+> design interaction  |       |
 
 </details>
 
