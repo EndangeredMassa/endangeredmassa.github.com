@@ -43,7 +43,7 @@ The key takeaways are:
 
 # A Job and a Candidate
 
-Let's assume we have a candidate Jessie:
+Let's assume we have a candidate Jessie for a Software Engineer position we'd like to fill. This example will be based on some real world experiences, but is not designed to represent a specific person.
 
 
 <details open>
@@ -233,7 +233,7 @@ If you are low on interviewable candidates, this is a hard to fill position, or 
 
 
 <details open>
-<summary>📝 <b>Phase 2 Notes: Jessie</b> [Sean]</summary>
+<summary>📝 <b>Phase 1 Notes: Jessie</b> [Sean]</summary>
 
 > *Date: 2019-03-01*
 >
@@ -508,91 +508,7 @@ Below are the modules we're going to run along with the skills we can capture si
     - Collaboration
     - Continuous Learning
 
-We then translate that into our scorecard:
-
-
-<details open>
-<summary>📝 <b>Scorecard: Jessie as Software Engineer</b></summary>
-
-> ## **Decision**
-> 
-> Decision: **TBD**
-> 
-> {{detailed reasons for the decision}}
-> 
-> ### **General Skills**
-> 
-> **Continuous Improvement** [Score: TBD]
-> - Two-directional Q&A [Confidence: Medium]
->     - {{notes}}
-> 
-> **Collaboration** [Score: TBD]
-> - Collaborate: API Design [Confidence: High]
->     - {{notes}}
-> - Collaborate: Refactoring and Testing [Confidence: High]
->     - {{notes}}
-> - Two-directional Q&A [Confidence: Medium]
->     - {{notes}}
-> 
-> **Technical Writing** [Score: TBD]
-> - Collaborate: API Design [Confidence: High]
->     - {{notes}}
-> - Homework Discussion: Chat App [Confidence: High]
->     - {{notes}}
-> 
-> **Giving Feedback** [Score: TBD]
-> - Two-directional Q&A [Confidence: Medium]
->   - {{notes}}
-> 
-> **Receiving Feedback** [Score: TBD]
-> - Two-directional Q&A [Confidence: Medium]
->     - {{notes}}
-> 
-> **Remote Work** [Score: TBD]
-> - Two-directional Q&A [Confidence: Medium]
->     - {{notes}}
-> - Reference: Ashish [Confidence: Low]
->      - past colleague
->      - talked about working remote with the candidate for brief periods of time, they did affirm that communication was frequent and detailed. No concerns were raised about this arrangement.
->
-> ### **Core Role Skills**
-> 
-> **Breaking Down Tasks** [Score: TBD]
-> - Homework Discussion: Chat App [Confidence: Low]
->     - {{notes}}
-> 
-> **Maintainable Code** [Score: TBD]
-> - Homework Discussion: Chat App [Confidence: High]
->     - {{notes}}
-> - Collaborate: Refactoring and Testing [Confidence: High]
->     - {{notes}}
-> 
-> **UI Component Architecture** [Score: TBD]
-> - Homework Discussion: Chat App [Confidence: Medium]
->     - {{notes}}
-> 
-> **UI Component Development** [Score: TBD]
-> - Homework Discussion: Chat App [Confidence: High]
->     - {{notes}}
-> 
-> **CSS Implementation** [Score: TBD]
-> - Homework Discussion: Chat App [Confidence: Medium]
->     - {{notes}}
-> 
-> **Testing** [Score: TBD]
-> - Homework Discussion: Chat App [Confidence: Medium]
->     - {{notes}}
-> - Collaborate: Refactoring and Testing [Confidence: Medium]
->     - {{notes}}
-> - Collaborate: API Design [Confidence: Low]
->     - {{notes}}
-> 
-> **API Design** [Score: TBD]
-> - Collaborate: API Design [Confidence: High]
->     - {{notes}}
-
-</details>
-
+We'll use this to take notes during Phase 3.
 
 
 ## Phase 3: Strength-finding Interview
@@ -605,99 +521,113 @@ In the break before the Two-directional Q&A, review your notes to find areas whe
 <details open>
 <summary>📝 <b>Interview Notes: Jessie</b> [Sean]</summary>
 
-> **Homework Discussion: Chat App**
->
-> They made it to the middle of Part 2 with tests for all of the functionality they implemented. There's only basic styling, which makes sense given how far they made it into the funciontality. Code looks legible with good identifiers, small-ish functions, and reasonably well modeled data.
->
-> Their writeup was well-reasoned. It described a strong, TDD-focused path forward.
->
-> **API Design**
->
-> There are essentially two skills being tested here: UI Architecture Design and React Execution. On the React Execution parts, Jessie could tell me in detail how the system would work. On the UI Architecture Design parts, Jessie struggled a bit on identifying a good solution to the problem. With some assistance, we arrived at a pretty good solution.
->
-> **Refactoring and Testing**
->
-> They suggested writing some outside tests first, then refactoring the inside to be more legible. Suggested better identifiers, method extractions, dead code elimination.
->
-> We also talked about general testing strategy. They mentioned enjoying writing by Justin Searls [on the topic](https://github.com/testdouble/contributing-tests/wiki). They follow the Detroit School TDD methodology.
->
->
-> **Two-directional Q&A**
->
-> 1. Tell us about a time when you felt that you didn’t collaborate well. Why? What did you do about it?
->
->     There was a coworker they would pair with that would not often contribute to the discussion or code. The candidate received feedback that the coworker wasn't comfortable with TDD and also wasn't comfortable bringing this up to the candidate. After talking it through, they realized that they could be more accommodating to other styles. Now, they try to alternate driver/navigator more often and are more flexible around testing style, while still teaching others about what they find valuable in TDD.
->
-> 2. Tell us about a time when you received some important feedback. How did you received it? What did you do about it?
->
->     The tech lead on their project mentioned several times that smaller PRs make things easier to develop and review. The candidate learned this lesson and is now also an advocate for that. They said they like to "aggressively" shrink work to be smaller, accomplishable, deliverable tasks.
->
-> 3. Tell us about a time when you had to solve a hard software problem. What made it hard? How did you approach solving it?
->
->     While working in a chat system, agents would talk to customers, but there were also monitors of chats. There could be up to 4-way chats. Monitors could be silent or coaching. Some chat messages could be seen by everyone and others only by staff. There were no tests, making development hard. Debugging was especially difficult.
->
->     They decided to add a lot of tests around this area. In doing so, they discovered several bugs and made the system easier to maintain. They now champion
->
-> 4. Tell us about how you manage your time and focus.
->
->     They use distraction blocking software called [Freedom](https://freedom.to/) to prevent themselves from jumping over to Twitter and getting distracted. They also like working in Pomodoros. Keeping mornings clear of meetings is helpful because they feel most productive then.
->
-> 5. Tell us about how you manage your own continuous learning.
->
->    {{TODO}}
->
-> 6. What employer processes and programs you prefer to aid in continuous learning?
->
->    {{TODO}}
+**Homework Discussion: Chat App**
+
+- [UI Component Architecture]
+    - Components are used for high-level encapsulation, but not much for re-use or low-level encapsulation
+    - The templates would read better with more components extracted out
+- [UI Component Development]
+    - The components themselves were pretty straight-forward
+- [Testing]
+    - Tests appear to essentially cover all implemented behavior
+    - Descriptions clearly describe what is being tested
+    - Some identifiers could be a little clearer about what values they contain; `value` is not a great name
+- [CSS Implementation]
+    - There's only basic styling, which makes sense given how far they made it into the funciontality.
+    - Used BEM style and stuck to it throughout
+- [Technical Writing]
+    - Their writeup was well-reasoned. It described a strong, TDD-focused path forward.
+    - It was clear what they had done and why.
+    - The document was well formatted with clear and useful headings.
+- [Breaking Down Tasks]
+    - They made it to the middle of Part 2 with tests for all of the functionality they implemented and minimal styling.
+    - It looks like they didn't break the tasks into smaller, vertical pieces given the result and commit messages
+- [Maintainable Code]
+    - Code looks legible with good identifiers, small-ish functions, and reasonably well modeled data.
+
+**Collaborate: API Design**
+
+- [API Design]
+    - Jessie struggled a bit on identifying a good solution to the problem. With some assistance, we arrived at a pretty good solution.
+- [Testing]
+    - N/A
+- [Technical Writing]
+    - Diagrams were clear enough for productive discussion
+- [Collaboration]
+    - We worked well together, both contributing to the solution
+    - They explained their understanding well
+    - They listened when I was talking
+    - At one point, we fell off of a topic, then they circled back to it to see if we were done with it before moving on, which was appreciated
+
+**Collaborate: Refactoring and Testing**
+
+- [Refactoring]
+    - Suggested better identifiers, method extractions, dead code elimination.
+    - All of their suggestions sounded pretty good to me
+- [Testing]
+    - We also talked about general testing strategy. They mentioned enjoying writing by Justin Searls [on the topic](https://github.com/testdouble/contributing-tests/wiki). They follow the Detroit School TDD methodology.
+- [Working with Existing Code]
+    - They suggested writing some outside tests first, then refactoring the inside to be more legible.
+- [Culture: Empathy and Understanding for Past Decisions]
+    - They made no comments about how dumb/whatever the existing solution was
+    - When I asked them to think about how the code ended up this way to begin with, they gave a thoughtful answer about possible limited expertise, timelines, or just small changes over time.
+- [Collaboration]
+    - They ended up driving most of the conversation, which was a great way for me to see how much they knew about the topic, but it didn't lead to a lot of collaboration
+- [Maintainable Code]
+    - Identified that a specific architecture choice meant that this logic would have many reasons to change, making it harder to maintain
+    - We talked a bit about how they like the SOLID principles
+    - I mentioned that as a team, we do like to follow SRP and OCP, but the others aren't often discussed explicitly
+
+**Two-directional Q&A**
+
+- [Giving Feedback]
+    - N/A
+- [Receiving Feedback]
+    - Q: Tell us about a time when you received some important feedback. How did you received it? What did you do about it?
+        - The tech lead on their project mentioned several times that smaller PRs make things easier to develop and review. The candidate learned this lesson and is now also an advocate for that. They said they like to "aggressively" shrink work to be smaller, accomplishable, deliverable tasks.
+- [Remote Work]
+    - Q: Tell us about how you manage your time and focus.
+        - They use distraction blocking software called [Freedom](https://freedom.to/) to prevent themselves from jumping over to Twitter and getting distracted. They also like working in Pomodoros. Keeping mornings clear of meetings is helpful because they feel most productive then.
+- [Collaboration]
+    - Q: Tell us about a time when you felt that you didn’t collaborate well. Why? What did you do about it?
+        - There was a coworker they would pair with that would not often contribute to the discussion or code. The candidate received feedback that the coworker wasn't comfortable with TDD and also wasn't comfortable bringing this up to the candidate. After talking it through, they realized that they could be more accommodating to other styles. Now, they try to alternate driver/navigator more often and are more flexible around testing style, while still teaching others about what they find valuable in TDD.
+- [Continuous Learning]
+    - Q: Tell us about a time when you had to solve a hard software problem. What made it hard? How did you approach solving it?
+        - While working in a chat system, agents would talk to customers, but there were also monitors of chats. There could be up to 4-way chats. Monitors could be silent or coaching. Some chat messages could be seen by everyone and others only by staff. There were no tests, making development hard. Debugging was especially difficult.
+        - They decided to add a lot of tests around this area. In doing so, they discovered several bugs and made the system easier to maintain. They now champion these TDD, specifically.
 
 </details>
 
-
-Now let's take our notes and populate the scorecard.
-
-
-{{TODO: Insert scorecard}}
+We'll compile our full scorecard at the end.
 
 
 ## Phase 4: Review and Follow Ups
 
 *Phase Goal: Fill in the assessment gaps.*
 
-No matter how much effort you reasonably put into the process, there will be times that Phase 2 does not produce enough information to make a decision. This can come from poor execution of an interview module, poor choice of interview module, candidate nerves getting in the way, or other mishaps.
+No matter how much effort you reasonably put into the process, there will be times that Phase 3 does not produce enough information to make a decision. This can come from poor execution of an interview module, poor choice of interview module, candidate nerves getting in the way, or other mishaps.
 
-Review the data gathered from the interview and decide if this candidate is a clear hire, decline, or it's unclear. If it's unclear, figure out what missing information you have.
+Review the data gathered from the interview and decide if this candidate is a clear hire, decline, or it's unclear. If it's unclear, figure out what missing information you need. The candidate may also have requests for additional information.
 
-The candidate may also have requests for additional information. Common requests at this stage include:
+Common follow-ups at this stage include:
+
 - candidate requesting to meet other team members
 - hiring manager requesting running a different module
-- hiring manager requesting supporting evidence of a skill
+- hiring manager requesting supporting evidence of a skill (artifact of the work, professional reference)
 
-Schedule any new modules that make sense and run them just like in Phase 3. Gather any relevant information and add it to the notes. After that's all run, go through Phase 4 again.
-
-
-<details open>
-<summary>📝 <b>Review Notes: Jessie</b> [Sean]</summary>
-
-> The candidate clearly has a strong TDD background and focus. They not only absorb the philosophy, but execute the practice. Their work in the interview shows a high quality level that appears to be well supported by this approach.
->
-> Our current team does not practice TDD. The candidate's story about encountering this situation in the past is promising, though. Maybe they'll end up converting a few of us, maybe not. Regardless, this candidate's code looks strong.
-
-</details>
+Run any follow-ups and gather any relevant information about them. After that's all run, start over with Phase 4.
 
 
-### Scoring
+### Compile Notes into Final Scorecard
 
+Now we take all of our notes and compile a scorecard. Our notes were mostly structured as activities and skill assessments related to those activities. The scorecard inverts that so we can focus on one skill at a time.
 
-For each module, we score the skills involved. The skills list can include everything the candidate exhibited that would be applicable to the role. The scores should have justifying metrics, statements, and artifacts of the work.
-
-This article won't dive into how things are actually scored. I just don't have the experience, research, and data on how best to do that. The research does show that having a rubric to turn qualifying assessments into more quantitative data leads to better outcomes. Beyond that, for now, just do your best.
-
-For our scoring, we use high-level categorizations based on a rubric. Someone can score poor, solid, or great on an assessment.
+We also try to qualify how representative a specific assessment is of a given skill with a confidence rating.
 
 
 #### Assessment Confidence
 
-We also temper that with our confidence rating on how well we believe that assessment actually represents their skill. The assessment can have a low, medium, or high level of confidence. Here are some examples of assessments by confidence level.
+We also temper each assessment with our confidence rating on how well we believe that assessment actually represents their skill. The assessment can have a low, medium, or high level of confidence.
 
 **High:** Assessments with high confidence include those where we worked together with the candidate to solve a problem. Collaboration is a great way to understand what it's going to be like to have the candidate on your team.
 
@@ -706,39 +636,174 @@ We also temper that with our confidence rating on how well we believe that asses
 **Low:** Assessments with a low confidence include reference calls, unvalidated claims, discussions about how someone works, or otherwise higher confidence assessments that were too short or otherwise incomplete.
 
 
+#### Culture Assessments
+
+Culture assessments are a special case. It's hard to assess at all, you need to be intentional about your own culture, and you want to be looking for culture add, not culture fit. I won't go into how we do that here, but you should at least be thinking about your own culture and how the candidate could contribute to it.
+
+
+#### The Scorecard
+
+Here we have our compiled scorecard.
+
 <details open>
 <summary>📝 <b>Scorecard: Jessie as Software Engineer</b></summary>
 
-> **Overall Score:** Great!
+> ### **General Skills**
 >
-> General Skill | Score | Confidence |
-> ------------- | :---: | ---------: |
-> Continuous Improvement | great | Low
-> Collaborate            |       |
-> Writing                |       |
-> Give Feedback          |       |
-> Receive Feedback       |       |
+> **Continuous Improvement** [Score: TBD]
+> - Two-directional Q&A [Confidence: Medium]
+>     - Q: Tell us about a time when you had to solve a hard software problem. What made it hard? How did you approach solving it?
+>         - While working in a chat system, agents would talk to customers, but there were also monitors of chats. There could be up to 4-way chats. Monitors could be silent or coaching. Some chat messages could be seen by everyone and others only by staff. There were no tests, making development hard. Debugging was especially difficult.
+>         - They decided to add a lot of tests around this area. In doing so, they discovered several bugs and made the system easier to maintain. They now champion these TDD, specifically.
+> - Phase 1 Notes
+>     - They blog about their learning: {{link to blog}}
 >
+> **Collaboration** [Score: TBD]
+> - Collaborate: API Design [Confidence: High]
+>     - We worked well together, both contributing to the solution
+>     - They explained their understanding well
+>     - They listened when I was talking
+>     - At one point, we fell off of a topic, then they circled back to it to see if we were done with it before moving on, which was appreciated
+> - Collaborate: Refactoring and Testing [Confidence: High]
+>     - They ended up driving most of the conversation, which was a great way for me to see how much they knew about the topic, but it didn't lead to a lot of collaboration
+> - Two-directional Q&A [Confidence: Medium]
+>     - Q: Tell us about a time when you felt that you didn’t collaborate well. Why? What did you do about it?
+>         - There was a coworker they would pair with that would not often contribute to the discussion or code. The candidate received feedback that the coworker wasn't comfortable with TDD and also wasn't comfortable bringing this up to the candidate. After talking it through, they realized that they could be more accommodating to other styles. Now, they try to alternate driver/navigator more often and are more flexible around testing style, while still teaching others about what they find valuable in TDD.
+> - Reference: Ashish [Confidence: Low]
+>     - said that Jessie was good to work with: liked to pair and share what they've learned
+>
+> **Technical Writing** [Score: TBD]
+> - Collaborate: API Design [Confidence: High]
+>     - Diagrams were clear enough for productive discussion
+> - Homework Discussion: Chat App [Confidence: High]
+>     - Their writeup was well-reasoned. It described a strong, TDD-focused path forward.
+>     - It was clear what they had done and why.
+>     - The document was well formatted with clear and useful headings.
+> - Phase 1 Notes
+>     - {{links to blog posts they submitted}}
+>
+> **Giving Feedback** [Score: N/A]
+> - Two-directional Q&A [Confidence: Medium]
+>   - N/A
+>
+> **Receiving Feedback** [Score: TBD]
+> - Two-directional Q&A [Confidence: Medium]
+>     - Q: Tell us about a time when you received some important feedback. How did you received it? What did you do about it?
+>         - The tech lead on their project mentioned several times that smaller PRs make things easier to develop and review. The candidate learned this lesson and is now also an advocate for that. They said they like to "aggressively" shrink work to be smaller, accomplishable, deliverable tasks.
+>
+> **Remote Work** [Score: TBD]
+> - Two-directional Q&A [Confidence: Medium]
+>     - Q: Tell us about how you manage your time and focus.
+>         - They use distraction blocking software called [Freedom](https://freedom.to/) to prevent themselves from jumping over to Twitter and getting distracted. They also like working in Pomodoros. Keeping mornings clear of meetings is helpful because they feel most productive then.
+> > - Reference: Ashish [Confidence: Low]
+>      - talked about working remote with the candidate for brief periods of time, they did affirm that communication was frequent and detailed. No concerns were raised about this arrangement.
+>
+> ### **Core Role Skills**
+>
+> **Breaking Down Tasks** [Score: TBD]
+> - Homework Discussion: Chat App [Confidence: Low]
+>     - They made it to the middle of Part 2 with tests for all of the functionality they implemented and minimal styling.
+>     - It looks like they didn't break the tasks into smaller, vertical pieces given the result and commit messages
+>
+> **Maintainable Code** [Score: TBD]
+> - Homework Discussion: Chat App [Confidence: High]
+>     - Code looks legible with good identifiers, small-ish functions, and reasonably well modeled data.
+> - Collaborate: Refactoring and Testing [Confidence: High]
+>     - Identified that a specific architecture choice meant that this logic would have many reasons to change, making it harder to maintain
+>     - We talked a bit about how they like the SOLID principles
+>     - I mentioned that as a team, we do like to follow SRP and OCP, but the others aren't often discussed explicitly
+>
+> **Refactoring** [Score: TBD]
+> - Collaborate: Refactoring and Testing [Confidence: High]
+>     - Suggested better identifiers, method extractions, dead code elimination.
+>     - All of their suggestions sounded pretty good to me
+>
+> **Working with Existing Code** [Score: TBD]
+> - Collaborate: Refactoring and Testing [Confidence: High]
+>     - They suggested writing some outside tests first, then refactoring the inside to be more legible.
+>
+> **UI Component Architecture** [Score: TBD]
+> - Homework Discussion: Chat App [Confidence: Medium]
+>     - Components are used for high-level encapsulation, but not much for re-use or low-level encapsulation
+>     - The templates would read better with more components extracted out
+>
+> **UI Component Development** [Score: TBD]
+> - Homework Discussion: Chat App [Confidence: High]
+>     - The components themselves were pretty straight-forward
+>
+> **CSS Implementation** [Score: TBD]
+> - Homework Discussion: Chat App [Confidence: Medium]
+>     - There's only basic styling, which makes sense given how far they made it into the funciontality.
+>     - Used BEM style and stuck to it throughout
+>
+> **Testing** [Score: TBD]
+> - Homework Discussion: Chat App [Confidence: Medium]
+>     - Tests appear to essentially cover all implemented behavior
+>     - Descriptions clearly describe what is being tested
+>     - Some identifiers could be a little clearer about what values they contain; `value` is not a great name
+> - Collaborate: Refactoring and Testing [Confidence: Medium]
+>     - We also talked about general testing strategy. They mentioned enjoying writing by Justin Searls [on the topic](https://github.com/testdouble/contributing-tests/wiki). They follow the Detroit School TDD methodology.
+> - Collaborate: API Design [Confidence: Low]
+>     - N/A
+>
+> **API Design** [Score: TBD]
+> - Collaborate: API Design [Confidence: High]
+>     - Jessie struggled a bit on identifying a good solution to the problem. With some assistance, we arrived at a pretty good solution.
+>
+> **Culture: Empathy and Understanding for Past Decisions** [Score: TBD]
+> - Collaborate: Refactoring and Testing
+>     - They made no comments about how dumb/whatever the existing solution was
+      - When I asked them to think about how the code ended up this way to begin with, they gave a thoughtful answer about possible limited expertise, timelines, or just small changes over time.
+>
+
+</details>
+
+
+#### Debrief and Scoring
+
+With all that data in place, the only thing left is to talk about the candidate among everyone involved in hiring. Hold a meeting where you discuss the details of the scorecard and make a final decision.
+
+It's important to keep in mind that the data you gathered and the decision you will make is not perfect. Avoid judgement phrases like "this person is bad at breaking down larger tasks". Instead, say things like "what we saw of their ability to break down tasks was not strong". This leaves the judgement open.
+
+Skill by skill, talk about the candidate's demonstration of that skill and determine a score. A score can be "great", "solid", or "poor". Keep in mind the data points you have and your confidence in those data points.
+
+Scores should reflect the level of the role the candidate is applying for. If you have a career ladder and/or job definitions that enumerate skills, use those definitions to determine these scores.
+
+Create a summary for your scorecard.
+
+<details open>
+<summary>📝 <b>Scorecard Summary: Jessie as Software Engineer</b></summary>
+
+> **Overall Score:** Solid to Great!
+>
+> General Skill          | Score |
+> ---------------------- | :---: |
+> Continuous Improvement | great
+> Collaboration          | great
+> Technical Writing      | solid
+> Giving Feedback        | -
+> Receiving Feedback     | solid
+> Remote Work            | solid
+> 
 > <br>
 >
-> Core Role Skill | Score         | Confidence |
-> --------------- | :-----------: | ---------: |
-> breaking down tasks | great |
-> maintainable code   | solid |
-> component use       |       |
-> css implementation  |       |
-> testing             |       |
-> api design          |       |
-> product interaction |       |
-> design interaction  |       |
+> Core Role Skill            | Score |
+> -------------------------- | :---: |
+> Breaking down Tasks        | poor
+> Maintainable Code          | solid
+> Refactoring                | great
+> Working with Existing Code | great
+> UI Component Architecture  | solid
+> UI Component Development   | solid
+> css implementation         | solid
+> testing                    | great
+> api design                 | poor
 
 </details>
 
 The scorecard is broken up into General Skills that we think most/all team members should have and Core Role Skills, which for a Software Engineer includes a lot of technical implementation skills as well as product and design collaborative skills.
 
 I'd love to dig into each skill in detail, but this is already going to be too long. Let's accept for now that these skills could be anything and discuss how we score candidates at a higher level.
-
-
 
 
 ## Phase 5: Make a Decision
