@@ -5,6 +5,13 @@ description: My take on a strength-finding interview
 tags: interview
 ---
 
+<!--
+TO DO:
+- ensure scorecard through-line is clear
+- put in a couple modules
+- link relevant research
+-->
+
 Most interviews seem to be Me-finding Interviews: the interviewers are looking for others who share their values, virtues, and unknowingly their vices. The format is also often very rigid, looking for specific things and rejecting candidates who can't demonstrate them.
 
 I think we can do better. I know many are trying, too! I'm not setting up a straw man here. I just want to share my take on doing better.
@@ -97,7 +104,7 @@ who is applying for this Software Engineer job:
 >
 > **Write:** Because we fully embrace remote work, you will often be writing messages, pull request descriptions, the occasional document, and more. Technical Writing is an important skill in general, but especially in a remote environment.
 >
-> **Give Feedback:** You should give feedback on the product, team, and team members. Feedback should be specific, actionable, and timely. For individuals, it should also be directly related to the job they are expected to perform. You should also be mindful of your biases when giving feedback.
+> **Give Feedback:** You should give feedback on the product, team, and team members. Feedback should be specific, actionable, and timely. For individuals, it should also be directly related to the job they are expected to perform. You should also be mindful or biases when giving feedback.
 >
 > **Receive Feedback:** You should respond well to valid feedback. Responding well can mean many things, including disagreement. We want to build a strong, trust-and-respect-based relationship across the team that allows us to give feedback about actions, not judgements about people.
 >
@@ -242,11 +249,7 @@ If you are low on interviewable candidates, this is a hard to fill position, or 
 > - never worked full-time remotely before
 > - tech skillset doesn't include Ember
 >
-> The pros are strong and the cons can be addressed relatively easily, except maybe
-> managing the transition to remote work. We can certainly offer support and guidance here, but
-> success in that area will ultimately come from within. After talking to their past colleague
-> Ashish about working remote with the candidate for brief periods of time, they did affirm that
-> communication was frequent and detailed. No concerns were raised about this arrangement.
+> The pros are strong and the cons can be addressed relatively easily, except maybe managing the transition to remote work. We can certainly offer support and guidance here, but success in that area will ultimately come from within. After talking to their past colleague Ashish about working remote with the candidate for brief periods of time, they did affirm that communication was frequent and detailed. No concerns were raised about this arrangement.
 >
 > Decision: This candidate looks like a good initial match for the team. Let's bring them in for the interview!
 
@@ -511,7 +514,11 @@ We then translate that into our scorecard:
 <details open>
 <summary>📝 <b>Scorecard: Jessie as Software Engineer</b></summary>
 
-> ## **Overall Score:** TBD
+> ## **Decision**
+> 
+> Decision: **TBD**
+> 
+> {{detailed reasons for the decision}}
 > 
 > ### **General Skills**
 > 
@@ -545,7 +552,8 @@ We then translate that into our scorecard:
 > - Two-directional Q&A [Confidence: Medium]
 >     - {{notes}}
 > - Reference: Ashish [Confidence: Low]
->      - {{notes}}
+>      - past colleague
+>      - talked about working remote with the candidate for brief periods of time, they did affirm that communication was frequent and detailed. No concerns were raised about this arrangement.
 >
 > ### **Core Role Skills**
 > 
@@ -645,6 +653,10 @@ In the break before the Two-directional Q&A, review your notes to find areas whe
 </details>
 
 
+Now let's take our notes and populate the scorecard.
+
+
+{{TODO: Insert scorecard}}
 
 
 ## Phase 4: Review and Follow Ups
