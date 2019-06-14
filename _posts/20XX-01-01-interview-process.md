@@ -5,13 +5,6 @@ description: My take on a strength-finding interview
 tags: interview
 ---
 
-<!--
-TO DO:
-- ensure scorecard through-line is clear
-- put in a couple modules
-- link relevant research
--->
-
 Most interviews seem to be Me-finding Interviews: the interviewers are looking for others who share their values, virtues, and unknowingly their vices. The format is also often very rigid, looking for specific things and rejecting candidates who can't demonstrate them.
 
 I think we can do better. I know many are trying, too! I'm not setting up a straw man here. I just want to share my take on doing better.
@@ -765,7 +758,7 @@ With all that data in place, the only thing left is to talk about the candidate 
 
 It's important to keep in mind that the data you gathered and the decision you will make is not perfect. Avoid judgement phrases like "this person is bad at breaking down larger tasks". Instead, say things like "what we saw of their ability to break down tasks was not strong". This leaves the judgement open.
 
-Skill by skill, talk about the candidate's demonstration of that skill and determine a score. A score can be "great", "solid", or "poor". Keep in mind the data points you have and your confidence in those data points.
+Skill by skill, talk about the candidate's demonstration of that skill and determine a score. A score can be a "strength", a "skill", or "unskilled". Keep in mind the data points you have and your confidence in those data points.
 
 Scores should reflect the level of the role the candidate is applying for. If you have a career ladder and/or job definitions that enumerate skills, use those definitions to determine these scores.
 
@@ -774,49 +767,40 @@ Create a summary for your scorecard.
 <details open>
 <summary>📝 <b>Scorecard Summary: Jessie as Software Engineer</b></summary>
 
-> **Overall Score:** Solid to Great!
->
-> General Skill          | Score |
-> ---------------------- | :---: |
-> Continuous Improvement | great
-> Collaboration          | great
-> Technical Writing      | solid
-> Giving Feedback        | -
-> Receiving Feedback     | solid
-> Remote Work            | solid
+> Strengths / Strong Skills  |
+> -------------------------- |
+> Continuous Improvement     |
+> Collaboration              |
+> Refactoring                |
+> Testing                    |
+> Working with Existing Code |
 > 
 > <br>
 >
-> Core Role Skill            | Score |
-> -------------------------- | :---: |
-> Breaking down Tasks        | poor
-> Maintainable Code          | solid
-> Refactoring                | great
-> Working with Existing Code | great
-> UI Component Architecture  | solid
-> UI Component Development   | solid
-> css implementation         | solid
-> testing                    | great
-> api design                 | poor
+> Skills |
+> ------------ |
+> Technical Writing |
+> Receiving Feedback |
+> Remote Work |
+> UI Component Architecture |
+> UI Component Development |
+> CSS Implementation |
+> Maintainable Code |
 
 </details>
 
-The scorecard is broken up into General Skills that we think most/all team members should have and Core Role Skills, which for a Software Engineer includes a lot of technical implementation skills as well as product and design collaborative skills.
+This is not a complete list of skills we'd like to see, only those we decided to assess from the overlap of the candidate's strengths and the employer's needs.
 
-I'd love to dig into each skill in detail, but this is already going to be too long. Let's accept for now that these skills could be anything and discuss how we score candidates at a higher level.
+Jessie didn't demonstrate a strong skill level in API Design or Breaking Down Tasks, but we shouldn't focus there. Instead, focus on their strengths! Could we use someone strong in Continuous Improvement, Collaboration, Refactoring, Testing, and Working with Existing Code? Those are the demonstrated strengths of the candidate.
 
 
 ## Phase 5: Make a Decision
 
 *Phase Goal: Decide to pass or make an offer on a candidate.*
 
-The information gathered so far should be focused on the candidate's strengths that match the employer's needs. If the candidate did well in the selected areas, you can be more confident that you've seen them at their best. If they did not, maybe they aren't as strong in those areas as they think they are.
+The information gathered so far was focused on the candidate's strengths that match the employer's needs. If the candidate did well in the selected areas, you can be more confident that you've seen them at their best. If they did not, maybe they aren't as strong in those areas as they think they are.
 
-Making a decision from here is easier than a standard one-size-fits-all interview, in our experience with the two formats.
-
-{{TODO: Hiring Decision Process with Scorecard}}
-
-This candidate looks like a great fit. We decide to hire them and make them an offer.
+This candidate looks like a great fit. They have several useful strengths and even more skills that we need in this role. We decide to hire them and make them an offer.
 
 
 <details open>
@@ -868,18 +852,3 @@ When we accept someone, we try to use this assessment as a starting point for th
 
 - [Lara Hogan's Interview Loop Template](https://larahogan.me/blog/onsite-interview-loop-template/)
 - [Gallup's Clifton Strengths Finder](https://www.gallupstrengthscenter.com/)
-
-
-# Appendix: Example Modules
-
-<details>
-<summary><b>Module A: API Design</b></summary>
-other things
-</details>
-
-<br>
-
-<details>
-<summary><b>Module B: Homework</b></summary>
-other things
-</details>
