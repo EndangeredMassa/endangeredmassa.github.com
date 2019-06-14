@@ -474,32 +474,39 @@ Each module can assess multiple skills, some deeply and others less so. There ca
 
 Below are the modules we're going to run along with the skills we can capture signals for in those modules.
 
-- **Homework Discussion: Chat App**
-    - UI Component Architecture
-    - UI Component Development
-    - Testing
-    - CSS Implementation
-    - Technical Writing
-    - Breaking Down Tasks
-    - Maintainable Code
-- **Collaborate: API Design**
-    - API Design
-    - Testing
-    - Technical Writing
-    - Collaboration
-- **Collaborate: Refactoring and Testing**
-    - Refactoring
-    - Testing
-    - Working with Existing Code
-    - Culture: Empathy and Understanding for Past Decisions
-    - Collaboration
-    - Maintainable Code
-- **Two-directional Q&A**
-    - Giving Feedback
-    - Receiving Feedback
-    - Remote Work
-    - Collaboration
-    - Continuous Learning
+
+<details open>
+<summary>📝 <b>Assessment Plan: Jessie</b> [Sean]</summary>
+
+> - **Homework Discussion: Chat App**
+>     - UI Component Architecture
+>     - UI Component Development
+>     - Testing
+>     - CSS Implementation
+>     - Technical Writing
+>     - Breaking Down Tasks
+>     - Maintainable Code
+> - **Collaborate: API Design**
+>     - API Design
+>     - Testing
+>     - Technical Writing
+>     - Collaboration
+> - **Collaborate: Refactoring and Testing**
+>     - Refactoring
+>     - Testing
+>     - Working with Existing Code
+>     - Culture: Empathy and Understanding for Past Decisions
+>     - Collaboration
+>     - Maintainable Code
+> - **Two-directional Q&A**
+>     - Giving Feedback
+>     - Receiving Feedback
+>     - Remote Work
+>     - Collaboration
+>     - Continuous Learning
+
+</details>
+
 
 We'll use this to take notes during Phase 3.
 
@@ -514,80 +521,80 @@ In the break before the Two-directional Q&A, review your notes to find areas whe
 <details open>
 <summary>📝 <b>Interview Notes: Jessie</b> [Sean]</summary>
 
-**Homework Discussion: Chat App**
-
-- [UI Component Architecture]
-    - Components are used for high-level encapsulation, but not much for re-use or low-level encapsulation
-    - The templates would read better with more components extracted out
-- [UI Component Development]
-    - The components themselves were pretty straight-forward
-- [Testing]
-    - Tests appear to essentially cover all implemented behavior
-    - Descriptions clearly describe what is being tested
-    - Some identifiers could be a little clearer about what values they contain; `value` is not a great name
-- [CSS Implementation]
-    - There's only basic styling, which makes sense given how far they made it into the funciontality.
-    - Used BEM style and stuck to it throughout
-- [Technical Writing]
-    - Their writeup was well-reasoned. It described a strong, TDD-focused path forward.
-    - It was clear what they had done and why.
-    - The document was well formatted with clear and useful headings.
-- [Breaking Down Tasks]
-    - They made it to the middle of Part 2 with tests for all of the functionality they implemented and minimal styling.
-    - It looks like they didn't break the tasks into smaller, vertical pieces given the result and commit messages
-- [Maintainable Code]
-    - Code looks legible with good identifiers, small-ish functions, and reasonably well modeled data.
-
-**Collaborate: API Design**
-
-- [API Design]
-    - Jessie struggled a bit on identifying a good solution to the problem. With some assistance, we arrived at a pretty good solution.
-- [Testing]
-    - N/A
-- [Technical Writing]
-    - Diagrams were clear enough for productive discussion
-- [Collaboration]
-    - We worked well together, both contributing to the solution
-    - They explained their understanding well
-    - They listened when I was talking
-    - At one point, we fell off of a topic, then they circled back to it to see if we were done with it before moving on, which was appreciated
-
-**Collaborate: Refactoring and Testing**
-
-- [Refactoring]
-    - Suggested better identifiers, method extractions, dead code elimination.
-    - All of their suggestions sounded pretty good to me
-- [Testing]
-    - We also talked about general testing strategy. They mentioned enjoying writing by Justin Searls [on the topic](https://github.com/testdouble/contributing-tests/wiki). They follow the Detroit School TDD methodology.
-- [Working with Existing Code]
-    - They suggested writing some outside tests first, then refactoring the inside to be more legible.
-- [Culture: Empathy and Understanding for Past Decisions]
-    - They made no comments about how dumb/whatever the existing solution was
-    - When I asked them to think about how the code ended up this way to begin with, they gave a thoughtful answer about possible limited expertise, timelines, or just small changes over time.
-- [Collaboration]
-    - They ended up driving most of the conversation, which was a great way for me to see how much they knew about the topic, but it didn't lead to a lot of collaboration
-- [Maintainable Code]
-    - Identified that a specific architecture choice meant that this logic would have many reasons to change, making it harder to maintain
-    - We talked a bit about how they like the SOLID principles
-    - I mentioned that as a team, we do like to follow SRP and OCP, but the others aren't often discussed explicitly
-
-**Two-directional Q&A**
-
-- [Giving Feedback]
-    - N/A
-- [Receiving Feedback]
-    - Q: Tell us about a time when you received some important feedback. How did you received it? What did you do about it?
-        - The tech lead on their project mentioned several times that smaller PRs make things easier to develop and review. The candidate learned this lesson and is now also an advocate for that. They said they like to "aggressively" shrink work to be smaller, accomplishable, deliverable tasks.
-- [Remote Work]
-    - Q: Tell us about how you manage your time and focus.
-        - They use distraction blocking software called [Freedom](https://freedom.to/) to prevent themselves from jumping over to Twitter and getting distracted. They also like working in Pomodoros. Keeping mornings clear of meetings is helpful because they feel most productive then.
-- [Collaboration]
-    - Q: Tell us about a time when you felt that you didn’t collaborate well. Why? What did you do about it?
-        - There was a coworker they would pair with that would not often contribute to the discussion or code. The candidate received feedback that the coworker wasn't comfortable with TDD and also wasn't comfortable bringing this up to the candidate. After talking it through, they realized that they could be more accommodating to other styles. Now, they try to alternate driver/navigator more often and are more flexible around testing style, while still teaching others about what they find valuable in TDD.
-- [Continuous Learning]
-    - Q: Tell us about a time when you had to solve a hard software problem. What made it hard? How did you approach solving it?
-        - While working in a chat system, agents would talk to customers, but there were also monitors of chats. There could be up to 4-way chats. Monitors could be silent or coaching. Some chat messages could be seen by everyone and others only by staff. There were no tests, making development hard. Debugging was especially difficult.
-        - They decided to add a lot of tests around this area. In doing so, they discovered several bugs and made the system easier to maintain. They now champion these TDD, specifically.
+> **Homework Discussion: Chat App**
+> 
+> - [UI Component Architecture]
+>     - Components are used for high-level encapsulation, but not much for re-use or low-level encapsulation
+>     - The templates would read better with more components extracted out
+> - [UI Component Development]
+>     - The components themselves were pretty straight-forward
+> - [Testing]
+>     - Tests appear to essentially cover all implemented behavior
+>     - Descriptions clearly describe what is being tested
+>     - Some identifiers could be a little clearer about what values they contain; `value` is not a great name
+> - [CSS Implementation]
+>     - There's only basic styling, which makes sense given how far they made it into the funciontality.
+>     - Used BEM style and stuck to it throughout
+> - [Technical Writing]
+>     - Their writeup was well-reasoned. It described a strong, TDD-focused path forward.
+>     - It was clear what they had done and why.
+>     - The document was well formatted with clear and useful headings.
+> - [Breaking Down Tasks]
+>     - They made it to the middle of Part 2 with tests for all of the functionality they implemented and minimal styling.
+>     - It looks like they didn't break the tasks into smaller, vertical pieces given the result and commit messages
+> - [Maintainable Code]
+>     - Code looks legible with good identifiers, small-ish functions, and reasonably well modeled data.
+> 
+> **Collaborate: API Design**
+> 
+> - [API Design]
+>     - Jessie struggled a bit on identifying a good solution to the problem. With some assistance, we arrived at a pretty good solution.
+> - [Testing]
+>     - N/A
+> - [Technical Writing]
+>     - Diagrams were clear enough for productive discussion
+> - [Collaboration]
+>     - We worked well together, both contributing to the solution
+>     - They explained their understanding well
+>     - They listened when I was talking
+>     - At one point, we fell off of a topic, then they circled back to it to see if we were done with it before moving on, which was appreciated
+> 
+> **Collaborate: Refactoring and Testing**
+> 
+> - [Refactoring]
+>     - Suggested better identifiers, method extractions, dead code elimination.
+>     - All of their suggestions sounded pretty good to me
+> - [Testing]
+>     - We also talked about general testing strategy. They mentioned enjoying writing by Justin Searls [on the topic](https://github.com/testdouble/contributing-tests/wiki). They follow the Detroit School TDD methodology.
+> - [Working with Existing Code]
+>     - They suggested writing some outside tests first, then refactoring the inside to be more legible.
+> - [Culture: Empathy and Understanding for Past Decisions]
+>     - They made no comments about how dumb/whatever the existing solution was
+>     - When I asked them to think about how the code ended up this way to begin with, they gave a thoughtful answer about possible limited expertise, timelines, or just small changes over time.
+> - [Collaboration]
+>     - They ended up driving most of the conversation, which was a great way for me to see how much they knew about the topic, but it didn't lead to a lot of collaboration
+> - [Maintainable Code]
+>     - Identified that a specific architecture choice meant that this logic would have many reasons to change, making it harder to maintain
+>     - We talked a bit about how they like the SOLID principles
+>     - I mentioned that as a team, we do like to follow SRP and OCP, but the others aren't often discussed explicitly
+> 
+> **Two-directional Q&A**
+> 
+> - [Giving Feedback]
+>     - N/A
+> - [Receiving Feedback]
+>     - Q: Tell us about a time when you received some important feedback. How did you received it? What did you do about it?
+>         - The tech lead on their project mentioned several times that smaller PRs make things easier to develop and review. The candidate learned this lesson and is now also an advocate for that. They said they like to "aggressively" shrink work to be smaller, accomplishable, deliverable tasks.
+> - [Remote Work]
+>     - Q: Tell us about how you manage your time and focus.
+>         - They use distraction blocking software called [Freedom](https://freedom.to/) to prevent themselves from jumping over to Twitter and getting distracted. They also like working in Pomodoros. Keeping mornings clear of meetings is helpful because they feel most productive then.
+> - [Collaboration]
+>     - Q: Tell us about a time when you felt that you didn’t collaborate well. Why? What did you do about it?
+>         - There was a coworker they would pair with that would not often contribute to the discussion or code. The candidate received feedback that the coworker wasn't comfortable with TDD and also wasn't comfortable bringing this up to the candidate. After talking it through, they realized that they could be more accommodating to other styles. Now, they try to alternate driver/navigator more often and are more flexible around testing style, while still teaching others about what they find valuable in TDD.
+> - [Continuous Learning]
+>     - Q: Tell us about a time when you had to solve a hard software problem. What made it hard? How did you approach solving it?
+>         - While working in a chat system, agents would talk to customers, but there were also monitors of chats. There could be up to 4-way chats. Monitors could be silent or coaching. Some chat messages could be seen by everyone and others only by staff. There were no tests, making development hard. Debugging was especially difficult.
+>         - They decided to add a lot of tests around this area. In doing so, they discovered several bugs and made the system easier to maintain. They now champion these TDD, specifically.
 
 </details>
 
