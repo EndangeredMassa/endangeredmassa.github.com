@@ -841,7 +841,7 @@ That's the Strength-finding Interview! I hope you find this useful.
 
 This is the result of research, experimentation, and iteration across years of work, quite often in collaboration with [@Trek](https://twitter.com/trek). You can read [Trek's earlier take](https://medium.com/@trek/tired-engineering-interviews-hired-engineering-auditions-5f9f00147a57) on this format, as well.
 
-I consider this to be an evolving process. If you have questions or feedback, please let me know!
+I consider this to be an evolving process. If you have questions or feedback, please let me know! Please send it to [@endangeredmassa](https://twitter.com/endangeredmassa) or [endangeredmassa@gmail.com](mailto:endangeredmassa@gmail.com).
 
 
 ## Feedback from Candidates So Far
