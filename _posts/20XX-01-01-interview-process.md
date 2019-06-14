@@ -688,7 +688,7 @@ Here we have our compiled scorecard.
 > - Two-directional Q&A [Confidence: Medium]
 >     - Q: Tell us about how you manage your time and focus.
 >         - They use distraction blocking software called [Freedom](https://freedom.to/) to prevent themselves from jumping over to Twitter and getting distracted. They also like working in Pomodoros. Keeping mornings clear of meetings is helpful because they feel most productive then.
-> > - Reference: Ashish [Confidence: Low]
+> - Reference: Ashish [Confidence: Low]
 >      - talked about working remote with the candidate for brief periods of time, they did affirm that communication was frequent and detailed. No concerns were raised about this arrangement.
 >
 > ### **Core Role Skills**
