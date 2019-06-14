@@ -775,7 +775,7 @@ Create a summary for your scorecard.
 <summary>📝 <b>Scorecard Summary: Jessie as Software Engineer</b></summary>
 
 > Strengths / Strong Skills  |
-> -------------------------- |
+> :------------------------- |
 > Continuous Improvement     |
 > Collaboration              |
 > Refactoring                |
@@ -785,7 +785,7 @@ Create a summary for your scorecard.
 > <br>
 >
 > Skills |
-> ------------ |
+> :------------ |
 > Technical Writing |
 > Receiving Feedback |
 > Remote Work |
