@@ -146,4 +146,4 @@ Phase 4: Review and Follow Ups
 Phase 5: Make a Decision
 ```
 
-In this series, we'll cover the phases in detail with our candidate and job example throughout.
+In this series, we'll cover the phases in detail, highlighting Jessie's strengths.
