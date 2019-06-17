@@ -58,7 +58,7 @@ layout: default
                 {% if post.link %}
                   <p>{{ post.content }}</p>
                 {% else %}
-                  <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+                  <p>{{ post.description }}</p>
                 {% endif %}
               </section>
 

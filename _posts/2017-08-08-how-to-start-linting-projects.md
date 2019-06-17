@@ -2,6 +2,8 @@
 layout: post
 title:  "An Incremental Approach to Linting to Your Projects"
 date:   2017-08-08
+description:
+  I have gone through the process of adding linting to existing, large projects a couple of times. I've learned some lessons about how to approach this so that it's not disruptive to the team doing other work. Follow these steps to get robust linting into your project without pulling team velocity to a halt!
 ---
 
 I have gone through the process of adding linting to existing, large projects a couple of times. I've learned some lessons about how to approach this so that it's not disruptive to the team doing other work. Follow these steps to get robust linting into your project without pulling team velocity to a halt!
@@ -18,7 +20,7 @@ The really great benefits to code linting are that it:
 
 Consistency of code removes the need to make decisions (individually and as a team) about hundreds of small things where the actual decision doesn't necessarily matter, but having a decision is valuable. With linting, your team can have those conversations once, then enforce them throughout the life of the project. And yes, those can change over time, but it's much easier to update a rule and fix all of the violations at once!
 
-It can also be valuable to adopt coding styles shared by a larger community. Your language, framework, or tools' communities will have their own conventions. Aligning with those can help alliviate friction when a developer switches context between internal and external code as well as when a developer changes jobs internally or externally.
+It can also be valuable to adopt coding styles shared by a larger community. Your language, framework, or tools' communities will have their own conventions. Aligning with those can help alleviate friction when a developer switches context between internal and external code as well as when a developer changes jobs internally or externally.
 
 
 # How Do I Get Started?
@@ -39,7 +41,7 @@ Your conventions will directly and indirectly inform many linting rules, but the
 
 One tool or ruleset at a time, install and configure it to run. Ideally, integrate this into your build process and test suite.
 
-You will probably see a lot of linting failures at this point. Go through the list and disable all rules where there is at least one falure. Now you should see no failures. Keep a list somewhere of which rules are turned off because they fail (as opposed to turned off because you disagree with them). We'll need those later!
+You will probably see a lot of linting failures at this point. Go through the list and disable all rules where there is at least one failure. Now you should see no failures. Keep a list somewhere of which rules are turned off because they fail (as opposed to turned off because you disagree with them). We'll need those later!
 
 Commit this and submit it for review. What you have now is a set of rules that are enforced and all currently pass linting check as well as a TO DO list of rules to turn on. This should be low-impact to the team while still enforcing the linting rules you were already following.
 
@@ -55,7 +57,7 @@ Repeat this step until all rules are back on!
 
 # The Result
 
-We now have a process for incremental maitenance work that we can do in small chunks to improve the state of the code. As long as your team has the appropriate slack time dedicated to maintenance, you'll get through all of this work in no time!
+We now have a process for incremental maintenance work that we can do in small chunks to improve the state of the code. As long as your team has the appropriate slack time dedicated to maintenance, you'll get through all of this work in no time!
 
 
 # I Want More!
