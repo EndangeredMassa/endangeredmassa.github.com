@@ -3,19 +3,6 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@endangeredmassa" />
-  <meta name="twitter:creator" content="@endangeredmassa" />
-  <meta property="og:url" content="{{ page.url }}" />
-  <meta property="og:title" content="{{ page.title }}" />
-  <meta property="og:description" content="{{ page.description | strip_html | strip_newlines }}" />
-
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url }}">
-  <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ page.description | strip_html | strip_newlines }}">
-
   <body itemscope itemtype="http://schema.org/Article">
     {% include header.html %}
     <main class="content" role="main">
