@@ -34,7 +34,7 @@ Me-finding characteristics, intentional or otherwise:
 
 What follows is a distillation of the process I use for interviewing. If you agree with the goals of this format, feel free to use it as a starting point in your own interview process. Hopefully, it can serve you as a better default.
 
-So far, variations of this format have been tested across 2 companies, 75 phone screens, 23 interviews, 13 offers, and 8 hires. Unsolicited feedback from candidates, even from those we declined, has been overwhelmingly positive.
+So far, variations of this format have been tested across 2 companies, 94 phone screens, 27 interviews, 14 offers, and 9 hires. False negatives are impossible to track, but confidence in no-hire decisions was very high. False positives were extremely low. Roughly half of all candidates provided unsolicited feedback and it has always (so far) been positive, even from those we declined.
 
 > I really loved the interview process. Thanks for considering me for the role.
 
