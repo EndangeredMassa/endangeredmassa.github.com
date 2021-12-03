@@ -58,7 +58,7 @@ Manager is not a role. It's a position in a hierarchy, a title. Instead of havin
 
 For those playing multiple roles, expectations should be set appropriately. It's all too easy to expect an Individual Contributor to perform similarly to others on a team even though they are also a mentor or a team lead.
 
-This works! Admittedly I've only seen it in action at one company, but the role conflict melted away, leading to a happier, more productive department.
+This works! The role conflict melts away, leading to a happier, more productive department.
 
 # **Pragmatic Solution: Strategies for Playing Conflicting Roles**
 
