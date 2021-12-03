@@ -2,7 +2,6 @@
 layout: post
 title:  "Detangling the Manager: Supervisor, Team Lead, Mentor"
 date:   2021-11-18
-draft: true
 description:
   "The term Manager means a lot of different things to different companies. It can include Project Manager, Product Manager, Technical Lead, Team Lead, Mentor, Coach, Supervisor, as well as Individual Contributor. Most often, in my experience, a manager is responsible for at least these roles: Supervisor, Mentor, and Team Lead.<br><br>There is great value in having those roles played by separate people."
 ---
@@ -58,6 +57,8 @@ Manager is not a role. It's a position in a hierarchy, a title. Instead of havin
 **Company Member as Mentor:** Anyone in the company with the understanding of their mentee's role can play the Mentor role. This could be a more senior engineer in another team or your current team's project manager. This does not need to be kept within a team boundary. This can be a 100% focus role, but that will be rare until a company is quite large. This is more likely a 25-50% role for someone playing a different role.
 
 For those playing multiple roles, expectations should be set appropriately. It's all too easy to expect an Individual Contributor to perform similarly to others on a team even though they are also a mentor or a team lead.
+
+This works! Admittedly I've only seen it in action at one company, but the role conflict melted away, leading to a happier, more productive department.
 
 # **Pragmatic Solution: Strategies for Playing Conflicting Roles**
 
