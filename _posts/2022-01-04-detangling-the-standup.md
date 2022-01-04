@@ -3,12 +3,12 @@ layout: post
 title:  "Detangling the Standup: Status Reports, Team Planning, Context Sharing, and Community Building"
 date:   2021-11-18
 description:
-  "Standups are often applied without understanding the problem they are solving. This leads to:
-
-  1. Not clearly solving a specific problem
-  2. Not solving a problem with the best solution
-  3. A daily interruption to deep work
-
+  "Standups are often applied without understanding the problem they are solving. This leads to:<br>
+  <br>
+  1. Not clearly solving a specific problem<br>
+  2. Not solving a problem with the best solution<br>
+  3. A daily interruption to deep work<br>
+  <br>
   What follows is a pragmatic and ideal approach to resolving this situation. The pragmatic approach is to understand so you can excel within that system. The ideal solution tries to change the system to better serve the team."
 ---
 
