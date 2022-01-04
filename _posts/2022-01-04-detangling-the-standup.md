@@ -2,7 +2,6 @@
 layout: post
 title:  "Detangling the Standup: Status Reports, Team Planning, Context Sharing, and Community Building"
 date:   2021-11-18
-published: false
 description:
   "Standups are often applied without understanding the problem they are solving. This leads to:
 
