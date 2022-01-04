@@ -12,7 +12,7 @@ description:
   What follows is a pragmatic and ideal approach to resolving this situation. The pragmatic approach is to understand so you can excel within that system. The ideal solution tries to change the system to better serve the team."
 ---
 
-The most common problems that Standups are solving:
+Standups are often applied without understanding the problem they are solving. Broken down by potential problem being solved, this becomes more obvious:
 
 | Problem | One Solution | Typically Called |
 | --- | --- | --- |
@@ -21,7 +21,7 @@ The most common problems that Standups are solving:
 | unclear team problems and/or solutions | Context Sharing meetings | Standup |
 | team member silos or other lacks of communication | Community Building meetings | Standup |
 
-Standups are often applied without understanding the problem they are solving. This leads to:
+Because of this, we have new problems:
 
 1. Not clearly solving a specific problem
 2. Not solving a problem with the best solution
