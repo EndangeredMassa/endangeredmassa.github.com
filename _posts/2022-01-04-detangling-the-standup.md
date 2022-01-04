@@ -49,7 +49,8 @@ Individual contributions to these meetings focus on what was done, what’s on t
 These contributions are most useful to the team lead and/or stakeholders to understand the status of the project.
 
 > Yesterday I was working on the “Sign In With Google” story, but hit a weird issue with the integration. I spent a few hours debugging it. I should finish it this morning. Today, I’ll finish that story and pick up the next one.
-> 
+
+
 
 **Context Sharing “Standups”**
 
@@ -58,9 +59,9 @@ Individual contributions to these meetings focus on what was done, how, and/or w
 These contributions are generally more useful to the individual contributors on a team. They are less useful to the team lead.
 
 > Yesterday I was working on the “Sign In With Google” story, but hit a weird issue with the integration. I spent a few hours debugging it. Turns out, the documentation was wrong about how to differentiate between bad credentials and bad integration.
-
-In my debugging, I built up a wrapper component that smooths over the confusing parts and more clearly validates inputs based on our needs. Make sure you use it in our other apps if you need to implement Google sign in.
 > 
+> In my debugging, I built up a wrapper component that smooths over the confusing parts and more clearly validates inputs based on our needs. Make sure you use it in our other apps if you need to implement Google sign in.
+
 
 **Community Building “Standups”**
 
@@ -69,9 +70,8 @@ Individual contributions to these meetings pay lip service to the premise of a �
 These contributions may feel like a waste of time, but are likely useful to all team members. This kind of meeting can build the team community.
 
 > Yesterday I was working on the “Sign In With Google” story and I’ll keep working on it today.
-
-Last night I took my kids to a trampoline park for the first time. It was bonkers, but a lot of fun. I ended up jumping just as much as the kids.
 > 
+> Last night I took my kids to a trampoline park for the first time. It was bonkers, but a lot of fun. I ended up jumping just as much as the kids.
 
 **Team Planning “Standups”**
 
@@ -80,7 +80,7 @@ Individual contributions to these meetings focus on what needs to be done, espec
 These contributions are generally more useful to the individual contributors on a team, but the team lead needs to know as well.
 
 > Yesterday I was working on the “Sign In With Google” story, but hit a weird issue with the integration. I spent a few hours debugging it. I’m still not sure what the problem is. Can someone pair with me on this today, ideally this morning?
-> 
+
 
 # Ideal Approach
 
