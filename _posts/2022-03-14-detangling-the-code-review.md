@@ -169,8 +169,9 @@ All comments are also non-blocking unless otherwise specified.
 
 # Takeaways
 
-The type of comment (Preference, Convention, Suggestion, or Requirement) should lead to whether or not resolution of that comment should block merging the code change:
+The type of comment (Question, Preference, Convention, Suggestion, or Requirement) should lead to whether or not resolution of that comment should block merging the code change:
 
+- Question: non-blocking or blocking; depends on context
 - Preference: non-blocking; don’t comment with this unless you can’t help yourself
 - Suggestion: non-blocking or soft-blocking
 - Convention: soft-blocking
