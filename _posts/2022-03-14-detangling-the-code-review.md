@@ -141,35 +141,31 @@ All comments are also non-blocking unless otherwise specified.
 ## Examples
 
 > **question (non-blocking):** Were you able to find a case when `paging.next` doesn't exist?
-
-When I tested analyzing temporary failures, the URL for next always seemed to exist and be the same across all subsequent polls. I ended up having to check whether `items.length === 0` (`events.length === 0`) instead to break out of the loop.
 > 
+> When I tested analyzing temporary failures, the URL for next always seemed to exist and be the same across all subsequent polls. I ended up having to check whether `items.length === 0` (`events.length === 0`) instead to break out of the loop.
 
 > **suggestion (non-blocking):** extract functions
-
-In the model hooks especially, I suggest extracting functions aggressively. This makes it easier to see each concept that happens as the result of a hook.
-
-What do you think about something like this?
-
-```
-beforeCreate: async function(model, options) {
-    ensureEmailMxDomain(model);
-    ensureLatLong(model);
-}
-```
 > 
+> In the model hooks especially, I suggest extracting functions aggressively. This makes it easier to see each concept that happens as the result of a hook.
+> 
+> What do you think about something like this?
+> 
+> ```
+> beforeCreate: async function(model, options) {
+>     ensureEmailMxDomain(model);
+>     ensureLatLong(model);
+> }
+> ```
 
 > **convention (blocking):** use `last_email_interaction_at`
-
-Our convention for database column names says that dates should end in `_at`.
-
-I marked this as “blocking” because migrations are expensive and risky in this database. We should minimize the number of migrations where possible.
 > 
+> Our convention for database column names says that dates should end in `_at`.
+> 
+> I marked this as “blocking” because migrations are expensive and risky in this database. We should minimize the number of migrations where possible.
 
 > **requirement (blocking):** invert conditional `if (found)` should be `if (!found)`
-
-It looks like the code and test are accidentally checking that the file was found, but I think here we expect the file to not be found.
 > 
+> It looks like the code and test are accidentally checking that the file was found, but I think here we expect the file to not be found.
 
 # Takeaways
 
