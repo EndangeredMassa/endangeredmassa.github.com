@@ -3,8 +3,7 @@ layout: post
 title:  "Theme Pact: Goal Setting Framework with no Goals"
 date:   2023-02-02
 description:
-  "Pulling from several sources, my framework for goal setting includes:
-  <br><br>
+  "Pulling from several sources, my framework for goal setting includes:<br>
   <ul>
     <li><b>Theme:</b> a guiding light, a default decision</li>
     <li><b>PACT Goals:</b> specific personal outputs I commit to</li>
