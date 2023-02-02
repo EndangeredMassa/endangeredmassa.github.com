@@ -3,13 +3,13 @@ layout: post
 title:  "Theme Pact: Goal Setting Framework with no Goals"
 date:   2023-02-02
 description:
-  Pulling from several sources, my framework for goal setting includes:
+  "Pulling from several sources, my framework for goal setting includes:
   <br><br>
   <ul>
     <li><b>Theme:</b> a guiding light, a default decision</li>
     <li><b>PACT Goals:</b> specific personal outputs I commit to</li>
     <li><b>Habits:</b> systems for making sure I achieve those outputs</li>
-  </ul>
+  </ul>"
 ---
 
 
@@ -99,6 +99,8 @@ Craving and Reward are two sides of the same coin. You need to make the habit re
 I focus mostly on setting new good habits here, but James makes it clear that you can use a similar system to break bad habits.
 
 # Setting a Theme Pact
+
+Steps:
 
 1. Define your Theme
 2. Define the duration (a quarter, season, year, etc.)
