@@ -6,8 +6,6 @@ description:
   "How I use Conventional Comments to make it clear (1) what kind of comment it is, (2) what specifically I want, and (3) how important it is that my comment is resolved."
 ---
 
-# Conventional Comments: Streamlining Feedback
-
 The idea behind [Conventional Comments](https://conventionalcomments.org/) on Code Reviews is that structure can convey a lot meaning quickly.
 
 This process helps convey understanding of:
