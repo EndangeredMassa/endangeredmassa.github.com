@@ -114,4 +114,4 @@ The type of comment (Question, Preference, Convention, Suggestion, or Requiremen
 
 However feedback on code changes is provided, they should be communicated with compassion. You should consider how your comments will be received based on team context and experience level of the author. Dr. McKayla goes into much more detail on [compassionate code review](https://www.michaelagreiler.com/respectful-constructive-code-review-feedback/).
 
-See [Conventional Commits](./2022-03-15-conventional-commits.md) for details about how I use this model to write code review comments.
+See [Conventional Commits](./conventional-commits) for details about how I use this model to write code review comments.

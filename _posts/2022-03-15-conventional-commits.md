@@ -81,4 +81,4 @@ The best part is that readers don't have to know about the structure to understa
 
 # Related Topics
 
-See [Detangling the Code Review](./2022-03-14-detangling-the-code-review.md) for details about different kinds of feedback.
+See [Detangling the Code Review](./detangling-the-code-review) for details about different kinds of feedback.
