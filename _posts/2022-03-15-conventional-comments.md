@@ -2,7 +2,6 @@
 layout: post
 title:  "Conventional Comments: Streamlining Feedback"
 date:   2022-03-15
-published: false
 description:
   "How I use Conventional Comments to make it clear (1) what kind of comment it is, (2) what specifically I want, and (3) how important it is that my comment is resolved."
 ---
